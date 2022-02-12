@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SAFT FAQs</title>
+    <link rel="stylesheet" type="text/css" href="../vintage/css/main.css">
+
+    <link rel="icon" type="image/png" href="../vintage/images/icon-coin-128.png"/>
+
+
+      <link rel="canonical" href="https://filecoin.io/blog/saft-faqs/" />
+      <link rel="alternate" href="https://filecoin.io/blog/saft-faqs/" hreflang="x-default">
+  </head>
+
+<body class="section blog">
+  <header>
+    <nav class="navbar">
+  <div class="nav-items-left">
+    <a href="https://filecoin.io" class="nav-item">
+      <img class="logo" src="../vintage/images/filecoin-logo.svg" alt="filecoin logo" width="130">
+    </a>
+  </div>
+  <div class="nav-items-right">
+    <label class="menu-icon" for="menu-btn">☰</label>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <ul class="nav-items-right-inner">
+      <li class="nav-item">
+        <a href="https://filecoin.io/store">Store</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://filecoin.io/mine">Mine</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://filecoin.io/build">Build</a>
+      </li>
+
+        <li class="nav-item">
+          <a href="../blog/" >
+            Blog
+          </a>
+        </li>
+
+      </ul>
+  </div>
+</nav>
+
+  </header>
+
+  <div class="wrapper section-single">
+
+    <div class="date">October 2020</div>
+    <h2 class="title">FAQ</h2>
+    <h4>Table of Contents</h2>
+    <p>
+      <a href="#network">The Filecoin Network</a><br>
+      <a href="#storing">Storing Data on Filecoin</a><br>
+      <a href="#mining">Mining Filecoin</a><br>
+      <a href="#tokens">Receiving your FIL Tokens</a><br>
+      <a href="#other">Other Questions</a><br>
+    <p>
+
+    <div class="content">
+
+      <a name="network"><h2>The Filecoin Network</h2></a>
+
+      <h4>When is the Filecoin Mainnet Liftoff?</h4>
+      <p>
+        The Filecoin mainnet will officially begin at epoch 148,888, which we expect will be on October 15, 2020. After a few quiet days, we will hold <strong>Filecoin Mainnet Liftoff: a week of events from October 19-23 celebrating Filecoin’s mainnet launch. 🚀</strong>
+      </p>
+
+      <h4>Is the Filecoin network fully functional?</h4>
+      <p>
+        Yes, the Filecoin network is fully functional. Miners can rent their storage in the network in exchange for Filecoin tokens, clients can add data to the network and pay for the storage in Filecoin tokens, developers can build applications using Filecoin for data storage, and more. The network has been stress-tested extensively throughout the <a href="http://spacerace.filecoin.io/">Space Race competition</a>, and <a href="http://slingshot.filecoin.io/">clients are utilizing the network</a> to store valuable data. There are many tools available to interact with the network, including the Lotus implementation, several chain explorers, and many applications to store data. The community is also constantly improving and evolving the Filecoin network, with new software tools and protocol improvements.
+      </p>
+
+      <h4>How can I use my tokens on the Filecoin Network?</h4>
+      <p>
+        After Mainnet Liftoff, you can use your tokens as collateral for mining (by sending them to your mining wallet and pledging storage capacity), or to store files and data as a client in the network (by entering into storage deals with miners). You can also purchase any storage or other services offered by Filecoin nodes that accept Filecoin payments, or payment channels.
+      </p>
+      <p>
+        The most technical users will likely <a href="https://docs.filecoin.io/get-started/">run a node</a> and mine or make storage deals directly with miners. However, there’s also a rapidly growing number of applications that use Filecoin for storage including <a href="http://slate.host/">Slate</a>, a fully open-source file sharing network designed for research and collaboration. Many developers are already building new applications on Filecoin, including ~50 projects from the various Filecoin Ignite events (<a href="https://hack.ethglobal.co/hackfs/showcase">HackFS</a>, <a href="https://filecoin.io/blog/spark-challenge-one/">Spark</a>, etc).
+      </p>
+
+
+      <a name="storing"><h2>Storing Data on Filecoin</h2></a>
+
+      <h4>How can I use my tokens to store & retrieve files and data?</h4>
+      <p>
+        There are many ways to spend filecoin to store and retrieve data on the network. The most technical of users will likely <a href="https://docs.filecoin.io/get-started/">run a node</a> and make storage deals directly with miners. You can read about <a href="https://docs.filecoin.io/store/lotus/store-data/">storing data with Lotus here</a> and about <a href="https://docs.filecoin.io/store/lotus/very-large-files/">storing large files/data here</a>.
+      </p>
+      <p>
+        However, there’s also a rapidly growing number of applications and service providers that you can use to help you get started storing with Filecoin even faster. Some of our recent favorites:
+        <ul>
+          <li><a href="http://slate.host/">Slate</a> is a fully open-source file sharing network designed for research and collaboration.</li>
+          <li><a href="http://textile.io/">Textile</a> is a set of open source developer tools that provide a decentralized database over IPFS with long-term data storage to Filecoin.</li>
+          <li><a href="https://github.com/FleekHQ/space-daemon">Space Daemon</a> from Fleek makes it easy to build peer to peer and privacy focused apps.</li>
+          <li>And be sure to check out the <a href="http://blog.filecoin.io/">Filecoin Blog</a> and <a href="http://twitter.com/filecoin">Twitter</a> for many more examples and showcases!</li>
+        </ul>
+      </p>
+
+      <h4>How can I use Filecoin storage in my application?</h4>
+      <p>
+        Applications that use Filecoin as storage participate in the Filecoin network as clients, and make storage and retrieval deals with miners. Developers will likely need to integrate their applications with a filecoin implementation (such as Lotus) or with intermediate tools like Powergate. There are many tools and systems available for many kinds of applications.
+        <ul>
+          <li>You can read about the <a href="https://docs.filecoin.io/build/powergate/">Powergate APIs here</a>.</li>
+          <li>You can read about <a href="https://docs.filecoin.io/reference/lotus-api/#endpoints">the Lotus API here</a>.</li>
+          <li>You can find <a href="https://docs.filecoin.io/build/examples/">tutorials to build example apps here</a>.</li>
+          <li>You can learn about <a href="https://docs.filecoin.io/build/filecoin-pinning-services/">Filecoin-backed pinning services here</a>.</li>
+          <li>You can learn how to build applications like Slate <a href="https://www.youtube.com/watch?v=XofZP6YEkhg">here</a> and <a href="https://github.com/filecoin-project/slate">via its github repository</a>.</li>
+        </ul>
+      </p>
+
+      <a name="mining"><h2>Mining Filecoin</h2></a>
+
+      <h4>How can I mine Filecoin?</h4>
+      <p>
+        Mining Filecoin involves renting out storage space on the network in exchange for FIL tokens, and participating in maintaining the Filecoin blockchain. You will need storage mining hardware, a filecoin software implementation (eg Lotus), an internet connection meeting bandwidth and latency requirements, and FIL tokens for collateral. You can learn more about how to mine Filecoin <a href="https://docs.filecoin.io/">in the documentation</a>, and in various guides and tutorials written by the community. There are many in-depth resources available, so this FAQ will not repeat that information here.
+      </p>
+
+      <h4>How can I use my tokens as collateral for mining?</h4>
+      <p>
+        FIL tokens are required for collateral in the mining process. This collateral helps ensure that miners follow the protocol and provide high quality of service for clients who buy their storage services. The collaterals also help secure the storage and the blockchain consensus.
+      </p>
+      <p>
+        As soon as your tokens begin unlocking, you can send them directly to your mining wallet for use in pledging storage capacity, entering into deals, and paying network fees. SAFT tokens will begin unlocking on October 15, and will unlock over the lockup period you selected during the SAFT sale.
+      </p>
+
+
+      <a name="tokens"><h2>Receiving your FIL Tokens</h2></a>
+
+      <h4>As a SAFT Holder, what should I do to receive my FIL tokens?</h4>
+      <p>
+        SAFT holder onboarding is beginning now, during the Mainnet Ignition period. Please follow the following steps to receive your tokens:
+        <ol>
+          <li> First, please make sure you have completed registration with <a href="http://coinlist.co/filecoin">CoinList</a>. You may have already done so -- most SAFT Holders are done with this step.</li>
+          <li> If you opted into a non-CoinList custodian, your custodian may reach out with specific timelines or next steps for you.</li>
+          <li> We need you to authorize us to transfer your Filecoin via this <a href="https://fil-safts.com/">Filecoin SAFT portal</a>.</li>
+        </ol>
+        After completing these steps, wait for us to transfer your Filecoin to your custodian. This may take several days, as we process custodian transfers in scheduled batches for security. We will notify you when the transfer is complete.
+      </p>
+      <p>
+        If you have additional questions or run into any trouble, please contact us at <a href="mailto:fil-safts-support@protocol.ai">fil-safts-support@protocol.ai</a>, or contact CoinList at <a href="mailto:team@coinlist.co">team@coinlist.co</a>.
+      </p>
+
+      <h4>I received an email asking me to authorize the SAFT transfer to my custodian in the <a href="https://fil-safts.com/">Filecoin SAFT portal</a>. Is this a legitimate request?</h4>
+      <p>
+        Yes, this is a legitimate request. Please use the <a href="https://fil-safts.com/">Filecoin SAFT portal</a> to authorize the transfer to your custodian. You will need to verify your identity with a valid form of identification.
+      </p>
+
+      <h4>What are my options for FIL custody?</h4>
+      <p>
+        By default, SAFT holder tokens will go to CoinList Wallets. SAFT holders can also opt into leading custodians including Anchorage, Gemini Custody, or Coinbase Custody (coming soon). All custodian selection is done via the <a href="http://coinlist.co/filecoin">CoinList interface</a>. If you are interested in self-custody or custody with a different provider than CoinList, the deadline for selecting that has now passed, but don’t worry – post-Liftoff you will be able to transfer your SAFT wallets to another custodian or self-custody via the CoinList platform. If you have any issues or questions, please <a href="mailto:team@coinlist.co">reach out to CoinList</a>.
+      </p>
+
+      <h4>What self-custody Filecoin wallet software can I use?</h4>
+      <p>
+        In addition to the professional custodians listed above, the Filecoin community is creating a number of software wallet tools. The most complete tool to date is the <a href="http://wallet.glif.io/">Glif Wallet</a>, which includes a full-fledged GUI and <a href="https://www.ledger.com/">Ledger hardware wallet</a> support. There are other software wallets and integrations in development now, including Metamask. The most advanced users and developers <a href="https://docs.filecoin.io/get-started/lotus/send-and-receive-fil/">may use a Filecoin lotus node directly</a>.
+      </p>
+      <p>
+        <strong>Warning: use self-custody wallets at your own risk.</strong>
+      </p>
+
+      <h4>Can I use my Ledger hardware wallet with Filecoin?</h4>
+      <p>
+        Yes, you can use your Ledger hardware wallet with a software wallet like <a href="http://wallet.glif.io/">Glif</a>. We expect other software wallets may emerge that also support Ledger devices.
+      </p>
+
+      <h4>What is FIL?</h4>
+      <p>
+        FIL is a three-letter currency code for Filecoin network tokens. We use FIL and filecoin tokens interchangeably.
+      </p>
+
+      <h4>How does Filecoin vesting/unlocking for SAFT holders work?</h4>
+      <p>
+        Filecoin vests (i.e. “unlocks”) linearly on a block-by-block basis for the duration of your vesting period. Filecoin tokens will begin vesting the moment the mainnet starts, on epoch 148,888 which we expect will be on October 15, 2020. The start of mainnet at this epoch will mark the Filecoin mainnet Launch as defined in the SAFT. You may get access and control of your FIL wallet before October 15, but your tokens will not start vesting until the mainnet Launch epoch 148,888, on October 15.
+      </p>
+      <p>
+        For example - if your vesting schedule is 12 months, your FIL will begin unlocking on a block-by-block basis beginning on epoch 148,888 on October 15. On each block (which occur every ~30 seconds in the blockchain), you will vest a linear fraction of your FIL until all of it is unlocked approximately 12 months later (around 1,051,200 blocks later). You cannot use or spend vesting FIL until they unlock.
+      </p>
+
+
+      <h4>I have a tax related question, can you answer it?</h4>
+      <p>
+        Unfortunately we are unable to give tax advice. We suggest consulting with your tax advisor.
+      </p>
+
+      <a name="other"><h2>Other Questions</h2></a>
+
+      <h4>I have another question or comment that wasn’t addressed here, who can I contact?</h4>
+      <p>
+        For all SAFT and token holder related inquiries please contact <a href="mailto:team@coinlist.co">team@coinlist.co</a>.
+      </p>
+      <p>
+        If you still need help, you may get in touch with us directly at <a href="mailto:fil-safts-support@protocol.ai">fil-safts-support@protocol.ai</a>.
+      </p>
+      <p>
+        If you’d like to participate more in the Filecoin Community, please join us on slack: <a href="https://filecoin.io/slack">filecoin.io/slack</a>.
+      </p>
+
+    </div>
+
+  </div>
+
+  <footer>
+  <div class="inner">
+    <div class="col">
+      Follow us at&nbsp;<a class="twitter" target="_blank" title="@Filecoin" href="https://twitter.com/Filecoin" rel="noopener">
+      @Filecoin
+      </a>
+    </div>
+  </div>
+</footer>
+<script src="../../vintage/js/main.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-1', 'auto');
+
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</body>
+</html>

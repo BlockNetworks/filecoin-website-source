@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2022-02-10T05:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2022-02-10T05:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2022-02-10T05:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/events/</loc>
+    <lastmod>2022-02-10T05:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/categories/events/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/events/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/piknik-s-espa-makes-way-for-web3-enterprise-storage-on-filecoin/</loc>
+    <lastmod>2022-02-10T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/updates/</loc>
+    <lastmod>2022-02-10T05:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/categories/updates/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/updates/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-35/</loc>
+    <lastmod>2022-02-02T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/awards/</loc>
+    <lastmod>2022-02-01T05:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/categories/awards/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/awards/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-for-large-data/</loc>
+    <lastmod>2022-02-01T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin.zh-cn-1/</loc>
+    <lastmod>2022-02-01T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/interviews/</loc>
+    <lastmod>2022-02-01T05:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/categories/interviews/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/interviews/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/trusted-setup-complete-for-network-v15-upgrade/</loc>
+    <lastmod>2022-01-27T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/orbit-community-program/</loc>
+    <lastmod>2022-01-21T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-34/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/introducing-ref-fvm-a-new-fvm-website-and-the-early-builders-program/</loc>
+    <lastmod>2022-01-19T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/metamask-flask-a-snap-for-filecoin/</loc>
+    <lastmod>2022-01-18T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-in-2021-looking-back-at-a-year-of-exponential-growth/</loc>
+    <lastmod>2022-01-13T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/longhashx-and-protocol-labs-launch-first-ever-metaverse-demo-day/</loc>
+    <lastmod>2022-01-11T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-green/</loc>
+    <lastmod>2021-12-21T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-green.zh-cn-1/</loc>
+    <lastmod>2021-12-21T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-33/</loc>
+    <lastmod>2021-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-32/</loc>
+    <lastmod>2021-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-launchpad-accelerator-ii-gaming-and-the-metaverse/</loc>
+    <lastmod>2021-11-23T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-launchpad-accelerator-ii-infrastructure-and-dev-tools/</loc>
+    <lastmod>2021-11-23T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-31-a-deeper-look-into-the-filecoin-virtual-machine/</loc>
+    <lastmod>2021-11-17T23:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/introducing-the-filecoin-virtual-machine/</loc>
+    <lastmod>2021-11-11T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-launchpad-accelerator-ii-nfts/</loc>
+    <lastmod>2021-11-09T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-30/</loc>
+    <lastmod>2021-11-04T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-launchpad-accelerator-ii-defi/</loc>
+    <lastmod>2021-11-01T04:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/posts/filecoin-launchpad-accelerator-ii-defi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/posts/filecoin-launchpad-accelerator-ii-defi/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-orbit-2021-recap/</loc>
+    <lastmod>2021-10-25T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/textile-intro-to-the-filecoin-bridge/</loc>
+    <lastmod>2021-10-21T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-29/</loc>
+    <lastmod>2021-10-20T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-orbit-filecoin-year-one-in-review/</loc>
+    <lastmod>2021-10-15T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-becomes-official-storage-collaborator-for-flow-blockchain/</loc>
+    <lastmod>2021-10-13T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-28/</loc>
+    <lastmod>2021-10-06T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-plus-how-storage-providers-can-engage-with-verified-clients/</loc>
+    <lastmod>2021-10-05T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/</loc>
+    <lastmod>2021-10-01T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/chainsafe-files-building-privacy-preserving-cloud-storage/</loc>
+    <lastmod>2021-09-28T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-s-island-economy/</loc>
+    <lastmod>2021-09-23T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-27/</loc>
+    <lastmod>2021-09-22T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/using-filecoin-with-ipfs/</loc>
+    <lastmod>2021-09-16T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-project-gravity-a-sales-referral-program/</loc>
+    <lastmod>2021-09-14T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/decentralized-storage-estuary-web3.storage-and-nft.storage/</loc>
+    <lastmod>2021-09-10T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-26/</loc>
+    <lastmod>2021-09-08T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/the-future-of-decentralized-social-media/</loc>
+    <lastmod>2021-09-07T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/taking-a-look-at-estuary/</loc>
+    <lastmod>2021-09-02T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/about-500-000-in-prizes-and-grants-for-asia-hackathon-season-2021/</loc>
+    <lastmod>2021-08-27T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/dapper-labs-integrates-filecoin/</loc>
+    <lastmod>2021-08-26T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-25/</loc>
+    <lastmod>2021-08-25T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/</loc>
+    <lastmod>2021-08-20T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/mask-network-x-filecoin-bridging-the-gap-between-web2-and-web3/</loc>
+    <lastmod>2021-08-17T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/</loc>
+    <lastmod>2021-08-13T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-24-filecoin-near-grant-program-asia-hackathon-season-21-sxsw-panel-voting-open-and-more/</loc>
+    <lastmod>2021-08-11T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/near-filecoin-ecosystems-accelerate-growth-web3-stack/</loc>
+    <lastmod>2021-08-10T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/</loc>
+    <lastmod>2021-08-06T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/building-web3-filecoin-ethereum-better-together/</loc>
+    <lastmod>2021-08-05T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/introducing-web3-storage/</loc>
+    <lastmod>2021-08-03T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/zero-knowledge-and-the-filecoin-network/</loc>
+    <lastmod>2021-07-29T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-23/</loc>
+    <lastmod>2021-07-28T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-and-hedera-hashgraph-announce-grant-program-to-propel-web3-interoperability/</loc>
+    <lastmod>2021-07-27T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/building-businesses-for-the-future-of-the-decentralized-web/</loc>
+    <lastmod>2021-07-20T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/open-web-community-summit-the-future-of-storage-capacity/</loc>
+    <lastmod>2021-07-15T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-22/</loc>
+    <lastmod>2021-07-14T04:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/posts/filecoin-news-22/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/posts/filecoin-news-22/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-zk-snarks-zero-knowledge-but-a-lot-of-zero-knowledge/</loc>
+    <lastmod>2021-07-13T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/more-than-storage-business-opportunities-on-filecoin/</loc>
+    <lastmod>2021-07-06T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-quadratic-funding-grant-round-1-at-dorahacks/</loc>
+    <lastmod>2021-07-01T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-21/</loc>
+    <lastmod>2021-06-30T04:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/posts/filecoin-news-21/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/posts/filecoin-news-21/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/the-evolution-of-a-lotus-node/</loc>
+    <lastmod>2021-06-22T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/</loc>
+    <lastmod>2021-06-17T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-20/</loc>
+    <lastmod>2021-06-16T04:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/posts/filecoin-news-20/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/posts/filecoin-news-20/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/slingshot-phase-2.3-recap/</loc>
+    <lastmod>2021-06-15T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-v13-hyperdrive-ama-1-recap/</loc>
+    <lastmod>2021-06-14T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/</loc>
+    <lastmod>2021-06-10T04:02:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/case-study-starling-lab/</loc>
+    <lastmod>2021-06-10T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/ipfs-filecoin-and-content-persistence/</loc>
+    <lastmod>2021-06-03T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-19/</loc>
+    <lastmod>2021-06-02T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-10-25x-increase-in-storage-onboarding/</loc>
+    <lastmod>2021-05-27T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-network-crosses-baseline-sustainability-target-for-first-time/</loc>
+    <lastmod>2021-05-19T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/longhash-ventures-demo-day-defi-consumer-tech/</loc>
+    <lastmod>2021-05-18T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-18/</loc>
+    <lastmod>2021-05-18T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/longhash-ventures-demo-day-nft-and-media-startups/</loc>
+    <lastmod>2021-05-13T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/</loc>
+    <lastmod>2021-05-12T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-17/</loc>
+    <lastmod>2021-05-05T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-network-v12/</loc>
+    <lastmod>2021-05-04T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/</loc>
+    <lastmod>2021-04-29T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-16/</loc>
+    <lastmod>2021-04-21T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filrep.io-a-filecoin-miner-reputation-system-v1-by-digital-mob/</loc>
+    <lastmod>2021-04-15T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/videocoin-and-filecoin-to-power-the-video-nft-market/</loc>
+    <lastmod>2021-04-09T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/block-dream-fund-launches-10m-fund-to-support-the-filecoin-ecosystem/</loc>
+    <lastmod>2021-04-08T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-15/</loc>
+    <lastmod>2021-04-07T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/truffle-suite-launches-nft-development-template-with-filecoin-box/</loc>
+    <lastmod>2021-03-31T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/decentralized-data-markets-with-filehive/</loc>
+    <lastmod>2021-03-30T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-and-chainlink-integration/</loc>
+    <lastmod>2021-03-24T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/livepeer-x-filecoin-co-mining-pilot/</loc>
+    <lastmod>2021-03-23T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/decrypt-collaborates-with-filecoin-for-its-inaugural-token-season/</loc>
+    <lastmod>2021-03-18T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/incident-report-accurate-bookkeeping-with-lotus-apis/</loc>
+    <lastmod>2021-03-18T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-14/</loc>
+    <lastmod>2021-03-17T05:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/posts/filecoin-news-14/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/posts/filecoin-news-14/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/the-next-phase-of-fleek-with-filecoin/</loc>
+    <lastmod>2021-03-11T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/how-storage-and-retrieval-deals-work-on-filecoin/</loc>
+    <lastmod>2021-03-09T17:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-13/</loc>
+    <lastmod>2021-03-03T05:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/posts/filecoin-news-13/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/posts/filecoin-news-13/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-for-treasuries-wills-financial-access-and-more/</loc>
+    <lastmod>2021-03-02T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-for-content-devops-trust-and-more/</loc>
+    <lastmod>2021-02-25T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-news-12/</loc>
+    <lastmod>2021-02-24T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-for-media-video-gaming-and-more/</loc>
+    <lastmod>2021-02-23T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/reputation-systems-in-filecoin/</loc>
+    <lastmod>2021-02-16T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/the-future-of-defi-with-filecoin/</loc>
+    <lastmod>2021-02-12T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/tracking-78-days-of-the-us-presidential-election-on-filecoin/</loc>
+    <lastmod>2021-02-10T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/the-future-of-datadaos/</loc>
+    <lastmod>2021-02-04T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/welcome-venus-to-the-filecoin-mainnet/</loc>
+    <lastmod>2021-02-02T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-plus-aligning-participants-with-useful-storage/</loc>
+    <lastmod>2021-01-28T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-minerx-fellowship-program/</loc>
+    <lastmod>2021-01-21T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/getting-started-with-the-infura-filecoin-api/</loc>
+    <lastmod>2021-01-19T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/resolving-the-dec-19-chain-halt-cause-impact-take-aways/</loc>
+    <lastmod>2021-01-15T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/the-fenbushi-ecosystem-fund-for-filecoin-development/</loc>
+    <lastmod>2021-01-11T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/eip-1559-in-filecoin/</loc>
+    <lastmod>2021-01-05T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/a-look-back-at-filecoin-in-2020/</loc>
+    <lastmod>2020-12-30T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/empowering-filecoin-startups/</loc>
+    <lastmod>2020-12-30T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-community-highlights-slate/</loc>
+    <lastmod>2020-12-29T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/investing-in-the-filecoin-ecosystem/</loc>
+    <lastmod>2020-12-28T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-ecosystem-growth-innovation/</loc>
+    <lastmod>2020-12-26T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/meet-the-filecoin-foundation/</loc>
+    <lastmod>2020-12-24T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-dev-grants-waves-4-5-and-gitcoin-grants/</loc>
+    <lastmod>2020-12-23T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-network-economics/</loc>
+    <lastmod>2020-12-22T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/from-storage-to-justice/</loc>
+    <lastmod>2020-12-21T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/meet-filecoin-s-collaborators-jonathan-dotan-starling-framework-for-data-integrity/</loc>
+    <lastmod>2020-12-18T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-collaborative-resource-and-risk-management/</loc>
+    <lastmod>2020-12-15T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/understanding-filecoin-circulating-supply/</loc>
+    <lastmod>2020-12-10T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/huobi-group-launches-filecoin-incubation-center/</loc>
+    <lastmod>2020-12-05T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/a-milestone-in-storage-filecoin-surpasses-1-exbibyte/</loc>
+    <lastmod>2020-11-24T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-features-slashing/</loc>
+    <lastmod>2020-11-17T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/highlights-from-shanghai-blockchain-week/</loc>
+    <lastmod>2020-11-09T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/introducing-slingshot-phase-2/</loc>
+    <lastmod>2020-11-09T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/the-intersection-of-filecoin-and-defi/</loc>
+    <lastmod>2020-11-06T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/slingshot-phase-1-recap/</loc>
+    <lastmod>2020-11-05T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/slingshot.zh-cn-1/</loc>
+    <lastmod>2020-11-05T00:06:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/the-journey-to-filecoin-mainnet-liftoff/</loc>
+    <lastmod>2020-10-29T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/looking-back-on-filecoin-liftoff-week/</loc>
+    <lastmod>2020-10-26T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-liftoff-week-closing-ama/</loc>
+    <lastmod>2020-10-24T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/liftoff-day-5-recap-on-the-shoulders-of-giants/</loc>
+    <lastmod>2020-10-23T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/bridging-the-filecoin-and-ethereum-communities/</loc>
+    <lastmod>2020-10-22T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/how-filecoin-supports-video-storage/</loc>
+    <lastmod>2020-10-22T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/liftoff-day-4-recap-storage-for-a-better-future/</loc>
+    <lastmod>2020-10-22T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-liftoff-week-ama/</loc>
+    <lastmod>2020-10-21T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/liftoff-day-3-recap-the-holy-grail-of-the-blockchain-ecosystem/</loc>
+    <lastmod>2020-10-21T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-implementations-progress-update/</loc>
+    <lastmod>2020-10-20T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/liftoff-day-1-recap/</loc>
+    <lastmod>2020-10-20T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/liftoff-day-2-recap-growing-filecoin-s-island-economy/</loc>
+    <lastmod>2020-10-20T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/updates-to-the-filecoin-security-program/</loc>
+    <lastmod>2020-10-19T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/join-us-for-filecoin-liftoff-on-october-19-23-2020/</loc>
+    <lastmod>2020-10-17T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/learning-to-store-data-on-filecoin-slingshot-and-beyond/</loc>
+    <lastmod>2020-10-16T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-mainnet-is-live/</loc>
+    <lastmod>2020-10-15T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/miner-s-guide-to-liftoff/</loc>
+    <lastmod>2020-10-14T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-just-received-a-massive-spec-upgrade/</loc>
+    <lastmod>2020-10-13T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-features-block-rewards/</loc>
+    <lastmod>2020-10-12T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/introducing-the-building-web3-video-series/</loc>
+    <lastmod>2020-10-09T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/valuable-datasets-being-stored-through-filecoin-slingshot/</loc>
+    <lastmod>2020-10-09T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-features-gas-fees/</loc>
+    <lastmod>2020-10-08T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-frontier-accelerator-launched-by-longhash-ventures/</loc>
+    <lastmod>2020-10-05T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/meet-the-sr2-slingshot-teams/</loc>
+    <lastmod>2020-10-02T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/space-race-ama-5-summary/</loc>
+    <lastmod>2020-10-02T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/want-to-learn-more-about-filecoin-start-here/</loc>
+    <lastmod>2020-09-29T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/space-race-ama-4-summary/</loc>
+    <lastmod>2020-09-28T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/announcing-mainnet-ignition-liftoff/</loc>
+    <lastmod>2020-09-27T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/slingshot-week-one-recap/</loc>
+    <lastmod>2020-09-25T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/space-race-ama-3-summary/</loc>
+    <lastmod>2020-09-20T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/spark-university-hackathon-winners-challenge-two/</loc>
+    <lastmod>2020-09-16T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/announcing-space-race-2/</loc>
+    <lastmod>2020-09-12T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/space-race-ama-2-summary/</loc>
+    <lastmod>2020-09-10T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/spark-university-hackathon-winners-challenge-one/</loc>
+    <lastmod>2020-09-08T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/space-race-ama-summary/</loc>
+    <lastmod>2020-09-03T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/trusted-setup-complete/</loc>
+    <lastmod>2020-08-28T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/introducing-the-filecoin-economy/</loc>
+    <lastmod>2020-08-27T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/hackfs-what-s-next/</loc>
+    <lastmod>2020-08-26T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/more-ways-to-keep-building-on-the-filecoin-network/</loc>
+    <lastmod>2020-08-25T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/30-days-130-projects-recognizing-new-ideas-to-power-web3/</loc>
+    <lastmod>2020-08-19T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/welcome-to-the-space-race/</loc>
+    <lastmod>2020-08-19T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-features-distributed-randomness-leader-elections/</loc>
+    <lastmod>2020-08-10T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/meet-the-hackfs-teams-vol.3/</loc>
+    <lastmod>2020-08-06T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/andrew-cronk-yannick-folla-figment-networks/</loc>
+    <lastmod>2020-08-04T06:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/posts/andrew-cronk-yannick-folla-figment-networks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/posts/andrew-cronk-yannick-folla-figment-networks/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/meet-the-hackfs-teams-vol.2/</loc>
+    <lastmod>2020-07-24T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-mining-community-call-july-2020/</loc>
+    <lastmod>2020-07-20T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/getting-ready-for-filecoin-s-space-race/</loc>
+    <lastmod>2020-07-14T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/juan-leni-zondax/</loc>
+    <lastmod>2020-07-08T07:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/posts/juan-leni-zondax/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/posts/juan-leni-zondax/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/a-guide-to-filecoin-storage-mining/</loc>
+    <lastmod>2020-07-07T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-comes-to-protoschool/</loc>
+    <lastmod>2020-07-06T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/june-q-a-summary/</loc>
+    <lastmod>2020-07-01T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/dev-grants-wave-3-update-wave-4-rfps/</loc>
+    <lastmod>2020-06-30T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-features-verifiable-storage/</loc>
+    <lastmod>2020-06-29T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/this-is-a-sample-post/</loc>
+    <lastmod>2020-06-24T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-virtual-community-meeting-recap/</loc>
+    <lastmod>2020-06-22T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/one-more/</loc>
+    <lastmod>2020-06-17T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/spark-university-hackathon.en-1/</loc>
+    <lastmod>2020-06-12T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/update-trusted-setup/</loc>
+    <lastmod>2020-06-11T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-mining-community-call-thank-you/</loc>
+    <lastmod>2020-06-10T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/announcing-filecoin-s-testnet-incentives/</loc>
+    <lastmod>2020-06-09T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/filecoin-features/</loc>
+    <lastmod>2020-06-08T04:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/categories/filecoin-features/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/filecoin-features/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/offline-data-transfer-for-large-scale-data/</loc>
+    <lastmod>2020-06-08T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-mining-community-call-may-2020/</loc>
+    <lastmod>2020-05-22T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/may-q-a-thank-you-and-summary/</loc>
+    <lastmod>2020-05-21T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/update-filecoin-discover/</loc>
+    <lastmod>2020-05-19T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-testnet-phase-2-is-here/</loc>
+    <lastmod>2020-05-14T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/introducing-filecoin-discover/</loc>
+    <lastmod>2020-05-07T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/jonathan-schwartz-open-work-labs/</loc>
+    <lastmod>2020-05-05T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-s-cryptoeconomic-constructions/</loc>
+    <lastmod>2020-04-24T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/ben-fino-radin-small-data-industries/</loc>
+    <lastmod>2020-04-22T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-roadmap-update-april-2020/</loc>
+    <lastmod>2020-04-17T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/tammy-yang-and-bofu-chen-numbers/</loc>
+    <lastmod>2020-04-14T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-dev-grants-wave-3-new-rfps-wave-1-2/</loc>
+    <lastmod>2020-04-08T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/meet-andrew-hill/</loc>
+    <lastmod>2020-03-23T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/filecoin-community/</loc>
+    <lastmod>2020-03-10T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/march-q-a-thank-you-and-summary/</loc>
+    <lastmod>2020-03-10T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/participate-in-a-march-q-a-with-juan-benet/</loc>
+    <lastmod>2020-03-03T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-roadmap-update-february-2020/</loc>
+    <lastmod>2020-02-19T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/what-sets-us-apart-filecoin-s-proof-system/</loc>
+    <lastmod>2020-02-18T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/announcing-filecoin-implementations-in-rust-and-c/</loc>
+    <lastmod>2020-01-31T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/testnet-phase-2-update/</loc>
+    <lastmod>2020-01-30T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/tipsets-a-closer-look-at-filecoin-building-blocks/</loc>
+    <lastmod>2020-01-13T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-roadmap-update-q4-2019/</loc>
+    <lastmod>2019-12-11T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-testnet-is-live/</loc>
+    <lastmod>2019-12-11T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-testnet-mining/</loc>
+    <lastmod>2019-12-10T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-dev-grants-wave-1-recipients-wave-2-now-open/</loc>
+    <lastmod>2019-12-03T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/participate-in-our-trusted-setup-ceremony/</loc>
+    <lastmod>2019-10-22T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/announcing-lotus-our-first-alternate-filecoin-implementation/</loc>
+    <lastmod>2019-10-16T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/announcing-the-go-filecoin-alphanet/</loc>
+    <lastmod>2019-09-25T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-2019-q2-q3-update/</loc>
+    <lastmod>2019-09-24T04:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/posts/filecoin-2019-q2-q3-update/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/posts/filecoin-2019-q2-q3-update/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-dev-grants-program-now-live-first-wave-closes-september-30th/</loc>
+    <lastmod>2019-09-11T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/go-filecoin-0.3.2-is-released/</loc>
+    <lastmod>2019-07-09T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/announcing-the-snark-challenge/</loc>
+    <lastmod>2019-05-17T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/go-filecoin-0.2.2-is-released/</loc>
+    <lastmod>2019-05-17T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/announcing-our-first-mining-community-call/</loc>
+    <lastmod>2019-04-24T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/collaboration-with-the-ethereum-foundation-on-vdfs/</loc>
+    <lastmod>2019-04-19T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/go-filecoin-0.1.4-is-released/</loc>
+    <lastmod>2019-03-27T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-2018-q3-q4-update/</loc>
+    <lastmod>2019-02-14T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/getting-started-with-filecoin-repos-and-devnets/</loc>
+    <lastmod>2019-02-14T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/opening-the-filecoin-project-repos/</loc>
+    <lastmod>2019-02-14T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/anti-fraud-statement-for-our-communities-in-china-hong-kong/</loc>
+    <lastmod>2018-12-10T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/announcing-the-filecoin-faqs/</loc>
+    <lastmod>2018-11-09T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-2018-q1-q2-update/</loc>
+    <lastmod>2018-08-28T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/token-sale-completed/</loc>
+    <lastmod>2017-09-13T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/first-day-sale-update-reopening-aug-12-11-00am-pdt/</loc>
+    <lastmod>2017-08-11T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/sale-delayed-new-date-thursday-aug-10/</loc>
+    <lastmod>2017-08-07T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/more-filecoin-token-sale-details-7-days-away/</loc>
+    <lastmod>2017-07-31T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/proof-of-replication-power-fault-tolerance-and-research-roadmap/</loc>
+    <lastmod>2017-07-27T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/updates-new-token-sale-date-august-7th/</loc>
+    <lastmod>2017-07-24T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/announcing-the-filecoin-token-sale-and-upgraded-whitepaper/</loc>
+    <lastmod>2017-07-19T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/why-is-decentralized-and-distributed-file-storage-critical-for-a-better-web/</loc>
+    <lastmod>2017-06-20T04:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-2017-q4-update/</loc>
+    <lastmod>2017-01-01T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/posts/meet-the-hackfs-teams-vol.1/</loc>
+    <lastmod>2000-01-01T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/awards/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/awards/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/awards/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/events/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/events/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/events/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/feed/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/feed/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/feed/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/interviews/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/interviews/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/interviews/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/updates/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/blog/updates/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/updates/"
+                />
+  </url>
+  
+  <url>
+    <loc>/build/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/build/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/build/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/posts/filecoin-roadmap-update-august-2020/</loc>
+  </url>
+  
+  <url>
+    <loc>/provide/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/provide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/provide/"
+                />
+  </url>
+  
+  <url>
+    <loc>/store/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/store/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/store/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="/zh-cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+  </url>
+  
+</urlset>

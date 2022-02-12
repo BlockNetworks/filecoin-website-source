@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Reputation Systems in Filecoin</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="Reputation Systems in Filecoin"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/reputation-systems-in-filecoin/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/reputation-system-2.png?c=1644520423"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/reputation-system-2.png?c=1644520423"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/reputation-system-2.png">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/reputation-systems-in-filecoin/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520423">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/reputation-system-3_hu96932cbc8f76db8b800839e94a0ee597_101015_667x0_resize_q90_linear_2.png 667w,../../../uploads/reputation-system-3_hu96932cbc8f76db8b800839e94a0ee597_101015_1333x0_resize_q90_linear_2.png 1333w,../../../uploads/reputation-system-3_hu96932cbc8f76db8b800839e94a0ee597_101015_2000x0_resize_q90_linear_2.png 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                            <li class="list-item"><a href="../../../blog/updates" class="anchor">updates</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Feb 16, 2021</span><br />
+                    <h2 class="h title">Reputation Systems in Filecoin</h2>
+                    <p>Reputation is an essential component of any efficient marketplace: people must have a way to evaluate the quality and trustworthiness of a counterparty before entering into a transaction. Filecoin is no different. However, as a decentralized marketplace and ecosystem, Filecoin, as a protocol, is positioned to support different needs and modes of interactions of its users. As such, there can be multiple reputation systems on Filecoin, meeting the diverse needs of network’s participants. In addition to increasing the efficiency of the network and promoting higher quality service, the diverse and decentralized set of reputation systems on Filecoin is well positioned to support the emerging needs of its users.</p>
+
+<p><strong>A decentralized marketplace needs a variety of reputation systems</strong></p>
+
+<p>All reputation systems use various forms of data collection to generate “ratings” for participants. Such systems are important to the functioning of a marketplace. Platforms such as eBay and Uber construct ratings based on user feedback, allowing people to make informed choices about whom to buy from or ride with. Effective reputation systems build trust between parties, promote quality, and foster loyalty between users and service providers.</p>
+
+<p>It is essential for someone to be able to form a basic judgment of a miner in order to be comfortable entering into any transaction, whether they are storing or retrieving data. Specifically, clients need a way to gauge the quality of miners, and lenders and underwriters must be able to make a judgment about their reliability and creditworthiness. For these reasons, miners on Filecoin must build reputations based on the feedback of users they have worked with. However, depending on the use cases and client demand, metrics and reputation can take many forms. A monolithic reputation system will also be subject to gaming by the network’s participants. As such, reputation systems on Filecoin are diverse and designed to empower clients to express their preferences and promote higher service quality from storage providers as a whole.</p>
+
+<p>During Liftoff week in November, Digital M.O.B. Partner Cezar Paraschiv presented the scope of their solution to Filecoin reputation. By gathering on- and off-chain metrics about miners, DM.O.B. is building a scalable, transparent reputation system that will provide relevant reputation metrics via a public API and web dashboard. Everyone is encouraged to build their own reputation systems for specific use cases.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/wiJ4W0jRce4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="Filecoin Reputation System"></iframe>
+</div>
+
+
+<p><strong>The fundamentals of reputation on Filecoin</strong></p>
+
+<p>Filecoin’s goal is to bring a decentralized data storage model to people everywhere in the world. The Filecoin reputation system functions as an infrastructure layer that can be integrated into other projects and apps. To that end, it will be available via a public API and web application for ease of use, allowing other app developers to integrate it into their projects.</p>
+
+<p>In doing so, the network will facilitate the emergence of a truly decentralized economy that can be more open, transparent, and accessible than prior systems. In accordance with these goals, Filecoin’s reputation system is designed to be as fair, efficient, and decentralized as possible. To that end, it has been designed around four key tenets: <em>trust, flexibility, customization, and transparency.</em></p>
+
+<p><strong><em>Trust</em></strong></p>
+
+<p>In order for clients to have confidence in their decisions, Filecoin’s reputation system must be reliable and trustworthy. Reputation systems are notoriously <a href="https://en.wikipedia.org/wiki/Review_bomb" target="_blank">susceptible to manipulation</a>. This is mitigated by a diversity of reputation systems and multitude of use cases. Metrics and ratings for a particular use case may not apply to another. Multiple reputation systems also provide a layer of social consensus and cross validation that make the overall system more robust.</p>
+
+<p><strong><em>Flexibility</em></strong></p>
+
+<p>The <em>intentions</em> behind a miner’s actions are as important as the actions themselves. A miner who cancels a contract over ethical concerns should not, for example, be treated the same as one who carelessly leaves a client in the lurch. Reputation systems should recognize the fact that not everything is black-and-white. It allows for appeal, follow-up, and investigation where appropriate in order to help ensure that any repercussions or penalties are fair and proportional.</p>
+
+<p>Additionally, as the Filecoin protocol evolves and expands, its reputation systems must be able to adjust and evolve with it. For this reason, the system allows real-time adjustments to the way reputation is evaluated based on future updates to the Filecoin protocol.</p>
+
+<p><strong><em>Customization</em></strong></p>
+
+<p>A unique element of Filecoin’s reputation systems is the ability of clients to fine-tune their experiences to fit their specific needs, producing ratings that are not only trustworthy, but <em>useful</em>. Each Filecoin user can choose how much weight to assign to a given metric. For instance, a client who only needs to store a small amount of data will probably not be concerned with storage capacity, but may want to ensure that any potential miner has high uptime and bandwidth retrieval ratings. In this way, Filecoin lets people tailor the reputation settings to their particular needs and goals.</p>
+
+<p><strong><em>Transparency</em></strong></p>
+
+<p>Finally, a crucial element to the success of any rating systems is the reputation of the system itself. The moment users no longer trust the ratings, they become useless. Therefore, the complete methodology for calculating user ratings will be made available to the public at all times. As the network grows, any tweaks to the rating systems will be publicly visible, letting anyone verify the criteria by which miners are being evaluated at any given time.</p>
+
+<p><strong>Toward a transparent, trustworthy future</strong></p>
+
+<p>Filecoin’s reputation systems will be key to the continued growth of the ecosystem. Interested parties are encouraged to build different systems and develop trust among parties in a decentralized way, with the goal of increasing the overall quality of Filecoin’s decentralized storage market. With a robust, transparent, and trustworthy reputation system, Filecoin can bring decentralized storage, and the growing decentralized economy, to more people than ever before.</p>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520426"></script>
+    <script src="../../../js/bundle.js?c=1644520426"></script>
+</body>
+</html>
+
+

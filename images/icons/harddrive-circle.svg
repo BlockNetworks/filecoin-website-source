@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 52 52">
+  <defs>
+    <linearGradient id="harddrive-circle-a" x1="0%" x2="100%" y1="-8.357%" y2="100%">
+      <stop offset="0%" stop-color="#39C1CB"/>
+      <stop offset="100%" stop-color="#006FEC"/>
+    </linearGradient>
+    <path id="harddrive-circle-b" d="M6.39.272a3.21 3.21 0 0 0-3.062 2.25L.258 14.924a4.475 4.475 0 0 1 2.599-.837H26.61c.97 0 1.862.314 2.598.839l-3.07-12.404a3.207 3.207 0 0 0-3.062-2.25H6.39z"/>
+    <linearGradient id="harddrive-circle-c" x1="3.934%" x2="99.961%" y1="34.881%" y2="73.68%">
+      <stop offset="0%" stop-color="#38C1CA"/>
+      <stop offset="100%" stop-color="#006EEB"/>
+    </linearGradient>
+    <path id="harddrive-circle-e" d="M3.407.337A3.403 3.403 0 0 0 .106 2.939 3.398 3.398 0 0 0 0 3.743 3.407 3.407 0 0 0 3.407 7.15H27.16a3.406 3.406 0 0 0 3.406-3.407c0-.28-.043-.547-.108-.806a3.399 3.399 0 0 0-3.298-2.6H3.407zm22.216 3.406a1.308 1.308 0 1 1 2.617 0 1.308 1.308 0 1 1-2.617 0zm-4.403 0a1.306 1.306 0 1 1 2.615 0 1.307 1.307 0 1 1-2.615 0z"/>
+    <linearGradient id="harddrive-circle-f" x1="-8.778%" x2="130.626%" y1="42.472%" y2="60.329%">
+      <stop offset="0%" stop-color="#38C1CA"/>
+      <stop offset="100%" stop-color="#006EEB"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+    <circle cx="25" cy="25" r="25" stroke="url(#harddrive-circle-a)" stroke-width="2"/>
+    <g transform="translate(10 13.4)">
+      <g transform="translate(.55)">
+        <mask id="harddrive-circle-d" fill="#fff">
+          <use xlink:href="#harddrive-circle-b"/>
+        </mask>
+        <path fill="url(#harddrive-circle-c)" d="M6.39.272a3.21 3.21 0 0 0-3.062 2.25L.258 14.924a4.475 4.475 0 0 1 2.599-.837H26.61c.97 0 1.862.314 2.598.839l-3.07-12.404a3.207 3.207 0 0 0-3.062-2.25H6.39z" mask="url(#harddrive-circle-d)"/>
+      </g>
+      <g transform="translate(0 14.85)">
+        <mask id="harddrive-circle-g" fill="#fff">
+          <use xlink:href="#harddrive-circle-e"/>
+        </mask>
+        <path fill="url(#harddrive-circle-f)" d="M3.407.337A3.403 3.403 0 0 0 .106 2.939 3.398 3.398 0 0 0 0 3.743 3.407 3.407 0 0 0 3.407 7.15H27.16a3.406 3.406 0 0 0 3.406-3.407c0-.28-.043-.547-.108-.806a3.399 3.399 0 0 0-3.298-2.6H3.407zm22.216 3.406a1.308 1.308 0 1 1 2.617 0 1.308 1.308 0 1 1-2.617 0zm-4.403 0a1.306 1.306 0 1 1 2.615 0 1.307 1.307 0 1 1-2.615 0z" mask="url(#harddrive-circle-g)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>go-filecoin 0.3.2 is released</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="go-filecoin 0.3.2 is released"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/go-filecoin-0.3.2-is-released/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/gofc-032-english-social.png?c=1644520388"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/gofc-032-english-social.png?c=1644520388"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/gofc-032-english-social.png">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/go-filecoin-0.3.2-is-released/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520388">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/gofc-032-main-header_hu75f171d213b73f5ab4624e174f3edef8_19370821_667x0_resize_q90_linear_2.png 667w,../../../uploads/gofc-032-main-header_hu75f171d213b73f5ab4624e174f3edef8_19370821_1333x0_resize_q90_linear_2.png 1333w,../../../uploads/gofc-032-main-header_hu75f171d213b73f5ab4624e174f3edef8_19370821_2000x0_resize_q90_linear_2.png 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                            <li class="list-item"><a href="../../../blog/updates" class="anchor">updates</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Jul 9, 2019</span><br />
+                    <h2 class="h title">go-filecoin 0.3.2 is released</h2>
+                    
+
+<p>We’re happy to announce go-filecoin 0.3.2. This release is a big step towards completing the filecoin storage protocol. It includes many changes to the miner actor builtin smart contract that will allow the network to securely account for verifiable storage power once fault handling is in place. Many less visible but high impact code and testing improvements ship with this release. 0.3.2 also includes a big UX improvement with the new and improved <code>go-filecoin deals</code> command for user friendly management of storage deals. Getting paid as a storage miner is now as simple as a single CLI call.</p>
+
+<h3 id="features">Features</h3>
+
+<h4 id="storage-protocol-nearing-completeness">🏇 Storage protocol nearing completeness</h4>
+
+<p>Our number one goal is a network securely powered by verifiable storage. In order for this to work we need to penalize cheating miners who do not prove their storage on time. This release includes most of the groundwork needed, including fundamental data structures and encoding work for tracking sets of sectors, improved power tracking in the miner actor built-in smart contract, and charging fees for late storage proof (PoSt) submissions. Expect these changes to blossom into the <a href="https://github.com/filecoin-project/specs/blob/master/faults.md#market-faults" target="_blank">complete fault reporting mechanism</a> in the next release.</p>
+
+<h4 id="multiple-sector-sizes">👪 Multiple sector sizes</h4>
+
+<p>In order for the network to scale gracefully, different miners may choose from a variety of different sector sizes to put data in and prove over: smaller sectors for faster and more nimble storage; larger sectors for slower but efficient storage. This release includes all of the software updates we need to support multiple sector sizes in a single network; however, we plan to properly vet network conditions with much bigger sectors before enabling multiple sectors sizes in the user devnet. Expect 1 GiB sectors on the user devnet in the next release.</p>
+
+<h4 id="deal-management-and-payments">🤝 Deal management and payments</h4>
+
+<p>Both clients and miners can now easily inspect the fine details of all storage deals they have entered into using <code>go-filecoin deals list</code> and <code>go-filecoin deals show</code>. Miners can get paid for honoring a deal by running <code>go-filecoin deals redeem</code>. Additionally this release ships some improvements in payment channel safety for correct arbitration of deal disputes we want down the road.</p>
+
+<h3 id="performance-and-reliability">Performance and Reliability</h3>
+
+<h4 id="upgrade-in-place">🌳 Upgrade in place</h4>
+
+<p>This release drives home previous work on repo migrations. The <code>go-filecoin-migrate</code> tool (included in the go-filecoin source repo) is now complete. This release includes a proof of concept migration: upgrading on-disk chain metadata from JSON to the more compact CBOR. Landing this means we are confident that this major technical challenge is behind us, putting us one step closer to a reliable, persistent testnet.</p>
+
+<h3 id="refactors-and-endeavors">Refactors and Endeavors</h3>
+
+<h4 id="major-testing-improvements">📈Major testing improvements</h4>
+
+<p>Testing is the silent champion of reliability and development speed. This release includes <a href="https://github.com/filecoin-project/go-filecoin/pull/2972" target="_blank">tons of </a><a href="https://github.com/filecoin-project/go-filecoin/pull/2700" target="_blank">behind</a> <a href="https://github.com/filecoin-project/go-filecoin/pull/2990" target="_blank">the scenes</a> <a href="https://github.com/filecoin-project/go-filecoin/pull/2919" target="_blank">work</a> improving the quality of existing unit and integration tests as well as adding new tests to existing code. Continued improvements to the <a href="https://github.com/filecoin-project/go-filecoin/tree/master/tools/fast" target="_blank">FAST</a> framework promise to further accelerate integration testing and devnet deployments.</p>
+
+<h4 id="tech-debt-paydown">💳 Tech debt paydown</h4>
+
+<p>This release is not playing around when it comes to paying off technical debt. Fundamental chain refactors include an <a href="https://github.com/filecoin-project/go-filecoin/pull/2837" target="_blank">improved immutable tipset type</a> and tipset cache sharing are at the top of the list. A major refactor of the <a href="https://github.com/filecoin-project/go-filecoin/pull/2798" target="_blank">message</a> <a href="https://github.com/filecoin-project/go-filecoin/pull/2796" target="_blank">handling</a> <a href="https://github.com/filecoin-project/go-filecoin/pull/2795" target="_blank">system</a> into inbox and outbox queues is also a notable improvement. Don’t forget about a consistent internal attoFIL token type, a sleek new miner deal acceptance codepath, sector builder reliability fixes… the list goes on. We are excited to be shipping higher quality software with each release so that we can move faster towards a robust mainnet.</p>
+
+<h3 id="changelog">Changelog</h3>
+
+<p>A full list of <a href="https://github.com/search?p=2&amp;q=is%3Apr+merged%3A2019-05-09..2019-07-05+repo%3Afilecoin-project%2Fgo-filecoin+repo%3Afilecoin-project%2Frust-fil-proofs+repo%3Afilecoin-project%2Fspecs&amp;type=Issues" target="_blank">all 207 PRs in this release</a>, including many bugfixes not listed here, can be found on Github.</p>
+
+<h3 id="cli-diff">CLI diff</h3>
+
+<table>
+<thead>
+<tr>
+<th>go-filecoin command</th>
+<th>change</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>deals list</td>
+<td>added</td>
+</tr>
+
+<tr>
+<td>deals redeem</td>
+<td>added</td>
+</tr>
+
+<tr>
+<td>deals show</td>
+<td>added</td>
+</tr>
+
+<tr>
+<td>miner pledge</td>
+<td>removed</td>
+</tr>
+
+<tr>
+<td>mining status</td>
+<td>added</td>
+</tr>
+
+<tr>
+<td>show block</td>
+<td>args changed</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="contributors">Contributors</h3>
+
+<p>❤️ Huge thank you to everyone that made this release possible! By alphabetical order, here are all the humans who contributed to this release:</p>
+
+<ul>
+<li><a href="https://github.com/a8159236" target="_blank">@a8159236</a> (3 issues, 2 comments)</li>
+<li><a href="https://github.com/Aboatlai" target="_blank">@Aboatlai</a> (1 issue)</li>
+<li><a href="https://github.com/acruikshank" target="_blank">@acruikshank</a> (6 commits, 8 PRs, 21 issues, 23 comments)</li>
+<li><a href="https://github.com/AkshitV" target="_blank">@AkshitV</a> (1 issue, 2 comments)</li>
+<li><a href="https://github.com/alanshaw" target="_blank">@alanshaw</a> (1 comment)</li>
+<li><a href="https://github.com/AndyChen1984" target="_blank">@AndyChen1984</a> (1 issue, 5 comments)</li>
+<li><a href="https://github.com/anorth" target="_blank">@anorth</a> (22 commits, 24 PRs, 40 issues, 163 comments)</li>
+<li><a href="https://github.com/arielgabizon" target="_blank">@arielgabizon</a> (1 issue, 2 comments)</li>
+<li><a href="https://github.com/benrogmans" target="_blank">@benrogmans</a> (1 issue)</li>
+<li><a href="https://github.com/bvohaska" target="_blank">@bvohaska</a> (1 PR, 1 comment)</li>
+<li><a href="https://github.com/callmez" target="_blank">@callmez</a> (1 comment)</li>
+<li><a href="https://github.com/carsonfly" target="_blank">@carsonfly</a> (2 issues, 7 comments)</li>
+<li><a href="https://github.com/chengzhigen" target="_blank">@chengzhigen</a> (2 issues, 2 comments)</li>
+<li><a href="https://github.com/chenhonghe" target="_blank">@chenhonghe</a> (1 issue, 5 comments)</li>
+<li><a href="https://github.com/chenxiaolin0105" target="_blank">@chenxiaolin0105</a> (1 issue)</li>
+<li><a href="https://github.com/chenzhi201901" target="_blank">@chenzhi201901</a> (2 issues, 1 comment)</li>
+<li><a href="https://github.com/codecov-io" target="_blank">@codecov-io</a> (57 comments)</li>
+<li><a href="https://github.com/Cryptovideos" target="_blank">@Cryptovideos</a> (1 issue)</li>
+<li><a href="https://github.com/dannyhchan" target="_blank">@dannyhchan</a> (4 comments)</li>
+<li><a href="https://github.com/dayu26" target="_blank">@dayu26</a> (1 issue)</li>
+<li><a href="https://github.com/decentralion" target="_blank">@decentralion</a> (3 commits, 1 PR, 6 comments)</li>
+<li><a href="https://github.com/deltazxm" target="_blank">@deltazxm</a> (2 comments)</li>
+<li><a href="https://github.com/dignifiedquire" target="_blank">@dignifiedquire</a> (76 commits, 25 PRs, 14 issues, 139 comments)</li>
+<li><a href="https://github.com/DrPeterVanNostrand" target="_blank">@DrPeterVanNostrand</a> (1 commit, 1 PR, 2 comments)</li>
+<li><a href="https://github.com/eshon" target="_blank">@eshon</a> (1 issue, 8 comments)</li>
+<li><a href="https://github.com/frrist" target="_blank">@frrist</a> (14 commits, 18 PRs, 10 issues, 46 comments)</li>
+<li><a href="https://github.com/gnunicorn" target="_blank">@gnunicorn</a> (23 commits, 3 PRs, 1 issue, 17 comments)</li>
+<li><a href="https://github.com/grandhelmsman" target="_blank">@grandhelmsman</a> (3 issues, 2 comments)</li>
+<li><a href="https://github.com/idotial" target="_blank">@idotial</a> (1 issue)</li>
+<li><a href="https://github.com/imrehg" target="_blank">@imrehg</a> (1 PR, 1 comment)</li>
+<li><a href="https://github.com/ingar" target="_blank">@ingar</a> (5 commits, 6 PRs, 7 comments)</li>
+<li><a href="https://github.com/ipfsmainofficial" target="_blank">@ipfsmainofficial</a> (1 issue)</li>
+<li><a href="https://github.com/jscode017" target="_blank">@jscode017</a> (1 comment)</li>
+<li><a href="https://github.com/Kentix" target="_blank">@Kentix</a> (1 issue, 2 comments)</li>
+<li><a href="https://github.com/kishansagathiya" target="_blank">@kishansagathiya</a> (1 PR, 2 comments)</li>
+<li><a href="https://github.com/Kubuxu" target="_blank">@Kubuxu</a> (1 commit, 1 PR, 1 comment)</li>
+<li><a href="https://github.com/laser" target="_blank">@laser</a> (45 commits, 41 PRs, 24 issues, 97 comments)</li>
+<li><a href="https://github.com/maybeuright" target="_blank">@maybeuright</a> (1 comment)</li>
+<li><a href="https://github.com/meiqimichelle" target="_blank">@meiqimichelle</a> (1 comment)</li>
+<li><a href="https://github.com/merced" target="_blank">@merced</a> (1 issue, 3 comments)</li>
+<li><a href="https://github.com/michellebrous" target="_blank">@michellebrous</a> (1 comment)</li>
+<li><a href="https://github.com/mishmosh" target="_blank">@mishmosh</a> (3 commits, 2 PRs, 2 issues, 20 comments)</li>
+<li><a href="https://github.com/mslipper" target="_blank">@mslipper</a> (5 commits, 1 PR, 8 comments)</li>
+<li><a href="https://github.com/nicola" target="_blank">@nicola</a> (2 commits, 1 PR, 4 issues, 11 comments)</li>
+<li><a href="https://github.com/nijynot" target="_blank">@nijynot</a> (1 commit, 1 comment)</li>
+<li><a href="https://github.com/no1lcy" target="_blank">@no1lcy</a> (1 issue, 1 comment)</li>
+<li><a href="https://github.com/ognots" target="_blank">@ognots</a> (6 commits, 5 PRs, 1 issue, 11 comments)</li>
+<li><a href="https://github.com/Peachooo" target="_blank">@Peachooo</a> (2 issues, 1 comment)</li>
+<li><a href="https://github.com/pooja" target="_blank">@pooja</a> (12 commits, 5 PRs, 9 issues, 45 comments)</li>
+<li><a href="https://github.com/porcuquine" target="_blank">@porcuquine</a> (8 commits, 4 PRs, 7 issues, 42 comments)</li>
+<li><a href="https://github.com/R-Niagra" target="_blank">@R-Niagra</a> (1 issue, 1 comment)</li>
+<li><a href="https://github.com/ridewindx" target="_blank">@ridewindx</a> (1 commit, 1 PR)</li>
+<li><a href="https://github.com/RobQuistNL" target="_blank">@RobQuistNL</a> (2 comments)</li>
+<li><a href="https://github.com/rogerlzp" target="_blank">@rogerlzp</a> (1 comment)</li>
+<li><a href="https://github.com/rosalinekarr" target="_blank">@rosalinekarr</a> (15 commits, 15 PRs, 3 issues, 36 comments)</li>
+<li><a href="https://github.com/schomatis" target="_blank">@schomatis</a> (22 commits, 11 PRs, 3 issues, 28 comments)</li>
+<li><a href="https://github.com/shannonwells" target="_blank">@shannonwells</a> (8 commits, 8 PRs, 5 issues, 11 comments)</li>
+<li><a href="https://github.com/sidke" target="_blank">@sidke</a> (13 commits, 1 comment)</li>
+<li><a href="https://github.com/Stebalien" target="_blank">@Stebalien</a> (1 commit, 1 PR, 1 comment)</li>
+<li><a href="https://github.com/sternhenri" target="_blank">@sternhenri</a> (4 PRs, 1 issue, 24 comments)</li>
+<li><a href="https://github.com/steven004" target="_blank">@steven004</a> (1 commit, 1 PR, 3 issues, 7 comments)</li>
+<li><a href="https://github.com/taoshengshi" target="_blank">@taoshengshi</a> (2 issues, 6 comments)</li>
+<li><a href="https://github.com/taylorshuang" target="_blank">@taylorshuang</a> (2 issues, 6 comments)</li>
+<li><a href="https://github.com/titilami" target="_blank">@titilami</a> (3 issues, 2 comments)</li>
+<li><a href="https://github.com/travisperson" target="_blank">@travisperson</a> (3 commits, 3 PRs, 6 issues, 25 comments)</li>
+<li><a href="https://github.com/urugang" target="_blank">@urugang</a> (1 issue)</li>
+<li><a href="https://github.com/vhosakot" target="_blank">@vhosakot</a> (1 comment)</li>
+<li><a href="https://github.com/vmx" target="_blank">@vmx</a> (3 commits, 4 PRs, 14 comments)</li>
+<li><a href="https://github.com/vyzo" target="_blank">@vyzo</a> (1 comment)</li>
+<li><a href="https://github.com/warpfork" target="_blank">@warpfork</a> (3 comments)</li>
+<li><a href="https://github.com/waynewyang" target="_blank">@waynewyang</a> (3 commits, 4 PRs, 1 issue, 3 comments)</li>
+<li><a href="https://github.com/whyrusleeping" target="_blank">@whyrusleeping</a> (72 commits, 15 PRs, 11 issues, 73 comments)</li>
+<li><a href="https://github.com/windemut" target="_blank">@windemut</a> (1 issue, 5 comments)</li>
+<li><a href="https://github.com/yangjian102621" target="_blank">@yangjian102621</a> (2 issues, 5 comments)</li>
+<li><a href="https://github.com/yaohcn" target="_blank">@yaohcn</a> (1 commit, 1 PR, 1 comment)</li>
+<li><a href="https://github.com/yusefnapora" target="_blank">@yusefnapora</a> (1 comment)</li>
+<li><a href="https://github.com/ZenGround0" target="_blank">@ZenGround0</a> (9 commits, 9 PRs, 23 issues, 37 comments)</li>
+<li><a href="https://github.com/zhengboowen" target="_blank">@zhengboowen</a> (3 issues)</li>
+<li><a href="https://github.com/zixuanzh" target="_blank">@zixuanzh</a> (1 PR)</li>
+</ul>
+
+<h3 id="want-to-contribute">🙌🏽 Want to contribute?</h3>
+
+<p>Would you like to contribute to the Filecoin project and don’t know how? Here are a few places you can get started:</p>
+
+<ul>
+<li>Check out the <a href="https://github.com/filecoin-project/go-filecoin/blob/master/CONTRIBUTING.md" target="_blank">Contributing Guidelines</a></li>
+<li>Look for issues with the <code>good-first-issue</code> label in <a href="https://docs.google.com/document/d/1dfTVASs9cQMo4NPqJmXjEEX-Ju_M9Vw-4AelN1aHOV8/edit#" target="_blank">go-filecoin</a> and <a href="https://github.com/filecoin-project/rust-fil-proofs/issues?q=is%3Aissue+is%3Aopen+label%3A" title="good+first+issue" target="_blank">rust-fil-proofs</a></li>
+<li>Join the <a href="https://github.com/filecoin-project/community#chat" target="_blank">community chat on Matrix/Slack</a>, introduce yourself in #_fil-lobby, and let us know where you would like to contribute</li>
+<li>Join the <a href="https://github.com/filecoin-project/go-filecoin/wiki/Getting-Started" target="_blank">user devnet</a></li>
+</ul>
+
+<h3 id="do-you-have-questions">⁉️ Do you have questions?</h3>
+
+<p>The best place to ask your questions about go-filecoin, how it works, and what you can do with it is at <a href="https://discuss.filecoin.io/" target="_blank">discuss.filecoin.io</a>. We are also available at the <a href="https://github.com/filecoin-project/community#chat" target="_blank">community chat on Matrix/Slack</a>.</p>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520396"></script>
+    <script src="../../../js/bundle.js?c=1644520396"></script>
+</body>
+</html>
+
+

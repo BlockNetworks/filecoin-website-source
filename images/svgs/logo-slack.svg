@@ -1,0 +1,40 @@
+<svg viewBox="0 0 40 40" width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path id="c-slack" d="M.249.559H4.44V10H.249z" />
+        <path id="e-slack" d="M0 .294h9.44v4.192H0z" />
+        <path id="g-slack" d="M.513.56h9.441V4.75H.514z" />
+        <circle id="a-slack" cx="20" cy="20" r="20" />
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b-slack" fill="#fff">
+            <use xlink:href="#a-slack" />
+        </mask>
+        <use fill="#D8D8D8" fill-rule="nonzero" xlink:href="#a-slack" />
+        <g mask="url(#b-slack)" fill="#0090FF" fill-rule="nonzero">
+            <path d="M-1.455 0h42v41h-42z" />
+        </g>
+        <g mask="url(#b-slack)">
+            <path d="M14.192 22.61a2.101 2.101 0 01-2.096 2.096A2.101 2.101 0 0110 22.61c0-1.153.942-2.096 2.096-2.096h2.096v2.096z" fill="#FEFEFE" />
+            <g transform="translate(15 19.954)">
+                <mask id="d-slack" fill="#fff">
+                    <use xlink:href="#c-slack" />
+                </mask>
+                <path d="M.249 2.655c0-1.153.942-2.096 2.096-2.096 1.154 0 2.096.943 2.096 2.096v5.249A2.102 2.102 0 012.345 10 2.102 2.102 0 01.249 7.904v-5.25z" fill="#FEFEFE" mask="url(#d-slack)" />
+            </g>
+            <path d="M17.345 14.192a2.101 2.101 0 01-2.096-2.096c0-1.154.943-2.096 2.096-2.096a2.1 2.1 0 012.096 2.096v2.096h-2.096z" fill="#FEFEFE" />
+            <g transform="translate(10 14.954)">
+                <mask id="f-slack" fill="#fff">
+                    <use xlink:href="#e-slack" />
+                </mask>
+                <path d="M7.345.294A2.1 2.1 0 019.44 2.39a2.1 2.1 0 01-2.096 2.096h-5.25A2.101 2.101 0 010 2.39C0 1.236.943.294 2.096.294h5.249z" fill="#FEFEFE" mask="url(#f-slack)" />
+            </g>
+            <path d="M25.763 17.345a2.1 2.1 0 012.096-2.096 2.1 2.1 0 012.095 2.096 2.101 2.101 0 01-2.095 2.096h-2.096v-2.096zM24.706 17.345a2.101 2.101 0 01-2.097 2.096 2.101 2.101 0 01-2.095-2.096v-5.249c0-1.153.942-2.096 2.095-2.096 1.155 0 2.097.943 2.097 2.096v5.25zM22.61 25.762c1.153 0 2.096.942 2.096 2.096a2.102 2.102 0 01-2.097 2.096 2.102 2.102 0 01-2.096-2.096v-2.096h2.096z" fill="#FEFEFE" />
+            <g transform="translate(20 19.954)">
+                <mask id="h-slack" fill="#fff">
+                    <use xlink:href="#g-slack" />
+                </mask>
+                <path d="M2.61 4.751A2.101 2.101 0 01.512 2.654C.513 1.501 1.456.56 2.61.56h5.25c1.152 0 2.095.942 2.095 2.095a2.101 2.101 0 01-2.096 2.097H2.61z" fill="#FEFEFE" mask="url(#h-slack)" />
+            </g>
+        </g>
+    </g>
+</svg>

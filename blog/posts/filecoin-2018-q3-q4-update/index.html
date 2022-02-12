@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Filecoin 2018 Q3 &amp; Q4 Update: Development and Research Repos, Roadmap Update, Development Update, and More</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="Filecoin 2018 Q3 &amp; Q4 Update: Development and Research Repos, Roadmap Update, Development Update, and More"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/filecoin-2018-q3-q4-update/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/2018-q3q4-update-english-social.png?c=1644520316"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/2018-q3q4-update-english-social.png?c=1644520316"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/2018-q3q4-update-english-social.png">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/filecoin-2018-q3-q4-update/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520316">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/2018-q3q4-update-main-header-1_hub673ce61912ad0ac3b518b84780fbfb7_8567525_667x0_resize_q90_linear_2.png 667w,../../../uploads/2018-q3q4-update-main-header-1_hub673ce61912ad0ac3b518b84780fbfb7_8567525_1333x0_resize_q90_linear_2.png 1333w,../../../uploads/2018-q3q4-update-main-header-1_hub673ce61912ad0ac3b518b84780fbfb7_8567525_2000x0_resize_q90_linear_2.png 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                            <li class="list-item"><a href="../../../blog/updates" class="anchor">updates</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Feb 14, 2019</span><br />
+                    <h2 class="h title">Filecoin 2018 Q3 &amp; Q4 Update: Development and Research Repos, Roadmap Update, Development Update, and More</h2>
+                    
+
+<p>Table of Contents</p>
+
+<ol>
+<li><a href="https://filecoin.io/blog/update-2018-q3-q4/#1-opening-up-development-and-research-repos" target="_blank">Opening up development and research repos</a></li>
+<li><a href="https://filecoin.io/blog/update-2018-q3-q4/#2-filecoin-project-roadmap-update" target="_blank">Project Roadmap Update</a></li>
+<li><a href="https://filecoin.io/blog/update-2018-q3-q4/#3-filecoin-development-update" target="_blank">Development Update</a></li>
+<li><a href="https://filecoin.io/blog/update-2018-q3-q4/#4-filecoin-research-update" target="_blank">Research Update</a></li>
+<li><a href="https://filecoin.io/blog/update-2018-q3-q4/#5-filecoin-community-update" target="_blank">Community Update</a></li>
+<li><a href="https://filecoin.io/blog/update-2018-q3-q4/#6-filecoin-legal-update" target="_blank">Legal Update</a></li>
+<li><a href="https://filecoin.io/blog/update-2018-q3-q4/#7-filecoin-public-talks-media" target="_blank">Filecoin Public Talks &amp; Media</a></li>
+<li><a href="https://filecoin.io/blog/update-2018-q3-q4/#8-libp2p-update-for-filecoin" target="_blank">libp2p update for Filecoin</a></li>
+<li><a href="https://filecoin.io/blog/update-2018-q3-q4/#9-ipfs-update-for-filecoin" target="_blank">IPFS update for Filecoin</a></li>
+<li><a href="https://filecoin.io/blog/update-2018-q3-q4/#10-cautionary-notes" target="_blank">Cautionary Notes</a></li>
+</ol>
+
+<h3 id="1-opening-up-development-and-research-repos">1. Opening up development and research repos</h3>
+
+<p>Good news! After many months building things privately, we are ready to open up a number of codebases and community forums. This is right on schedule as predicted in our <a href="https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn" target="_blank">Project Roadmap</a> and <a href="https://filecoin.io/blog/update-2018-q1-q2/" target="_blank">last update</a>. Read our <a href="https://filecoin.io/blog/opening-filecoin-project-repos/" target="_blank">announcement blog post</a> for more.</p>
+
+<h3 id="2-filecoin-project-roadmap-update">2. Filecoin Project Roadmap Update</h3>
+
+<p>In our <a href="https://filecoin.io/blog/update-2018-q1-q2/" target="_blank">last big update</a>, we published a high-level <a href="https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn" target="_blank">roadmap</a>, with upcoming optimistic milestones.</p>
+
+<p>We are pleased to report that – so far – we have hit our first two big milestones on time 🎉🎉, and added a third 🎉:</p>
+
+<ul>
+<li>We started a <strong>go-filecoin collaborator &amp; contributor preview</strong> in 2018 Q4.</li>
+<li>We <strong>opened up the go-filecoin codebase</strong> in 2019 Q1.</li>
+<li>We <strong>launched the first public Filecoin devnets</strong> in 2019 Q1.</li>
+</ul>
+
+<p>Beyond that, our team has been hard at work in the following areas:</p>
+
+<ul>
+<li><strong>Developing go-filecoin.</strong> The main effort to implement the Filecoin Protocol. This is the bulk of our development work.</li>
+<li><strong>Developing rust-fil-proofs.</strong> Implementations and benchmarking of <strong><em>Proof-of-Replication</em></strong> and <strong><em>Proof-of-Spacetime</em></strong> algorithms, for use in go-filecoin, other filecoin implementations, and other systems.</li>
+<li><strong>Writing and refining protocol specs.</strong> We need detailed protocol specifications in order to have multiple independent implementations of the protocol, to have a properly decentralized network, and to assess and verify protocol security.</li>
+<li><strong>Ancillary product development.</strong> There are a couple dozen ancillary products and tools that need to exist around the Filecoin network: things like chain explorers, network stats visualizers, integrations, and so on.</li>
+<li><strong>Designing protocol improvements.</strong> There are multiple areas of the filecoin protocol that have improved significantly – in particular chain scalability, performance of proofs, and consensus security.</li>
+</ul>
+
+<p>As we make progress, our visibility and estimates grow clearer. To that end, we have adjusted the upcoming milestones as follows:</p>
+
+<p>| &mdash; | &mdash; | &mdash; |
+| Milestone | Old ETA | New ETA |
+| Launching the first public Filecoin testnet: | Q1 | Q2 |
+| Testing with sets of large scale miners: | Q1 | Q2 |
+| go-filecoin v1.0.0 feature freeze: | Q1/Q2 | Q2/Q3 |
+| Security Review &amp; Audit: | Q1/Q2 | Q2/Q3 |
+| Launching the Filecoin mainnet: | Q2/Q3 | Q3/Q4 |</p>
+
+<p>We have updated <a href="https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.ao6yxxg3c0tn" target="_blank">the Roadmap document</a> accordingly. Please recall that all our estimates and timelines are <strong>optimistic</strong> and subject to change. We want to keep the community updated, and give a rough indication of where we are, what’s next, and when we currently (if optimistically) expect to achieve our next milestones.</p>
+
+<h3 id="3-filecoin-development-update">3. Filecoin Development Update</h3>
+
+<p>This update, we are splitting the news into:</p>
+
+<ul>
+<li><strong>demos</strong> - new demos shipping today!</li>
+<li><strong>go-filecoin</strong> - the first implementation of the Filecoin protocol</li>
+<li><strong>rust-fil-proofs</strong> - a portable implementation of Filecoin proof systems and other cryptographic components.</li>
+</ul>
+
+<h4 id="3-1-dev-update-demos">3.1. Dev Update / demos</h4>
+
+<p>We are publishing 2 demos along with this update. The demos show a few of the ways you can get started with testing Filecoin proofs-of-replication (PoReps). PoReps make it possible to ensure that a Filecoin storage miner is storing their clients’ data correctly. They are crucial to the successful operation of the protocol. In the future, we will release more demos of features, go-filecoin installation, and how to use the newly opened devnets and related development tools, such as the <a href="http://stats.kittyhawk.wtf/" target="_blank">network statistics dashboard</a>.</p>
+
+<h4 id="demo-1-proof-benchmarks">Demo 1: Proof Benchmarks</h4>
+
+<p>In this demo, we show how you can run Proof-of-Replication (PoRep) benchmarks on your local machine. You can use these benchmark tools to observe how different parameters affect data replication and PoRep generation and verification times. You can also use these tools to benchmark any variations on implementations of PoRep. The demo shows:</p>
+
+<ul>
+<li>cloning rust-fil-proofs and building the benchmarks</li>
+<li>how to run the benchmarking tool for ZigZag-PoRep (our current PoRep implementation)</li>
+<li>generating benchmark running times for ZigZag-PoRep on different data sizes: 1MB, 2MB, and 1GB</li>
+</ul>
+
+<h4 id="demo-2-the-replication-game">Demo 2: The Replication Game</h4>
+
+<p>In this demo, we describe the Replication Game and how to compete. We show how you can create and submit an entry to the Replication Game, and how to check your results on a leaderboard. More specifically, we show how to:</p>
+
+<ul>
+<li>parse the different parameters that can be passed to the game</li>
+<li>run a play script to generate a Replication Game submission from your local machine or rig and post it to the game server</li>
+<li>check the Replication Game leaderboard</li>
+<li>filter Replication Game leaderboard using the same parameters used to generate your submission</li>
+</ul>
+
+<h4 id="3-2-dev-update-go-filecoin-https-github-com-filecoin-project-go-filecoin">3.2. Dev Update / <a href="https://github.com/filecoin-project/go-filecoin" target="_blank">go-filecoin</a></h4>
+
+<ul>
+<li><strong>✅Completion overview updated.</strong> The <a href="https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit" target="_blank">roadmap document</a> has a section tracking <a href="https://docs.google.com/document/d/1cgss-rifFO2iSJgnMmOsD_tPal40MUp1m7crTFQuVYQ/edit#heading=h.j4zh21nd9r1o" target="_blank">go-filecoin’s completion</a>. We have updated this section with the latest state. Many components advanced from “still todo”, to “work in progress”, and to “mostly done”. We have also added and removed some components.</li>
+<li><strong>⛽️Implemented gas for VM execution.</strong> Filecoin actors (the “VM” programs on Filecoin) require a concept of gas to run, similar to Ethereum’s. This key functionality landed in go-filecoin in the last few months.</li>
+<li><strong>💎Miner Payments and Payment Channels.</strong> Miner payments are now implemented, with the use of payment channels. The latter ones are a key feature in making the Filecoin network operate faster (off chain protocols), and to scale to an acceptable performance (amount of chain storage per op). The mining cycle is close to complete.</li>
+<li><strong>🕸Developer networks.</strong> We have reached the point where persistent networks are useful for development, debugging, and testing. We are not close to the proper <strong>“testnet”</strong> stage, but we already have the need for several small networks our developers, early contributors, and prospective users can work with. Today, we are introducing <strong>“devnets”</strong>, smaller development networks for experimental usage. <a href="https://github.com/filecoin-project/go-filecoin/wiki/Devnets" target="_blank">Read more here</a>.</li>
+<li><strong>🗃End-to-end Data Storage.</strong> Storing data in <strong>go-filecoin</strong> is now working end-to-end. Miners (a) pledge storage with collateral, (b) make deals with clients, &copy; receive clients’ data, (d) assemble the data into sectors, (e) seal the sectors with <em>Proof-of-Replication</em>, (f) gain storage power through sealed sectors, (g) mine on top of sealed sectors, (h) receive clients’ retrieval requests for data, (i) unseal sectors to retrieve clients’ data, (j) serve the data to clients, and (k) and get paid for doing so. From here, we will continue to improve storage performance and usability.</li>
+<li><strong>🛠Turning prototype code into production code.</strong> Early on, in building systems like go-filecoin, we need to move fast and prototype. We have now moved on to maturing the codebase with principled software engineering practices, clean and clear interfaces, separation of concerns into components, layered APIs, and more. This has been a significant endeavor, key for long-term maintainability, new contributor onboarding, building on go-filecoin, security, and a smoother developer experience.</li>
+<li><strong>📄Documentation and Guides.</strong> We created detailed documentation for <a href="https://github.com/filecoin-project/go-filecoin/wiki/Getting-Started" target="_blank">getting started with go-filecoin</a>, for <a href="https://github.com/filecoin-project/go-filecoin/#install-from-source" target="_blank">building the projects from source</a>, for <a href="https://github.com/filecoin-project/go-filecoin/wiki/Devnets" target="_blank">connecting to devnets</a>, for <a href="https://github.com/filecoin-project/go-filecoin/wiki/Mining-Filecoin" target="_blank">storage mining</a>, for <a href="https://github.com/filecoin-project/go-filecoin/wiki/Storing-on-Filecoin" target="_blank">storing and retrieving data</a>, for <a href="https://github.com/filecoin-project/go-filecoin/wiki/Dashboards" target="_blank">the network dashboards</a>, for <a href="https://github.com/filecoin-project/go-filecoin/wiki/Block-Explorer" target="_blank">the block explorer</a>, and for <a href="https://github.com/filecoin-project/go-filecoin/wiki/Troubleshooting-&amp;-FAQ" target="_blank">troubleshooting issues</a>. We also wrote up <a href="https://github.com/filecoin-project/go-filecoin/blob/master/CODEWALK.md" target="_blank">an overview of go-filecoin’s code</a>.</li>
+<li><strong>🎉Got ready for new contributors!</strong> We structured our <a href="https://github.com/filecoin-project/go-filecoin/blob/master/CONTRIBUTING.md" target="_blank">contributing guidelines</a>, and documented our development processes. We made our <a href="https://github.com/filecoin-project/go-filecoin/issues" target="_blank">issue tracker</a> approachable to newcomers, with lots of issues with <a href="https://github.com/filecoin-project/go-filecoin/issues?q=is%3Aopen+is%3Aissue+label%3AE-help-wanted" target="_blank"><strong>help-wanted</strong></a> or <a href="https://github.com/filecoin-project/go-filecoin/issues?q=is%3Aopen+is%3Aissue+label%3AE-good-first-issue" target="_blank"><strong>good-first-issue</strong></a> labels. We refactored and cleaned up APIs. We created <strong>#fil-dev</strong> and other developer <a href="https://github.com/filecoin-project/go-filecoin#community" target="_blank">chat channels (on Slack/Riot/Matrix)</a>. And we got our first pull-requests from outside the Filecoin team! 🎁</li>
+</ul>
+
+<h4 id="3-3-dev-update-rust-fil-proofs-https-github-com-filecoin-project-rust-fil-proofs">3.3 Dev Update / <a href="https://github.com/filecoin-project/rust-fil-proofs" target="_blank">rust-fil-proofs</a></h4>
+
+<ul>
+<li><strong>⚙️Portable fil-proofs effort.</strong> Implementing <a href="https://github.com/filecoin-project/rust-fil-proofs/blob/master/storage-proofs/src/zigzag_drgporep.rs" target="_blank"><strong><em>Proofs-of-Replication</em></strong></a> (<strong>PoReps</strong>), <a href="https://github.com/filecoin-project/rust-fil-proofs/blob/master/storage-proofs/src/vdf_post.rs" target="_blank"><strong><em>Proofs-of-Spacetime</em></strong></a> (<strong>PoSTs</strong>), and other cryptographic constructions is a significant feat of engineering. In Q3, we decided to split this into a separate endeavor from <strong>go-filecoin</strong>, in order to (a) increase focus for each effort, (b) work closely with our cryptography researchers in “research-development” mode, and &copy; produce an implementation-agnostic library. We decided to write it in Rust, which is a good fit to couple closely with other existing crypto libraries we need (eg Bellman), and to produce code and tooling that is usable to all implementations of the Filecoin Protocol and across a wide variety of systems and devices.</li>
+<li><strong>🏃‍♀️DRGs, ZigZag-PoRep, and optimizing implementations.</strong> The main task of the <strong>rust-fil-proofs</strong> effort is to implement practical and usable <strong>PoReps</strong> and <strong>PoSTs</strong>. To achieve this, we needed to implement brand new cryptographic constructions (fresh from <a href="https://eprint.iacr.org/2018/702" target="_blank">the research press</a>), study and optimize the performance of each proof system, and produce tooling that <strong>go-filecoin</strong> now imports. We discuss the effort in more detail in <a href="https://www.youtube.com/watch?v=Z5cHYItRIoY" target="_blank">these research interviews</a>.</li>
+<li><strong>⏱Reaching practical runtimes.</strong> <strong>PoRep</strong> algorithms are meant to be arbitrarily tunable in speed. However, to greatly reduce the size of proofs on chain, we needed to employ constructions that enabled non-interactive and aggregated proofs – namely, verifiable computation systems. In our case, the latest <strong>PoRep</strong> algorithms use <a href="https://github.com/filecoin-project/rust-fil-proofs/tree/master/storage-proofs/src/circuit" target="_blank"><strong>zkSNARKs</strong></a>, and are quite slow. In Q3, we implemented algorithms and got the <a href="https://github.com/filecoin-project/rust-fil-proofs" target="_blank"><strong>Filecoin Proving Subsystem</strong></a> working end-to-end. During Q4, we managed to speed up the runtime of <strong>PoRep</strong> replication by orders of magnitude! Sealing a 1GB sector took ~150hrs in Oct, and we optimized it to 50hrs in Nov, then 16hrs, then just under 1hr in Dec. 🎉 This is right in our acceptable zone, which is great.</li>
+<li><strong>🔬Benchmark Tools.</strong> We developed <a href="https://github.com/filecoin-project/rust-fil-proofs#examples" target="_blank">benchmarking tools</a> for a number of proof algorithms and cryptographic components. These can be used to measure the real, practical performance of algorithms with some given operations. These tools are great to have, and can be seen in action in <a href="https://youtu.be/-0GmwhWw05E" target="_blank">this demo</a>.</li>
+<li>👾<strong>The Replication Game.</strong> Last but not least: we made improving replication algorithms into a game! Players in <a href="https://github.com/filecoin-project/replication-game" target="_blank">the Replication Game</a> can compete to outperform the default implementation of <em>Proof-of-Replication</em>, by optimizing algorithms, running on better hardware, and so on. Think you can optimize better than the rest? Prove it by beating others in the leaderboard. This is a fun &amp; rewarding way to participate in building Filecoin. Some results may even beat those generated by our current PoRep implementation. We can’t wait to see what you come up with! See how to make a submission to the Replication Game in <a href="https://youtu.be/7r2pL53abSA" target="_blank">this demo</a>.</li>
+</ul>
+
+<h3 id="4-filecoin-research-update">4. Filecoin Research Update</h3>
+
+<p>A lot of important improvements have happened in our research team.</p>
+
+<p><strong>Research Interviews and Talks.</strong> In an effort to make our work more accessible, we are making a set of interviews with Filecoin researchers and engineers. Check out the first installment of these interviews:</p>
+
+<ul>
+<li><a href="https://youtu.be/L826rIziNMQ" target="_blank">Proof-of-Replication</a>, with Ben Fisch and Nicola Greco</li>
+<li><a href="https://www.youtube.com/watch?v=Z5cHYItRIoY" target="_blank">Implementing and Optimizing Proofs-of-Replication</a>, with Nicola Greco and Friedel Ziegelmayer</li>
+<li><a href="https://youtu.be/TzfcqPzSR0s" target="_blank">Storage and Retrieval Markets</a>, with Jeromy Johnson and Juan Benet</li>
+<li><a href="https://youtu.be/2NAKGL0ydiE" target="_blank">Replication Game Intro</a>, with Friedel Ziegelmayer and Nicola Greco</li>
+</ul>
+
+<p><strong><em>Proof-of-Replication</em> constructions.</strong> <strong>The best <em>Proof-of-Replication</em> (</strong>PoRep**) we have so far is <a href="https://eprint.iacr.org/2018/702.pdf" target="_blank"><strong>ZigZag-PoRep</strong></a>, introduced in the middle of 2018. During Q3 and Q4, we implemented <strong>ZigZag-PoRep</strong>, and other <strong>PoRep</strong> algorithms. Bringing complex cryptographic constructions from theory into practice is a significant feat. Finding practical and application constraints that drive improvements in the theoretical construction is even greater. We achieved this and more with <strong>ZigZag-PoRep</strong>. We are also setting proof parameter choices based on practical limitations. The research work on PoReps led to novel academic results on <a href="https://eprint.iacr.org/2018/702.pdf" target="_blank">Tight Proofs of Space and Replication</a>.</p>
+
+<p><strong><em>Expected Consensus</em> formalization and implementation.</strong> One of the key components of Filecoin’s *Storage Power Consensus *(<strong>SPC</strong>) is a protocol named <em>Expected Consensus</em> (<strong>EC</strong>). EC is a protocol inspired by leader-election based proof-of-stake protocols. In the last two quarters, we formalized EC’s properties and studied it in a variety of scenarios. We explored a number of questions through simulation, such as parameter choices, weighing function choices, and incentive compatibility. Significant contributions resulted from this exploration, that changed protocol implementation. Some of this work is of independent interest, and may be published separately. <strong>EC</strong> is now implemented within <strong>go-filecoin’s</strong> <strong>SPC</strong> implementation, and can be seen <a href="http://user.kittyhawk.wtf:8000/" target="_blank">keeping the Filecoin blockchains stable</a> across our <strong>devnets</strong>.</p>
+
+<p><strong>VDFs in <em>Proofs-of-Spacetime</em>, and VDF Collaboration.</strong> <strong>PoReps</strong> are not the only proof protocols in Filecoin that improved recently. We also have new constructions for <strong><em>Proofs-of-Spacetime</em></strong> (<strong>PoSTs</strong>) using recent <strong><em>Verifiable Delay Function</em></strong> (<strong>VDF</strong>) constructions. This is a significant improvement, as <strong>VDFs</strong> give <strong>PoSTs</strong> much stronger timing guarantees than we get from the bare <strong>PoReps</strong>. This is great because it allows us to have longer <strong>PoST</strong> verification cycles, and thus to significantly reduce the amount of data accumulated on-chain. This new direction has led to a <a href="https://vdfresearch.org/" target="_blank">collaboration with the Ethereum Foundation</a> to drive development, implementation, and optimization of VDFs. Some of Ethereum’s new constructions aim to use VDFs within consensus, a direction Filecoin is also exploring. Ethereum, Filecoin, and a number of next-generation blockchain protocols will benefit greatly from this work. But perhaps the most exciting part is this could yield efficient, world-wide, decentralized, and robust randomness beacons – which would be a major breakthrough in applied cryptography and distributed systems, with wide applicability beyond blockchains.</p>
+
+<p><strong>RFP: Single Secret Leader Election.</strong> Over the last couple of years, an important problem has surfaced through our exploration of consensus protocols for Filecoin.. Its solution stands to improve random leader election based protocols, such as Filecoin and many other blockchains, particularly Proof-of-Stake systems. We have called this problem <strong>Single Secret Leader Election (SSLE)</strong>, and it involves electing at most one leader, in a fair, unpredictable, and secret way, from a weighted set of participants. We have posted a new Request For Proposals (<strong>RFP</strong>) to solve this problem: <a href="https://github.com/protocol/research-RFPs/blob/master/RFPs/rfp-6-SSLE.md" target="_blank"><strong>RFP-6 Single Secret Leader Election</strong></a>. A solution to this problem would constitute a major breakthrough in cryptographic sortition schemes and greatly improve the security, performance, and simplicity of dozens of blockchain protocols, including Filecoin.</p>
+
+<h3 id="5-filecoin-community-update">5. Filecoin Community Update</h3>
+
+<p>We have been preparing to meet the needs of a broad and vibrant Filecoin community. Three examples of this include launching the Filecoin Private Preview, supporting Global Filecoin Meetups and collaborating with leading research, engineering, and blockchain organizations.</p>
+
+<ul>
+<li><strong>Filecoin Private Preview.</strong> Over the last few months, we invited external research and developer collaborators to test drive the codebases released recently, and our community communication channels. Among other things, this helped us generate or improve the following community resources:
+
+<ul>
+<li><a href="https://github.com/filecoin-project/go-filecoin/blob/master/CONTRIBUTING.md" target="_blank"><strong>Contributing Guidelines</strong></a>, the foundations on how to get started as a Filecoin contributor.</li>
+<li><a href="https://github.com/filecoin-project/community" target="_blank"><strong>Filecoin Community Channels</strong></a>, for real-time discussions.</li>
+<li><a href="https://github.com/filecoin-project/go-filecoin/blob/master/CODEWALK.md" target="_blank"><strong>Filecoin Codewalk</strong></a>, a high level tour of go-filecoin.</li>
+<li><strong>Dev Processes,</strong> to integrate PRs and code reviews from non team members into our workflows.</li>
+</ul></li>
+<li><strong>Filecoin Meetups and Communities.</strong> The Filecoin team is delighted to engage with and support communities and meetups around the world. These groups come together to learn about, discuss, participate in, and evangelize the Filecoin Network. If you’d like start a Filecoin meetup group, please email <a href="mailto:team@filecoin.org" target="_blank">team@filecoin.org</a> with your information and we’ll try to help however we can. A few specific events to highlight include:
+
+<ul>
+<li><strong>Meetups.</strong> Filecoin meetups occur around the world on a weekly basis. For example, in 2018, around 90 meetup events have been held across 16 cities in China, as well as in <a href="https://www.meetup.com/IPFS-Tokyo-Meetup/events/255661338/" target="_blank">Japan</a>, <a href="https://www.meetup.com/Hong-Kong-IPFS-Meetup/events/258784575/" target="_blank">Hong Kong</a>, and Taiwan (we note this number reflects activity from communities that have specifically reached out to our team). These meetups regularly attract 100-200 attendees and are often formatted as lectures, panels, and <a href="https://www.meetup.com/beijing-ipfs/events/255438836/" target="_blank">developer salons</a>. <a href="https://v.qq.com/x/page/f0755d2q1mz.html" target="_blank">Online</a> educational streams are also common and generate thousands of views.</li>
+<li><strong>Universities, Research Communities, and Research Centers.</strong> Community leaders have visited <a href="http://bccc.msup.com.cn/Bcc/default/cases-detail?courseid=13294" target="_blank">research centers</a>, presented to <a href="https://twitter.com/RalapXStartUp/status/1064410180899598336" target="_blank">blockchain student groups</a>, and <a href="https://mp.weixin.qq.com/s/ge_8RMl3J6iMdq6LhJa3-w" target="_blank">visited</a> <a href="http://www.chuangkem.com/archives/114407" target="_blank">renowned universities</a>.</li>
+<li><strong>Protocol Labs Events</strong>. Last year, Protocol Labs hosted its first <a href="https://lab-day.com/" target="_blank">LabDay</a> where the stakeholders in PL’s ecosystem presented, hacked, and worked together. We delivered a presentation about active <a href="https://www.youtube.com/watch?v=W-casgpGwy4" target="_blank">Filecoin Communities in China</a> and <a href="https://www.youtube.com/watch?v=ztPi2e21Mw4" target="_blank">moderated a panel</a> that with a few of the community leaders there.</li>
+<li><strong>Other.</strong> Some community volunteers are actively working to educate local governments about distributed technology. Further, our community members have contributed <a href="https://twitter.com/IPFSMain/status/1034970873277513728" target="_blank">translations</a>, visited <a href="https://twitter.com/IPFSMain/status/1041505075275812864" target="_blank">exchanges</a>, <a href="http://play.yunxi.tv/livestream/ca260eb6e2df41b6ae83ff319c7098d6" target="_blank">hosted conferences</a> and dev workshops, developed educational curriculums, and even baked <a href="https://ipfs.io/ipfs/QmPAL5QgRFm5Ziwf9SGEiW9qYhvGJWy7FSHLhUsGMdPa3j" target="_blank">filecoin</a> <a href="https://ipfs.io/ipfs/QmXtqqAECJHQAdZc3njy58qksgwEX6qT7a5UAioQW9E5bM" target="_blank">mooncakes</a>!</li>
+</ul></li>
+<li><strong>Filecoin Collaborators.</strong> We continue to develop deep relationships with leading research, engineering, distributed systems, and blockchain organizations, including:
+
+<ul>
+<li><strong>Parity Technologies.</strong> Protocol Labs and Parity have worked closely for many years. Parity recently created an <a href="https://github.com/libp2p/rust-libp2p" target="_blank">implementation of libp2p written in Rust</a>, which <a href="https://www.parity.io/why-libp2p/" target="_blank">Polkadot, Substrate, and other projects</a> are using. We look forward to more collaborations between our teams in 2019.</li>
+<li><strong>Web3 Foundation.</strong> <a href="https://www.youtube.com/watch?v=l44z35vabvA" target="_blank">We actively participated in the 2018 Web3 Summit</a> in Berlin, which was put on by the Web3 Foundation. Juan Benet and Jutta Steiner, co-founder and CEO of Parity Technologies spoke on <a href="https://www.dld-conference.com/vintage/videos/I2IZAKAuy90" target="_blank">The Grand Opportunities Of Web 3.0</a> on a panel at DLD 2019.</li>
+<li><strong>Stanford SBC</strong>. Protocol Labs supported the <a href="https://cyber.stanford.edu/sbc19" target="_blank">2019 Stanford Blockchain Conference</a> again this year, which brought together practitioners and researchers in blockchain protocols, distributed systems, cryptography, and computer security. Many of the topics covered within SBC are relevant to Filecoin, including <a href="https://www.youtube.com/watch?v=JlvZPSEFmNE&amp;feature=youtu.be" target="_blank">Accumulators for Blockchains</a>, <a href="https://www.youtube.com/watch?v=QUB7U-R527g&amp;feature=youtu.be" target="_blank">Tight Proofs of Space and Replication</a> and <a href="https://youtu.be/oyLV5wl_Ots" target="_blank">Betting on Blockchain Consensus with Fantômette</a>. We co-hosted several events around SBC this year, including VDF Days, <a href="https://www.youtube.com/playlist?list=PLhuBigpl7lqtG6LgQ0FiiR4Pbrph9nocn" target="_blank">ConsensusDay</a>, and SBC receptions.</li>
+<li><strong>Ethereum</strong>. The Ethereum Foundation is a close partner of Protocol labs. Recently, we worked together to co-fund VDF Research to drive development, implementation, and optimization of <a href="https://vdfresearch.org/" target="_blank">Verifiable Delay Functions</a>, an endeavor that could make the Filecoin protocol more secure. The Ethereum Foundation has also been experimenting with libp2p, the modular P2P networking library used by Filecoin. Some researchers at EF are considering using libp2p to power <a href="https://github.com/ethereum/eth2.0-specs/tree/v0.1" target="_blank">Ethereum 2.0</a>, and also in the process of evaluating a grant to fund py-libp2p, a new implementation of libp2p in Python.</li>
+<li><strong>CarbonFive</strong>. <a href="https://www.carbonfive.com/" target="_blank">Carbon Five</a> is one of Protocol Labs’ development partners. Carbon Five developers are working on Filecoin and participating directly in key working groups.</li>
+<li>And many others</li>
+</ul></li>
+</ul>
+
+<h3 id="6-filecoin-legal-update">6. Filecoin Legal Update</h3>
+
+<p><strong>The Permissive License Stack</strong>. Protocol Labs has developed and adopted a set of open source intellectual property commitments we call <a href="https://protocol.ai/blog/announcing-the-permissive-license-stack/" target="_blank">the Permissive License Stack</a>. These commitments guarantee that the technology PL is building for Filecoin will be usable by the largest possible number of people and projects.</p>
+
+<p>We’re hopeful that sharing our approach will help our colleagues at other companies and organizations to join us and follow this path forward. You can read more about the Permissive Licensing Stack <a href="https://protocol.ai/blog/announcing-the-permissive-license-stack/" target="_blank">here</a>.</p>
+
+<p><strong>Engaging with policymakers about the decentralized web</strong>. Protocol Labs is a founding member of the <a href="https://theblockchainassociation.org/" target="_blank">Blockchain Association</a>, a new policy advocacy group whose work we believe will advance the goals of the decentralized web. The Blockchain Association has done incredible work educating policymakers, providing critical industry knowledge to improve draft legislation, and promoting productive engagement between the U.S. government and important decentralized software projects. Their writings about <a href="https://medium.com/@BlockchainAssoc/understanding-the-secs-guidance-on-digital-tokens-the-hinman-token-standard-dd51c6105e2a" target="_blank">decentralization</a>, a <a href="https://medium.com/@BlockchainAssoc/new-bipartisan-legislation-defines-digital-tokens-paves-way-for-pro-innovation-policy-4833cbfca600" target="_blank">recently proposed law in Congress</a>, and a <a href="https://medium.com/@BlockchainAssoc/the-potential-kik-and-the-kin-foundation-case-has-major-consequences-for-the-open-blockchain-de8ed616a1c" target="_blank">potential administrative law case</a> may interest those following US public policy.</p>
+
+<p>We also support <a href="https://coincenter.org/" target="_blank">Coin Center</a>, a nonprofit think tank in Washington, DC educating policymakers on the promise of blockchain technology and why it should remain free and open. Our team provided some comments on their important new paper, <a href="https://coincenter.org/entry/the-case-for-electronic-cash" target="_blank">The Case for Electronic Cash: Why Private Peer-to-Peer Payments are Essential to an Open Society</a>.</p>
+
+<p>In September, the General Counsel of Protocol Labs testified alongside 100 other industry experts to <a href="https://coincenter.org/entry/rep-davidson-hosts-a-roundtable-on-cryptocurrencies" target="_blank">at a briefing</a> hosted by two Congressmen who later introduced a strongly <a href="https://www.cnbc.com/2018/12/20/lawmakers-look-to-change-secs-72-year-old-securities-definition-to-exclude-cryptocurrencies.html" target="_blank">pro-cryptocurrency bill</a>.</p>
+
+<h3 id="7-filecoin-public-talks-media">7. Filecoin Public Talks &amp; Media</h3>
+
+<p>We elected to continue staying out of the public sphere in 2018 and focus on building. That said, our team and our broader Filecoin community gave a few public talks, published a few blog posts and visited a few research groups. Our activity will remain similarly constrained until the lead-up to the launch of the network.</p>
+
+<ul>
+<li><strong>Public Talks and Blog posts</strong> <em>video/posts linked if available</em>
+
+<ul>
+<li>2018-08-03. <a href="https://www.youtube.com/watch?v=n8KyTACoj2Y" target="_blank"><strong>Filecoin live demo</strong></a> (Juan Benet, LabDay 1)</li>
+<li>2018-08-03. <a href="https://www.youtube.com/watch?v=W-casgpGwy4" target="_blank"><strong>Communities in China</strong></a> (Colin Evran &amp; Michelle Brous, LabDay 1)</li>
+<li>2018-08-03. <a href="https://www.youtube.com/watch?v=ztPi2e21Mw4" target="_blank"><strong>Panel: Example Community Leaders in China</strong></a> (Moderated by Juan Benet &amp; Colin Evran, LabDay 1)</li>
+<li>2018-08-03. <a href="https://www.youtube.com/watch?v=ioesqilxeuE" target="_blank"><strong>PoReps: Proof of Space on Real Data</strong></a> (Ben Fisch, LabDay 1)</li>
+<li>2018-08-06. <a href="http://longnow.org/seminars/02018/aug/06/long-term-info-structure/" target="_blank"><strong>Long Term Info-structure</strong></a> (Juan Benet, The Long Now Foundation)</li>
+<li>2018-09-11. <a href="https://medium.com/@BlockchainAssoc/a-unified-voice-for-the-blockchain-industry-8b63c93e9651" target="_blank"><strong>A Unified Voice for the Blockchain Industry</strong></a> (Blockchain Association)</li>
+<li>2018-09-26. <a href="https://coincenter.org/entry/rep-davidson-hosts-a-roundtable-on-cryptocurrencies" target="_blank"><strong>Congressional Cryptocurrency Roundtable Hosted By Rep. Warren Davidson</strong></a> (R-OH) (Marvin Ammori)</li>
+<li>2018-09-29. <a href="https://www.meetup.com/EthereumDev/events/254866815/" target="_blank"><strong>Overview of Protocol Labs, IPFS, libp2p, IPLD, and Filecoin</strong></a> (Jesse Clayburgh, Waterloo Ethereum Developer Meetup)</li>
+<li>2018-10-22. <a href="https://www.youtube.com/watch?v=l44z35vabvA" target="_blank"><strong>What exactly is web3?</strong></a> (Juan Benet, Web3 Summit)</li>
+<li>2018-10-26. <strong>Cryptocurrency Lunch Q&amp;A</strong> (Marvin Ammori, TechGC Summit)</li>
+</ul></li>
+<li><strong>University, Research Group, &amp; Community Visits</strong>
+
+<ul>
+<li>2018-09-24. <a href="https://twitter.com/colinevran/status/1047685759904436224" target="_blank"><strong>Panel on Blockchain Technology at Stanford</strong></a> (Prof Susan Athey, Doug Galen, Nicolas Kokkalis, Colin Evran @ Stanford Graduate School of Business)</li>
+<li>2018-10-24. <strong>Introduction to Market Token Networks</strong> (Ian Darrow @ Duke Law School)</li>
+<li>2018-10-18. <strong>Protocol Labs, Filecoin, and Open Problems.</strong> (Juan Benet, Evan Miyazono @ UCL CS)</li>
+<li>2018-11-14. <strong>Protocol Labs &amp; The Future of Organizational Structures; Blockchain 101: Building The Internet Of The Future</strong> (Marvin Ammori &amp; Michelle Brous @ Harvard Business School)</li>
+<li>2018-11-28. <strong>Guest Lecture in Bitcoin &amp; Cryptocurrencies</strong> (Marvin Ammori @ Stanford University CS)</li>
+</ul></li>
+</ul>
+
+<p>Additionally, we ran a small conference on consensus protocols called <a href="https://www.youtube.com/playlist?list=PLhuBigpl7lqtG6LgQ0FiiR4Pbrph9nocn" target="_blank"><strong>ConsensusDay</strong></a>. This is the first installment of what we expect to become a regular event. Consensus throughput is one of the major hurdles in blockchain scalability, and we will only realize the full potential of crypto networks if we can scale operations to match the needs of typical consumer-oriented applications. We need to move orders of magnitude beyond the 7-25 tx/s (that’s Bitcoin and Ethereum) to billions of transactions per second. We believe this improvement will come from a combination of off-chain scalability protocols, sharding, hierarchy, and new directions in consensus protocols. We hope that ConsensusDay can stimulate the field, and draw attention to important problems. All the talks from the first ConsensusDay can be <a href="https://www.youtube.com/playlist?list=PLhuBigpl7lqtG6LgQ0FiiR4Pbrph9nocn" target="_blank">found here</a>.</p>
+
+<h3 id="8-libp2p-update-for-filecoin">8. libp2p update for Filecoin</h3>
+
+<p>Filecoin is built on top of and depends heavily on <a href="https://libp2p.io/" target="_blank">libp2p</a>, a project led by Protocol Labs as well. Therefore we include a compressed update from that project tuned for Filecoin.</p>
+
+<ul>
+<li><strong>What is libp2p?</strong> A modular peer-to-peer networking library. Check out <a href="https://libp2p.io/" target="_blank">this website</a> or <a href="https://www.youtube.com/watch?v=CRe_oDtfRLw&amp;index=2&amp;list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW&amp;t=0s" target="_blank">this video</a>, or <a href="https://www.youtube.com/watch?v=xqVmEzsin3Y" target="_blank">this one</a>.</li>
+<li><strong>Libp2p Roadmap and Vision.</strong> Libp2p defined their 2019 <a href="https://docs.google.com/document/d/1Rd4yNw1TNQBvfRrKeEMSTseb6fvPzS-C--obOn0nul8/edit?ts=5bff9514#" target="_blank">roadmap</a>, focusing on priorities to harden and evolve the stack forward.</li>
+<li><strong>Lots of Releases.</strong>
+
+<ul>
+<li><strong>go-libp2p</strong> had <a href="https://github.com/libp2p/go-libp2p/releases" target="_blank">16 releases</a>.</li>
+<li><strong>js-libp2p</strong> had <a href="https://github.com/libp2p/js-libp2p/releases" target="_blank">6 releases</a> including <a href="https://blog.ipfs.io/55-js-libp2p-0-24/" target="_blank">v0.24.0</a>.</li>
+<li><strong>rust-libp2p</strong> had <a href="https://github.com/libp2p/rust-libp2p/releases" target="_blank">6 releases</a> including: <a href="https://github.com/libp2p/rust-libp2p/releases/tag/v0.1.0" target="_blank">v0.1.0</a>, <a href="https://github.com/libp2p/rust-libp2p/releases/tag/v0.2.0" target="_blank">v0.2.0</a>, <a href="https://github.com/libp2p/rust-libp2p/releases/tag/v0.3.0" target="_blank">v0.3.0</a>.</li>
+</ul></li>
+<li><strong><em>Many</em> teams are choosing libp2p for their p2p networking needs.</strong> Just js-libp2p alone has over 500 dependent repos on Github.
+
+<ul>
+<li><a href="https://medium.com/paritytech/why-libp2p-13085ed0c9c8" target="_blank"><strong>Why libp2p</strong>?</a> Great article about why top projects are choosing to build on libp2p (Pierre Krieger)</li>
+<li>Polkadot <a href="https://medium.com/polkadot-network/polkadot-poc-2-is-here-parachains-runtime-upgrades-and-libp2p-networking-7035bb141c25" target="_blank">builds on rust-libp2p</a></li>
+<li>New <a href="https://github.com/web3j/libp2p" target="_blank">jvm-libp2p</a> implementation by Web3 Labs</li>
+<li>Nervos <a href="https://medium.com/nervosnetwork/hello-ckb-17b8c8fdfba2" target="_blank">builds on rust-libp2p</a></li>
+<li>PegaSys (ConsenSys) contributing <a href="https://github.com/libp2p/go-libp2p-daemon/pull/28#issuecomment-449014187" target="_blank">native library</a> <a href="https://github.com/libp2p/go-libp2p-daemon/pull/54" target="_blank">for daemon</a></li>
+<li>Status.im is <a href="https://www.google.com/url?q=https://our.status.im/status-town-hall-27-february-4-2019/&amp;sa=D&amp;ust=1550102719765000&amp;usg=AFQjCNEGZaoOv8TGCLavbn2FK9Hxo91JEQ" target="_blank">experimenting with libp2p</a> and made <a href="https://github.com/status-im/nim-libp2p" target="_blank">nim-libp2p</a></li>
+</ul></li>
+<li><strong>Talks and media</strong>
+
+<ul>
+<li><strong>libp2p Dev Meetings - 2018-07-12 to 13</strong></li>
+<li><a href="https://www.youtube.com/watch?v=HqSXFlCwgMY&amp;index=3&amp;list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW&amp;t=0s" target="_blank">Introduction to rust-libp2p</a> (Pierre Krieger)</li>
+<li><a href="https://www.youtube.com/watch?v=4FvMed5iCb4&amp;index=4&amp;list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW&amp;t=0s" target="_blank">QUIC in libp2p</a> (Marten Seeman)</li>
+<li><a href="https://www.youtube.com/watch?v=zcWHamr5m_k&amp;index=5&amp;list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW&amp;t=0s" target="_blank">The life of a libp2p connection</a> (Jacob Heun)</li>
+<li><a href="https://www.youtube.com/watch?v=27Uv8pRmIaY&amp;index=6&amp;list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW&amp;t=0s" target="_blank">Ethereum Sharding requirements for P2P</a> (Kevin MHC)</li>
+<li><a href="https://www.youtube.com/watch?v=hyT91vdeZBk&amp;index=7&amp;list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW&amp;t=0s" target="_blank">go-libp2p-gorpc: simple RPC on top of libp2p</a> (Hector Sanjuan)</li>
+<li><a href="https://www.youtube.com/watch?v=_OVsFoK-Cr8&amp;index=8&amp;list=PLX9e-uG608s-O77QyT6QQqm9Mp6DAgjDW" target="_blank">Sharing data in OpenBazaar with PubSub</a> (Chris Pacia)</li>
+<li><strong>LabDay 1 - 2018-08-03</strong></li>
+<li><a href="https://www.youtube.com/watch?v=RZbPSTIhhnk&amp;index=5&amp;list=PLhuBigpl7lqvIymGaM7A_VT4CYZW3R_4Q&amp;t=0s" target="_blank">Libp2p in OpenBazaar</a> (Chris Pacia)</li>
+<li><a href="https://www.youtube.com/watch?v=LahR7BlN8MI&amp;index=7&amp;list=PLhuBigpl7lqvIymGaM7A_VT4CYZW3R_4Q&amp;t=0s" target="_blank">The libp2p Project</a> (Mike Goelzer)</li>
+<li><a href="https://www.youtube.com/watch?v=mRlLSByFxCQ&amp;index=8&amp;list=PLhuBigpl7lqvIymGaM7A_VT4CYZW3R_4Q&amp;t=0s" target="_blank">Polkadot &amp; Parity Substrate built on rust-libp2p</a> (Björn Wagner)</li>
+<li><a href="https://www.youtube.com/watch?v=QKFOWdOTrpo&amp;index=4&amp;list=PLhuBigpl7lqvIymGaM7A_VT4CYZW3R_4Q&amp;t=0s" target="_blank">Paratii: P2P Video Publishing</a> (Felipe Sant Ana)</li>
+<li><strong>Web3Summit - 2018-10-22 to 24</strong></li>
+<li><a href="https://www.youtube.com/watch?v=xqVmEzsin3Y" target="_blank">libp2p, a modular P2P networking stack</a> (Mike Goelzer)</li>
+<li><a href="https://www.youtube.com/watch?v=t2qCmwUlY2Q" target="_blank">Implement a payment channel with libp2p</a> (Lucas Vogelsang)</li>
+<li><strong>Other</strong></li>
+<li>2018-09-18. <a href="https://www.infoq.com/presentations/blockchain-libp2p" target="_blank">How to Leverage libp2p for Blockchain Applications</a> (Chris Pacia, Open Bazaar, InfoQ)</li>
+<li>And <a href="https://libp2p.io/media/" target="_blank">more</a>.</li>
+</ul></li>
+</ul>
+
+<h3 id="9-ipfs-update-for-filecoin">9. IPFS update for Filecoin</h3>
+
+<p>Filecoin is built on top of and depends heavily on <a href="https://ipfs.io/" target="_blank">IPFS</a>, a project also led by Protocol Labs. Many users of IPFS aim to also become users of Filecoin, so IPFS capabilities and use cases greatly inform Filecoin. Therefore, we include a compressed update from that project tuned for Filecoin.</p>
+
+<ul>
+<li><strong>What is IPFS?</strong> A content-addressed hypermedia distribution protocol. Check out <a href="https://ipfs.io/" target="_blank">this website</a>.</li>
+<li><strong>IPFS Roadmap and 2019 Priorities.</strong> The IPFS Project Roadmap and WG Roadmaps have been <a href="https://github.com/ipfs/roadmap" target="_blank">published to github</a> and are helping align priorities within and across projects. Check it out to learn more!</li>
+<li><strong>Lots of releases across the ecosystem.</strong>
+
+<ul>
+<li>Check out the links for summaries of what’s new and the full changelogs!</li>
+<li><strong>go-ipfs</strong> released <a href="https://github.com/ipfs/go-ipfs/blob/master/CHANGELOG.md#0418-2018-10-26" target="_blank">v0.4.18</a>, one of the largest go-ipfs releases in recent history.</li>
+<li><strong>js-ipfs</strong> had <a href="https://github.com/ipfs/js-ipfs/releases" target="_blank">12 releases</a>, including: <a href="https://github.com/ipfs/js-ipfs/releases/tag/v0.28.0" target="_blank">v0.</a><a href="https://github.com/ipfs/js-ipfs/releases/tag/v0.32.0" target="_blank">32.0</a>, <a href="https://github.com/ipfs/js-ipfs/releases/tag/v0.28.0" target="_blank">v0.</a><a href="https://github.com/ipfs/js-ipfs/releases/tag/v0.33.0" target="_blank">33.0</a>, <a href="https://github.com/ipfs/js-ipfs/releases/tag/v0.28.0" target="_blank">v0.</a><a href="https://github.com/ipfs/js-ipfs/releases/tag/v0.34.0" target="_blank">34.0</a>.</li>
+<li><strong>ipfs-cluster</strong> had <a href="https://github.com/ipfs/ipfs-cluster/releases/" target="_blank">5 releases</a>, including: <a href="https://github.com/ipfs/ipfs-cluster/releases/tag/v0.5.0" target="_blank">v0.5.0</a>, <a href="https://github.com/ipfs/ipfs-cluster/releases/tag/v0.6.0" target="_blank">v0.6.0</a>, <a href="https://github.com/ipfs/ipfs-cluster/releases/tag/v0.7.0" target="_blank">v0.7.0</a>, <a href="https://github.com/ipfs/ipfs-cluster/releases/tag/v0.8.0" target="_blank">v0.8.0</a>.</li>
+<li><strong>ipfs-companion</strong> had <a href="https://github.com/ipfs-shipyard/ipfs-companion/releases" target="_blank">10 releases</a>, including: <a href="https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.5.0" target="_blank">v2.5.0</a>, <a href="https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.6.0" target="_blank">v2.6.0</a>, <a href="https://github.com/ipfs-shipyard/ipfs-companion/releases/tag/v2.7.0" target="_blank">v2.7.0</a>.</li>
+<li><strong>ipfs-desktop</strong> released <a href="https://github.com/ipfs-shipyard/ipfs-desktop/releases/tag/v0.6.0" target="_blank">v0.6.0</a>.</li>
+</ul></li>
+<li><strong>Awesome feature highlights.</strong>
+
+<ul>
+<li>go-ipfs got <a href="https://github.com/ipfs/go-ipfs/blob/v0.4.18/CHANGELOG.md#quic" target="_blank">experimental QUIC support</a> and <a href="https://github.com/ipfs/go-ipfs/docs/experimental-features.md#gossipsub" target="_blank">gossipsub routing</a> to boost speed and efficiency</li>
+<li><a href="https://github.com/ipfs-shipyard/npm-on-ipfs#npm-on-ipfs" target="_blank">npm-on-ipfs</a> - wraps your chosen package manager (e.g. npm or yarn) to install your favourite modules from the central registry using IPFS</li>
+<li><a href="https://github.com/ipfs-shipyard/ipfs-webui#ipfs-web-ui" target="_blank">IPFS WebUI</a> - a shiny new interface to check in on your node’s stats, explore the IPLD powered merkle forest, see peers around the world, and manage your files</li>
+<li><a href="https://twitter.com/ipfspin/status/1053376847596187648" target="_blank">@ipfspin, a Twitter Pinbot</a> - add and pin your data to IPFS Cluster with just a tweet</li>
+<li><a href="https://www.youtube.com/watch?v=C7A3-ycCRWU" target="_blank">IPFS Install Manager</a> - a CLI interface for managing IPFS installs</li>
+<li>and <a href="https://ipfs.io/blog/" target="_blank">more</a></li>
+</ul></li>
+<li><strong>Recent IPFS user highlights.</strong>
+
+<ul>
+<li><a href="https://blog.cloudflare.com/distributed-web-gateway/" target="_blank">Cloudflare - distributed IPFS gateway</a></li>
+<li><a href="https://youtu.be/kaueUSiDrc0" target="_blank">Azure - support for IPFS in consortiums</a></li>
+<li><a href="https://dapp.originprotocol.com/#/" target="_blank">Origin - decentralized, secure, and auditable messaging</a></li>
+<li><a href="https://www.pinata.cloud/" target="_blank">Pinata - IPFS deployment and pinning service</a></li>
+<li><a href="https://ipfscloud.store/" target="_blank">IPFSCloud - decentralized storage platform</a></li>
+<li>and <a href="https://awesome.ipfs.io/categories/apps/" target="_blank">more</a></li>
+</ul></li>
+<li><strong>Community talks, articles, tutorials.</strong>
+
+<ul>
+<li>Tutorial: <a href="https://hacks.mozilla.org/2018/08/dweb-building-cooperation-and-trust-into-the-web-with-ipfs/" target="_blank">Mozilla Hacks: Building Cooperation and Trust into the Web with IPFS</a></li>
+<li>Article: <a href="https://www.nasdaq.com/article/thailand-uses-blockchain-supported-electronic-voting-system-in-primaries-cm1055512" target="_blank">Thailand used IPFS for blockchain-supported Electronic Voting System in primaries</a></li>
+<li>Article: <a href="https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle" target="_blank">Decentralisation: the next big step for the world wide web</a></li>
+<li>Article: <a href="https://www.technologyreview.com/s/612240/a-big-tech-company-is-working-to-free-the-internet-from-big-tech-companies/" target="_blank">A big tech company is working to free the internet from big tech companies</a></li>
+<li>Article: <a href="https://hackernoon.com/breaking-the-ice-a-crash-course-in-ipfs-ethereum-and-fat-protocols-of-the-future-eb9bd15eb96e" target="_blank">Breaking The Ice: A Crash Course In IPFS, Ethereum And Fat Protocols Of The Future</a></li>
+<li>2018-11-14. <a href="https://www.youtube.com/watch?v=M4W6rzTOtP4" target="_blank">Telecom Application Development Summit: Protocol Labs and IPFS Project Update</a> (David Dias)</li>
+<li>2018-12-18. <a href="https://www.youtube.com/watch?v=umNL2VkIHe8" target="_blank">OPO.js - NPM on IPFS</a> (Alex Potsides)</li>
+</ul></li>
+</ul>
+
+<h3 id="10-cautionary-notes">10. Cautionary Notes</h3>
+
+<ul>
+<li>We are not announcing the testnet or the mainnet. Instead, we are inviting you to review and contribute to this open source work we believe is so important.</li>
+<li>The three devnets are true development networks, and we make no guarantees about performance, stability, and security on the devnets. In fact, we can probably guarantee the opposite.</li>
+<li>None of the economics are live and any tokens involved are only for testing. It is not yet possible to claim, sell, or buy actual tokens.</li>
+<li>Miners cannot earn actual block rewards.</li>
+<li>Exchanges claiming to trade in filecoin or filecoin futures are either fraudulent or very confused. There should not yet be any sales or purchases of devnet filecoin – or any other filecoin.</li>
+<li>Nobody should invest in mining hardware based on any specs in the devnet, as these specs will likely change.</li>
+<li>Beware of any potential scams anywhere based on claims contrary to the above. We have unfortunately heard of some potentially fraudulent activity in China and Hong Kong. Please review <a href="https://filecoin.io/blog/china-antifraud/" target="_blank">the Anti-Fraud Statement</a>, which strongly recommends avoiding anyone in China or Hong Kong claiming to be commercially or officially affiliated with the Filecoin project (or IPFS or Protocol Labs) at this time.</li>
+<li>Please review the <a href="https://docs.filecoin.io/about-filecoin/faq/" target="_blank">Filecoin FAQs</a>.</li>
+</ul>
+
+<h3 id="many-thanks">Many Thanks!</h3>
+
+<p>Thank you for all your support so far, and in the future! And thank you in advance for your referrals, ideas, and suggestions. Your help accelerates our progress.</p>
+
+<p>The Filecoin Team</p>
+
+<p>Protocol Labs</p>
+
+                </div>
+            </div>
+
+            
+            <div class="div related-articles">
+                <div class="div grid">
+                    <div class="div label"><h3 class="h type-base">Related Articles</h3></div>
+                    <div class="div overview-link"><a class="anchor type-base" href="../../../blog">View all articles</a></div>
+                </div>
+                <div class="div grid">
+
+                    <div class="div Carousel" data-setting-mobile="true">
+                        <div class="div carousel-container">
+                            <div class="div carousel-items">
+                                <div class="div unit-cols-3">
+                                    
+                                    <div class="div carousel-item article-1">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper image--dimmed">
+        <a href="../../../blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/fil-blog-wolfram-1_hu0375257b9269174e4963d1cf63e2c097_324840_500x0_resize_q90_linear.jpg 500w,../../../uploads/fil-blog-wolfram-1_hu0375257b9269174e4963d1cf63e2c097_324840_1000x0_resize_q90_linear.jpg 1000w,../../../uploads/fil-blog-wolfram-1_hu0375257b9269174e4963d1cf63e2c097_324840_1500x0_resize_q90_linear.jpg 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/" class="anchor">
+                Wolfram Blockchain Labs Expanding Storage Functionality with IPFS &amp; Filecoin for Dapp Development 
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">WBL is integrating their distributed ledger technology platform with IPFS and Filecoin to add new decentralized functionality and expanded storage to their existing blockchain features.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                May 12, 2021
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-2">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/proof-of-replication-power-fault-tolerance-and-research-roadmap/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/proof-of-replication-power-fault-tolerance-and-research-roadmap/" class="anchor">
+                Proof-of-Replication, Power-Fault-Tolerance and Research Roadmap
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">At Protocol Labs we are charting a course to the future, but we also know that the details make or break the plan. </p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Jul 27, 2017
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-3">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/what-sets-us-apart-filecoin-s-proof-system/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/proof-system-main-header_hu52b91cf0c3b9c5eb6471b2e3d0cf68da_3792572_500x0_resize_q90_linear_2.png 500w,../../../uploads/proof-system-main-header_hu52b91cf0c3b9c5eb6471b2e3d0cf68da_3792572_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/proof-system-main-header_hu52b91cf0c3b9c5eb6471b2e3d0cf68da_3792572_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">Filecoin-Features</span>
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/what-sets-us-apart-filecoin-s-proof-system/" class="anchor">
+                What sets it apart: Filecoin’s proof system
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">With the testnet launch, a new set of storage-based proof systems to attain decentralized consensus has been launched.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Feb 18, 2020
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="div nav-dots"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520328"></script>
+    <script src="../../../js/bundle.js?c=1644520328"></script>
+</body>
+</html>
+
+

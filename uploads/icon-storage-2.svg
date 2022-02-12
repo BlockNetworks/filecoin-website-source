@@ -1,0 +1,23 @@
+<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="50%" x2="107.05%" y2="62.678%" id="b">
+            <stop stop-color="#0F161D" offset="0%" />
+            <stop stop-color="#172129" offset="100%" />
+        </linearGradient>
+        <linearGradient x1="26.234%" y1="16.97%" x2="72.154%" y2="80.158%" id="e">
+            <stop stop-color="#2DF3AE" offset="0%" />
+            <stop stop-color="#0CCBEC" offset="100%" />
+        </linearGradient>
+        <pattern id="d" width="512" height="512" x="-512" y="-512" patternUnits="userSpaceOnUse">
+            <use xlink:href="#a" />
+        </pattern>
+        <path d="M45.703 0C54.375 0 60 5.625 60 14.297v31.406C60 54.375 54.375 60 45.703 60H14.297C5.625 60 0 54.375 0 45.703V14.297C0 5.625 5.625 0 14.297 0h31.406z" id="c" />
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <use fill="url(#b)" xlink:href="#c" />
+            <use fill-opacity=".06" fill="url(#d)" xlink:href="#c" />
+        </g>
+        <path d="M30.02 11L11.5 29.842l18.52 19.06 18.932-19.21L30.019 11zm.689 2.256l16.27 16.191-12.571-3.435-3.7-12.756zM14 28.75l9.33-5.594 5.92-9.906L14 28.75zm12.659 5.427l9.353 2.481-5.988 10.202-3.365-12.683zM29.5 46.836L13.894 30.79l12.209 3.238L29.5 46.836zm.226.85l-.056.057h.07l-.014-.057zm17.232-17.803l-9.873 5.705-2.512-9.024 12.385 3.32zm-13.507-3.62l2.61 9.374-9.697-2.573-2.485-9.367 9.572 2.566zm11.916 5.734L32 45.5l5.035-8.642 8.332-4.861zm-31.993-2.373l12.44 3.3-2.415-9.211-10.025 5.91zm19.942-3.907l-3.503-12.52-5.905 9.992 9.408 2.528z" fill="url(#e)" />
+    </g>
+</svg>

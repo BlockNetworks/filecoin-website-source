@@ -1,0 +1,28 @@
+<svg width="28" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="3.934%" y1="34.881%" x2="99.961%" y2="73.68%" id="b-hard-white">
+            <stop stop-color="#f3f3f3" offset="0%" />
+            <stop stop-color="#ffffff" offset="100%" />
+        </linearGradient>
+        <linearGradient x1="-8.778%" y1="42.472%" x2="130.626%" y2="60.329%" id="e-hard-white">
+            <stop stop-color="#f3f3f3" offset="0%" />
+            <stop stop-color="#ffffff" offset="100%" />
+        </linearGradient>
+        <path d="M6.309.247a2.918 2.918 0 00-2.784 2.046L.734 13.567a4.068 4.068 0 012.363-.761h21.594c.881 0 1.693.286 2.362.763L24.261 2.293A2.916 2.916 0 0021.478.247H6.309z" id="a-hard-white" />
+        <path d="M3.097.806A3.093 3.093 0 00.096 3.172 3.09 3.09 0 000 3.903 3.097 3.097 0 003.097 7h21.594a3.096 3.096 0 003.096-3.097c0-.255-.039-.498-.098-.733A3.09 3.09 0 0024.691.806H3.097zm20.197 3.097a1.19 1.19 0 012.379 0 1.19 1.19 0 01-2.379 0zm-4.003 0a1.188 1.188 0 112.377 0 1.189 1.189 0 11-2.377 0z" id="d-hard-white" />
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(0 -.247)">
+            <mask id="c-hard-white" fill="#fff">
+                <use xlink:href="#a-hard-white" />
+            </mask>
+            <path d="M6.309.247a2.918 2.918 0 00-2.784 2.046L.734 13.567a4.068 4.068 0 012.363-.761h21.594c.881 0 1.693.286 2.362.763L24.261 2.293A2.916 2.916 0 0021.478.247H6.309z" fill="url(#b-hard-white)" mask="url(#c-hard-white)" />
+        </g>
+        <g transform="translate(0 12.753)">
+            <mask id="f-hard-white" fill="#fff">
+                <use xlink:href="#d-hard-white" />
+            </mask>
+            <path d="M3.097.806A3.093 3.093 0 00.096 3.172 3.09 3.09 0 000 3.903 3.097 3.097 0 003.097 7h21.594a3.096 3.096 0 003.096-3.097c0-.255-.039-.498-.098-.733A3.09 3.09 0 0024.691.806H3.097zm20.197 3.097a1.19 1.19 0 012.379 0 1.19 1.19 0 01-2.379 0zm-4.003 0a1.188 1.188 0 112.377 0 1.189 1.189 0 11-2.377 0z" fill="url(#e-hard-white)" mask="url(#f-hard-white)" />
+        </g>
+    </g>
+</svg>

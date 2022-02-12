@@ -1,0 +1,24 @@
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="a-arrow-circle">
+            <stop stop-color="#39C1CB" offset="0%" />
+            <stop stop-color="#3069BD" offset="100%" />
+        </linearGradient>
+        <path d="M12.071 3l7.071 7.071-7.07 7.071-1.415-1.414 4.728-4.729L1 11V9l14.241-.001-4.584-4.585L12.07 3z" id="b-arrow-circle" />
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="" d="M-960-3960H480v15942H-960z" />
+        <g>
+            <circle class="circle" stroke="url(#a-arrow-circle)" stroke-width="2" cx="20" cy="20" r="19" />
+            <g transform="translate(10 10)">
+                <mask id="c-arrow-circle" fill="#fff">
+                    <use xlink:href="#b-arrow-circle" />
+                </mask>
+                <use fill="#000" fill-rule="nonzero" xlink:href="#b-arrow-circle" />
+                <g class="arrow" mask="url(#c-arrow-circle)" fill="url(#a-arrow-circle)" fill-rule="nonzero">
+                    <path d="M0 0h20v20H0z" />
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,2173 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+        <title>Filecoin</title>
+        <link>https://filecoin.io/blog/events/</link>
+        <description>Recent content on Filecoin</description>
+        <generator>Hugo -- gohugo.io</generator>
+        
+        <atom:link href="/blog/events/index.xml" rel="self" type="application/rss+xml" />
+        
+        
+        <item>
+            <title>PiKNiK’s ESPA Makes Way for Web3 Enterprise Storage on Filecoin</title>
+            <link>https://filecoin.io/blog/posts/piknik-s-espa-makes-way-for-web3-enterprise-storage-on-filecoin/</link>
+            <pubDate>Thu, 10 Feb 2022 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/piknik-s-espa-makes-way-for-web3-enterprise-storage-on-filecoin/</guid>
+            <description>The program helps enterprise storage providers optimize for large datasets on Filecoin.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 35</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-35/</link>
+            <pubDate>Wed, 02 Feb 2022 12:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-35/</guid>
+            <description>A new website and referral program at the scale of Filecoin’s 15+ EiB of decentralized storage power</description>
+        </item>
+        
+        <item>
+            <title>Filecoin for Large Data</title>
+            <link>https://filecoin.io/blog/posts/filecoin-for-large-data/</link>
+            <pubDate>Tue, 01 Feb 2022 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-for-large-data/</guid>
+            <description>A solution for large datasets — and announcing Project Gravity II as a way to incentivize clients to explore this capability.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin与大型数据集</title>
+            <link>https://filecoin.io/blog/posts/filecoin.zh-cn-1/</link>
+            <pubDate>Tue, 01 Feb 2022 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin.zh-cn-1/</guid>
+            <description>02/01/2022 1:00 PM</description>
+        </item>
+        
+        <item>
+            <title>Trusted Setup Complete for Network v15 Upgrade </title>
+            <link>https://filecoin.io/blog/posts/trusted-setup-complete-for-network-v15-upgrade/</link>
+            <pubDate>Thu, 27 Jan 2022 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/trusted-setup-complete-for-network-v15-upgrade/</guid>
+            <description>The Filecoin community successfully completed the task of generating secure parameters for 4 circuits that will enable “SnapDeals” in Network V15.</description>
+        </item>
+        
+        <item>
+            <title>Orbit Community Program</title>
+            <link>https://filecoin.io/blog/posts/orbit-community-program/</link>
+            <pubDate>Fri, 21 Jan 2022 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/orbit-community-program/</guid>
+            <description>We are excited to announce the launch of the Orbit Community Program powered by Protocol Labs and the Filecoin Foundation.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 34</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-34/</link>
+            <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-34/</guid>
+            <description>Take a look at everything that happened in the Filecoin ecosystem in the last year</description>
+        </item>
+        
+        <item>
+            <title>Introducing ref-fvm, a new FVM website, and the Early Builders Program</title>
+            <link>https://filecoin.io/blog/posts/introducing-ref-fvm-a-new-fvm-website-and-the-early-builders-program/</link>
+            <pubDate>Wed, 19 Jan 2022 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/introducing-ref-fvm-a-new-fvm-website-and-the-early-builders-program/</guid>
+            <description>Announcing three major updates along the road of the Filecoin Virtual Machine’s towards Milestone 1.</description>
+        </item>
+        
+        <item>
+            <title>MetaMask Flask: A Snap for Filecoin Devs</title>
+            <link>https://filecoin.io/blog/posts/metamask-flask-a-snap-for-filecoin/</link>
+            <pubDate>Tue, 18 Jan 2022 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/metamask-flask-a-snap-for-filecoin/</guid>
+            <description>Developers: Use MetaMask Flask to Access Web3 Tools Like Filecoin Directly from the Wallet</description>
+        </item>
+        
+        <item>
+            <title>Filecoin in 2021: Looking Back at a Year of Exponential Growth</title>
+            <link>https://filecoin.io/blog/posts/filecoin-in-2021-looking-back-at-a-year-of-exponential-growth/</link>
+            <pubDate>Thu, 13 Jan 2022 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-in-2021-looking-back-at-a-year-of-exponential-growth/</guid>
+            <description>2021 was quite the year for the Filecoin network and community! </description>
+        </item>
+        
+        <item>
+            <title>LongHashX and Protocol Labs Launch First-Ever Metaverse Demo Day</title>
+            <link>https://filecoin.io/blog/posts/longhashx-and-protocol-labs-launch-first-ever-metaverse-demo-day/</link>
+            <pubDate>Tue, 11 Jan 2022 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/longhashx-and-protocol-labs-launch-first-ever-metaverse-demo-day/</guid>
+            <description>The Filecoin track will feature innovative projects including Grape Protocol, Lit Protocol, Matters Lab, and Lighthouse.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Green</title>
+            <link>https://filecoin.io/blog/posts/filecoin-green/</link>
+            <pubDate>Tue, 21 Dec 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-green/</guid>
+            <description>A look of what’s ahead in Filecoin’s push towards environmental sustainability.</description>
+        </item>
+        
+        <item>
+            <title>绿色Filecoin</title>
+            <link>https://filecoin.io/blog/posts/filecoin-green.zh-cn-1/</link>
+            <pubDate>Tue, 21 Dec 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-green.zh-cn-1/</guid>
+            <description>请随下文一同了解Filecoin推动环境可持续发展的前进方向 </description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 33</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-33/</link>
+            <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-33/</guid>
+            <description>Filecoin Green Shows How Web3 Can Help Fight Climate Change</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 32</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-32/</link>
+            <pubDate>Thu, 02 Dec 2021 00:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-32/</guid>
+            <description>The Projects Building the Next Wave of Web3 Developer Tools</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Launchpad Accelerator II: Gaming and the Metaverse</title>
+            <link>https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-gaming-and-the-metaverse/</link>
+            <pubDate>Tue, 23 Nov 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-gaming-and-the-metaverse/</guid>
+            <description>3D art galleries, play-to-earn, derivative NFTs, and more — explore the gaming and metaverse projects from Filecoin Launchpad Accelerator II.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Launchpad Accelerator II: Infrastructure and Dev Tools</title>
+            <link>https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-infrastructure-and-dev-tools/</link>
+            <pubDate>Tue, 23 Nov 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-infrastructure-and-dev-tools/</guid>
+            <description>De-risking relationships, identity NFTs for DAOs, community-operated weather frameworks, and more — explore the infrastructure and dev tool projects from Filecoin Launchpad Accelerator II.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 31</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-31-a-deeper-look-into-the-filecoin-virtual-machine/</link>
+            <pubDate>Wed, 17 Nov 2021 23:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-31-a-deeper-look-into-the-filecoin-virtual-machine/</guid>
+            <description>The FVM brings new capabilities to decentralized storage. Plus, five up-and-coming NFT projects building on Filecoin, and more.</description>
+        </item>
+        
+        <item>
+            <title>Introducing the Filecoin Virtual Machine</title>
+            <link>https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/</link>
+            <pubDate>Thu, 11 Nov 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/introducing-the-filecoin-virtual-machine/</guid>
+            <description>A unified, interoperable environment for computation and storage, enabled by the Filecoin Virtual Machine.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Launchpad Accelerator II: NFTs</title>
+            <link>https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-nfts/</link>
+            <pubDate>Tue, 09 Nov 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-nfts/</guid>
+            <description>Fractional ownership, no-loss gaming, marketplaces, and more — explore the NFT projects from Filecoin Launchpad Accelerator II.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 30:  Announcing the Filecoin Virtual Machine! Storage &#43; Computation = 🤯🚀</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-30/</link>
+            <pubDate>Thu, 04 Nov 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-30/</guid>
+            <description>Catch up on the most exciting announcements and developments from Filecoin Orbit, including what the rest of the year holds in store.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Launchpad Accelerator II: DeFi</title>
+            <link>https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-defi/</link>
+            <pubDate>Mon, 01 Nov 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-launchpad-accelerator-ii-defi/</guid>
+            <description>Options markets, synthetic tokens, compliance, and more — an overview of DeFi projects from Launchpad Demo Day #2</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Orbit 2021 Recap: Celebrating the One Year Anniversary of Mainnet Liftoff</title>
+            <link>https://filecoin.io/blog/posts/filecoin-orbit-2021-recap/</link>
+            <pubDate>Mon, 25 Oct 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-orbit-2021-recap/</guid>
+            <description>Starting on October 15th and culminating a week later, Filecoin Orbit 2021 was a happy celebration to mark the momentous first anniversary of the Filecoin mainnet launch in October, 2020.</description>
+        </item>
+        
+        <item>
+            <title>Textile: Intro to the Filecoin Bridge</title>
+            <link>https://filecoin.io/blog/posts/textile-intro-to-the-filecoin-bridge/</link>
+            <pubDate>Thu, 21 Oct 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/textile-intro-to-the-filecoin-bridge/</guid>
+            <description>One of the most recent advances in Filecoin&#39;s development is the creation of the NEAR bridge.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 29: Join the 1-year celebration of Filecoin Mainnet</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-29/</link>
+            <pubDate>Wed, 20 Oct 2021 19:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-29/</guid>
+            <description>Join the Filecoin community to celebrate one year since Filecoin Mainnet Liftoff. Register now!</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Orbit: Filecoin Year One in Review</title>
+            <link>https://filecoin.io/blog/posts/filecoin-orbit-filecoin-year-one-in-review/</link>
+            <pubDate>Fri, 15 Oct 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-orbit-filecoin-year-one-in-review/</guid>
+            <description> In 12 short months, the Filecoin network and its surrounding ecosystem have grown in strength to what it is today.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Becomes Official Storage Collaborator for Flow Blockchain</title>
+            <link>https://filecoin.io/blog/posts/filecoin-becomes-official-storage-collaborator-for-flow-blockchain/</link>
+            <pubDate>Wed, 13 Oct 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-becomes-official-storage-collaborator-for-flow-blockchain/</guid>
+            <description>Filecoin is now the official storage collaborator of Flow blockchain.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 28: Filecoin Orbit, Proofs v10.0.0, Halo 2, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-28/</link>
+            <pubDate>Wed, 06 Oct 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-28/</guid>
+            <description>Filecoin Orbit is here: celebrating one year of Filecoin mainnet!</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Plus: How Storage Providers Can Engage with Verified Clients</title>
+            <link>https://filecoin.io/blog/posts/filecoin-plus-how-storage-providers-can-engage-with-verified-clients/</link>
+            <pubDate>Tue, 05 Oct 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-plus-how-storage-providers-can-engage-with-verified-clients/</guid>
+            <description>Filecoin Plus adds a layer of social trust to the Filecoin network to incentivize useful storage and facilitates deals with verified clients.</description>
+        </item>
+        
+        <item>
+            <title>Reviving Halo 2 with Protocol Labs, Filecoin Foundation, Ethereum Foundation, and Electric Coin Co.</title>
+            <link>https://filecoin.io/blog/posts/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/</link>
+            <pubDate>Fri, 01 Oct 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/reviving-halo-2-with-protocol-labs-filecoin-foundation-ethereum-foundation-and-electric-coin-co/</guid>
+            <description>The four ecosystems come together to explore the future of recursive zero knowledge proofs.</description>
+        </item>
+        
+        <item>
+            <title>ChainSafe Files — Building Privacy-preserving Cloud Storage</title>
+            <link>https://filecoin.io/blog/posts/chainsafe-files-building-privacy-preserving-cloud-storage/</link>
+            <pubDate>Tue, 28 Sep 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/chainsafe-files-building-privacy-preserving-cloud-storage/</guid>
+            <description>ChainSafe Files provides highly private, highly secure cloud storage that allows users to maintain full sovereignty over their data.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin’s “Island Economy”</title>
+            <link>https://filecoin.io/blog/posts/filecoin-s-island-economy/</link>
+            <pubDate>Thu, 23 Sep 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-s-island-economy/</guid>
+            <description>Understanding the economic interconnectedness of the Filecoin storage network.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 27: MoNA Launch, Decentralized Storage Options, Using Filecoin with IPFS, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-27/</link>
+            <pubDate>Wed, 22 Sep 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-27/</guid>
+            <description>MoNA is bringing together creators, collectors, and investors to build the world of NFT art. </description>
+        </item>
+        
+        <item>
+            <title>Using Filecoin with IPFS</title>
+            <link>https://filecoin.io/blog/posts/using-filecoin-with-ipfs/</link>
+            <pubDate>Thu, 16 Sep 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/using-filecoin-with-ipfs/</guid>
+            <description>Understanding how Filecoin and IPFS come together to create decentralized storage through the lens of Textile and Estuary.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Project Gravity, a Sales Referral Program</title>
+            <link>https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/</link>
+            <pubDate>Tue, 14 Sep 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-project-gravity-a-sales-referral-program/</guid>
+            <description>Bring your customer’s data to the Filecoin network and make gravity work!</description>
+        </item>
+        
+        <item>
+            <title>Decentralized Storage: Estuary, Web3.storage, and NFT.storage</title>
+            <link>https://filecoin.io/blog/posts/decentralized-storage-estuary-web3.storage-and-nft.storage/</link>
+            <pubDate>Fri, 10 Sep 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/decentralized-storage-estuary-web3.storage-and-nft.storage/</guid>
+            <description>Breaking down the different reasons to use Estuary vs. Web3.storage vs. NFT.storage</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 26: Filecoin Network capacity surpasses 10 EiB, and more!</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-26/</link>
+            <pubDate>Wed, 08 Sep 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-26/</guid>
+            <description>Welcome to Filecoin News 26!</description>
+        </item>
+        
+        <item>
+            <title>The Future of Decentralized Social Media</title>
+            <link>https://filecoin.io/blog/posts/the-future-of-decentralized-social-media/</link>
+            <pubDate>Tue, 07 Sep 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/the-future-of-decentralized-social-media/</guid>
+            <description>Decentralizing social media is the latest evolution in the “forum” — a critical tool for human discussion, collaboration, and consensus.</description>
+        </item>
+        
+        <item>
+            <title>Taking a Look at Estuary</title>
+            <link>https://filecoin.io/blog/posts/taking-a-look-at-estuary/</link>
+            <pubDate>Thu, 02 Sep 2021 08:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/taking-a-look-at-estuary/</guid>
+            <description>Estuary is open-source software allowing simple sending of public data to the Filecoin network to be retrieved from anywhere.</description>
+        </item>
+        
+        <item>
+            <title>Announcing Asia Hackathon Season 2021</title>
+            <link>https://filecoin.io/blog/posts/about-500-000-in-prizes-and-grants-for-asia-hackathon-season-2021/</link>
+            <pubDate>Fri, 27 Aug 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/about-500-000-in-prizes-and-grants-for-asia-hackathon-season-2021/</guid>
+            <description>Asia Hackathon Season 2021 is a hackathon series helping startups and entrepreneurs grow with Web3 stacks.</description>
+        </item>
+        
+        <item>
+            <title>Dapper Labs Integrates Filecoin to Propel the Future of the NFT and Gaming Metaverse on Flow Blockchain</title>
+            <link>https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/</link>
+            <pubDate>Thu, 26 Aug 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/dapper-labs-integrates-filecoin/</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 25: JigStack Gallery Integrates IPFS and Filecoin, Mask x Filecoin, Lotus Release v1.11.1 and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-25/</link>
+            <pubDate>Wed, 25 Aug 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-25/</guid>
+            <description>Welcome to Filecoin News 25! Updates from the ecosystem about Web3 interoperability, community terminology updates, grant distributions, and more.</description>
+        </item>
+        
+        <item>
+            <title>Announcing Filecoin-Polygon Bridge and Free Storage for Developers</title>
+            <link>https://filecoin.io/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/</link>
+            <pubDate>Fri, 20 Aug 2021 19:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/announcing-filecoin-polygon-bridge-and-free-storage-for-developers/</guid>
+            <description>This kicks off with the recently-created Filecoin-Polygon Bridge by the Textile team.</description>
+        </item>
+        
+        <item>
+            <title>Mask Network × Filecoin: Bridging the Gap Between Web2 and Web3</title>
+            <link>https://filecoin.io/blog/posts/mask-network-x-filecoin-bridging-the-gap-between-web2-and-web3/</link>
+            <pubDate>Tue, 17 Aug 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/mask-network-x-filecoin-bridging-the-gap-between-web2-and-web3/</guid>
+            <description>Today, Mask Network and Filecoin announced a collaboration to bridge the gap between Web2 and Web3 by bringing decentralized storage solutions to Mask users. </description>
+        </item>
+        
+        <item>
+            <title>17 Winning Projects from DoraHack’s Filecoin Grant Hackathon</title>
+            <link>https://filecoin.io/blog/posts/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/</link>
+            <pubDate>Fri, 13 Aug 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/249k-for-17-projects-from-dorahacks-filecoin-grant-hackathon/</guid>
+            <description>Catch up with the 17 winning projects (including three first places) from the DoraHacks Filecoin Grant Hackathon. </description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 24: Near Grant Program, Asia Hackathon Season &#39;21, SXSW Panel Voting Open, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-24-filecoin-near-grant-program-asia-hackathon-season-21-sxsw-panel-voting-open-and-more/</link>
+            <pubDate>Wed, 11 Aug 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-24-filecoin-near-grant-program-asia-hackathon-season-21-sxsw-panel-voting-open-and-more/</guid>
+            <description>Welcome to Filecoin News 24, our roundup of the latest updates and happenings in the world of Filecoin.</description>
+        </item>
+        
+        <item>
+            <title>NEAR and Filecoin Ecosystems to Accelerate the Growth of the Web3 Stack</title>
+            <link>https://filecoin.io/blog/posts/near-filecoin-ecosystems-accelerate-growth-web3-stack/</link>
+            <pubDate>Tue, 10 Aug 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/near-filecoin-ecosystems-accelerate-growth-web3-stack/</guid>
+            <description>The collaboration between the Filecoin ecosystem and the NEAR ecosystem deepens with the launch of a $300,000 joint grants program designed to support developers interested in exploring new opportunities at the intersection of these two protocols.</description>
+        </item>
+        
+        <item>
+            <title>Announcing Chainlink-Filecoin Joint Grants for dApps Combining Decentralized Storage and Oracles</title>
+            <link>https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/</link>
+            <pubDate>Fri, 06 Aug 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/</guid>
+            <description>Chainlink and Filecoin are launching a joint grant initiative to accelerate development of hybrid smart contracts that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application.</description>
+        </item>
+        
+        <item>
+            <title>Building Web3: Filecoin &#43; Ethereum Better Together</title>
+            <link>https://filecoin.io/blog/posts/building-web3-filecoin-ethereum-better-together/</link>
+            <pubDate>Thu, 05 Aug 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/building-web3-filecoin-ethereum-better-together/</guid>
+            <description>A look at some of the projects leading the collaborative opportunities between Filecoin and Ethereum.</description>
+        </item>
+        
+        <item>
+            <title>Introducing Web3.Storage: A simple interface for Filecoin storage</title>
+            <link>https://filecoin.io/blog/posts/introducing-web3-storage/</link>
+            <pubDate>Tue, 03 Aug 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/introducing-web3-storage/</guid>
+            <description>Protocol Labs launches Web3.Storage, a free product for any developer to use Filecoin’s decentralized storage network in their applications.</description>
+        </item>
+        
+        <item>
+            <title>Zero Knowledge and the Filecoin Network</title>
+            <link>https://filecoin.io/blog/posts/zero-knowledge-and-the-filecoin-network/</link>
+            <pubDate>Thu, 29 Jul 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/zero-knowledge-and-the-filecoin-network/</guid>
+            <description>An overview of how the worlds of zk-SNARKs and decentralized storage come together on the Filecoin network.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 23: Hedera, Filecoin Base Camp, Juan at EthCC, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-23/</link>
+            <pubDate>Wed, 28 Jul 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-23/</guid>
+            <description>Welcome to Filecoin News 23, our roundup of the latest updates and happenings in the world of Filecoin.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin and Hedera Hashgraph Announce Grant Program to Propel Web3 Interoperability</title>
+            <link>https://filecoin.io/blog/posts/filecoin-and-hedera-hashgraph-announce-grant-program-to-propel-web3-interoperability/</link>
+            <pubDate>Tue, 27 Jul 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-and-hedera-hashgraph-announce-grant-program-to-propel-web3-interoperability/</guid>
+            <description>Today, Filecoin and Hedera Hashgraph are announcing a joint effort to advance the interoperability of Web3.</description>
+        </item>
+        
+        <item>
+            <title>Building Businesses for the Future of the Decentralized Web</title>
+            <link>https://filecoin.io/blog/posts/building-businesses-for-the-future-of-the-decentralized-web/</link>
+            <pubDate>Tue, 20 Jul 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/building-businesses-for-the-future-of-the-decentralized-web/</guid>
+            <description>Outlier Ventures CEO &amp; Founder Jamie Burke and Protocol Labs Ecosystem Lead Colin Evran talking about the business opportunities of decentralized storage in the future of Web3 and the role that the recently-announced Filecoin Base Camp by Outlier Ventures plays.</description>
+        </item>
+        
+        <item>
+            <title>Open Web Community Summit: The Future of Storage Capacity </title>
+            <link>https://filecoin.io/blog/posts/open-web-community-summit-the-future-of-storage-capacity/</link>
+            <pubDate>Thu, 15 Jul 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/open-web-community-summit-the-future-of-storage-capacity/</guid>
+            <description>Dystopia Labs recently hosted the Open Web Community Summit for Creators &amp; Community, co-presented by NEAR Protocol and Gitcoin. The event mainly focused on NFTs and featured 50+ speakers and dozens of artists and creators from all over the world.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 22: Techstars Accelerator, Filecoin Base Camp, HackFS, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-22/</link>
+            <pubDate>Wed, 14 Jul 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-22/</guid>
+            <description>Announcing the Filecoin Techstars Accelerator, Starling Labs featured on BloombergTV, SNARKs website launch, and more!</description>
+        </item>
+        
+        <item>
+            <title>Filecoin zk-SNARKs: Zero Knowledge — but a Lot of Zero Knowledge</title>
+            <link>https://filecoin.io/blog/posts/filecoin-zk-snarks-zero-knowledge-but-a-lot-of-zero-knowledge/</link>
+            <pubDate>Tue, 13 Jul 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-zk-snarks-zero-knowledge-but-a-lot-of-zero-knowledge/</guid>
+            <description>CryptoComputeLab created a beautiful zk-SNARKs for the world minisite, showcasing that Filecoin is the largest deployed zk-SNARK network to date and highlighting the key improvements that allowed a deployment of this scale.</description>
+        </item>
+        
+        <item>
+            <title>More than just Storage: Business Opportunities on Filecoin</title>
+            <link>https://filecoin.io/blog/posts/more-than-storage-business-opportunities-on-filecoin/</link>
+            <pubDate>Tue, 06 Jul 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/more-than-storage-business-opportunities-on-filecoin/</guid>
+            <description>Exploring Web2 and Web3 business opportunities for the Filecoin network beyond storage, with ZX Zhang.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Quadratic Funding Grant Round-1 at DoraHacks</title>
+            <link>https://filecoin.io/blog/posts/filecoin-quadratic-funding-grant-round-1-at-dorahacks/</link>
+            <pubDate>Thu, 01 Jul 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-quadratic-funding-grant-round-1-at-dorahacks/</guid>
+            <description>Protocol Labs is sponsoring a HackerLink Grant via DoraHacks to fund open source developer  projects via donation, so that these projects can develop further into a startup in the Filecoin ecosystem. </description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 21: Wave 8 Dev Grants, Browsers 3000 Hackathon, ETHOdyssey, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-21/</link>
+            <pubDate>Wed, 30 Jun 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-21/</guid>
+            <description>Welcome to Filecoin News 21!</description>
+        </item>
+        
+        <item>
+            <title>The Evolution of a Lotus Node</title>
+            <link>https://filecoin.io/blog/posts/the-evolution-of-a-lotus-node/</link>
+            <pubDate>Tue, 22 Jun 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/the-evolution-of-a-lotus-node/</guid>
+            <description>A look into the past, present, and future of a Lotus node from the Retrieval Market Builders Mini-Summit.</description>
+        </item>
+        
+        <item>
+            <title>OpenSea stores NFTs with IPFS and Filecoin</title>
+            <link>https://filecoin.io/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/</link>
+            <pubDate>Thu, 17 Jun 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/opensea-decentralizes-and-persists-nft-storage-with-ipfs-and-filecoin/</guid>
+            <description>OpenSea recently launched a feature to “freeze” NFT metadata, enabling NFT creators to properly decentralize their NFTs using IPFS and Filecoin.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 20: HackMoney, Web3 Weekend, Starling Lab, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-20/</link>
+            <pubDate>Wed, 16 Jun 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-20/</guid>
+            <description>Welcome to Filecoin News 20!</description>
+        </item>
+        
+        <item>
+            <title>Slingshot Phase 2.3 Recap</title>
+            <link>https://filecoin.io/blog/posts/slingshot-phase-2.3-recap/</link>
+            <pubDate>Tue, 15 Jun 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/slingshot-phase-2.3-recap/</guid>
+            <description>The Slingshot Phase 2.3 Closing Ceremony on June 9th closed what has been one of the most productive phases of the Slingshot Competition yet. Check out this post for a full recap.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin v13 HyperDrive AMA 1 Recap</title>
+            <link>https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-ama-1-recap/</link>
+            <pubDate>Mon, 14 Jun 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-ama-1-recap/</guid>
+            <description>On June 8th, Filecoin hosted an AMA answering 25+ questions on the network upgrade, sealing, onboarding new storage deals and more. </description>
+        </item>
+        
+        <item>
+            <title>Starling Lab: Establishing Trust for Humanity’s Data</title>
+            <link>https://filecoin.io/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/</link>
+            <pubDate>Thu, 10 Jun 2021 04:02:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/starling-lab-establishing-trust-for-humanity-s-data/</guid>
+            <description>Announcing the launch of Starling Lab, a commitment to continue building the frameworks required to endow humanity’s most vital digital information with trust.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Case Study: Starling Lab</title>
+            <link>https://filecoin.io/blog/posts/case-study-starling-lab/</link>
+            <pubDate>Thu, 10 Jun 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/case-study-starling-lab/</guid>
+            <description>Starling Lab is the home to the Starling Framework for Data Integrity, a comprehensive set of tools empowering organizations to securely capture, store and verify human history leveraging technologies like Filecoin.</description>
+        </item>
+        
+        <item>
+            <title>IPFS, Filecoin, and ‘Content Persistence’</title>
+            <link>https://filecoin.io/blog/posts/ipfs-filecoin-and-content-persistence/</link>
+            <pubDate>Thu, 03 Jun 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/ipfs-filecoin-and-content-persistence/</guid>
+            <description>The value of content persistence for the information era, and the role IPFS and Filecoin play.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 19: Filecoin v13 &#39;Hyperdrive&#39;, Baseline Sustainability, Chainsafe, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-19/</link>
+            <pubDate>Wed, 02 Jun 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-19/</guid>
+            <description>Welcome to Filecoin News 19!</description>
+        </item>
+        
+        <item>
+            <title>Filecoin v13 ‘HyperDrive’ Network Upgrade Unlocks 10-25x Increase in Storage Onboarding</title>
+            <link>https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-10-25x-increase-in-storage-onboarding/</link>
+            <pubDate>Thu, 27 May 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-v13-hyperdrive-network-upgrade-unlocks-10-25x-increase-in-storage-onboarding/</guid>
+            <description>Today, we’re excited to announce that the Filecoin v13 ‘HyperDrive’ Network upgrade coming in just a few weeks will unlock a 10-25x increase in storage onboarding rate* due to innovations in Filecoin Proofs system (*depending on how miners take advantage of the new aggregation limits) !</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Network Crosses Baseline Sustainability Target for First Time</title>
+            <link>https://filecoin.io/blog/posts/filecoin-network-crosses-baseline-sustainability-target-for-first-time/</link>
+            <pubDate>Wed, 19 May 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-network-crosses-baseline-sustainability-target-for-first-time/</guid>
+            <description>This article provides an update on the Filecoin x BlockScience research collaboration, denoting a significant milestone for the Filecoin project. It was first published by Blockscience here.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Frontier Accelerator Demo Day: DeFi &amp; Consumer Tech </title>
+            <link>https://filecoin.io/blog/posts/longhash-ventures-demo-day-defi-consumer-tech/</link>
+            <pubDate>Tue, 18 May 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/longhash-ventures-demo-day-defi-consumer-tech/</guid>
+            <description>A look at the DeFi and consumer tech startups from Filecoin Frontier Accelerator demo day: Atomica, Ownership Labs, Sinso Technology, and Vera AI.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 18: Web3 Weekend, Launchpad Accelerator, Frontier Accelerator Demo Day, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-18/</link>
+            <pubDate>Tue, 18 May 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-18/</guid>
+            <description>Welcome to Filecoin News 18!</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Frontier Accelerator Demo Day: NFT and Media Startups</title>
+            <link>https://filecoin.io/blog/posts/longhash-ventures-demo-day-nft-and-media-startups/</link>
+            <pubDate>Thu, 13 May 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/longhash-ventures-demo-day-nft-and-media-startups/</guid>
+            <description>A look at the NFT and media startups from Filecoin Frontier Accelerator demo day: Curio, Flame, Huddle 01, Myel, NonEntropy Tech, Numbers, and OP Games.</description>
+        </item>
+        
+        <item>
+            <title>Wolfram Blockchain Labs Expanding Storage Functionality with IPFS &amp; Filecoin for Dapp Development </title>
+            <link>https://filecoin.io/blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/</link>
+            <pubDate>Wed, 12 May 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/wolfram-blockchain-labs-expanding-storage-functionality-with-ipfs-filecoin-for-dapp-development/</guid>
+            <description>WBL is integrating their distributed ledger technology platform with IPFS and Filecoin to add new decentralized functionality and expanded storage to their existing blockchain features.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 17: Launchpad Accelerator II, Frontier Accelerator Demo Day, MetaMask, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-17/</link>
+            <pubDate>Wed, 05 May 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-17/</guid>
+            <description>Welcome to Filecoin News 17!</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Network v12</title>
+            <link>https://filecoin.io/blog/posts/filecoin-network-v12/</link>
+            <pubDate>Tue, 04 May 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-network-v12/</guid>
+            <description>On April 29th, 2021, the Filecoin network upgraded to version 12.</description>
+        </item>
+        
+        <item>
+            <title>Introducing NFT.Storage: Free Decentralized Storage for NFTs</title>
+            <link>https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/</link>
+            <pubDate>Thu, 29 Apr 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/</guid>
+            <description>NFT.Storage lets users store their NFT content and metadata seamlessly and securely with IPFS and Filecoin.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 16: Filecoin Launchpad Accelerator II, Filecoin Frontier Accelerator Demo Day, Scaling Ethereum and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-16/</link>
+            <pubDate>Wed, 21 Apr 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-16/</guid>
+            <description>Welcome to Filecoin News 16!</description>
+        </item>
+        
+        <item>
+            <title>FilRep.io - A Filecoin Miner Reputation System v1 by Digital Mob</title>
+            <link>https://filecoin.io/blog/posts/filrep.io-a-filecoin-miner-reputation-system-v1-by-digital-mob/</link>
+            <pubDate>Thu, 15 Apr 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filrep.io-a-filecoin-miner-reputation-system-v1-by-digital-mob/</guid>
+            <description> Filrep.io helps storage clients answer “How can I find the best miners to make storage and retrieval deals with?” by keeping track of storage miner reliability and performance.</description>
+        </item>
+        
+        <item>
+            <title>VideoCoin and Filecoin to Power the Video NFT Market</title>
+            <link>https://filecoin.io/blog/posts/videocoin-and-filecoin-to-power-the-video-nft-market/</link>
+            <pubDate>Fri, 09 Apr 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/videocoin-and-filecoin-to-power-the-video-nft-market/</guid>
+            <description>The VideoCoin Network commences integration with Filecoin to offer platform optimized for Video NFTs.</description>
+        </item>
+        
+        <item>
+            <title>Block Dream Fund launches $10m fund to support the Filecoin Ecosystem</title>
+            <link>https://filecoin.io/blog/posts/block-dream-fund-launches-10m-fund-to-support-the-filecoin-ecosystem/</link>
+            <pubDate>Thu, 08 Apr 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/block-dream-fund-launches-10m-fund-to-support-the-filecoin-ecosystem/</guid>
+            <description>OKEx’s newly founded Block Dream Fund announces a collaboration with the Filecoin Network. </description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 15: MetaMask Preview, Filecoin &amp; Chainlink Integration, Truffle&#39;s Filecoin Box, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-15/</link>
+            <pubDate>Wed, 07 Apr 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-15/</guid>
+            <description>Welcome to Filecoin News 15!</description>
+        </item>
+        
+        <item>
+            <title>Truffle Suite Launches NFT Development Template with Filecoin Box</title>
+            <link>https://filecoin.io/blog/posts/truffle-suite-launches-nft-development-template-with-filecoin-box/</link>
+            <pubDate>Wed, 31 Mar 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/truffle-suite-launches-nft-development-template-with-filecoin-box/</guid>
+            <description>Filecoin Box includes everything a developer needs to get started with decentralized storage and markets for NFTs, powered by Truffle Ganache.</description>
+        </item>
+        
+        <item>
+            <title>Decentralized Data Markets with Filehive</title>
+            <link>https://filecoin.io/blog/posts/decentralized-data-markets-with-filehive/</link>
+            <pubDate>Tue, 30 Mar 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/decentralized-data-markets-with-filehive/</guid>
+            <description>Solving the problem of data availability and monetization with Filehive, built on top of Filecoin.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin and Chainlink Integration to Bring Advanced Decentralized Storage Solutions to Web 3.0 Developers</title>
+            <link>https://filecoin.io/blog/posts/filecoin-and-chainlink-integration/</link>
+            <pubDate>Wed, 24 Mar 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-and-chainlink-integration/</guid>
+            <description>We&#39;re excited to announce that Chainlink—the industry leading decentralized oracle solution—is integrating with Filecoin—the world’s largest open-source, decentralized storage network— to enable bidirectional connection between the Filecoin Network and smart contract enabled blockchains such as Ethereum.</description>
+        </item>
+        
+        <item>
+            <title>Livepeer x Filecoin Co-Mining Pilot</title>
+            <link>https://filecoin.io/blog/posts/livepeer-x-filecoin-co-mining-pilot/</link>
+            <pubDate>Tue, 23 Mar 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/livepeer-x-filecoin-co-mining-pilot/</guid>
+            <description>Co-locating decentralized video transcoding with decentralized storage.</description>
+        </item>
+        
+        <item>
+            <title>Decrypt Collaborates with Filecoin for its Inaugural Token Season</title>
+            <link>https://filecoin.io/blog/posts/decrypt-collaborates-with-filecoin-for-its-inaugural-token-season/</link>
+            <pubDate>Thu, 18 Mar 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/decrypt-collaborates-with-filecoin-for-its-inaugural-token-season/</guid>
+            <description>Filecoin is sponsoring Decrypt’s first token season, which will let Decrypt token holders swap their tokens for limited edition NFTs.</description>
+        </item>
+        
+        <item>
+            <title>Incident Report: Accurate Bookkeeping with Lotus APIs</title>
+            <link>https://filecoin.io/blog/posts/incident-report-accurate-bookkeeping-with-lotus-apis/</link>
+            <pubDate>Thu, 18 Mar 2021 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/incident-report-accurate-bookkeeping-with-lotus-apis/</guid>
+            <description>On March 18, the Lotus team received a report from an exchange about the incorrect use of a Lotus API for evaluating transfers/deposits in the Filecoin Network. The team investigated and found no issues with the Filecoin network or the RPC API code. The exchange in question has already reverted the incorrect transaction (there was no loss of funds) and is reviewing their deposit processing logic to correct their API usage.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 14: Gitcoin GR9 Hackathon, Chainlink Hackathon, NFT Hackathon, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-14/</link>
+            <pubDate>Wed, 17 Mar 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-14/</guid>
+            <description>Welcome to Filecoin News 14!</description>
+        </item>
+        
+        <item>
+            <title>The Next Phase of Fleek with Filecoin</title>
+            <link>https://filecoin.io/blog/posts/the-next-phase-of-fleek-with-filecoin/</link>
+            <pubDate>Thu, 11 Mar 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/the-next-phase-of-fleek-with-filecoin/</guid>
+            <description>Fleek’s support of Filecoin archiving for websites and dapps pushes the protocol further down the road of decentralization and permanence.</description>
+        </item>
+        
+        <item>
+            <title>How storage and retrieval deals work on Filecoin</title>
+            <link>https://filecoin.io/blog/posts/how-storage-and-retrieval-deals-work-on-filecoin/</link>
+            <pubDate>Tue, 09 Mar 2021 17:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/how-storage-and-retrieval-deals-work-on-filecoin/</guid>
+            <description>A short article on how storage and retrieval deals work in Filecoin.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News 13: Filecoin Launchpad Accelerator, NFT Hackathon, Space Beta, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-13/</link>
+            <pubDate>Wed, 03 Mar 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-13/</guid>
+            <description>Welcome to Filecoin News 13!</description>
+        </item>
+        
+        <item>
+            <title>Filecoin for Treasuries, Wills, Financial Access, and more</title>
+            <link>https://filecoin.io/blog/posts/filecoin-for-treasuries-wills-financial-access-and-more/</link>
+            <pubDate>Tue, 02 Mar 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-for-treasuries-wills-financial-access-and-more/</guid>
+            <description>A look at the startups from Filecoin Launchpad Demo Day under the “Finance” category.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin for Content, DevOps, Trust, and more</title>
+            <link>https://filecoin.io/blog/posts/filecoin-for-content-devops-trust-and-more/</link>
+            <pubDate>Thu, 25 Feb 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-for-content-devops-trust-and-more/</guid>
+            <description>A look at the startups from Filecoin Launchpad Demo Day under the “Enterprise” category.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin News, Issue 12: Fenbushi Ecosystem Fund, Textile, Starling Framework, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-news-12/</link>
+            <pubDate>Wed, 24 Feb 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-news-12/</guid>
+            <description>Welcome to the twelfth issue of Filecoin News!</description>
+        </item>
+        
+        <item>
+            <title>Filecoin for Media, Video, Gaming, and more</title>
+            <link>https://filecoin.io/blog/posts/filecoin-for-media-video-gaming-and-more/</link>
+            <pubDate>Tue, 23 Feb 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-for-media-video-gaming-and-more/</guid>
+            <description>A look at the startups from Filecoin Launchpad Demo Day under the “Social” category.</description>
+        </item>
+        
+        <item>
+            <title>Reputation Systems in Filecoin</title>
+            <link>https://filecoin.io/blog/posts/reputation-systems-in-filecoin/</link>
+            <pubDate>Tue, 16 Feb 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/reputation-systems-in-filecoin/</guid>
+            <description>The role reputation plays in the maintenance of the Filecoin network.</description>
+        </item>
+        
+        <item>
+            <title>The Future of DeFi with Filecoin</title>
+            <link>https://filecoin.io/blog/posts/the-future-of-defi-with-filecoin/</link>
+            <pubDate>Fri, 12 Feb 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/the-future-of-defi-with-filecoin/</guid>
+            <description>The Ethereum DeFi ecosystem is interoperating with Filecoin to supercharge the future of DeFi.</description>
+        </item>
+        
+        <item>
+            <title>Tracking 78 Days of the US Presidential Election on Filecoin</title>
+            <link>https://filecoin.io/blog/posts/tracking-78-days-of-the-us-presidential-election-on-filecoin/</link>
+            <pubDate>Wed, 10 Feb 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/tracking-78-days-of-the-us-presidential-election-on-filecoin/</guid>
+            <description>The Starling Framework and Adobe’s Content Authenticity Initiative launch a photo archive documenting November 2020 to January 2021.</description>
+        </item>
+        
+        <item>
+            <title>The Future of DataDAOs</title>
+            <link>https://filecoin.io/blog/posts/the-future-of-datadaos/</link>
+            <pubDate>Thu, 04 Feb 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/the-future-of-datadaos/</guid>
+            <description>Filecoin&#39;s role in expanding the potential of DAOs within the DeFi ecosystem and beyond.</description>
+        </item>
+        
+        <item>
+            <title>Welcome Venus to the Filecoin mainnet!</title>
+            <link>https://filecoin.io/blog/posts/welcome-venus-to-the-filecoin-mainnet/</link>
+            <pubDate>Tue, 02 Feb 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/welcome-venus-to-the-filecoin-mainnet/</guid>
+            <description>Today we are excited to announce that at epoch 455673 (Jan 30th, 2021, 03:16 UTC), miner f0128788 running Venus v0.9.0, mined its very first block on mainnet!</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Plus: Aligning Participants with Useful Storage</title>
+            <link>https://filecoin.io/blog/posts/filecoin-plus-aligning-participants-with-useful-storage/</link>
+            <pubDate>Thu, 28 Jan 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-plus-aligning-participants-with-useful-storage/</guid>
+            <description>Filecoin is a global marketplace of storage and its related services, matching a diverse set of storage providers with demand for secure distributed cloud storage services. As a blockchain network, Filecoin provides a robust, decentralized, verifiable platform for anyone to store and interact with data.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin MinerX Fellowship Program</title>
+            <link>https://filecoin.io/blog/posts/filecoin-minerx-fellowship-program/</link>
+            <pubDate>Thu, 21 Jan 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-minerx-fellowship-program/</guid>
+            <description>The MinerX Fellowship engages small and medium-sized miners distributed across the world to help improve Filecoin’s experience and productivity in the early stages of the network. MinerX is designed to build a solid foundation of geographically-diverse, reliable, long-term storage options to accelerate the development of tools and services in the Filecoin ecosystem.</description>
+        </item>
+        
+        <item>
+            <title>Getting Started With the Infura Filecoin API</title>
+            <link>https://filecoin.io/blog/posts/getting-started-with-the-infura-filecoin-api/</link>
+            <pubDate>Tue, 19 Jan 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/getting-started-with-the-infura-filecoin-api/</guid>
+            <description>Filecoin nodes expose APIs that make it easy for developers to interact with and query the Filecoin blockchain. Learn how the Infura Filecoin API simplifies the process even further!</description>
+        </item>
+        
+        <item>
+            <title>Resolving the Dec 19 Chain Halt: Cause, Impact, &amp; Take Aways</title>
+            <link>https://filecoin.io/blog/posts/resolving-the-dec-19-chain-halt-cause-impact-take-aways/</link>
+            <pubDate>Fri, 15 Jan 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/resolving-the-dec-19-chain-halt-cause-impact-take-aways/</guid>
+            <description>On Dec 19th, 2020, the Filecoin network experienced a chain halt. This post describes the issue encountered, the outage impact, the rapid response, and what’s next.</description>
+        </item>
+        
+        <item>
+            <title>The Fenbushi Ecosystem Fund for Filecoin Development</title>
+            <link>https://filecoin.io/blog/posts/the-fenbushi-ecosystem-fund-for-filecoin-development/</link>
+            <pubDate>Mon, 11 Jan 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/the-fenbushi-ecosystem-fund-for-filecoin-development/</guid>
+            <description>An overview of the recently-announced Fenbushi Fund to accelerate Filecoin development and growth.</description>
+        </item>
+        
+        <item>
+            <title>EIP-1559 in Filecoin</title>
+            <link>https://filecoin.io/blog/posts/eip-1559-in-filecoin/</link>
+            <pubDate>Tue, 05 Jan 2021 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/eip-1559-in-filecoin/</guid>
+            <description>Filecoin incorporates the EIP-1559 transaction pricing model to make transaction processing on the network more efficient and easier to navigate. This post details the promising impact this decision has had over the course of Filecoin&#39;s mainnet launch.</description>
+        </item>
+        
+        <item>
+            <title>A Look Back at Filecoin in 2020</title>
+            <link>https://filecoin.io/blog/posts/a-look-back-at-filecoin-in-2020/</link>
+            <pubDate>Wed, 30 Dec 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/a-look-back-at-filecoin-in-2020/</guid>
+            <description>Welcoming 2021 by taking a moment to celebrate the Filecoin community’s achievements in 2020.</description>
+        </item>
+        
+        <item>
+            <title>Empowering Filecoin Startups</title>
+            <link>https://filecoin.io/blog/posts/empowering-filecoin-startups/</link>
+            <pubDate>Wed, 30 Dec 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/empowering-filecoin-startups/</guid>
+            <description>Highlights from the Storage Market Summit with Filecoin and ETH Global on Dec. 11</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Community Highlights: Slate</title>
+            <link>https://filecoin.io/blog/posts/filecoin-community-highlights-slate/</link>
+            <pubDate>Tue, 29 Dec 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-community-highlights-slate/</guid>
+            <description>Slate is the first storage application designed to encourage collaboration and research across a distributed network.</description>
+        </item>
+        
+        <item>
+            <title>Investing in the Filecoin Ecosystem</title>
+            <link>https://filecoin.io/blog/posts/investing-in-the-filecoin-ecosystem/</link>
+            <pubDate>Mon, 28 Dec 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/investing-in-the-filecoin-ecosystem/</guid>
+            <description>Highlights from the Storage Market Summit with Filecoin and ETH Global on Dec. 11</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Ecosystem Growth &amp; Innovation</title>
+            <link>https://filecoin.io/blog/posts/filecoin-ecosystem-growth-innovation/</link>
+            <pubDate>Sat, 26 Dec 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-ecosystem-growth-innovation/</guid>
+            <description>Highlights from the Storage Market Summit with Filecoin and ETH Global on Dec. 11</description>
+        </item>
+        
+        <item>
+            <title>Meet the Filecoin Foundation</title>
+            <link>https://filecoin.io/blog/posts/meet-the-filecoin-foundation/</link>
+            <pubDate>Thu, 24 Dec 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/meet-the-filecoin-foundation/</guid>
+            <description>Meet the Filecoin Foundation and the Filecoin Foundation for the Decentralized Web, two organizations committed to driving forward the growth and development of the network.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Dev Grants Waves 4-5 and Gitcoin Grants</title>
+            <link>https://filecoin.io/blog/posts/filecoin-dev-grants-waves-4-5-and-gitcoin-grants/</link>
+            <pubDate>Wed, 23 Dec 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-dev-grants-waves-4-5-and-gitcoin-grants/</guid>
+            <description>Announcing Filecoin Dev Grants Wave 4 and 5 Projects and Filecoin’s participation in the current Gitcoin Grants Round 8 with 2 categories dedicated to Filecoin including Miner Tooling Grant RFPs and Apollo Filecoin Dapps. Wave 6 and Gitcoin proposals are due January 15th at 23:59 PDT for priority consideration. Apply for a Filecoin dev grant!</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Network Economics</title>
+            <link>https://filecoin.io/blog/posts/filecoin-network-economics/</link>
+            <pubDate>Tue, 22 Dec 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-network-economics/</guid>
+            <description>Highlights from the Storage Market Summit with Filecoin and ETH Global on Dec. 11</description>
+        </item>
+        
+        <item>
+            <title>From Storage to Justice</title>
+            <link>https://filecoin.io/blog/posts/from-storage-to-justice/</link>
+            <pubDate>Mon, 21 Dec 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/from-storage-to-justice/</guid>
+            <description>The role of Filecoin and distributed storage in the preservation of justice on a global scale.</description>
+        </item>
+        
+        <item>
+            <title>Meet Filecoin’s Collaborators: Jonathan Dotan, Starling Framework for Data Integrity</title>
+            <link>https://filecoin.io/blog/posts/meet-filecoin-s-collaborators-jonathan-dotan-starling-framework-for-data-integrity/</link>
+            <pubDate>Fri, 18 Dec 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/meet-filecoin-s-collaborators-jonathan-dotan-starling-framework-for-data-integrity/</guid>
+            <description>At a time when the internet is overrun with misinformation and valuable data is intentionally obscured, it’s more important than ever that we harness technology to capture, verify, and preserve our history.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Collaborative Resource and Risk Management</title>
+            <link>https://filecoin.io/blog/posts/filecoin-collaborative-resource-and-risk-management/</link>
+            <pubDate>Tue, 15 Dec 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-collaborative-resource-and-risk-management/</guid>
+            <description>Highlights from the Storage Market Summit with Filecoin and ETH Global on Dec. 11</description>
+        </item>
+        
+        <item>
+            <title>Understanding Filecoin Circulating Supply</title>
+            <link>https://filecoin.io/blog/posts/understanding-filecoin-circulating-supply/</link>
+            <pubDate>Thu, 10 Dec 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/understanding-filecoin-circulating-supply/</guid>
+            <description>This blog post aims to unpack how Filecoin tokens enter circulating supply, provide more insights on how various stakeholders take part in its economy, and shed light on how one should approach and think about Filecoin token economics.</description>
+        </item>
+        
+        <item>
+            <title>Huobi Group Launches Filecoin Incubation Center</title>
+            <link>https://filecoin.io/blog/posts/huobi-group-launches-filecoin-incubation-center/</link>
+            <pubDate>Sat, 05 Dec 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/huobi-group-launches-filecoin-incubation-center/</guid>
+            <description>Huobi Group and Protocol labs have partnered to launch the Huobi Filecoin Incubation Center with a $10M USD fund.</description>
+        </item>
+        
+        <item>
+            <title>A Milestone in Storage: Filecoin Surpasses 1 Exbibyte</title>
+            <link>https://filecoin.io/blog/posts/a-milestone-in-storage-filecoin-surpasses-1-exbibyte/</link>
+            <pubDate>Tue, 24 Nov 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/a-milestone-in-storage-filecoin-surpasses-1-exbibyte/</guid>
+            <description>The Filecoin network has just surpassed 1 exbibyte of storage fewer than four weeks after launch.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Features: Slashing</title>
+            <link>https://filecoin.io/blog/posts/filecoin-features-slashing/</link>
+            <pubDate>Tue, 17 Nov 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-features-slashing/</guid>
+            <description>Filecoin’s combination of cryptographic and economic mechanisms are designed to align participants’ incentives with the goals and mission of the network. With block reward and deal payment as the main incentive drivers, slashing is the main form of mitigating bad behavior when participants deviate from the promises they made to the network.</description>
+        </item>
+        
+        <item>
+            <title>Highlights from Shanghai Blockchain Week</title>
+            <link>https://filecoin.io/blog/posts/highlights-from-shanghai-blockchain-week/</link>
+            <pubDate>Mon, 09 Nov 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/highlights-from-shanghai-blockchain-week/</guid>
+            <description>Looking back at our week in Shanghai with the awesome Filecoin community in China.</description>
+        </item>
+        
+        <item>
+            <title>Introducing Slingshot Phase 2</title>
+            <link>https://filecoin.io/blog/posts/introducing-slingshot-phase-2/</link>
+            <pubDate>Mon, 09 Nov 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/introducing-slingshot-phase-2/</guid>
+            <description>In this blog post, we are introducing Phase 2 of the Slingshot competition. If you are interested in earning FIL rewards for storing valuable data on the Filecoin network, Slingshot is for you!</description>
+        </item>
+        
+        <item>
+            <title>The Intersection of Filecoin and DeFi</title>
+            <link>https://filecoin.io/blog/posts/the-intersection-of-filecoin-and-defi/</link>
+            <pubDate>Fri, 06 Nov 2020 07:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/the-intersection-of-filecoin-and-defi/</guid>
+            <description>During Filecoin Liftoff Week, Colin Evran of Filecoin led a conversation with Aave founder and CEO Stani Kulechov, Ren Protocol CTO Loong Wang, and ConsenSys Codefi Head of Product Corbin Page to discuss Filecoin’s position in the DeFi ecosystem. </description>
+        </item>
+        
+        <item>
+            <title>Slingshot Phase 1 Recap</title>
+            <link>https://filecoin.io/blog/posts/slingshot-phase-1-recap/</link>
+            <pubDate>Thu, 05 Nov 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/slingshot-phase-1-recap/</guid>
+            <description>Phase 1 of Space Race 2: Slingshot is in the books! Slingshot is a two-part community competition for storage clients and developers that rewards the storage of real, valuable, and usable data onto the Filecoin network. The goal is to onboard 10PiB of valuable data to the Filecoin network. Teams are rewarded for storing more useful data, as well as building interesting, novel, and functional user interfaces (UIs) or applications associated with the data they store.</description>
+        </item>
+        
+        <item>
+            <title>回顾Slingshot第一阶段</title>
+            <link>https://filecoin.io/blog/posts/slingshot.zh-cn-1/</link>
+            <pubDate>Thu, 05 Nov 2020 00:06:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/slingshot.zh-cn-1/</guid>
+            <description>太空竞赛2的第一阶段Slingshot已经进入尾声! Slingshot是一个针对存储用户和开发者的社区竞赛，以奖励大家将真实、有价值、可用的数据存储到Filecoin网络上，该竞赛共分为两个部分。其目标是将10PiB有价值的数据存储到Filecoin网络。团队将通过存储更多有用的数据、创建与他们存储的数据相关有趣、新颖、具有功能性的用户界面（UI）或应用程序而获得奖励。</description>
+        </item>
+        
+        <item>
+            <title>The Journey to Filecoin Mainnet Liftoff</title>
+            <link>https://filecoin.io/blog/posts/the-journey-to-filecoin-mainnet-liftoff/</link>
+            <pubDate>Thu, 29 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/the-journey-to-filecoin-mainnet-liftoff/</guid>
+            <description>After years of work, the Filecoin mainnet is officially live!🚀</description>
+        </item>
+        
+        <item>
+            <title>Looking Back on Filecoin Liftoff Week</title>
+            <link>https://filecoin.io/blog/posts/looking-back-on-filecoin-liftoff-week/</link>
+            <pubDate>Mon, 26 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/looking-back-on-filecoin-liftoff-week/</guid>
+            <description>Last week was packed with talks, demos, workshops, and more for Filecoin Liftoff Week.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Liftoff Week Closing AMA</title>
+            <link>https://filecoin.io/blog/posts/filecoin-liftoff-week-closing-ama/</link>
+            <pubDate>Sat, 24 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-liftoff-week-closing-ama/</guid>
+            <description>To conclude Filecoin Liftoff Week, the Filecoin Team hosted a live AMA with the Filecoin community. </description>
+        </item>
+        
+        <item>
+            <title>Liftoff Day 5 Recap: On the Shoulders of Giants</title>
+            <link>https://filecoin.io/blog/posts/liftoff-day-5-recap-on-the-shoulders-of-giants/</link>
+            <pubDate>Fri, 23 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/liftoff-day-5-recap-on-the-shoulders-of-giants/</guid>
+            <description>Today we wrapped up day 5 at Filecoin Liftoff Week - our final day. We heard from Filecoin founder Juan Benet, Ethereum co-founder Joe Lubin, Blockchain Association Executive Director Kristin Smith, Hyperledger Executive Director Brian Behlendorf, Head of Blockchain and DLT at the World Economic Forum Sheila Warren, and more.</description>
+        </item>
+        
+        <item>
+            <title>Bridging the Filecoin and Ethereum Communities</title>
+            <link>https://filecoin.io/blog/posts/bridging-the-filecoin-and-ethereum-communities/</link>
+            <pubDate>Thu, 22 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/bridging-the-filecoin-and-ethereum-communities/</guid>
+            <description>Building a decentralized data and transaction infrastructure for the future of the internet depends upon interoperation between decentralized protocols like Ethereum, Filecoin, and IPFS.</description>
+        </item>
+        
+        <item>
+            <title>How Filecoin Supports Video Storage</title>
+            <link>https://filecoin.io/blog/posts/how-filecoin-supports-video-storage/</link>
+            <pubDate>Thu, 22 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/how-filecoin-supports-video-storage/</guid>
+            <description>Since its inception, Filecoin’s mission has been to store the world’s most valuable information. Today, video is a prominent source of communication and content on the web.</description>
+        </item>
+        
+        <item>
+            <title>Liftoff Day 4 Recap: Storage for a Better Future</title>
+            <link>https://filecoin.io/blog/posts/liftoff-day-4-recap-storage-for-a-better-future/</link>
+            <pubDate>Thu, 22 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/liftoff-day-4-recap-storage-for-a-better-future/</guid>
+            <description>Today we wrapped up day 4 at Filecoin Liftoff Week. We heard from builders, entrepreneurs, and activists across the Web3 ecosystem and beyond, including Internet Archive founder Brewster Kahle, Pinata’s CTO Matt Ober and CEO Kyle Tut, Livepeer founder Doug Petkanics, Carbon Five principal developer Hannah Howard, and Jonathan Dotan of the Stanford Center for Blockchain Research, and more.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Liftoff Week AMA</title>
+            <link>https://filecoin.io/blog/posts/filecoin-liftoff-week-ama/</link>
+            <pubDate>Wed, 21 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-liftoff-week-ama/</guid>
+            <description>As a part of Filecoin Liftoff Week, the Filecoin team are hosting live AMAs with the Filecoin community. </description>
+        </item>
+        
+        <item>
+            <title>Liftoff Day 3 Recap: The Holy Grail of the Blockchain Ecosystem</title>
+            <link>https://filecoin.io/blog/posts/liftoff-day-3-recap-the-holy-grail-of-the-blockchain-ecosystem/</link>
+            <pubDate>Wed, 21 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/liftoff-day-3-recap-the-holy-grail-of-the-blockchain-ecosystem/</guid>
+            <description>Today we wrapped up day 3 at Filecoin Liftoff Week. We heard from developers across the Web3 ecosystem, including Ethereum co-founder Joe Lubin, Filecoin product lead Pooja Shah, Infura senior engineer Tim Myers, Aave CEO Stani Kulechov, and Ren CTO Loong Wang.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Implementations Progress Update</title>
+            <link>https://filecoin.io/blog/posts/filecoin-implementations-progress-update/</link>
+            <pubDate>Tue, 20 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-implementations-progress-update/</guid>
+            <description>One of Filecoin’s launch goals has always been to have multiple independent protocol implementations to help secure the network at launch.</description>
+        </item>
+        
+        <item>
+            <title>Liftoff Day 1 Recap</title>
+            <link>https://filecoin.io/blog/posts/liftoff-day-1-recap/</link>
+            <pubDate>Tue, 20 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/liftoff-day-1-recap/</guid>
+            <description>Yesterday we wrapped up Day 1 at Filecoin Liftoff Week. We heard from Filecoin founder, Juan Benet, Polychain Capital founder Olaf Carlson-Wee, Stanford Professor Dan Boneh, outside general counsel Marta Belcher, and more.</description>
+        </item>
+        
+        <item>
+            <title>Liftoff Day 2 Recap: Growing Filecoin’s Island Economy</title>
+            <link>https://filecoin.io/blog/posts/liftoff-day-2-recap-growing-filecoin-s-island-economy/</link>
+            <pubDate>Tue, 20 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/liftoff-day-2-recap-growing-filecoin-s-island-economy/</guid>
+            <description>Today we wrapped up day 2 at Filecoin Liftoff Week. We heard from mining experts across the Web3 ecosystem, including solo Filecoin miner Benjamin Hoesjbo, Node Factory CEO Belma Gutlic, IPFSMain Co-founder Neo Ge, Chainsafe lead engineer Elizabeth Binks, and many many more.</description>
+        </item>
+        
+        <item>
+            <title>Updates to the Filecoin Security Program</title>
+            <link>https://filecoin.io/blog/posts/updates-to-the-filecoin-security-program/</link>
+            <pubDate>Mon, 19 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/updates-to-the-filecoin-security-program/</guid>
+            <description>Building a strong Security Culture in the Filecoin project has been one of our core goals from the beginning of the project, from creating bleeding edge, researched, and evaluated mathematical proofs that set the foundation for the critical operations executed in the Filecoin Protocol (e.g. Proof of Replication &amp; Proof of Space Time), to building a culture of strong security habits, secure code development and testing, through working with multiple external security specialists, pentesters and researchers to audit our code and practices.</description>
+        </item>
+        
+        <item>
+            <title>Join us for Filecoin Liftoff on October 19-23 2020</title>
+            <link>https://filecoin.io/blog/posts/join-us-for-filecoin-liftoff-on-october-19-23-2020/</link>
+            <pubDate>Sat, 17 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/join-us-for-filecoin-liftoff-on-october-19-23-2020/</guid>
+            <description>The Filecoin Network is now LIVE! This marks the culmination of years of innovation and hard work, and we thank everyone who dedicated their time, ideas, and expertise to make Filecoin a reality.</description>
+        </item>
+        
+        <item>
+            <title>Learning to Store Data on Filecoin: Slingshot and Beyond</title>
+            <link>https://filecoin.io/blog/posts/learning-to-store-data-on-filecoin-slingshot-and-beyond/</link>
+            <pubDate>Fri, 16 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/learning-to-store-data-on-filecoin-slingshot-and-beyond/</guid>
+            <description>Over the last three weeks, members of the Filecoin community have participated in Phase 1 of the Slingshot competition, storing 450+ TiB of data through more than 350,000 storage deals on the network. </description>
+        </item>
+        
+        <item>
+            <title>Filecoin Mainnet is Live</title>
+            <link>https://filecoin.io/blog/posts/filecoin-mainnet-is-live/</link>
+            <pubDate>Thu, 15 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-mainnet-is-live/</guid>
+            <description>Today around 3pm UTC the Filecoin Mainnet went live! 🚀</description>
+        </item>
+        
+        <item>
+            <title>Miner&#39;s Guide to Liftoff</title>
+            <link>https://filecoin.io/blog/posts/miner-s-guide-to-liftoff/</link>
+            <pubDate>Wed, 14 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/miner-s-guide-to-liftoff/</guid>
+            <description>As we count down the final few hours of Space Race 2: Orbital Burn, here are some useful tips and FAQs to help miners transition into mainnet smoothly.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin just received a massive Spec upgrade!</title>
+            <link>https://filecoin.io/blog/posts/filecoin-just-received-a-massive-spec-upgrade/</link>
+            <pubDate>Tue, 13 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-just-received-a-massive-spec-upgrade/</guid>
+            <description>Over the last few months, we have made massive progress revamping the Filecoin Specification and its custom website! </description>
+        </item>
+        
+        <item>
+            <title>Filecoin Features: Block Rewards</title>
+            <link>https://filecoin.io/blog/posts/filecoin-features-block-rewards/</link>
+            <pubDate>Mon, 12 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-features-block-rewards/</guid>
+            <description>The Filecoin network boasts a unique economic design that aligns incentives among participants and rewards useful work by Filecoin miners.</description>
+        </item>
+        
+        <item>
+            <title>Introducing the Building Web3 Video Series</title>
+            <link>https://filecoin.io/blog/posts/introducing-the-building-web3-video-series/</link>
+            <pubDate>Fri, 09 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/introducing-the-building-web3-video-series/</guid>
+            <description>In just the past few months, dozens of new applications, services, and businesses utilizing web3 have come to life, leveraging Filecoin and IPFS in exciting ways.</description>
+        </item>
+        
+        <item>
+            <title>Valuable Datasets Being Stored through Filecoin Slingshot</title>
+            <link>https://filecoin.io/blog/posts/valuable-datasets-being-stored-through-filecoin-slingshot/</link>
+            <pubDate>Fri, 09 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/valuable-datasets-being-stored-through-filecoin-slingshot/</guid>
+            <description>Over the last two weeks, the Filecoin community has stored more than 170 TiB of valuable data through more than 200,000 storage deals on the Filecoin network.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Features: Gas Fees</title>
+            <link>https://filecoin.io/blog/posts/filecoin-features-gas-fees/</link>
+            <pubDate>Thu, 08 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-features-gas-fees/</guid>
+            <description>This is the latest installment in our series highlighting unique features of the Filecoin network. This post dives into gas fees – how they operate and why they’re important to the Filecoin network.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Frontier Accelerator launched by LongHash Ventures</title>
+            <link>https://filecoin.io/blog/posts/filecoin-frontier-accelerator-launched-by-longhash-ventures/</link>
+            <pubDate>Mon, 05 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-frontier-accelerator-launched-by-longhash-ventures/</guid>
+            <description>LongHash Ventures has just announced the launch of the Filecoin Frontier Accelerator, a 12 week program to fuel the growth of major projects on the world’s largest decentralized storage network.</description>
+        </item>
+        
+        <item>
+            <title>Meet The SR2 Slingshot Teams</title>
+            <link>https://filecoin.io/blog/posts/meet-the-sr2-slingshot-teams/</link>
+            <pubDate>Fri, 02 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/meet-the-sr2-slingshot-teams/</guid>
+            <description>We’re about a week into the Space Race 2 Slingshot competition, and it is off to an exciting start! So far, 370+ participants have made over 125,000 storage deals to store valuable data on the Filecoin network, competing for a potential 500,000 FIL prize pool.</description>
+        </item>
+        
+        <item>
+            <title>Space Race AMA #5 Summary</title>
+            <link>https://filecoin.io/blog/posts/space-race-ama-5-summary/</link>
+            <pubDate>Fri, 02 Oct 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/space-race-ama-5-summary/</guid>
+            <description>As a part of the Space Race events program, the Filecoin team are hosting weekly live AMA’s with the Filecoin community.</description>
+        </item>
+        
+        <item>
+            <title>Want to Learn More about Filecoin? Start here.</title>
+            <link>https://filecoin.io/blog/posts/want-to-learn-more-about-filecoin-start-here/</link>
+            <pubDate>Tue, 29 Sep 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/want-to-learn-more-about-filecoin-start-here/</guid>
+            <description>Just in time for back to school, we’re here to get you up to speed on all things Filecoin. </description>
+        </item>
+        
+        <item>
+            <title>Space Race AMA #4 Summary</title>
+            <link>https://filecoin.io/blog/posts/space-race-ama-4-summary/</link>
+            <pubDate>Mon, 28 Sep 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/space-race-ama-4-summary/</guid>
+            <description>As a part of the Space Race events program, the Filecoin team are hosting weekly live AMA’s with the Filecoin community. </description>
+        </item>
+        
+        <item>
+            <title>Announcing Mainnet Ignition &amp; Liftoff</title>
+            <link>https://filecoin.io/blog/posts/announcing-mainnet-ignition-liftoff/</link>
+            <pubDate>Sun, 27 Sep 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/announcing-mainnet-ignition-liftoff/</guid>
+            <description>The Filecoin network has made phenomenal progress over the last few months</description>
+        </item>
+        
+        <item>
+            <title>Slingshot Week One Recap</title>
+            <link>https://filecoin.io/blog/posts/slingshot-week-one-recap/</link>
+            <pubDate>Fri, 25 Sep 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/slingshot-week-one-recap/</guid>
+            <description>It’s been an exciting week with the kickoff of Filecoin Slingshot, a two-part competition for storage clients and developers to deploy their products to the testnet.</description>
+        </item>
+        
+        <item>
+            <title>Space Race AMA #3 Summary</title>
+            <link>https://filecoin.io/blog/posts/space-race-ama-3-summary/</link>
+            <pubDate>Sun, 20 Sep 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/space-race-ama-3-summary/</guid>
+            <description>As a part of the Space Race events program, the Filecoin team are hosting weekly live AMA’s with the Filecoin community.</description>
+        </item>
+        
+        <item>
+            <title>Spark University Hackathon Winners: Challenge Two</title>
+            <link>https://filecoin.io/blog/posts/spark-university-hackathon-winners-challenge-two/</link>
+            <pubDate>Wed, 16 Sep 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/spark-university-hackathon-winners-challenge-two/</guid>
+            <description>Now that the Spark University Hackathon has reached a conclusion, we’re shining a spotlight on the winners of the two challenges that Filecoin sponsored for the event!</description>
+        </item>
+        
+        <item>
+            <title>Announcing Space Race 2</title>
+            <link>https://filecoin.io/blog/posts/announcing-space-race-2/</link>
+            <pubDate>Sat, 12 Sep 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/announcing-space-race-2/</guid>
+            <description>For the past 3 weeks, miners across the community have been participating in the Filecoin Space Race to onboard as much storage as possible to the Testnet. </description>
+        </item>
+        
+        <item>
+            <title>Space Race AMA #2 Summary</title>
+            <link>https://filecoin.io/blog/posts/space-race-ama-2-summary/</link>
+            <pubDate>Thu, 10 Sep 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/space-race-ama-2-summary/</guid>
+            <description>As a part of the Space Race events program, on September 9th the Filecoin team hosted another live AMA with the Filecoin community, answering questions on Space Race, cryptoeconomics, Filecoin mining. Our engineering team also helped miners troubleshoot some common issues.</description>
+        </item>
+        
+        <item>
+            <title>Spark University Hackathon Winners: Challenge One</title>
+            <link>https://filecoin.io/blog/posts/spark-university-hackathon-winners-challenge-one/</link>
+            <pubDate>Tue, 08 Sep 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/spark-university-hackathon-winners-challenge-one/</guid>
+            <description>In June, we shared the news that Filecoin was participating as a challenge partner in the Spark University Hackathon, an eight-week online competition focused on the development of novel blockchain solutions.</description>
+        </item>
+        
+        <item>
+            <title>Space Race AMA Summary</title>
+            <link>https://filecoin.io/blog/posts/space-race-ama-summary/</link>
+            <pubDate>Thu, 03 Sep 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/space-race-ama-summary/</guid>
+            <description>As a part of the Space Race events program, the Filecoin team are hosting weekly live AMAs with the Filecoin community.</description>
+        </item>
+        
+        <item>
+            <title>Trusted Setup Complete!</title>
+            <link>https://filecoin.io/blog/posts/trusted-setup-complete/</link>
+            <pubDate>Fri, 28 Aug 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/trusted-setup-complete/</guid>
+            <description>At the end of last year, we successfully completed the first phase of our trusted setup also known as the “powers of tau” ceremony. At the end of July, we finished our second phase of the trusted setup – generating secure parameters for the 6 circuits that will be used for mainnet. Now, with both phases of our setup complete Filecoin’s final parameters for mainnet are available. Thank you to everyone who contributed!</description>
+        </item>
+        
+        <item>
+            <title>Introducing the Filecoin Economy</title>
+            <link>https://filecoin.io/blog/posts/introducing-the-filecoin-economy/</link>
+            <pubDate>Thu, 27 Aug 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/introducing-the-filecoin-economy/</guid>
+            <description>The datasphere will grow to 175 zettabytes by 2025, according to IDC estimates. A stack of enough 10-terabyte hard drives to store all that data would literally reach the moon (1 zettabyte equals 1 trillion gigabytes).</description>
+        </item>
+        
+        <item>
+            <title>HackFS: What&#39;s Next</title>
+            <link>https://filecoin.io/blog/posts/hackfs-what-s-next/</link>
+            <pubDate>Wed, 26 Aug 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/hackfs-what-s-next/</guid>
+            <description>More than three dozen teams took home prizes at the HackFS Finale last week on August 18. Among them, 10 were named finalists, earning $1,000 USD per team member plus 250 FIL.</description>
+        </item>
+        
+        <item>
+            <title>More Ways to Keep Building on the Filecoin Network</title>
+            <link>https://filecoin.io/blog/posts/more-ways-to-keep-building-on-the-filecoin-network/</link>
+            <pubDate>Tue, 25 Aug 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/more-ways-to-keep-building-on-the-filecoin-network/</guid>
+            <description>Around the world, thousands of individuals and teams are devoting their energy, talent, and resources to making Filecoin an important building block of the internet’s evolving infrastructure. </description>
+        </item>
+        
+        <item>
+            <title>30 Days, 130 Projects: Recognizing New Ideas to Power Web3</title>
+            <link>https://filecoin.io/blog/posts/30-days-130-projects-recognizing-new-ideas-to-power-web3/</link>
+            <pubDate>Wed, 19 Aug 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/30-days-130-projects-recognizing-new-ideas-to-power-web3/</guid>
+            <description>After a month of workshops, talks, AMAs, and heads-down building, 134 teams submitted final projects for the inaugural HackFS hackathon, unveiling amazing tools and services to drive the decentralized web.</description>
+        </item>
+        
+        <item>
+            <title>Welcome to the Space Race</title>
+            <link>https://filecoin.io/blog/posts/welcome-to-the-space-race/</link>
+            <pubDate>Wed, 19 Aug 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/welcome-to-the-space-race/</guid>
+            <description>The Filecoin Testnet Incentives Program is kicking off on, Monday August 24th at 10pm UTC (3pm PT | 6am CST on Tuesday, August 25th)!</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Features: Distributed Randomness &amp; Leader Elections</title>
+            <link>https://filecoin.io/blog/posts/filecoin-features-distributed-randomness-leader-elections/</link>
+            <pubDate>Mon, 10 Aug 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-features-distributed-randomness-leader-elections/</guid>
+            <description>This is the latest installment in our series highlighting unique features of the Filecoin network. Filecoin will be the first high-profile user of the production drand network.</description>
+        </item>
+        
+        <item>
+            <title>Meet the HackFS Teams Vol. 3: coeo, IPFS.FPS, Sailplane</title>
+            <link>https://filecoin.io/blog/posts/meet-the-hackfs-teams-vol.3/</link>
+            <pubDate>Thu, 06 Aug 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/meet-the-hackfs-teams-vol.3/</guid>
+            <description>Welcome to the ninth installment of the Filecoin Community Highlights series, and our final post highlighting the HackFS teams building essential tools and services on the Filecoin network. </description>
+        </item>
+        
+        <item>
+            <title>Andrew Cronk &amp; Yannick Folla, Figment Networks</title>
+            <link>https://filecoin.io/blog/posts/andrew-cronk-yannick-folla-figment-networks/</link>
+            <pubDate>Tue, 04 Aug 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/andrew-cronk-yannick-folla-figment-networks/</guid>
+            <description>Welcome to the eighth installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network.</description>
+        </item>
+        
+        <item>
+            <title>Meet the HackFS Teams Vol. 2: Kazan, Parcel, EduVault</title>
+            <link>https://filecoin.io/blog/posts/meet-the-hackfs-teams-vol.2/</link>
+            <pubDate>Fri, 24 Jul 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/meet-the-hackfs-teams-vol.2/</guid>
+            <description>Welcome to the seventh installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Mining Community Call, July 2020</title>
+            <link>https://filecoin.io/blog/posts/filecoin-mining-community-call-july-2020/</link>
+            <pubDate>Mon, 20 Jul 2020 06:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-mining-community-call-july-2020/</guid>
+            <description>We are excited to announce the next Filecoin Mining Community Call. It will begin with a Filecoin ecosystem update and an overview of the progress that has been made since the last mining call. </description>
+        </item>
+        
+        <item>
+            <title>Getting Ready for Filecoin’s Space Race</title>
+            <link>https://filecoin.io/blog/posts/getting-ready-for-filecoin-s-space-race/</link>
+            <pubDate>Tue, 14 Jul 2020 07:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/getting-ready-for-filecoin-s-space-race/</guid>
+            <description>As we enter the home stretch into Filecoin’s mainnet launch, Lotus (the Filecoin reference implementation) is making fast progress. In the past 2 weeks alone the team has landed a major data transfer improvement to the Filecoin market implementation, finished up the final sector-lifecycle features for verified &amp; fast-retrieval deals and upgrading Committed Capacity sectors, and shipped large improvements to the Filecoin actors. </description>
+        </item>
+        
+        <item>
+            <title>Juan Leni, Zondax</title>
+            <link>https://filecoin.io/blog/posts/juan-leni-zondax/</link>
+            <pubDate>Wed, 08 Jul 2020 07:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/juan-leni-zondax/</guid>
+            <description>Welcome to the fifth installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network. The goal is to inspire others to build world-class tools for the distributed web.</description>
+        </item>
+        
+        <item>
+            <title>A Guide to Filecoin Storage Mining</title>
+            <link>https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/</link>
+            <pubDate>Tue, 07 Jul 2020 07:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/a-guide-to-filecoin-storage-mining/</guid>
+            <description>An updated guide to Filecoin storage mining, and discuss some of the recently announced incentives and opportunities for members of the growing Filecoin community.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Comes to ProtoSchool</title>
+            <link>https://filecoin.io/blog/posts/filecoin-comes-to-protoschool/</link>
+            <pubDate>Mon, 06 Jul 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-comes-to-protoschool/</guid>
+            <description>Today we’re excited to announce ProtoSchool’s first-ever Filecoin tutorial, Verifying Storage on Filecoin. It offers a beginner-friendly, code-free look at Filecoin’s proof system, exploring how Proof of Replication (PoRep), Proof of Storage (PoSt), and zkSNARKs make it possible to trust peers in an incentivized, decentralized storage system.</description>
+        </item>
+        
+        <item>
+            <title>June Q &amp; A Summary</title>
+            <link>https://filecoin.io/blog/posts/june-q-a-summary/</link>
+            <pubDate>Wed, 01 Jul 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/june-q-a-summary/</guid>
+            <description>On June 25, 2020, the Filecoin team hosted an AMA with Juan Benet. Over the course of an hour, we answered 41 questions, covering topics like testnet incentives, the most recent roadmap update, and the path to mainnet launch. During the session we were joined by 968 Filecoin community members from across the globe. Many thanks to all who participated!</description>
+        </item>
+        
+        <item>
+            <title>Dev Grants Wave 3 Update, Wave 4 RFPs</title>
+            <link>https://filecoin.io/blog/posts/dev-grants-wave-3-update-wave-4-rfps/</link>
+            <pubDate>Tue, 30 Jun 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/dev-grants-wave-3-update-wave-4-rfps/</guid>
+            <description>For Wave 3 of Dev Grants that were due in April, we received 44 proposals from the community.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin features: verifiable storage</title>
+            <link>https://filecoin.io/blog/posts/filecoin-features-verifiable-storage/</link>
+            <pubDate>Mon, 29 Jun 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-features-verifiable-storage/</guid>
+            <description>With Filecoin, miners’ storage is publicly audited. In other words, our storage proofs give every user of the Filecoin network assurance that all miners are storing data exactly as promised.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin roadmap update June 2020</title>
+            <link>https://filecoin.io/blog/posts/this-is-a-sample-post/</link>
+            <pubDate>Wed, 24 Jun 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/this-is-a-sample-post/</guid>
+            <description>Our June 2020 roadmap update covers progress made since the last roadmap update and a peek into what’s next for the Filecoin project as we enter the homestretch to the mainnet launch.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin virtual community meeting recap</title>
+            <link>https://filecoin.io/blog/posts/filecoin-virtual-community-meeting-recap/</link>
+            <pubDate>Mon, 22 Jun 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-virtual-community-meeting-recap/</guid>
+            <description>The Filecoin team hosted our very first Filecoin virtual community meetup! Thank you to all who attended and made it such a success. Our community meetups are an opportunity to meet the people behind the many tools and projects being built in the Filecoin ecosystem.                          </description>
+        </item>
+        
+        <item>
+            <title>Announcing: Filecoin Ignite and HackFS!</title>
+            <link>https://filecoin.io/blog/posts/one-more/</link>
+            <pubDate>Wed, 17 Jun 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/one-more/</guid>
+            <description>We are thrilled to announce Filecoin Ignite, a series of events gathering the community, to learn, show, and build together. </description>
+        </item>
+        
+        <item>
+            <title>Spark University Hackathon</title>
+            <link>https://filecoin.io/blog/posts/spark-university-hackathon.en-1/</link>
+            <pubDate>Fri, 12 Jun 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/spark-university-hackathon.en-1/</guid>
+            <description>Filecoin is excited to be a challenge partner in the Spark University Hackathon, an 8 week online competition bringing together developers from universities around the world, to learn, build, and launch new applications and storage solutions on the Filecoin network.</description>
+        </item>
+        
+        <item>
+            <title>Update: trusted setup</title>
+            <link>https://filecoin.io/blog/posts/update-trusted-setup/</link>
+            <pubDate>Thu, 11 Jun 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/update-trusted-setup/</guid>
+            <description>The trusted setup ceremony is conducted in two phases. The first phase, also known as the “powers of tau” ceremony, applies to all Groth16 zk-SNARKs up to a given size.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin mining community call thank you</title>
+            <link>https://filecoin.io/blog/posts/filecoin-mining-community-call-thank-you/</link>
+            <pubDate>Wed, 10 Jun 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-mining-community-call-thank-you/</guid>
+            <description>On May 28, 2020, the Filecoin team hosted our second Filecoin Mining Community Call; we were joined by over 160 live attendees globally. Find the overview of the questions and answers.</description>
+        </item>
+        
+        <item>
+            <title>Announcing Filecoin&#39;s Testnet incentives</title>
+            <link>https://filecoin.io/blog/posts/announcing-filecoin-s-testnet-incentives/</link>
+            <pubDate>Tue, 09 Jun 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/announcing-filecoin-s-testnet-incentives/</guid>
+            <description>After years of research and development, Filecoin’s mainnet launch is within sight. Today, we’re announcing Filecoin’s testnet incentives program and inviting miners all over the world to compete to earn global and regional pools totaling up to 4 million Filecoin tokens.</description>
+        </item>
+        
+        <item>
+            <title>Offline data transfer for large-scale data</title>
+            <link>https://filecoin.io/blog/posts/offline-data-transfer-for-large-scale-data/</link>
+            <pubDate>Mon, 08 Jun 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/offline-data-transfer-for-large-scale-data/</guid>
+            <description>As we discussed in our cryptoeconomics constructions blog post, sometimes when you’re dealing with huge troves of data, it’s difficult (expensive and time-consuming) to transfer those files over the internet for safekeeping. For petabyte-scale datasets and larger, the most sensible solutions often involve shipping data on hard drives. The Filecoin protocol and project has tools and structures to support what’s known as offline data transfers.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin mining community call, May 2020</title>
+            <link>https://filecoin.io/blog/posts/filecoin-mining-community-call-may-2020/</link>
+            <pubDate>Fri, 22 May 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-mining-community-call-may-2020/</guid>
+            <description>We are excited to announce our second Filecoin Mining Community Call. We’ll kick off with an overview of Testnet Phase 2 then provide an update on the Filecoin Discover program. To conclude, we will answer your questions about mining on the Filecoin network. </description>
+        </item>
+        
+        <item>
+            <title>May Q&amp;A thank you and summary</title>
+            <link>https://filecoin.io/blog/posts/may-q-a-thank-you-and-summary/</link>
+            <pubDate>Thu, 21 May 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/may-q-a-thank-you-and-summary/</guid>
+            <description>On May 18, 2020, we hosted another AMA with Juan Benet and other developers of the Filecoin Project. Thanks to everyone who joined! Over the course of one hour, we received 291 questions and were able to answer 46, ranging from roadmap and timing updates to details on verified clients, hardware requirements, and the latest on testnet incentives. Nearly 1,400 Filecoin community members participated in the session or checked the recap on Slido.</description>
+        </item>
+        
+        <item>
+            <title>Update: Filecoin Discover</title>
+            <link>https://filecoin.io/blog/posts/update-filecoin-discover/</link>
+            <pubDate>Tue, 19 May 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/update-filecoin-discover/</guid>
+            <description>Filecoin Discover has received an overwhelming amount of community interest. Since May 7th, Filecoin miners have signed up to store dozens of petabytes worth of important data.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Testnet Phase 2 is here!</title>
+            <link>https://filecoin.io/blog/posts/filecoin-testnet-phase-2-is-here/</link>
+            <pubDate>Thu, 14 May 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-testnet-phase-2-is-here/</guid>
+            <description>Today is a big day for the Filecoin project. Six months ago, we launched the first phase of the Filecoin testnet. Since then, we have been bug fixing, conducting protocol reviews, making critical protocol and product improvements, performing optimizations, and working towards running networks with multiple interoperable nodes. Now, we are ready to launch Testnet Phase 2!</description>
+        </item>
+        
+        <item>
+            <title>Introducing Filecoin Discover</title>
+            <link>https://filecoin.io/blog/posts/introducing-filecoin-discover/</link>
+            <pubDate>Thu, 07 May 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/introducing-filecoin-discover/</guid>
+            <description>Today, we are pleased to launch Filecoin Discover – a project to help seed Filecoin as the home for humanity’s most important datasets and make it accessible to others, to grow our knowledge base and forge new ideas.</description>
+        </item>
+        
+        <item>
+            <title>Jonathan Schwartz, Open Work Labs</title>
+            <link>https://filecoin.io/blog/posts/jonathan-schwartz-open-work-labs/</link>
+            <pubDate>Tue, 05 May 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/jonathan-schwartz-open-work-labs/</guid>
+            <description>Jonathan Schwartz is the co-founder of Open Work Labs (OWL), a product studio based in Brooklyn that builds tools to improve the way people share, organize, and archive their work. Most of their time is spent helping other teams develop distributed web apps and infrastructure that they hope to eventually reuse on their own products.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin&#39;s cryptoeconomic constructions</title>
+            <link>https://filecoin.io/blog/posts/filecoin-s-cryptoeconomic-constructions/</link>
+            <pubDate>Fri, 24 Apr 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-s-cryptoeconomic-constructions/</guid>
+            <description>Today, we’re pleased to provide an overview of the cryptoeconomic structures that will allow Filecoin to create that foundation. Filecoin uses a combination of existing cryptoeconomic structures and many new ones to meet the network’s unique requirements. If you’re interested in Filecoin’s long-term success as a storage marketplace, you should find these mechanisms encouraging. While we’re still conducting extensive testing to finalize parameters, we’re excited to share these details on how the system works.</description>
+        </item>
+        
+        <item>
+            <title>Ben Fino-Radin, Small Data Industries</title>
+            <link>https://filecoin.io/blog/posts/ben-fino-radin-small-data-industries/</link>
+            <pubDate>Wed, 22 Apr 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/ben-fino-radin-small-data-industries/</guid>
+            <description>Ben Fino-Radin is the founder of Small Data Industries, a lab and consultancy based in New York City. Small Data’s mission is to safeguard the permanence and integrity of the world’s artistic record. Ben and his team work with artists, collectors, and cultural heritage institutions around the world to preserve and protect art and archives, and they see Filecoin as the key to improving their efficiency and creating more secure records. </description>
+        </item>
+        
+        <item>
+            <title>Filecoin roadmap update April 2020</title>
+            <link>https://filecoin.io/blog/posts/filecoin-roadmap-update-april-2020/</link>
+            <pubDate>Fri, 17 Apr 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-roadmap-update-april-2020/</guid>
+            <description>Our April 2020 roadmap update covers progress made since the last roadmap update and a peek into what’s next for the Filecoin project as we get closer to the mainnet launch.</description>
+        </item>
+        
+        <item>
+            <title>Tammy Yang and Bofu Chen, Numbers</title>
+            <link>https://filecoin.io/blog/posts/tammy-yang-and-bofu-chen-numbers/</link>
+            <pubDate>Tue, 14 Apr 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/tammy-yang-and-bofu-chen-numbers/</guid>
+            <description>Bofu Chen and Tammy Yang launched Numbers to give people greater access to and control of their information – including where and with whom they share it. Most recently, they’ve turned their talents to helping track symptoms related to the Coronavirus. We asked them why they chose to build on the Filecoin network and what’s next for Numbers.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Dev Grants - Wave 3 New RFPs, Wave 1 &amp; 2</title>
+            <link>https://filecoin.io/blog/posts/filecoin-dev-grants-wave-3-new-rfps-wave-1-2/</link>
+            <pubDate>Wed, 08 Apr 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-dev-grants-wave-3-new-rfps-wave-1-2/</guid>
+            <description>The Wave 3 deadline for Filecoin Dev Grants has been extended to April 15th at 23:59 PDT. This is the final wave with a few months to build something before Filecoin’s mainnet launch. A wide range of new RFP ideas have been published here and we hope this sparks more ideas and discussion of what could be built.</description>
+        </item>
+        
+        <item>
+            <title>Meet Andrew Hill, Co-Founder and CEO of Textile</title>
+            <link>https://filecoin.io/blog/posts/meet-andrew-hill/</link>
+            <pubDate>Mon, 23 Mar 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/meet-andrew-hill/</guid>
+            <description>Welcome to the first blog post in our Filecoin Community Highlights series. Over the next few weeks, we will be featuring Filecoin use cases and developers in the community who are building essential tools and services on the Filecoin network.</description>
+        </item>
+        
+        <item>
+            <title>March Q&amp;A thank you and summary</title>
+            <link>https://filecoin.io/blog/posts/march-q-a-thank-you-and-summary/</link>
+            <pubDate>Tue, 10 Mar 2020 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/march-q-a-thank-you-and-summary/</guid>
+            <description>Thanks to everyone who participated in our March 5 Q&amp;A about the Filecoin project! We answered more than 100 questions in our 1-hour session (fast and furious typing!). We fielded questions on topics ranging from hardware requirements, for mining to our timeline for Testnet Phase 2 and mainnet launch, to the inner workings of our proofs constructions. </description>
+        </item>
+        
+        <item>
+            <title>Participate in a March Q&amp;A with Juan Benet</title>
+            <link>https://filecoin.io/blog/posts/participate-in-a-march-q-a-with-juan-benet/</link>
+            <pubDate>Tue, 03 Mar 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/participate-in-a-march-q-a-with-juan-benet/</guid>
+            <description>This Thursday, March 5, 2020, we will host a virtual Q&amp;A session with Juan Benet, founder of the Filecoin Project. For one hour, Juan will be online to answer any questions you might have about our testnet, updated roadmap and future plans. We hope you can join us!</description>
+        </item>
+        
+        <item>
+            <title>Filecoin roadmap update February 2020</title>
+            <link>https://filecoin.io/blog/posts/filecoin-roadmap-update-february-2020/</link>
+            <pubDate>Wed, 19 Feb 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-roadmap-update-february-2020/</guid>
+            <description>In this blog post, we cover recent progress since launching Testnet Phase 1 and updated roadmap information about Testnet Phase 2 and mainnet launch. Please review our Roadmap Update Q4 2019 and Testnet Phase 2 Update (in that order) for additional context.</description>
+        </item>
+        
+        <item>
+            <title>What sets it apart: Filecoin’s proof system</title>
+            <link>https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/</link>
+            <pubDate>Tue, 18 Feb 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/</guid>
+            <description>With the testnet launch, a new set of storage-based proof systems to attain decentralized consensus has been launched.</description>
+        </item>
+        
+        <item>
+            <title>Announcing Filecoin implementations in Rust and C&#43;&#43;</title>
+            <link>https://filecoin.io/blog/posts/announcing-filecoin-implementations-in-rust-and-c/</link>
+            <pubDate>Fri, 31 Jan 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/announcing-filecoin-implementations-in-rust-and-c/</guid>
+            <description>Today, we are excited to announce two additional implementations of the Filecoin protocol: forest – being implemented in Rust by ChainSafe, and fuhon – being implemented in C++ by Soramitsu. These implementations are in active development, and are now fully open for anyone to use or contribute to. Check them out on GitHub!</description>
+        </item>
+        
+        <item>
+            <title>Testnet Phase 2 update</title>
+            <link>https://filecoin.io/blog/posts/testnet-phase-2-update/</link>
+            <pubDate>Thu, 30 Jan 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/testnet-phase-2-update/</guid>
+            <description>As announced in our last roadmap update, we’re using a public Gantt chart to maintain an updated view of our roadmap to launch. We are currently in Testnet Phase 1, and are gearing up to launch Testnet Phase 2. This blog post assumes knowledge of our milestones and what they mean; if you’d like a refresher, read more here.</description>
+        </item>
+        
+        <item>
+            <title>Tipsets: A closer look at Filecoin&#39;s building blocks</title>
+            <link>https://filecoin.io/blog/posts/tipsets-a-closer-look-at-filecoin-building-blocks/</link>
+            <pubDate>Mon, 13 Jan 2020 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/tipsets-a-closer-look-at-filecoin-building-blocks/</guid>
+            <description>Blockchains are built on blocks—chunks of information denoted by a unique cryptographic hash and permanently recorded on the blockchain. Strung together, these blocks of information constitute the blockchain and carry a set of updates to a given system whose state they encode. </description>
+        </item>
+        
+        <item>
+            <title>Filecoin roadmap update Q4 2019</title>
+            <link>https://filecoin.io/blog/posts/filecoin-roadmap-update-q4-2019/</link>
+            <pubDate>Wed, 11 Dec 2019 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-roadmap-update-q4-2019/</guid>
+            <description>In this post, we share what’s next on our roadmap and a tool you can use to follow milestone timing estimates.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Testnet is live</title>
+            <link>https://filecoin.io/blog/posts/filecoin-testnet-is-live/</link>
+            <pubDate>Wed, 11 Dec 2019 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-testnet-is-live/</guid>
+            <description>Today marks an important milestone for the Filecoin project: the launch of the Filecoin testnet (on schedule)! After significant research, design, and development, the Filecoin protocol is ready for live network testing. We’re thrilled to share it with you.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Testnet mining</title>
+            <link>https://filecoin.io/blog/posts/filecoin-testnet-mining/</link>
+            <pubDate>Tue, 10 Dec 2019 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-testnet-mining/</guid>
+            <description>Becoming a Filecoin miner is an opportunity for community members to help store and preserve access to humanity’s most important information. By providing network security and infrastructure, Filecoin miners help build a more open, resilient, and trustworthy Internet.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Dev Grants - Wave 1 recipients, Wave 2 now open</title>
+            <link>https://filecoin.io/blog/posts/filecoin-dev-grants-wave-1-recipients-wave-2-now-open/</link>
+            <pubDate>Tue, 03 Dec 2019 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-dev-grants-wave-1-recipients-wave-2-now-open/</guid>
+            <description></description>
+        </item>
+        
+        <item>
+            <title>Participate in our trusted setup ceremony</title>
+            <link>https://filecoin.io/blog/posts/participate-in-our-trusted-setup-ceremony/</link>
+            <pubDate>Tue, 22 Oct 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/participate-in-our-trusted-setup-ceremony/</guid>
+            <description>As you may have seen in our recent update, the Filecoin team is gearing up to launch our testnet in December 2019 and mainnet in March 2020. Prior to launch, we need to conduct a secure trusted setup ceremony (read more about this below). We are seeking volunteers to participate in our trusted setup ceremony and to help us get Filecoin securely off the ground.</description>
+        </item>
+        
+        <item>
+            <title>Announcing Lotus, our first alternate Filecoin implementation</title>
+            <link>https://filecoin.io/blog/posts/announcing-lotus-our-first-alternate-filecoin-implementation/</link>
+            <pubDate>Wed, 16 Oct 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/announcing-lotus-our-first-alternate-filecoin-implementation/</guid>
+            <description>One of our most important goals is to make the Filecoin mainnet as secure and resilient as possible. One part of our network security strategy is launching the Filecoin network with multiple implementations. Today, we are delighted to announce lotus, our first alternate Filecoin implementation.</description>
+        </item>
+        
+        <item>
+            <title>Announcing the go-filecoin alphanet</title>
+            <link>https://filecoin.io/blog/posts/announcing-the-go-filecoin-alphanet/</link>
+            <pubDate>Wed, 25 Sep 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/announcing-the-go-filecoin-alphanet/</guid>
+            <description>Yesterday, we launched the go-filecoin alphanet, go-filecoin release 0.5.6 (right on schedule – well actually, a day early!). As we announced in our 2019 Q2 &amp; Q3 Update, this was our last major interim milestone before our upcoming testnet launch in December 2019.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin 2019 Q2 &amp; Q3 Update: Testnet &amp; Mainnet Launches, Highlights from 2019, Roadmap Update, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-2019-q2-q3-update/</link>
+            <pubDate>Tue, 24 Sep 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-2019-q2-q3-update/</guid>
+            <description>The most important news in this update is that we’re getting very close to launching the network. We are delayed from our prior estimates, but – as you will read below – we have made tremendous progress on all fronts! </description>
+        </item>
+        
+        <item>
+            <title>Filecoin Dev Grants Program now live – first wave closes September 30</title>
+            <link>https://filecoin.io/blog/posts/filecoin-dev-grants-program-now-live-first-wave-closes-september-30th/</link>
+            <pubDate>Wed, 11 Sep 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-dev-grants-program-now-live-first-wave-closes-september-30th/</guid>
+            <description>Filecoin is much more than just a file storage network. It aims to be a decentralized, robust, and efficient foundation for humanity’s information. This vision is ambitious, and we can’t do it alone! The Filecoin network needs a vibrant and diverse community of participants working together to build the ecosystem of tools and services needed to improve Filecoin and make it usable in countless real-world applications.</description>
+        </item>
+        
+        <item>
+            <title>go-filecoin 0.3.2 is released</title>
+            <link>https://filecoin.io/blog/posts/go-filecoin-0.3.2-is-released/</link>
+            <pubDate>Tue, 09 Jul 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/go-filecoin-0.3.2-is-released/</guid>
+            <description>We’re happy to announce go-filecoin 0.3.2. This release is a big step towards completing the filecoin storage protocol.</description>
+        </item>
+        
+        <item>
+            <title>Announcing the SNARK Challenge</title>
+            <link>https://filecoin.io/blog/posts/announcing-the-snark-challenge/</link>
+            <pubDate>Fri, 17 May 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/announcing-the-snark-challenge/</guid>
+            <description>We are excited to announce that Protocol Labs and Filecoin are sponsoring the SNARK Challenge, an open challenge to speed up zk-SNARK provers. The SNARK challenge is co-hosted by Coinlist, Coda, and Dekrypt Capital, and co-sponsored by Tezos and the Zcash Foundation.</description>
+        </item>
+        
+        <item>
+            <title>go-filecoin 0.2.2 is released</title>
+            <link>https://filecoin.io/blog/posts/go-filecoin-0.2.2-is-released/</link>
+            <pubDate>Fri, 17 May 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/go-filecoin-0.2.2-is-released/</guid>
+            <description>We’re happy to announce go-filecoin 0.2.2. go-filecoin is the Go implementation of the Filecoin protocol. The up-to-date changelog can always be found at go-filecoin/CHANGELOG.md.</description>
+        </item>
+        
+        <item>
+            <title>Announcing our first mining community call</title>
+            <link>https://filecoin.io/blog/posts/announcing-our-first-mining-community-call/</link>
+            <pubDate>Wed, 24 Apr 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/announcing-our-first-mining-community-call/</guid>
+            <description>We are excited to announce our upcoming community call specifically focused on mining. In this call, we will bring together implementers, contributors, researchers, prospective miners, and curious minds to engage with one another.</description>
+        </item>
+        
+        <item>
+            <title>Collaboration with the Ethereum Foundation on VDFs</title>
+            <link>https://filecoin.io/blog/posts/collaboration-with-the-ethereum-foundation-on-vdfs/</link>
+            <pubDate>Fri, 19 Apr 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/collaboration-with-the-ethereum-foundation-on-vdfs/</guid>
+            <description>Today, Protocol Labs is announcing a research collaboration with the Ethereum Foundation to design and develop at least one secure, efficient, and usable Verifiable Delay Function (VDF) construction.</description>
+        </item>
+        
+        <item>
+            <title>go-filecoin 0.1.4 is released</title>
+            <link>https://filecoin.io/blog/posts/go-filecoin-0.1.4-is-released/</link>
+            <pubDate>Wed, 27 Mar 2019 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/go-filecoin-0.1.4-is-released/</guid>
+            <description>We’re happy to announce go-filecoin 0.1.4. go-filecoin is the Go implementation of the Filecoin protocol. The up-to-date changelog can always be found at go-filecoin/CHANGELOG.md.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin 2018 Q3 &amp; Q4 Update: Development and Research Repos, Roadmap Update, Development Update, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-2018-q3-q4-update/</link>
+            <pubDate>Thu, 14 Feb 2019 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-2018-q3-q4-update/</guid>
+            <description>Good news! After many months building things privately, we are ready to open up a number of codebases and community forums. This is right on schedule as predicted in our Project Roadmap and last update. Read our announcement blog post for more.</description>
+        </item>
+        
+        <item>
+            <title>Getting started with Filecoin repos and devnets</title>
+            <link>https://filecoin.io/blog/posts/getting-started-with-filecoin-repos-and-devnets/</link>
+            <pubDate>Thu, 14 Feb 2019 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/getting-started-with-filecoin-repos-and-devnets/</guid>
+            <description>As we announced here, we recently opened up the Filecoin project repos on GitHub. You can visit the GitHub repos to explore the codebase, development tools, community resources, and more.</description>
+        </item>
+        
+        <item>
+            <title>Opening the Filecoin project repos</title>
+            <link>https://filecoin.io/blog/posts/opening-the-filecoin-project-repos/</link>
+            <pubDate>Thu, 14 Feb 2019 05:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/opening-the-filecoin-project-repos/</guid>
+            <description>Today, we are excited to open several repos on GitHub, and invite everybody to join us on GitHub.</description>
+        </item>
+        
+        <item>
+            <title>Anti-fraud statement for our communities in China &amp; Hong Kong</title>
+            <link>https://filecoin.io/blog/posts/anti-fraud-statement-for-our-communities-in-china-hong-kong/</link>
+            <pubDate>Mon, 10 Dec 2018 08:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/anti-fraud-statement-for-our-communities-in-china-hong-kong/</guid>
+            <description>Community Caution: The Protocol Labs, IPFS and Filecoin teams are thrilled about the activity coming from communities around the world, including China and Hong Kong. Over the past year, we’ve enjoyed receiving open-source contributions from several community volunteers across China and Hong Kong. We’ve been happy about the many educational events, webcasts, meetups, articles about our projects, and more.</description>
+        </item>
+        
+        <item>
+            <title>Announcing the Filecoin FAQs</title>
+            <link>https://filecoin.io/blog/posts/announcing-the-filecoin-faqs/</link>
+            <pubDate>Fri, 09 Nov 2018 08:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/announcing-the-filecoin-faqs/</guid>
+            <description>We have assembled an exhaustive list of crowd-sourced Filecoin FAQs from our active community as a quick and easy resource for questions about Filecoin. </description>
+        </item>
+        
+        <item>
+            <title>Filecoin 2018 Q1 &amp; Q2 update</title>
+            <link>https://filecoin.io/blog/posts/filecoin-2018-q1-q2-update/</link>
+            <pubDate>Tue, 28 Aug 2018 07:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-2018-q1-q2-update/</guid>
+            <description>Filecoin 2018 Q1 &amp; Q2 Update</description>
+        </item>
+        
+        <item>
+            <title>Token Sale Completed</title>
+            <link>https://filecoin.io/blog/posts/token-sale-completed/</link>
+            <pubDate>Wed, 13 Sep 2017 07:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/token-sale-completed/</guid>
+            <description>The Filecoin Sale completed on Sep 7th, 2017, at 19:00 UTC. The sale was a resounding success!</description>
+        </item>
+        
+        <item>
+            <title>First Day Sale Update, Reopening Aug 12, 11:00am PDT</title>
+            <link>https://filecoin.io/blog/posts/first-day-sale-update-reopening-aug-12-11-00am-pdt/</link>
+            <pubDate>Fri, 11 Aug 2017 07:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/first-day-sale-update-reopening-aug-12-11-00am-pdt/</guid>
+            <description>Wow! We are deeply humbled and grateful for your tremendous support. As soon as we opened the sale we were overwhelmed with thousands of investments.</description>
+        </item>
+        
+        <item>
+            <title>Sale Delayed — New Date: Thursday Aug 10</title>
+            <link>https://filecoin.io/blog/posts/sale-delayed-new-date-thursday-aug-10/</link>
+            <pubDate>Mon, 07 Aug 2017 07:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/sale-delayed-new-date-thursday-aug-10/</guid>
+            <description>Bad news. We unfortunately have to delay the sale. This is painful — for us, as much as anybody else — but it is necessary. </description>
+        </item>
+        
+        <item>
+            <title>More Filecoin Token Sale Details — 7 days away!</title>
+            <link>https://filecoin.io/blog/posts/more-filecoin-token-sale-details-7-days-away/</link>
+            <pubDate>Mon, 31 Jul 2017 07:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/more-filecoin-token-sale-details-7-days-away/</guid>
+            <description>First off, I want to thank our amazing community for being so creative, and so overwhelmingly supportive in this time.</description>
+        </item>
+        
+        <item>
+            <title>Proof-of-Replication, Power-Fault-Tolerance and Research Roadmap</title>
+            <link>https://filecoin.io/blog/posts/proof-of-replication-power-fault-tolerance-and-research-roadmap/</link>
+            <pubDate>Thu, 27 Jul 2017 07:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/proof-of-replication-power-fault-tolerance-and-research-roadmap/</guid>
+            <description>At Protocol Labs we are charting a course to the future, but we also know that the details make or break the plan. </description>
+        </item>
+        
+        <item>
+            <title>Updates &amp; New Token Sale Date - August 7th</title>
+            <link>https://filecoin.io/blog/posts/updates-new-token-sale-date-august-7th/</link>
+            <pubDate>Mon, 24 Jul 2017 07:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/updates-new-token-sale-date-august-7th/</guid>
+            <description>We are absolutely overwhelmed with the positive response to the new Filecoin whitepaper, our upcoming token sale, our video, and the other info we’ve released. </description>
+        </item>
+        
+        <item>
+            <title>Announcing the Filecoin token sale and upgraded whitepaper</title>
+            <link>https://filecoin.io/blog/posts/announcing-the-filecoin-token-sale-and-upgraded-whitepaper/</link>
+            <pubDate>Wed, 19 Jul 2017 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/announcing-the-filecoin-token-sale-and-upgraded-whitepaper/</guid>
+            <description>The Filecoin Token Sale will begin on July 27 at 7pm GMT. The sale will take place on CoinList and is open for registration and pre-funding now.</description>
+        </item>
+        
+        <item>
+            <title>Why is decentralized and distributed file storage critical for a better web?</title>
+            <link>https://filecoin.io/blog/posts/why-is-decentralized-and-distributed-file-storage-critical-for-a-better-web/</link>
+            <pubDate>Tue, 20 Jun 2017 04:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/why-is-decentralized-and-distributed-file-storage-critical-for-a-better-web/</guid>
+            <description>The team behind IPFS and Filecoin explain how advances in distributed data storage and strong alignment of market incentives are combining to create a much more secure and efficient web.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin 2017 Q4 Update: Community Updates, How You Can Help, Filecoin Blog, and More</title>
+            <link>https://filecoin.io/blog/posts/filecoin-2017-q4-update/</link>
+            <pubDate>Sun, 01 Jan 2017 08:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-2017-q4-update/</guid>
+            <description>Since the completion of the token sale, we have been heads down turning Filecoin’s tremendous potential into reality – from implementing the core parts of the Filecoin protocol to growing our team with the best talent we can find.</description>
+        </item>
+        
+        <item>
+            <title>Meet the HackFS Teams Vol. 1: Omo Earth, Pygate, Unchained Index, Padlock</title>
+            <link>https://filecoin.io/blog/posts/meet-the-hackfs-teams-vol.1/</link>
+            <pubDate>Sat, 01 Jan 2000 07:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/meet-the-hackfs-teams-vol.1/</guid>
+            <description>Welcome to the sixth installment of the Filecoin Community Highlights series, which features users and developers building essential tools and services on the Filecoin network.</description>
+        </item>
+        
+        <item>
+            <title>Filecoin Roadmap Update August 2020</title>
+            <link>https://filecoin.io/blog/posts/filecoin-roadmap-update-august-2020/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            
+            <guid>https://filecoin.io/blog/posts/filecoin-roadmap-update-august-2020/</guid>
+            <description>Our August 2020 roadmap update covers progress made since the last roadmap update - with a special celebration of today’s launch of the Filecoin Space Race, our incentivized testnet competition.</description>
+        </item>
+        
+    </channel>
+</rss>

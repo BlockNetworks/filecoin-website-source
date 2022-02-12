@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Announcing Space Race 2: Slingshot</title>
+    <link rel="stylesheet" type="text/css" href="../../vintage/css/main.css">
+    
+      <link rel="stylesheet" type="text/css" href="../../vintage/fancy-table.css">
+    
+    <link rel="icon" type="image/png" href="../../vintage/images/icon-coin-128-new.png"/>
+    <link rel="alternate feed" href="https://filecoin.io/blog/feed/index.xml" type="application/rss+xml"  title="Filecoin Blog" />
+
+    
+      <link rel="canonical" href="https://filecoin.io/blog/announcing-sr2-slingshot/" />
+      <link rel="alternate" href="https://filecoin.io/blog/announcing-sr2-slingshot/" hreflang="x-default">
+    
+
+    <meta name="description" content="We are extremely excited to announce Space Race 2: Slingshot! While SR1 focused on miners, the Filecoin Network is a multi-dimensional network with many critical stakeholders and audiences. We’re ready and excited to bring in storage clients, app developers, tooling providers, and the many other community members contributing to the network!" />
+    <meta name="author" content="Filecoin Project" />
+    <meta name="theme-color" content="#00C5CA"/>
+
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="We are extremely excited to announce Space Race 2: Slingshot! While SR1 focused on miners, the Filecoin Network is a multi-dimensional network with many critical stakeholders and audiences. We’re ready and excited to bring in storage clients, app developers, tooling providers, and the many other community members contributing to the network!" />
+    <meta property="og:title" content="Announcing Space Race 2: Slingshot" />
+    <meta property="og:image" content="https://filecoin.io/vintage/images/blog/slingshot-header.jpg" />
+    <meta property="og:url" content="https://filecoin.io/blog/announcing-sr2-slingshot/" />
+    <meta property="og:site_name" content="Filecoin" />
+    <meta property="og:locale" content="en">
+    
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="525" />
+
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="Filecoin" />
+    <meta name="twitter:title" content="Announcing Space Race 2: Slingshot" />
+    <meta name="twitter:creator" content="Filecoin Project" />
+    <meta name="twitter:description" content="We are extremely excited to announce Space Race 2: Slingshot! While SR1 focused on miners, the Filecoin Network is a multi-dimensional network with many critical stakeholders and audiences. We’re ready and excited to bring in storage clients, app developers, tooling providers, and the many other community members contributing to the network!" />
+    <meta name="twitter:domain" content="filecoin.io" />
+    <meta name="twitter:image:src" content="https://filecoin.io/vintage/images/blog/slingshot-header.jpg" />
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+<body class="section blog">
+  <header>
+    <nav class="navbar">
+  <div class="nav-items-left">
+    <a href="https://filecoin.io" class="nav-item">
+      <img class="logo" src="../../vintage/images/filecoin-logo.png" alt="filecoin logo" width="130">
+    </a>
+  </div>
+  <div class="nav-items-right">
+    <label class="menu-icon" for="menu-btn">☰</label>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <ul class="nav-items-right-inner">
+      <li class="nav-item">
+        <a href="https://filecoin.io/store">Store</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://filecoin.io/mine">Mine</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://filecoin.io/build">Build</a>
+      </li>
+      
+        
+        
+        
+        
+        <li class="nav-item">
+          <a href="../../blog/" >
+            Blog
+          </a>
+        </li>
+      
+      </ul>
+  </div>
+</nav>
+
+  </header>
+
+  <div class="wrapper section-single">
+
+    
+
+
+    <div class="section-read-more">
+      <a href="../../blog/">← Back to the index</a>
+    </div>
+
+    <div class="date">September 18, 2020</div>
+    <h2 class="title">Announcing Space Race 2: Slingshot</h2>
+    
+      <div class="cover-img">
+        <img alt="Announcing Space Race 2: Slingshot" src="../../vintage/images/blog/slingshot-header.jpg">
+      </div>
+    
+
+    <div class="content">
+      <p>
+</p>
+      
+
+<p>Congratulations to everyone who participated in Space Race (or SR1, for short)! It was a truly astounding event, and a real demonstration of the breadth, depth, and commitment of the Filecoin mining community. You can read more about SR1 and Space Race 2 (SR2): Orbital Burn in <a href="https://filecoin.io/blog/space-race-2/">this blog post</a>.</p>
+
+<p>SR2 is a competition with two tracks:</p>
+
+<ol>
+<li><strong>Track 1: SR2 - Orbital Burn.</strong> A track for storage miners to continue testing and growing the scale of the network. This will pick up where Space Race 1 left off.</li>
+<li><strong>Track 2: SR2 - Slingshot.</strong> A track for Filecoin clients, application developers, and tooling developers to deploy their products to the testnet. This track will encourage clients and miners to make storage and retrieval deals, and help users of Filecoin storage prepare for mainnet.</li>
+</ol>
+
+<p>This blog post focuses on SR2 Slingshot! If you are a miner and want to participate in SR2 Orbital Burn, please read <a href="https://filecoin.io/blog/space-race-2/">this blog post</a>. SR2 Slingshot is for storage clients and developers only.</p>
+
+<h1 id="what-is-sr2-slingshot">What is SR2 Slingshot?</h1>
+
+<p>We are extremely excited to announce Space Race 2: Slingshot! While SR1 focused on miners, the Filecoin Network is a multi-dimensional network with many critical stakeholders and audiences. We’re ready and excited to bring in storage clients, app developers, tooling providers, and the many other community members contributing to the network!</p>
+
+<p>SR2 Slingshot is a community competition for <strong>storage clients and developers</strong> that rewards the storage of real, valuable, and usable data onto the Filecoin Space Race network (testnet). The stakes are high: Over the course of the event, eligible participants will compete for a prize pool of up to 500,000 FIL. The more real, valuable and usable data you onboard onto the Filecoin network, the more FIL you earn!</p>
+
+<p>With SR2 Slingshot, we are hoping to achieve the following goals:</p>
+
+<ul>
+<li><strong>Maximize the number of valuable applications storing real data on the Filecoin network.</strong> We want to see your product or application live on the Filecoin network. If you’re building an application on the Filecoin, IPFS, and/or Textile stacks, or looking to build something new, we encourage you to participate in the competition!</li>
+<li><strong>Onboard real data to the Filecoin network, and make sure it is discoverable, retrievable, and usable.</strong> We want to see you bring your real data to the Filecoin network. But the challenge isn’t just to onboard large data volumes onto Filecoin. It is also to make sure data can be discovered, retrieved, and used by your application and other applications down the road. Note that because many SR2 storage sectors will be persisted for mainnet, Slingshot is also a great opportunity to ensure that your data is stored on the Filecoin network come mainnet launch.</li>
+<li><strong>Strengthen the Filecoin storage client and developer communities.</strong> We want to create an event for our storage client and developer communities to connect and achieve collectively ambitious goals. And we’ll be there every step of the way to make sure that your team is successful in bringing real data and useful applications to the Filecoin network.</li>
+</ul>
+
+<p><strong>Phase 1</strong> of this competition starts on September 23, 2020 at 1800 UTC and ends on October 14, 2020 at 1800 UTC. Read on for more details on how to participate!</p>
+
+<h1 id="how-to-compete-in-slingshot">How to Compete in Slingshot</h1>
+
+<p>To participate in the Slingshot competition, you must store real, valuable, and usable data to the Filecoin network. You must also build an application or UI that uses that data in a meaningful way (whether reading that data directly from Filecoin or from a cache of that data stored elsewhere, like on IPFS). There are many paths to storing data to Filecoin and building these applications and UIs. You can read more about these paths in the Developer Guidance section below.</p>
+
+<p>By “real, valuable, and usable data”, we mean:</p>
+
+<ol>
+<li><strong>Application data.</strong> You can build an end-user facing application that stores application and user data to Filecoin. The application UI is capable of retrieving the relevant data as needed.</li>
+<li><strong>Data collections.</strong> You can store data from a curated list of data collections that the Slingshot admin team maintains and create an accompanying UI to utilize / access this data.</li>
+</ol>
+
+<p>The main channels for the Slingshot competition are:</p>
+
+<ul>
+<li><strong>Slingshot website and leaderboard:</strong> <a href="https://slingshot.filecoin.io">https://slingshot.filecoin.io</a>. This website is the source of truth for the entire Slingshot competition. It includes information about the general competition purpose, rules, events and programming, registration forms, and the leaderboard. The leaderboard maintains the total size of the reward pool based on the collective efforts of Slingshot participants. It also provides a listing of participants, their eligibility status, and potential rewards.</li>
+<li><strong>Slingshot repo:</strong> <a href="https://github.com/filecoin-project/slingshot">https://github.com/filecoin-project/slingshot</a>. This repo is where you can submit PRs to include your project details in the Slingshot leaderboard. Community reviewers will leave feedback directly in the submitted PRs. The Slingshot admin team also maintains a <a href="https://github.com/filecoin-project/slingshot/blob/master/datasets.md">curated list of datasets</a> in this repo.</li>
+<li><strong>Slack:</strong> We are using the following Slack channels in the <a href="https://filecoin.io/slack">Filecoin Project Slack workspace</a> to provide Slingshot announcements and help debug any issues. If you are participating in the competition, please make sure you have joined these channels:
+
+<ul>
+<li><strong>#fil-testnet-announce</strong> &ndash; For major announcements about the testnet and major software releases</li>
+<li><strong>#slingshot-announcements</strong> &ndash; For major announcements about the Slingshot program</li>
+<li><strong>#slingshot</strong> &ndash; For debugging help and community conversations throughout the course of the competition</li>
+</ul></li>
+</ul>
+
+<p>To sign up for the competition and become eligible for rewards, please complete the following steps:</p>
+
+<ol>
+<li><strong>Slack:</strong> Join the <a href="https://filecoin.io/slack">Filecoin Project Slack workspace</a> and the following channels:
+
+<ul>
+<li>#fil-testnet-announce</li>
+<li>#slingshot-announcements</li>
+<li>#slingshot</li>
+</ul></li>
+<li><strong>Start your project:</strong> Decide what data you’d like to store to Filecoin, what application or UI you will  build to interact with this data, and what technology stack you’d like to use (more info on this in the Developer Guidance section). Once you have successfully made your first storage deal to the Filecoin network, the Filecoin address you used to make that storage deal will automatically show up on the leaderboard. However, your project will not yet be eligible for rewards.</li>
+<li><strong>Register to participate:</strong> There are two registration steps to complete:
+
+<ul>
+<li>Submit a registration form at <a href="https://slingshot.filecoin.io/register">https://slingshot.filecoin.io/register</a> containing information about your team.</li>
+<li>Submit a PR to the <a href="https://github.com/filecoin-project/slingshot">filecoin-project/slingshot</a> GitHub repo, containing information about your project, application/UI URL, and more. The repo contains a template and submission instructions.</li>
+</ul></li>
+<li><strong>Pass community review:</strong> The team of Slingshot community reviewers will review your project details in the <a href="https://github.com/filecoin-project/slingshot">filecoin-project/slingshot</a> GitHub repo to make sure you are eligible to participate in the competition. They will leave feedback for your team in your PR. If your application is accepted, the review team will merge the PR, update the leaderboard with your project information only (no personal information), and mark your project as “Reviewed” on the leaderboard. If your application is not immediately accepted, the review team will ask for more information, which you can provide by updating your PR.</li>
+<li><strong>Follow competition rules:</strong> If you have completed the prior steps, and follow the competition rules throughout the competition, you will become eligible for rewards. These rules are automatically checked by the Slingshot leaderboard software or, in some cases, manually checked by the Slingshot community reviewers. If you are eligible for rewards, the leaderboard will mark your project as “Eligible”. Please note that Eligible projects can become ineligible for rewards throughout the competition if they fail to follow the competition rules on an ongoing basis.</li>
+</ol>
+
+<p>Participants should expect to improve their applications/UIs and grow their data storage on Filecoin throughout the course of the competition. Throughout the competition, the Slingshot leaderboard will be the source of truth, so monitor this leaderboard closely to make sure your project is properly represented there.</p>
+
+<h1 id="competition-rules">Competition Rules</h1>
+
+<ol>
+<li><strong>Leaderboard Listing:</strong>
+
+<ul>
+<li>To show up on the Slingshot leaderboard, you must submit at least 1 successful deal to the Filecoin network.</li>
+<li>To be listed as “Reviewed” on the leaderboard, you must submit a registration form on the Slingshot website, submit a PR to the <a href="https://github.com/filecoin-project/slingshot">filecoin-project/slingshot</a> GitHub repo, and pass community review.</li>
+<li>Note: Showing up on the leaderboard does not automatically make you eligible for rewards.</li>
+</ul></li>
+<li><strong>Eligibility for Rewards:</strong> In order to be eligible for any Slingshot rewards, and be listed as “Eligible” on the leaderboard, you must meet the following requirements. These requirements are checked automatically by the Slingshot leaderboard or manually by the community review team throughout the course of the competition.
+
+<ul>
+<li>You must store real, valuable, and usable data to the Filecoin network. This can be application data or data collections (from a list maintained by the Slingshot team <a href="https://github.com/filecoin-project/slingshot/blob/master/datasets.md">here</a>).</li>
+<li>You must build an application or UI that uses the data in a meaningful way. You must submit this application or UI as part of the competition and it needs to work.</li>
+<li>Your project must pass community review to validate that your project is legitimate. Teams that were once reviewed can become disqualified throughout the course of the competition if they fail to continually follow the competition rules.</li>
+<li>You must make storage deals with at least 3 miners on the SR2 network.</li>
+<li>You must store each CID such that it can be retrieved from the Filecoin network. We will test for CID retrieval periodically throughout the course of the competition.</li>
+<li>You must participate in the Slingshot Showcase.</li>
+</ul></li>
+<li><strong>Showcase:</strong> We are organizing a Slingshot Showcase to highlight the work all Slingshot participants will have done over the course of the competition.
+
+<ul>
+<li>Each of the top 100 eligible participants on the leaderboard will record a presentation of their project for the Slingshot Showcase.</li>
+<li>In addition, the top 10 eligible participants on the leaderboard will be invited to do a live presentation of their projects at the live Showcase event.</li>
+<li>We will publish specific criteria for these Showcase presentations and demos at the end of Week 2 of the competition.</li>
+</ul></li>
+<li><strong>Disqualification:</strong> It is possible that your team may become disqualified at any point in the competition if you become ineligible for rewards, violate the competition rules, or are found to be gaming the competition in any way. You must not plagiarize other projects. Leaderboard results will not be truly final until shortly after the competition ends. The Slingshot admin team will aggregate all data from the leaderboard and community reviewers to determine final eligibility at the end of the competition and the final competition winners.</li>
+<li>We reserve the right to change the competition rules as needed in order to ensure healthy competition dynamics.</li>
+</ol>
+
+<h1 id="community-review">Community Review</h1>
+
+<p>Slingshot community reviewers are members of the Filecoin community who have proven themselves to be deeply invested in the long-term health of the Filecoin network. Community reviewers come from different stakeholder communities &ndash; a few storage miners, a few developer tooling builders, a few application developers, and more. We will post on the Slingshot website when we have finalized the community review team!</p>
+
+<p>Slingshot community reviewers will review submission PRs across a number of dimensions. Some of the criteria they will be reviewing for include:</p>
+
+<ul>
+<li>Does this project follow the <a href="https://github.com/filecoin-project/community/blob/master/CODE_OF_CONDUCT.md">Filecoin Project Code of Conduct</a>?</li>
+<li>Does this project store authentic and usable data?</li>
+<li>How does the project plan to structure data and store it? What are the data sizes and dataset details?</li>
+<li>Does the project seem achievable?</li>
+<li>Does the application/UI plan make sense?</li>
+</ul>
+
+<p>If your project is accepted, the reviewers will merge your PR, update the leaderboard with your project info, and mark your project as “Reviewed”. If your project is not immediately accepted, the reviewers will provide feedback in the PR on the revisions they would like to see for reconsideration.</p>
+
+<h1 id="rewards">Rewards</h1>
+
+<p>SR2 Slingshot builds on the collaborative and competitive dynamics from SR1. Slingshot distributes a prize pool among all participants. The size of the prize pool is determined by the total amount of data stored on the network. The prize pool is distributed proportionally amongst participants according to the amount of data their project or application is storing on the network.</p>
+
+<p>Slingshot will occur in two phases:</p>
+
+<ul>
+<li><strong>Phase 1: Onboard</strong>. This initial phase of the competition will start on September 23, 2020. The goal of this phase is to onboard the first PiB of real data onto the Filecoin network!</li>
+<li><strong>Phase 2: Scale</strong>. The second phase will start after Phase 1 completes. The goal of this phase is to go from 1PiB to 10PiB of data onboarded onto the Filecoin network. We will determine the exact timing of Phase 2 after Phase 1 completes.</li>
+<li>We may add more prize pools or adjust the phases as needed, depending on the pace of the competition!</li>
+</ul>
+
+<p>Current reward prize pools:</p>
+
+<table style="width:80%;margin-left:auto;margin-right:auto;">
+  <tr>
+   <th style="text-align:center"><strong>Total Data Onboarded</strong></th>
+   <th style="text-align:center"><strong>Size of Reward Pool (FIL)</strong></th>
+  </tr>
+  <tr>
+   <td style="text-align:center">Phase 1: Onboard</td>
+   <td style="text-align:center"> - </td>
+  </tr>
+  <tr>
+   <td style="text-align:center">10TiB</td>
+   <td style="text-align:center">10,000</td>
+  </tr>
+  <tr>
+   <td style="text-align:center">100TiB</td>
+   <td style="text-align:center">20,000</td>
+  </tr>
+  <tr>
+   <td style="text-align:center">500TiB</td>
+   <td style="text-align:center">50,000</td>
+  </tr>
+  <tr>
+   <td style="text-align:center">1PiB</td>
+   <td style="text-align:center">100,000</td>
+  </tr>
+  <tr>
+   <td style="text-align:center">Phase 2: Scale</td>
+   <td style="text-align:center"> - </td>
+  </tr>
+  <tr>
+   <td style="text-align:center">5PiB</td>
+   <td style="text-align:center">250,000</td>
+  </tr>
+  <tr>
+   <td style="text-align:center">10PiB</td>
+   <td style="text-align:center">500,000</td>
+  </tr>
+</table>
+
+<p>Here is an example to demonstrate how rewards will be distributed at the end of the competition.</p>
+
+<ul>
+<li>There are four participants in the competition:
+
+<ul>
+<li>A stores 5TiB of data, passed the community review stage, and is listed as Eligible on the leaderboard.</li>
+<li>B stores 5.5TiB of application data, passed the community review stage, and is listed as Eligible on the leaderboard.</li>
+<li>C stores 5TiB of application data, but did not pass the community review stage and is not Reviewed or Eligible on the leaderboard.</li>
+<li>D stores 0.5TiB of data and passed community review. However, D stores all their data with 1 miner (instead of 3 or more), and thus has not met all rewards eligibility requirements. D is listed as Reviewed, but not Eligible on the leaderboard.</li>
+</ul></li>
+<li>In this case, C and D are not eligible for rewards in the Slingshot competition. This is because C did not pass the community review stage and D stored their data with fewer than 3 miners in aggregate. Thus, only the storage of A and B count for competition rewards.<br /></li>
+<li>Between A and B, the collective storage is 5 + 5.5 = 10.5TiB of eligible storage. This unlocks the lowest tier, the 10,000 FIL reward pool.</li>
+<li>Since A and B are the only eligible winners, they split the reward pool proportionally between themselves:
+
+<ul>
+<li>Total data size = 5 + 5.5 TiB = 10.5 TiB</li>
+<li>A’s portion of the reward pool = (5 / 10.5) * 10,000 FIL = ~4,762 FIL</li>
+<li>B’s portion of the reward pool = (5.5 / 10.5) * 10,000 FIL = ~5,238 FIL</li>
+</ul></li>
+<li>Both C and D are ineligible for rewards and receive 0 FIL.</li>
+</ul>
+
+<p>Note: Any rewards earned will vest linearly over six months from mainnet launch. Additionally, while we don’t expect it, in the unlikely event that Protocol Labs or the Filecoin Foundation determine in their sole discretion that legal or regulatory issues prevent the delivery of any portion of rewards, the rewards may be restructured, postponed, or cancelled.</p>
+
+<h1 id="developer-guidance">Developer Guidance</h1>
+
+<p>There are many ways to store data to the Filecoin network and build applications/UIs on top of this data. The most popular tech stacks for developers are:</p>
+
+<ul>
+<li><strong>Powergate.</strong> Powergate is a multitiered file storage API built on Filecoin and IPFS, and an index builder for Filecoin data. It&rsquo;s designed to be modular and extensible. You can use Powergate to store your data to IPFS and Filecoin, and Powergate will retrieve CIDs from the hottest storage layer where the data is available (could be local cache, IPFS, or lastly, Filecoin). Running Powergate entails managing your own IPFS and Filecoin lotus nodes.</li>
+<li><strong>Textile Hub.</strong> Textile Hub is the fastest way to start building and experimenting on Textile technologies. It provides hosted Buckets and Threads with persistent IFPS endpoints. It includes developer accounts for individuals and organizations and API keys integration into apps. If you choose to use Textile Hub with hosted Buckets for your application, it takes just one command to archive your entire Bucket to the Filecoin network.</li>
+<li><strong>Hosted Powergate.</strong> Hosted Powergate provides the same functionality as Powergate, but the infrastructure is managed by the Textile team. Instead of having to manage your own IPFS and Filecoin lotus nodes, Textile manages these nodes for you, while your team retains complete control and full access to the hosted instance.</li>
+<li><strong>Lotus.</strong> Lotus is the reference Filecoin protocol implementation. Building your application directly on lotus is the most bare-metal option available to developers. It requires managing your own node and the complexities of storage deal proposal and management on Filecoin.</li>
+</ul>
+
+<p>There is no single right way to store data or build applications/UIs on the Filecoin network. However, we recommend the following for developers:</p>
+
+<ul>
+<li>We do not recommend that developers who are primarily interested in Filecoin’s data storage and retrieval features build directly on top of lotus. This is because lotus features are fairly low-level, and there are easier products for developers to use. Additionally, a lotus node alone is not able to retrieve data directly from the IPFS network. Because Filecoin retrieval performance is significantly slower than IPFS, it is often used as the backup storage solution. If developers are using a lotus node directly for storage and retrieval, this limits the use cases for your application/UI significantly.</li>
+<li>Developers who are looking to store their data and retrieve it quickly should use Powergate, Hosted Powergate, or Textile Hub. This is especially true if the data you are storing to Filecoin is already on IPFS. These solutions allow you to back your data up to the colder storage that Filecoin offers, and retrieve your data from hotter storage layers like IPFS.</li>
+<li>Developers who are looking to store their data, agnostic of retrieval speed, should still use Powergate, Hosted Powergate, or Textile Hub for the nicer developer experience compared to using lotus directly. However, you can select not to pin your data to IPFS, saving on storage and bandwidth costs in the process.</li>
+<li>Developers who are building developer tooling and products like chain explorers should build directly on top of lotus.</li>
+</ul>
+
+<p>If you have any questions about the tech stack you should be using for your application or how to get set up, feel free to ask in Slack or email <a href="mailto:slingshot@filecoin.org">slingshot@filecoin.org</a>!</p>
+
+<h1 id="thank-you">Thank you</h1>
+
+<p>We are really excited to kick off SR2 Slingshot and grow the applications built and amount of real data stored on humanity’s largest decentralized storage network. Thank you to the storage client, developer, and mining communities for making this network great! And a special thanks to our community reviewers for making it possible for us to run a program like Slingshot for the Filecoin network and ecosystem.</p>
+
+    </div>
+
+    <div class="section-read-more">
+      <a href="../../blog/">← Back to the index</a>
+    </div>
+  </div>
+
+  <footer>
+  <div class="inner">
+    <div class="col">
+      Follow us at&nbsp;<a class="twitter" target="_blank" title="@Filecoin" href="https://twitter.com/Filecoin" rel="noopener">
+      @Filecoin
+      </a>
+    </div>
+  </div>
+</footer>
+<script src="../../vintage/js/main.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</body>
+</html>

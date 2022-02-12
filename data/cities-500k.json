@@ -1,0 +1,5002 @@
+[
+  {
+    "name": "Tokyo",
+    "latitude": 35.685,
+    "longitude": 139.7514
+  },
+  {
+    "name": "New York",
+    "latitude": 40.6943,
+    "longitude": -73.9249
+  },
+  {
+    "name": "Mexico City",
+    "latitude": 19.4424,
+    "longitude": -99.131
+  },
+  {
+    "name": "Mumbai",
+    "latitude": 19.017,
+    "longitude": 72.857
+  },
+  {
+    "name": "Sao Paulo",
+    "latitude": -23.5587,
+    "longitude": -46.625
+  },
+  {
+    "name": "Delhi",
+    "latitude": 28.67,
+    "longitude": 77.23
+  },
+  {
+    "name": "Shanghai",
+    "latitude": 31.2165,
+    "longitude": 121.4365
+  },
+  {
+    "name": "Kolkata",
+    "latitude": 22.495,
+    "longitude": 88.3247
+  },
+  {
+    "name": "Los Angeles",
+    "latitude": 34.1139,
+    "longitude": -118.4068
+  },
+  {
+    "name": "Dhaka",
+    "latitude": 23.7231,
+    "longitude": 90.4086
+  },
+  {
+    "name": "Buenos Aires",
+    "latitude": -34.6025,
+    "longitude": -58.3975
+  },
+  {
+    "name": "Karachi",
+    "latitude": 24.87,
+    "longitude": 66.99
+  },
+  {
+    "name": "Cairo",
+    "latitude": 30.05,
+    "longitude": 31.25
+  },
+  {
+    "name": "Rio de Janeiro",
+    "latitude": -22.925,
+    "longitude": -43.225
+  },
+  {
+    "name": "Osaka",
+    "latitude": 34.75,
+    "longitude": 135.4601
+  },
+  {
+    "name": "Beijing",
+    "latitude": 39.9289,
+    "longitude": 116.3883
+  },
+  {
+    "name": "Manila",
+    "latitude": 14.6042,
+    "longitude": 120.9822
+  },
+  {
+    "name": "Moscow",
+    "latitude": 55.7522,
+    "longitude": 37.6155
+  },
+  {
+    "name": "Istanbul",
+    "latitude": 41.105,
+    "longitude": 29.01
+  },
+  {
+    "name": "Paris",
+    "latitude": 48.8667,
+    "longitude": 2.3333
+  },
+  {
+    "name": "Seoul",
+    "latitude": 37.5663,
+    "longitude": 126.9997
+  },
+  {
+    "name": "Lagos",
+    "latitude": 6.4433,
+    "longitude": 3.3915
+  },
+  {
+    "name": "Jakarta",
+    "latitude": -6.1744,
+    "longitude": 106.8294
+  },
+  {
+    "name": "Guangzhou",
+    "latitude": 23.145,
+    "longitude": 113.325
+  },
+  {
+    "name": "Chicago",
+    "latitude": 41.8373,
+    "longitude": -87.6862
+  },
+  {
+    "name": "London",
+    "latitude": 51.5,
+    "longitude": -0.1167
+  },
+  {
+    "name": "Lima",
+    "latitude": -12.048,
+    "longitude": -77.0501
+  },
+  {
+    "name": "Tehran",
+    "latitude": 35.6719,
+    "longitude": 51.4243
+  },
+  {
+    "name": "Kinshasa",
+    "latitude": -4.3297,
+    "longitude": 15.315
+  },
+  {
+    "name": "Bogota",
+    "latitude": 4.5964,
+    "longitude": -74.0833
+  },
+  {
+    "name": "Shenzhen",
+    "latitude": 22.5524,
+    "longitude": 114.1221
+  },
+  {
+    "name": "Wuhan",
+    "latitude": 30.58,
+    "longitude": 114.27
+  },
+  {
+    "name": "Hong Kong",
+    "latitude": 22.305,
+    "longitude": 114.185
+  },
+  {
+    "name": "Tianjin",
+    "latitude": 39.13,
+    "longitude": 117.2
+  },
+  {
+    "name": "Chennai",
+    "latitude": 13.09,
+    "longitude": 80.28
+  },
+  {
+    "name": "Taipei",
+    "latitude": 25.0358,
+    "longitude": 121.5683
+  },
+  {
+    "name": "Bengaluru",
+    "latitude": 12.97,
+    "longitude": 77.56
+  },
+  {
+    "name": "Bangkok",
+    "latitude": 13.75,
+    "longitude": 100.5166
+  },
+  {
+    "name": "Lahore",
+    "latitude": 31.56,
+    "longitude": 74.35
+  },
+  {
+    "name": "Chongqing",
+    "latitude": 29.565,
+    "longitude": 106.595
+  },
+  {
+    "name": "Miami",
+    "latitude": 25.7839,
+    "longitude": -80.2102
+  },
+  {
+    "name": "Hyderabad",
+    "latitude": 17.4,
+    "longitude": 78.48
+  },
+  {
+    "name": "Dallas",
+    "latitude": 32.7936,
+    "longitude": -96.7662
+  },
+  {
+    "name": "Santiago",
+    "latitude": -33.44,
+    "longitude": -70.66
+  },
+  {
+    "name": "Philadelphia",
+    "latitude": 40.0077,
+    "longitude": -75.1339
+  },
+  {
+    "name": "Belo Horizonte",
+    "latitude": -19.915,
+    "longitude": -43.915
+  },
+  {
+    "name": "Madrid",
+    "latitude": 40.4,
+    "longitude": -3.6834
+  },
+  {
+    "name": "Houston",
+    "latitude": 29.7869,
+    "longitude": -95.3905
+  },
+  {
+    "name": "Ahmadabad",
+    "latitude": 23.0301,
+    "longitude": 72.58
+  },
+  {
+    "name": "Ho Chi Minh City",
+    "latitude": 10.78,
+    "longitude": 106.695
+  },
+  {
+    "name": "Washington",
+    "latitude": 38.9047,
+    "longitude": -77.0163
+  },
+  {
+    "name": "Atlanta",
+    "latitude": 33.7627,
+    "longitude": -84.4225
+  },
+  {
+    "name": "Toronto",
+    "latitude": 43.7,
+    "longitude": -79.42
+  },
+  {
+    "name": "Singapore",
+    "latitude": 1.293,
+    "longitude": 103.8558
+  },
+  {
+    "name": "Luanda",
+    "latitude": -8.8383,
+    "longitude": 13.2344
+  },
+  {
+    "name": "Baghdad",
+    "latitude": 33.3386,
+    "longitude": 44.3939
+  },
+  {
+    "name": "Barcelona",
+    "latitude": 41.3833,
+    "longitude": 2.1834
+  },
+  {
+    "name": "Haora",
+    "latitude": 22.5804,
+    "longitude": 88.3299
+  },
+  {
+    "name": "Shenyang",
+    "latitude": 41.805,
+    "longitude": 123.45
+  },
+  {
+    "name": "Khartoum",
+    "latitude": 15.5881,
+    "longitude": 32.5342
+  },
+  {
+    "name": "Pune",
+    "latitude": 18.53,
+    "longitude": 73.85
+  },
+  {
+    "name": "Boston",
+    "latitude": 42.3188,
+    "longitude": -71.0846
+  },
+  {
+    "name": "Sydney",
+    "latitude": -33.92,
+    "longitude": 151.1852
+  },
+  {
+    "name": "Saint Petersburg",
+    "latitude": 59.939,
+    "longitude": 30.316
+  },
+  {
+    "name": "Chittagong",
+    "latitude": 22.33,
+    "longitude": 91.8
+  },
+  {
+    "name": "Dongguan",
+    "latitude": 23.0489,
+    "longitude": 113.7447
+  },
+  {
+    "name": "Riyadh",
+    "latitude": 24.6408,
+    "longitude": 46.7727
+  },
+  {
+    "name": "Hanoi",
+    "latitude": 21.0333,
+    "longitude": 105.85
+  },
+  {
+    "name": "Guadalajara",
+    "latitude": 20.67,
+    "longitude": -103.33
+  },
+  {
+    "name": "Melbourne",
+    "latitude": -37.82,
+    "longitude": 144.975
+  },
+  {
+    "name": "Alexandria",
+    "latitude": 31.2,
+    "longitude": 29.95
+  },
+  {
+    "name": "Chengdu",
+    "latitude": 30.67,
+    "longitude": 104.07
+  },
+  {
+    "name": "Rangoon",
+    "latitude": 16.7834,
+    "longitude": 96.1667
+  },
+  {
+    "name": "Phoenix",
+    "latitude": 33.5722,
+    "longitude": -112.0891
+  },
+  {
+    "name": "Xian",
+    "latitude": 34.275,
+    "longitude": 108.895
+  },
+  {
+    "name": "Porto Alegre",
+    "latitude": -30.05,
+    "longitude": -51.2
+  },
+  {
+    "name": "Surat",
+    "latitude": 21.2,
+    "longitude": 72.84
+  },
+  {
+    "name": "Hechi",
+    "latitude": 23.0965,
+    "longitude": 109.6091
+  },
+  {
+    "name": "Abidjan",
+    "latitude": 5.32,
+    "longitude": -4.04
+  },
+  {
+    "name": "Brasilia",
+    "latitude": -15.7833,
+    "longitude": -47.9161
+  },
+  {
+    "name": "Ankara",
+    "latitude": 39.9272,
+    "longitude": 32.8644
+  },
+  {
+    "name": "Monterrey",
+    "latitude": 25.67,
+    "longitude": -100.33
+  },
+  {
+    "name": "Yokohama",
+    "latitude": 35.32,
+    "longitude": 139.58
+  },
+  {
+    "name": "Nanjing",
+    "latitude": 32.05,
+    "longitude": 118.78
+  },
+  {
+    "name": "Montreal",
+    "latitude": 45.5,
+    "longitude": -73.5833
+  },
+  {
+    "name": "Guiyang",
+    "latitude": 26.58,
+    "longitude": 106.72
+  },
+  {
+    "name": "Recife",
+    "latitude": -8.0756,
+    "longitude": -34.9156
+  },
+  {
+    "name": "Seattle",
+    "latitude": 47.6211,
+    "longitude": -122.3244
+  },
+  {
+    "name": "Harbin",
+    "latitude": 45.75,
+    "longitude": 126.65
+  },
+  {
+    "name": "San Francisco",
+    "latitude": 37.7562,
+    "longitude": -122.443
+  },
+  {
+    "name": "Fortaleza",
+    "latitude": -3.75,
+    "longitude": -38.58
+  },
+  {
+    "name": "Zhangzhou",
+    "latitude": 24.5204,
+    "longitude": 117.67
+  },
+  {
+    "name": "Detroit",
+    "latitude": 42.3834,
+    "longitude": -83.1024
+  },
+  {
+    "name": "Salvador",
+    "latitude": -12.97,
+    "longitude": -38.48
+  },
+  {
+    "name": "Busan",
+    "latitude": 35.0951,
+    "longitude": 129.01
+  },
+  {
+    "name": "Johannesburg",
+    "latitude": -26.17,
+    "longitude": 28.03
+  },
+  {
+    "name": "Berlin",
+    "latitude": 52.5218,
+    "longitude": 13.4015
+  },
+  {
+    "name": "Algiers",
+    "latitude": 36.7631,
+    "longitude": 3.0506
+  },
+  {
+    "name": "Rome",
+    "latitude": 41.896,
+    "longitude": 12.4833
+  },
+  {
+    "name": "Pyongyang",
+    "latitude": 39.0194,
+    "longitude": 125.7547
+  },
+  {
+    "name": "Medellin",
+    "latitude": 6.275,
+    "longitude": -75.575
+  },
+  {
+    "name": "Kabul",
+    "latitude": 34.5167,
+    "longitude": 69.1833
+  },
+  {
+    "name": "Athens",
+    "latitude": 37.9833,
+    "longitude": 23.7333
+  },
+  {
+    "name": "Nagoya",
+    "latitude": 35.155,
+    "longitude": 136.915
+  },
+  {
+    "name": "Cape Town",
+    "latitude": -33.92,
+    "longitude": 18.435
+  },
+  {
+    "name": "San Diego",
+    "latitude": 32.8312,
+    "longitude": -117.1225
+  },
+  {
+    "name": "Changchun",
+    "latitude": 43.865,
+    "longitude": 125.34
+  },
+  {
+    "name": "Casablanca",
+    "latitude": 33.6,
+    "longitude": -7.6164
+  },
+  {
+    "name": "Dalian",
+    "latitude": 38.9228,
+    "longitude": 121.6298
+  },
+  {
+    "name": "Cawnpore",
+    "latitude": 26.46,
+    "longitude": 80.32
+  },
+  {
+    "name": "Kano",
+    "latitude": 12,
+    "longitude": 8.52
+  },
+  {
+    "name": "Tel Aviv-Yafo",
+    "latitude": 32.08,
+    "longitude": 34.77
+  },
+  {
+    "name": "Addis Ababa",
+    "latitude": 9.0333,
+    "longitude": 38.7
+  },
+  {
+    "name": "Curitiba",
+    "latitude": -25.42,
+    "longitude": -49.32
+  },
+  {
+    "name": "Zibo",
+    "latitude": 36.8,
+    "longitude": 118.05
+  },
+  {
+    "name": "Jeddah",
+    "latitude": 21.5169,
+    "longitude": 39.2192
+  },
+  {
+    "name": "Nairobi",
+    "latitude": -1.2833,
+    "longitude": 36.8167
+  },
+  {
+    "name": "Hangzhou",
+    "latitude": 30.25,
+    "longitude": 120.17
+  },
+  {
+    "name": "Benoni",
+    "latitude": -26.1496,
+    "longitude": 28.3299
+  },
+  {
+    "name": "Caracas",
+    "latitude": 10.501,
+    "longitude": -66.917
+  },
+  {
+    "name": "Milan",
+    "latitude": 45.47,
+    "longitude": 9.205
+  },
+  {
+    "name": "Stuttgart",
+    "latitude": 48.78,
+    "longitude": 9.2
+  },
+  {
+    "name": "Kunming",
+    "latitude": 25.07,
+    "longitude": 102.68
+  },
+  {
+    "name": "Dar es Salaam",
+    "latitude": -6.8,
+    "longitude": 39.2683
+  },
+  {
+    "name": "Minneapolis",
+    "latitude": 44.9635,
+    "longitude": -93.2678
+  },
+  {
+    "name": "Jaipur",
+    "latitude": 26.9211,
+    "longitude": 75.81
+  },
+  {
+    "name": "Taiyuan",
+    "latitude": 37.875,
+    "longitude": 112.5451
+  },
+  {
+    "name": "Frankfurt",
+    "latitude": 50.1,
+    "longitude": 8.675
+  },
+  {
+    "name": "Qingdao",
+    "latitude": 36.09,
+    "longitude": 120.33
+  },
+  {
+    "name": "Surabaya",
+    "latitude": -7.2492,
+    "longitude": 112.7508
+  },
+  {
+    "name": "Lisbon",
+    "latitude": 38.7227,
+    "longitude": -9.1449
+  },
+  {
+    "name": "Tampa",
+    "latitude": 27.9942,
+    "longitude": -82.4451
+  },
+  {
+    "name": "Jinan",
+    "latitude": 36.675,
+    "longitude": 116.995
+  },
+  {
+    "name": "Fukuoka",
+    "latitude": 33.595,
+    "longitude": 130.41
+  },
+  {
+    "name": "Campinas",
+    "latitude": -22.9,
+    "longitude": -47.1
+  },
+  {
+    "name": "Denver",
+    "latitude": 39.7621,
+    "longitude": -104.8759
+  },
+  {
+    "name": "Kaohsiung",
+    "latitude": 22.6333,
+    "longitude": 120.2666
+  },
+  {
+    "name": "Quezon City",
+    "latitude": 14.6504,
+    "longitude": 121.03
+  },
+  {
+    "name": "Katowice",
+    "latitude": 50.2604,
+    "longitude": 19.02
+  },
+  {
+    "name": "Aleppo",
+    "latitude": 36.23,
+    "longitude": 37.17
+  },
+  {
+    "name": "Durban",
+    "latitude": -29.865,
+    "longitude": 30.98
+  },
+  {
+    "name": "Kyiv",
+    "latitude": 50.4334,
+    "longitude": 30.5166
+  },
+  {
+    "name": "Lucknow",
+    "latitude": 26.855,
+    "longitude": 80.915
+  },
+  {
+    "name": "Giza",
+    "latitude": 30.01,
+    "longitude": 31.19
+  },
+  {
+    "name": "Zhengzhou",
+    "latitude": 34.755,
+    "longitude": 113.6651
+  },
+  {
+    "name": "Taichung",
+    "latitude": 24.1521,
+    "longitude": 120.6817
+  },
+  {
+    "name": "Brooklyn",
+    "latitude": 40.6501,
+    "longitude": -73.9496
+  },
+  {
+    "name": "Ibadan",
+    "latitude": 7.38,
+    "longitude": 3.93
+  },
+  {
+    "name": "Faisalabad",
+    "latitude": 31.41,
+    "longitude": 73.11
+  },
+  {
+    "name": "Fuzhou",
+    "latitude": 26.08,
+    "longitude": 119.3
+  },
+  {
+    "name": "Changsha",
+    "latitude": 28.2,
+    "longitude": 112.97
+  },
+  {
+    "name": "Dakar",
+    "latitude": 14.7158,
+    "longitude": -17.4731
+  },
+  {
+    "name": "Izmir",
+    "latitude": 38.4361,
+    "longitude": 27.1518
+  },
+  {
+    "name": "Xiangtan",
+    "latitude": 27.8504,
+    "longitude": 112.9
+  },
+  {
+    "name": "Lanzhou",
+    "latitude": 36.056,
+    "longitude": 103.792
+  },
+  {
+    "name": "Incheon",
+    "latitude": 37.4761,
+    "longitude": 126.6422
+  },
+  {
+    "name": "Sapporo",
+    "latitude": 43.075,
+    "longitude": 141.34
+  },
+  {
+    "name": "Xiamen",
+    "latitude": 24.45,
+    "longitude": 118.08
+  },
+  {
+    "name": "Guayaquil",
+    "latitude": -2.22,
+    "longitude": -79.92
+  },
+  {
+    "name": "George Town",
+    "latitude": 5.4136,
+    "longitude": 100.3294
+  },
+  {
+    "name": "Mashhad",
+    "latitude": 36.27,
+    "longitude": 59.57
+  },
+  {
+    "name": "Damascus",
+    "latitude": 33.5,
+    "longitude": 36.3
+  },
+  {
+    "name": "Daegu",
+    "latitude": 35.8668,
+    "longitude": 128.607
+  },
+  {
+    "name": "Nagpur",
+    "latitude": 21.17,
+    "longitude": 79.09
+  },
+  {
+    "name": "Lianshan",
+    "latitude": 40.7503,
+    "longitude": 120.83
+  },
+  {
+    "name": "Shijiazhuang",
+    "latitude": 38.05,
+    "longitude": 114.48
+  },
+  {
+    "name": "Tunis",
+    "latitude": 36.8028,
+    "longitude": 10.1797
+  },
+  {
+    "name": "Vienna",
+    "latitude": 48.2,
+    "longitude": 16.3666
+  },
+  {
+    "name": "Jilin",
+    "latitude": 43.85,
+    "longitude": 126.55
+  },
+  {
+    "name": "Omdurman",
+    "latitude": 15.6167,
+    "longitude": 32.48
+  },
+  {
+    "name": "Bandung",
+    "latitude": -6.95,
+    "longitude": 107.57
+  },
+  {
+    "name": "Bekasi",
+    "latitude": -6.2173,
+    "longitude": 106.9723
+  },
+  {
+    "name": "Mannheim",
+    "latitude": 49.5004,
+    "longitude": 8.47
+  },
+  {
+    "name": "Nanchang",
+    "latitude": 28.68,
+    "longitude": 115.88
+  },
+  {
+    "name": "Wenzhou",
+    "latitude": 28.02,
+    "longitude": 120.6501
+  },
+  {
+    "name": "Queens",
+    "latitude": 40.7498,
+    "longitude": -73.7976
+  },
+  {
+    "name": "Vancouver",
+    "latitude": 49.2734,
+    "longitude": -123.1216
+  },
+  {
+    "name": "Birmingham",
+    "latitude": 52.475,
+    "longitude": -1.92
+  },
+  {
+    "name": "Cali",
+    "latitude": 3.4,
+    "longitude": -76.5
+  },
+  {
+    "name": "Naples",
+    "latitude": 40.84,
+    "longitude": 14.245
+  },
+  {
+    "name": "Sendai",
+    "latitude": 38.2871,
+    "longitude": 141.0217
+  },
+  {
+    "name": "Manchester",
+    "latitude": 53.5004,
+    "longitude": -2.248
+  },
+  {
+    "name": "Puebla",
+    "latitude": 19.05,
+    "longitude": -98.2
+  },
+  {
+    "name": "Tripoli",
+    "latitude": 32.8925,
+    "longitude": 13.18
+  },
+  {
+    "name": "Tashkent",
+    "latitude": 41.3117,
+    "longitude": 69.2949
+  },
+  {
+    "name": "Havana",
+    "latitude": 23.132,
+    "longitude": -82.3642
+  },
+  {
+    "name": "Gaoping",
+    "latitude": 30.7804,
+    "longitude": 106.13
+  },
+  {
+    "name": "Baltimore",
+    "latitude": 39.3051,
+    "longitude": -76.6144
+  },
+  {
+    "name": "Nanning",
+    "latitude": 22.82,
+    "longitude": 108.32
+  },
+  {
+    "name": "Belem",
+    "latitude": -1.45,
+    "longitude": -48.48
+  },
+  {
+    "name": "Patna",
+    "latitude": 25.625,
+    "longitude": 85.13
+  },
+  {
+    "name": "Santo Domingo",
+    "latitude": 18.4701,
+    "longitude": -69.9001
+  },
+  {
+    "name": "Urumqi",
+    "latitude": 43.805,
+    "longitude": 87.575
+  },
+  {
+    "name": "Zaozhuang",
+    "latitude": 34.88,
+    "longitude": 117.57
+  },
+  {
+    "name": "Baku",
+    "latitude": 40.3953,
+    "longitude": 49.8622
+  },
+  {
+    "name": "Accra",
+    "latitude": 5.55,
+    "longitude": -0.2167
+  },
+  {
+    "name": "Yantai",
+    "latitude": 37.5304,
+    "longitude": 121.4
+  },
+  {
+    "name": "Medan",
+    "latitude": 3.58,
+    "longitude": 98.65
+  },
+  {
+    "name": "Santa Cruz",
+    "latitude": -17.7539,
+    "longitude": -63.226
+  },
+  {
+    "name": "Tongshan",
+    "latitude": 34.28,
+    "longitude": 117.18
+  },
+  {
+    "name": "Riverside",
+    "latitude": 33.9381,
+    "longitude": -117.3948
+  },
+  {
+    "name": "Linyi",
+    "latitude": 35.08,
+    "longitude": 118.33
+  },
+  {
+    "name": "St. Louis",
+    "latitude": 38.6358,
+    "longitude": -90.2451
+  },
+  {
+    "name": "Las Vegas",
+    "latitude": 36.2333,
+    "longitude": -115.2654
+  },
+  {
+    "name": "Maracaibo",
+    "latitude": 10.73,
+    "longitude": -71.66
+  },
+  {
+    "name": "Kuwait City",
+    "latitude": 29.3697,
+    "longitude": 47.9783
+  },
+  {
+    "name": "Ad Dammam",
+    "latitude": 26.4282,
+    "longitude": 50.0997
+  },
+  {
+    "name": "Portland",
+    "latitude": 45.5371,
+    "longitude": -122.65
+  },
+  {
+    "name": "Haikou",
+    "latitude": 20.05,
+    "longitude": 110.32
+  },
+  {
+    "name": "Hiroshima",
+    "latitude": 34.3878,
+    "longitude": 132.4429
+  },
+  {
+    "name": "Baotou",
+    "latitude": 40.6522,
+    "longitude": 109.822
+  },
+  {
+    "name": "Hefei",
+    "latitude": 31.85,
+    "longitude": 117.28
+  },
+  {
+    "name": "Indore",
+    "latitude": 22.7151,
+    "longitude": 75.865
+  },
+  {
+    "name": "Goiania",
+    "latitude": -16.72,
+    "longitude": -49.3
+  },
+  {
+    "name": "Sanaa",
+    "latitude": 15.3547,
+    "longitude": 44.2066
+  },
+  {
+    "name": "San Antonio",
+    "latitude": 29.4658,
+    "longitude": -98.5254
+  },
+  {
+    "name": "Port-au-Prince",
+    "latitude": 18.541,
+    "longitude": -72.336
+  },
+  {
+    "name": "Haiphong",
+    "latitude": 20.83,
+    "longitude": 106.6801
+  },
+  {
+    "name": "Suzhou",
+    "latitude": 33.6361,
+    "longitude": 116.9789
+  },
+  {
+    "name": "Nanyang",
+    "latitude": 33.0004,
+    "longitude": 112.53
+  },
+  {
+    "name": "Bucharest",
+    "latitude": 44.4334,
+    "longitude": 26.0999
+  },
+  {
+    "name": "Ningbo",
+    "latitude": 29.88,
+    "longitude": 121.55
+  },
+  {
+    "name": "Douala",
+    "latitude": 4.0604,
+    "longitude": 9.71
+  },
+  {
+    "name": "Tangshan",
+    "latitude": 39.6243,
+    "longitude": 118.1944
+  },
+  {
+    "name": "Tainan",
+    "latitude": 23,
+    "longitude": 120.2
+  },
+  {
+    "name": "Xiping",
+    "latitude": 40.08,
+    "longitude": 113.3
+  },
+  {
+    "name": "Asuncion",
+    "latitude": -25.2964,
+    "longitude": -57.6415
+  },
+  {
+    "name": "Saidu Sharif",
+    "latitude": 34.75,
+    "longitude": 72.35
+  },
+  {
+    "name": "Brisbane",
+    "latitude": -27.455,
+    "longitude": 153.0351
+  },
+  {
+    "name": "Rawalpindi",
+    "latitude": 33.6,
+    "longitude": 73.04
+  },
+  {
+    "name": "Sacramento",
+    "latitude": 38.5667,
+    "longitude": -121.4683
+  },
+  {
+    "name": "Beirut",
+    "latitude": 33.872,
+    "longitude": 35.5097
+  },
+  {
+    "name": "San Jose",
+    "latitude": 37.3021,
+    "longitude": -121.8489
+  },
+  {
+    "name": "Minsk",
+    "latitude": 53.9,
+    "longitude": 27.5666
+  },
+  {
+    "name": "Kyoto",
+    "latitude": 35.03,
+    "longitude": 135.75
+  },
+  {
+    "name": "Barranquilla",
+    "latitude": 10.96,
+    "longitude": -74.8
+  },
+  {
+    "name": "Orlando",
+    "latitude": 28.4772,
+    "longitude": -81.3369
+  },
+  {
+    "name": "Shuyangzha",
+    "latitude": 34.1299,
+    "longitude": 118.7734
+  },
+  {
+    "name": "Valencia",
+    "latitude": 10.23,
+    "longitude": -67.98
+  },
+  {
+    "name": "Hamburg",
+    "latitude": 53.55,
+    "longitude": 10
+  },
+  {
+    "name": "Vadodara",
+    "latitude": 22.31,
+    "longitude": 73.18
+  },
+  {
+    "name": "Manaus",
+    "latitude": -3.1,
+    "longitude": -60
+  },
+  {
+    "name": "Shangqiu",
+    "latitude": 34.4504,
+    "longitude": 115.65
+  },
+  {
+    "name": "Wuxi",
+    "latitude": 31.58,
+    "longitude": 120.3
+  },
+  {
+    "name": "Palembang",
+    "latitude": -2.98,
+    "longitude": 104.75
+  },
+  {
+    "name": "Brussels",
+    "latitude": 50.8333,
+    "longitude": 4.3333
+  },
+  {
+    "name": "Essen",
+    "latitude": 51.45,
+    "longitude": 7.0166
+  },
+  {
+    "name": "Cleveland",
+    "latitude": 41.4767,
+    "longitude": -81.6805
+  },
+  {
+    "name": "Bhopal",
+    "latitude": 23.25,
+    "longitude": 77.41
+  },
+  {
+    "name": "Hohhot",
+    "latitude": 40.82,
+    "longitude": 111.66
+  },
+  {
+    "name": "Pittsburgh",
+    "latitude": 40.4396,
+    "longitude": -79.9763
+  },
+  {
+    "name": "Luoyang",
+    "latitude": 34.68,
+    "longitude": 112.4701
+  },
+  {
+    "name": "Santos",
+    "latitude": -23.9537,
+    "longitude": -46.3329
+  },
+  {
+    "name": "Jingling",
+    "latitude": 30.6501,
+    "longitude": 113.16
+  },
+  {
+    "name": "Warsaw",
+    "latitude": 52.25,
+    "longitude": 21
+  },
+  {
+    "name": "Rabat",
+    "latitude": 34.0253,
+    "longitude": -6.8361
+  },
+  {
+    "name": "Vitoria",
+    "latitude": -20.324,
+    "longitude": -40.366
+  },
+  {
+    "name": "Quito",
+    "latitude": -0.215,
+    "longitude": -78.5001
+  },
+  {
+    "name": "Antananarivo",
+    "latitude": -18.9166,
+    "longitude": 47.5166
+  },
+  {
+    "name": "Coimbatore",
+    "latitude": 11,
+    "longitude": 76.95
+  },
+  {
+    "name": "Daqing",
+    "latitude": 46.58,
+    "longitude": 125
+  },
+  {
+    "name": "Lu'an",
+    "latitude": 31.7503,
+    "longitude": 116.48
+  },
+  {
+    "name": "Sanzhou",
+    "latitude": 30.82,
+    "longitude": 108.4
+  },
+  {
+    "name": "Budapest",
+    "latitude": 47.5,
+    "longitude": 19.0833
+  },
+  {
+    "name": "Turin",
+    "latitude": 45.0704,
+    "longitude": 7.67
+  },
+  {
+    "name": "Suzhou",
+    "latitude": 31.3005,
+    "longitude": 120.62
+  },
+  {
+    "name": "Ludhiana",
+    "latitude": 30.9278,
+    "longitude": 75.8723
+  },
+  {
+    "name": "Cincinnati",
+    "latitude": 39.1412,
+    "longitude": -84.506
+  },
+  {
+    "name": "Kumasi",
+    "latitude": 6.69,
+    "longitude": -1.63
+  },
+  {
+    "name": "Manhattan",
+    "latitude": 40.7834,
+    "longitude": -73.9662
+  },
+  {
+    "name": "Qiqihar",
+    "latitude": 47.345,
+    "longitude": 123.99
+  },
+  {
+    "name": "Anshan",
+    "latitude": 41.115,
+    "longitude": 122.94
+  },
+  {
+    "name": "Austin",
+    "latitude": 30.3006,
+    "longitude": -97.7517
+  },
+  {
+    "name": "Zhongli",
+    "latitude": 24.965,
+    "longitude": 121.2168
+  },
+  {
+    "name": "Handan",
+    "latitude": 36.58,
+    "longitude": 114.48
+  },
+  {
+    "name": "Tai'an",
+    "latitude": 36.2,
+    "longitude": 117.1201
+  },
+  {
+    "name": "Esfahan",
+    "latitude": 32.7,
+    "longitude": 51.7
+  },
+  {
+    "name": "Kansas City",
+    "latitude": 39.1239,
+    "longitude": -94.5541
+  },
+  {
+    "name": "Yaounde",
+    "latitude": 3.8667,
+    "longitude": 11.5167
+  },
+  {
+    "name": "Shantou",
+    "latitude": 23.37,
+    "longitude": 116.67
+  },
+  {
+    "name": "Agra",
+    "latitude": 27.1704,
+    "longitude": 78.015
+  },
+  {
+    "name": "Zhanjiang",
+    "latitude": 21.2,
+    "longitude": 110.38
+  },
+  {
+    "name": "La Paz",
+    "latitude": -16.498,
+    "longitude": -68.15
+  },
+  {
+    "name": "Kalyan",
+    "latitude": 19.2502,
+    "longitude": 73.1602
+  },
+  {
+    "name": "Abuja",
+    "latitude": 9.0833,
+    "longitude": 7.5333
+  },
+  {
+    "name": "Harare",
+    "latitude": -17.8178,
+    "longitude": 31.0447
+  },
+  {
+    "name": "Indianapolis",
+    "latitude": 39.7771,
+    "longitude": -86.1458
+  },
+  {
+    "name": "Xiantao",
+    "latitude": 30.3704,
+    "longitude": 113.44
+  },
+  {
+    "name": "Khulna",
+    "latitude": 22.84,
+    "longitude": 89.56
+  },
+  {
+    "name": "Weifang",
+    "latitude": 36.7204,
+    "longitude": 119.1001
+  },
+  {
+    "name": "Tijuana",
+    "latitude": 32.5,
+    "longitude": -117.08
+  },
+  {
+    "name": "Xinyang",
+    "latitude": 32.1304,
+    "longitude": 114.07
+  },
+  {
+    "name": "Luzhou",
+    "latitude": 28.88,
+    "longitude": 105.38
+  },
+  {
+    "name": "Perth",
+    "latitude": -31.955,
+    "longitude": 115.84
+  },
+  {
+    "name": "Toluca",
+    "latitude": 19.3304,
+    "longitude": -99.67
+  },
+  {
+    "name": "Vishakhapatnam",
+    "latitude": 17.73,
+    "longitude": 83.305
+  },
+  {
+    "name": "Leeds",
+    "latitude": 53.83,
+    "longitude": -1.58
+  },
+  {
+    "name": "Kobe",
+    "latitude": 34.68,
+    "longitude": 135.17
+  },
+  {
+    "name": "Columbus",
+    "latitude": 39.986,
+    "longitude": -82.9851
+  },
+  {
+    "name": "Multan",
+    "latitude": 30.2,
+    "longitude": 71.455
+  },
+  {
+    "name": "Kochi",
+    "latitude": 10.015,
+    "longitude": 76.2239
+  },
+  {
+    "name": "Montevideo",
+    "latitude": -34.858,
+    "longitude": -56.1711
+  },
+  {
+    "name": "Gujranwala",
+    "latitude": 32.1604,
+    "longitude": 74.185
+  },
+  {
+    "name": "Niteroi",
+    "latitude": -22.9,
+    "longitude": -43.1
+  },
+  {
+    "name": "Ganzhou",
+    "latitude": 25.92,
+    "longitude": 114.95
+  },
+  {
+    "name": "Florence",
+    "latitude": 43.78,
+    "longitude": 11.25
+  },
+  {
+    "name": "Liuzhou",
+    "latitude": 24.28,
+    "longitude": 109.25
+  },
+  {
+    "name": "Bamako",
+    "latitude": 12.65,
+    "longitude": -8
+  },
+  {
+    "name": "Conakry",
+    "latitude": 9.5315,
+    "longitude": -13.6802
+  },
+  {
+    "name": "Bursa",
+    "latitude": 40.2,
+    "longitude": 29.07
+  },
+  {
+    "name": "Leon de los Aldama",
+    "latitude": 21.15,
+    "longitude": -101.7
+  },
+  {
+    "name": "Virginia Beach",
+    "latitude": 36.7335,
+    "longitude": -76.0435
+  },
+  {
+    "name": "Nasik",
+    "latitude": 20.0004,
+    "longitude": 73.78
+  },
+  {
+    "name": "Fushun",
+    "latitude": 41.8654,
+    "longitude": 123.87
+  },
+  {
+    "name": "Changde",
+    "latitude": 29.03,
+    "longitude": 111.68
+  },
+  {
+    "name": "Daejeon",
+    "latitude": 36.3355,
+    "longitude": 127.425
+  },
+  {
+    "name": "Charlotte",
+    "latitude": 35.2079,
+    "longitude": -80.8304
+  },
+  {
+    "name": "Phnom Penh",
+    "latitude": 11.55,
+    "longitude": 104.9166
+  },
+  {
+    "name": "Neijiang",
+    "latitude": 29.5804,
+    "longitude": 105.05
+  },
+  {
+    "name": "Quanzhou",
+    "latitude": 24.9,
+    "longitude": 118.58
+  },
+  {
+    "name": "Kharkiv",
+    "latitude": 50,
+    "longitude": 36.25
+  },
+  {
+    "name": "Hyderabad City",
+    "latitude": 25.38,
+    "longitude": 68.375
+  },
+  {
+    "name": "Bronx",
+    "latitude": 40.8501,
+    "longitude": -73.8662
+  },
+  {
+    "name": "Lome",
+    "latitude": 6.1319,
+    "longitude": 1.2228
+  },
+  {
+    "name": "Cordoba",
+    "latitude": -31.4,
+    "longitude": -64.1823
+  },
+  {
+    "name": "Huainan",
+    "latitude": 32.63,
+    "longitude": 116.98
+  },
+  {
+    "name": "Doha",
+    "latitude": 25.2866,
+    "longitude": 51.533
+  },
+  {
+    "name": "Kuala Lumpur",
+    "latitude": 3.1667,
+    "longitude": 101.7
+  },
+  {
+    "name": "Maputo",
+    "latitude": -25.9553,
+    "longitude": 32.5892
+  },
+  {
+    "name": "Kaduna",
+    "latitude": 10.52,
+    "longitude": 7.44
+  },
+  {
+    "name": "Gwangju",
+    "latitude": 35.171,
+    "longitude": 126.9104
+  },
+  {
+    "name": "Kawanakajima",
+    "latitude": 35.53,
+    "longitude": 139.705
+  },
+  {
+    "name": "San Salvador",
+    "latitude": 13.71,
+    "longitude": -89.203
+  },
+  {
+    "name": "Suining",
+    "latitude": 30.5333,
+    "longitude": 105.5333
+  },
+  {
+    "name": "Lyon",
+    "latitude": 45.77,
+    "longitude": 4.83
+  },
+  {
+    "name": "Karaj",
+    "latitude": 35.8004,
+    "longitude": 50.97
+  },
+  {
+    "name": "Kampala",
+    "latitude": 0.3167,
+    "longitude": 32.5833
+  },
+  {
+    "name": "Tabriz",
+    "latitude": 38.0863,
+    "longitude": 46.3012
+  },
+  {
+    "name": "The Hague",
+    "latitude": 52.08,
+    "longitude": 4.27
+  },
+  {
+    "name": "Davao",
+    "latitude": 7.11,
+    "longitude": 125.63
+  },
+  {
+    "name": "Marseille",
+    "latitude": 43.29,
+    "longitude": 5.375
+  },
+  {
+    "name": "Meerut",
+    "latitude": 29.0004,
+    "longitude": 77.7
+  },
+  {
+    "name": "Mianyang",
+    "latitude": 31.47,
+    "longitude": 104.77
+  },
+  {
+    "name": "Semarang",
+    "latitude": -6.9666,
+    "longitude": 110.42
+  },
+  {
+    "name": "Faridabad",
+    "latitude": 28.4333,
+    "longitude": 77.3167
+  },
+  {
+    "name": "Novosibirsk",
+    "latitude": 55.03,
+    "longitude": 82.96
+  },
+  {
+    "name": "Mecca",
+    "latitude": 21.43,
+    "longitude": 39.82
+  },
+  {
+    "name": "Dubai",
+    "latitude": 25.23,
+    "longitude": 55.28
+  },
+  {
+    "name": "Milwaukee",
+    "latitude": 43.0642,
+    "longitude": -87.9673
+  },
+  {
+    "name": "Auckland",
+    "latitude": -36.8481,
+    "longitude": 174.763
+  },
+  {
+    "name": "Ma'anshan",
+    "latitude": 31.7304,
+    "longitude": 118.48
+  },
+  {
+    "name": "Brazzaville",
+    "latitude": -4.2592,
+    "longitude": 15.2847
+  },
+  {
+    "name": "Yiyang",
+    "latitude": 28.6004,
+    "longitude": 112.33
+  },
+  {
+    "name": "Varanasi",
+    "latitude": 25.33,
+    "longitude": 83
+  },
+  {
+    "name": "Lubumbashi",
+    "latitude": -11.68,
+    "longitude": 27.48
+  },
+  {
+    "name": "Juarez",
+    "latitude": 31.6904,
+    "longitude": -106.49
+  },
+  {
+    "name": "Ghaziabad",
+    "latitude": 28.6604,
+    "longitude": 77.4084
+  },
+  {
+    "name": "Pretoria",
+    "latitude": -25.7069,
+    "longitude": 28.2294
+  },
+  {
+    "name": "Heze",
+    "latitude": 35.23,
+    "longitude": 115.45
+  },
+  {
+    "name": "Porto",
+    "latitude": 41.15,
+    "longitude": -8.62
+  },
+  {
+    "name": "Asansol",
+    "latitude": 23.6833,
+    "longitude": 86.9833
+  },
+  {
+    "name": "Lusaka",
+    "latitude": -15.4166,
+    "longitude": 28.2833
+  },
+  {
+    "name": "Changzhou",
+    "latitude": 31.78,
+    "longitude": 119.97
+  },
+  {
+    "name": "Mosul",
+    "latitude": 36.345,
+    "longitude": 43.145
+  },
+  {
+    "name": "Yekaterinburg",
+    "latitude": 56.85,
+    "longitude": 60.6
+  },
+  {
+    "name": "Peshawar",
+    "latitude": 34.005,
+    "longitude": 71.535
+  },
+  {
+    "name": "Mandalay",
+    "latitude": 21.97,
+    "longitude": 96.085
+  },
+  {
+    "name": "Jamshedpur",
+    "latitude": 22.7875,
+    "longitude": 86.1975
+  },
+  {
+    "name": "Mbuji-Mayi",
+    "latitude": -6.15,
+    "longitude": 23.6
+  },
+  {
+    "name": "Madura",
+    "latitude": 9.92,
+    "longitude": 78.12
+  },
+  {
+    "name": "Adana",
+    "latitude": 36.995,
+    "longitude": 35.32
+  },
+  {
+    "name": "Sheffield",
+    "latitude": 53.3667,
+    "longitude": -1.5
+  },
+  {
+    "name": "Jabalpur",
+    "latitude": 23.1751,
+    "longitude": 79.9551
+  },
+  {
+    "name": "San Jose",
+    "latitude": 9.935,
+    "longitude": -84.0841
+  },
+  {
+    "name": "Panama City",
+    "latitude": 8.968,
+    "longitude": -79.533
+  },
+  {
+    "name": "Nizhniy Novgorod",
+    "latitude": 56.333,
+    "longitude": 44.0001
+  },
+  {
+    "name": "Chifeng",
+    "latitude": 42.27,
+    "longitude": 118.95
+  },
+  {
+    "name": "Duisburg",
+    "latitude": 51.43,
+    "longitude": 6.75
+  },
+  {
+    "name": "Munich",
+    "latitude": 48.1299,
+    "longitude": 11.575
+  },
+  {
+    "name": "Huaiyin",
+    "latitude": 33.58,
+    "longitude": 119.03
+  },
+  {
+    "name": "Stockholm",
+    "latitude": 59.3508,
+    "longitude": 18.0973
+  },
+  {
+    "name": "Makassar",
+    "latitude": -5.14,
+    "longitude": 119.432
+  },
+  {
+    "name": "Rajkot",
+    "latitude": 22.31,
+    "longitude": 70.8
+  },
+  {
+    "name": "Dhanbad",
+    "latitude": 23.8004,
+    "longitude": 86.42
+  },
+  {
+    "name": "Mudanjiang",
+    "latitude": 44.575,
+    "longitude": 129.59
+  },
+  {
+    "name": "Geneva",
+    "latitude": 46.21,
+    "longitude": 6.14
+  },
+  {
+    "name": "Shiraz",
+    "latitude": 29.63,
+    "longitude": 52.57
+  },
+  {
+    "name": "Huzhou",
+    "latitude": 30.8704,
+    "longitude": 120.1
+  },
+  {
+    "name": "Beidao",
+    "latitude": 34.6,
+    "longitude": 105.92
+  },
+  {
+    "name": "Shuangshui",
+    "latitude": 26.5944,
+    "longitude": 104.8333
+  },
+  {
+    "name": "Dusseldorf",
+    "latitude": 51.2204,
+    "longitude": 6.78
+  },
+  {
+    "name": "Gaozhou",
+    "latitude": 21.9204,
+    "longitude": 110.87
+  },
+  {
+    "name": "Sevilla",
+    "latitude": 37.405,
+    "longitude": -5.98
+  },
+  {
+    "name": "Amritsar",
+    "latitude": 31.64,
+    "longitude": 74.87
+  },
+  {
+    "name": "Vila Velha",
+    "latitude": -20.3676,
+    "longitude": -40.318
+  },
+  {
+    "name": "Vila Velha",
+    "latitude": 3.2167,
+    "longitude": -51.2167
+  },
+  {
+    "name": "Almaty",
+    "latitude": 43.325,
+    "longitude": 76.915
+  },
+  {
+    "name": "Providence",
+    "latitude": 41.823,
+    "longitude": -71.4187
+  },
+  {
+    "name": "Warangal",
+    "latitude": 18.01,
+    "longitude": 79.58
+  },
+  {
+    "name": "Rosario",
+    "latitude": -32.9511,
+    "longitude": -60.6663
+  },
+  {
+    "name": "Allahabad",
+    "latitude": 25.455,
+    "longitude": 81.84
+  },
+  {
+    "name": "Benin City",
+    "latitude": 6.3405,
+    "longitude": 5.62
+  },
+  {
+    "name": "Jining",
+    "latitude": 35.4004,
+    "longitude": 116.55
+  },
+  {
+    "name": "Maceio",
+    "latitude": -9.62,
+    "longitude": -35.73
+  },
+  {
+    "name": "Sofia",
+    "latitude": 42.6833,
+    "longitude": 23.3167
+  },
+  {
+    "name": "Abbottabad",
+    "latitude": 34.1495,
+    "longitude": 73.1995
+  },
+  {
+    "name": "Benghazi",
+    "latitude": 32.1167,
+    "longitude": 20.0667
+  },
+  {
+    "name": "Cilacap",
+    "latitude": -7.7188,
+    "longitude": 109.0154
+  },
+  {
+    "name": "Prague",
+    "latitude": 50.0833,
+    "longitude": 14.466
+  },
+  {
+    "name": "Glasgow",
+    "latitude": 55.8744,
+    "longitude": -4.2507
+  },
+  {
+    "name": "Leshan",
+    "latitude": 29.5671,
+    "longitude": 103.7333
+  },
+  {
+    "name": "Jacksonville",
+    "latitude": 30.3322,
+    "longitude": -81.6749
+  },
+  {
+    "name": "Ouagadougou",
+    "latitude": 12.3703,
+    "longitude": -1.5247
+  },
+  {
+    "name": "Ottawa",
+    "latitude": 45.4167,
+    "longitude": -75.7
+  },
+  {
+    "name": "Adelaide",
+    "latitude": -34.935,
+    "longitude": 138.6
+  },
+  {
+    "name": "Shangrao",
+    "latitude": 28.4704,
+    "longitude": 117.97
+  },
+  {
+    "name": "Torreon",
+    "latitude": 25.5701,
+    "longitude": -103.42
+  },
+  {
+    "name": "Srinagar",
+    "latitude": 34.1,
+    "longitude": 74.815
+  },
+  {
+    "name": "Bezwada",
+    "latitude": 16.52,
+    "longitude": 80.63
+  },
+  {
+    "name": "Samara",
+    "latitude": 53.195,
+    "longitude": 50.1513
+  },
+  {
+    "name": "Omsk",
+    "latitude": 54.99,
+    "longitude": 73.4
+  },
+  {
+    "name": "Newcastle",
+    "latitude": -32.8453,
+    "longitude": 151.815
+  },
+  {
+    "name": "Yulin",
+    "latitude": 22.63,
+    "longitude": 110.15
+  },
+  {
+    "name": "Namp'o",
+    "latitude": 38.7669,
+    "longitude": 125.4524
+  },
+  {
+    "name": "Xianyang",
+    "latitude": 34.3456,
+    "longitude": 108.7147
+  },
+  {
+    "name": "Cagayan de Oro",
+    "latitude": 8.4508,
+    "longitude": 124.6853
+  },
+  {
+    "name": "Can Tho",
+    "latitude": 10.05,
+    "longitude": 105.77
+  },
+  {
+    "name": "Barquisimeto",
+    "latitude": 10.05,
+    "longitude": -69.3
+  },
+  {
+    "name": "Helsinki",
+    "latitude": 60.1756,
+    "longitude": 24.9341
+  },
+  {
+    "name": "Kazan'",
+    "latitude": 55.7499,
+    "longitude": 49.1263
+  },
+  {
+    "name": "Aurangabad",
+    "latitude": 19.8957,
+    "longitude": 75.3203
+  },
+  {
+    "name": "Calgary",
+    "latitude": 51.083,
+    "longitude": -114.08
+  },
+  {
+    "name": "Ciudad Nezahualcoyotl",
+    "latitude": 19.41,
+    "longitude": -99.03
+  },
+  {
+    "name": "Zurich",
+    "latitude": 47.38,
+    "longitude": 8.55
+  },
+  {
+    "name": "Baoding",
+    "latitude": 38.8704,
+    "longitude": 115.48
+  },
+  {
+    "name": "Zigong",
+    "latitude": 29.4,
+    "longitude": 104.78
+  },
+  {
+    "name": "Sharjah",
+    "latitude": 25.3714,
+    "longitude": 55.4065
+  },
+  {
+    "name": "Yerevan",
+    "latitude": 40.1812,
+    "longitude": 44.5136
+  },
+  {
+    "name": "Mogadishu",
+    "latitude": 2.0667,
+    "longitude": 45.3667
+  },
+  {
+    "name": "Tbilisi",
+    "latitude": 41.725,
+    "longitude": 44.7908
+  },
+  {
+    "name": "Ankang",
+    "latitude": 32.68,
+    "longitude": 109.02
+  },
+  {
+    "name": "Huambo",
+    "latitude": -12.75,
+    "longitude": 15.76
+  },
+  {
+    "name": "Ikare",
+    "latitude": 7.5304,
+    "longitude": 5.76
+  },
+  {
+    "name": "Belgrade",
+    "latitude": 44.8186,
+    "longitude": 20.468
+  },
+  {
+    "name": "Salt Lake City",
+    "latitude": 40.7774,
+    "longitude": -111.93
+  },
+  {
+    "name": "Bhilai",
+    "latitude": 21.2167,
+    "longitude": 81.4333
+  },
+  {
+    "name": "Jinhua",
+    "latitude": 29.12,
+    "longitude": 119.65
+  },
+  {
+    "name": "Chelyabinsk",
+    "latitude": 55.155,
+    "longitude": 61.4387
+  },
+  {
+    "name": "Natal",
+    "latitude": -5.78,
+    "longitude": -35.24
+  },
+  {
+    "name": "Dushanbe",
+    "latitude": 38.56,
+    "longitude": 68.7739
+  },
+  {
+    "name": "Copenhagen",
+    "latitude": 55.6786,
+    "longitude": 12.5635
+  },
+  {
+    "name": "Changwon",
+    "latitude": 35.2191,
+    "longitude": 128.5836
+  },
+  {
+    "name": "Zhuzhou",
+    "latitude": 27.83,
+    "longitude": 113.15
+  },
+  {
+    "name": "Suwon",
+    "latitude": 37.2578,
+    "longitude": 127.0109
+  },
+  {
+    "name": "Nashville",
+    "latitude": 36.1715,
+    "longitude": -86.7843
+  },
+  {
+    "name": "Vereeniging",
+    "latitude": -26.6496,
+    "longitude": 27.96
+  },
+  {
+    "name": "Xiangyang",
+    "latitude": 32.02,
+    "longitude": 112.13
+  },
+  {
+    "name": "Memphis",
+    "latitude": 35.1046,
+    "longitude": -89.9773
+  },
+  {
+    "name": "Ulsan",
+    "latitude": 35.5467,
+    "longitude": 129.317
+  },
+  {
+    "name": "Amman",
+    "latitude": 31.95,
+    "longitude": 35.9333
+  },
+  {
+    "name": "Mizhou",
+    "latitude": 35.99,
+    "longitude": 119.3801
+  },
+  {
+    "name": "Richmond",
+    "latitude": 37.5295,
+    "longitude": -77.4756
+  },
+  {
+    "name": "Dublin",
+    "latitude": 53.3331,
+    "longitude": -6.2489
+  },
+  {
+    "name": "Edmonton",
+    "latitude": 53.55,
+    "longitude": -113.5
+  },
+  {
+    "name": "Solapur",
+    "latitude": 17.6704,
+    "longitude": 75.9
+  },
+  {
+    "name": "Rostov-na-Donu",
+    "latitude": 47.2346,
+    "longitude": 39.7127
+  },
+  {
+    "name": "Dnipro",
+    "latitude": 48.48,
+    "longitude": 35
+  },
+  {
+    "name": "Xining",
+    "latitude": 36.62,
+    "longitude": 101.77
+  },
+  {
+    "name": "Zhangjiakou",
+    "latitude": 40.83,
+    "longitude": 114.93
+  },
+  {
+    "name": "Lille",
+    "latitude": 50.65,
+    "longitude": 3.08
+  },
+  {
+    "name": "Ranchi",
+    "latitude": 23.37,
+    "longitude": 85.33
+  },
+  {
+    "name": "Gaziantep",
+    "latitude": 37.075,
+    "longitude": 37.385
+  },
+  {
+    "name": "Monrovia",
+    "latitude": 6.3106,
+    "longitude": -10.8048
+  },
+  {
+    "name": "Sao Luis",
+    "latitude": -2.516,
+    "longitude": -44.266
+  },
+  {
+    "name": "Amsterdam",
+    "latitude": 52.35,
+    "longitude": 4.9166
+  },
+  {
+    "name": "Jerusalem",
+    "latitude": 31.7784,
+    "longitude": 35.2066
+  },
+  {
+    "name": "New Orleans",
+    "latitude": 30.0687,
+    "longitude": -89.9288
+  },
+  {
+    "name": "Guatemala City",
+    "latitude": 14.6211,
+    "longitude": -90.527
+  },
+  {
+    "name": "Zhuhai",
+    "latitude": 22.2769,
+    "longitude": 113.5678
+  },
+  {
+    "name": "Florianopolis",
+    "latitude": -27.58,
+    "longitude": -48.52
+  },
+  {
+    "name": "Port Elizabeth",
+    "latitude": -33.97,
+    "longitude": 25.6
+  },
+  {
+    "name": "Jiamusi",
+    "latitude": 46.83,
+    "longitude": 130.35
+  },
+  {
+    "name": "Port Harcourt",
+    "latitude": 4.81,
+    "longitude": 7.01
+  },
+  {
+    "name": "Raleigh",
+    "latitude": 35.8324,
+    "longitude": -78.6438
+  },
+  {
+    "name": "Ufa",
+    "latitude": 54.79,
+    "longitude": 56.04
+  },
+  {
+    "name": "Hengyang",
+    "latitude": 26.88,
+    "longitude": 112.59
+  },
+  {
+    "name": "Benxi",
+    "latitude": 41.3304,
+    "longitude": 123.75
+  },
+  {
+    "name": "Louisville",
+    "latitude": 38.1663,
+    "longitude": -85.6485
+  },
+  {
+    "name": "Haifa",
+    "latitude": 32.8204,
+    "longitude": 34.98
+  },
+  {
+    "name": "Medina",
+    "latitude": 24.5,
+    "longitude": 39.58
+  },
+  {
+    "name": "Bucaramanga",
+    "latitude": 7.1301,
+    "longitude": -73.1259
+  },
+  {
+    "name": "Maracay",
+    "latitude": 10.2469,
+    "longitude": -67.5958
+  },
+  {
+    "name": "Rotterdam",
+    "latitude": 51.92,
+    "longitude": 4.48
+  },
+  {
+    "name": "Homs",
+    "latitude": 34.73,
+    "longitude": 36.72
+  },
+  {
+    "name": "Cologne",
+    "latitude": 50.93,
+    "longitude": 6.95
+  },
+  {
+    "name": "Qinhuangdao",
+    "latitude": 39.9304,
+    "longitude": 119.62
+  },
+  {
+    "name": "Fes",
+    "latitude": 34.0546,
+    "longitude": -5.0004
+  },
+  {
+    "name": "Aden",
+    "latitude": 12.7797,
+    "longitude": 45.0095
+  },
+  {
+    "name": "Cochabamba",
+    "latitude": -17.41,
+    "longitude": -66.17
+  },
+  {
+    "name": "Yongzhou",
+    "latitude": 26.2304,
+    "longitude": 111.62
+  },
+  {
+    "name": "Baoshan",
+    "latitude": 25.12,
+    "longitude": 99.15
+  },
+  {
+    "name": "Quang Ha",
+    "latitude": 16.06,
+    "longitude": 108.25
+  },
+  {
+    "name": "Kitaku",
+    "latitude": 33.8704,
+    "longitude": 130.82
+  },
+  {
+    "name": "Perm",
+    "latitude": 58,
+    "longitude": 56.25
+  },
+  {
+    "name": "Ahvaz",
+    "latitude": 31.28,
+    "longitude": 48.72
+  },
+  {
+    "name": "Jodhpur",
+    "latitude": 26.2918,
+    "longitude": 73.0168
+  },
+  {
+    "name": "San Luis Potosi",
+    "latitude": 22.17,
+    "longitude": -101
+  },
+  {
+    "name": "Odesa",
+    "latitude": 46.49,
+    "longitude": 30.71
+  },
+  {
+    "name": "Yinchuan",
+    "latitude": 38.468,
+    "longitude": 106.273
+  },
+  {
+    "name": "NDjamena",
+    "latitude": 12.1131,
+    "longitude": 15.0491
+  },
+  {
+    "name": "Jiaxing",
+    "latitude": 30.7704,
+    "longitude": 120.75
+  },
+  {
+    "name": "Joinvile",
+    "latitude": -26.32,
+    "longitude": -48.8399
+  },
+  {
+    "name": "Donets'k",
+    "latitude": 48,
+    "longitude": 37.83
+  },
+  {
+    "name": "Guilin",
+    "latitude": 25.28,
+    "longitude": 110.28
+  },
+  {
+    "name": "Dahuk",
+    "latitude": 36.8667,
+    "longitude": 43
+  },
+  {
+    "name": "Volgograd",
+    "latitude": 48.71,
+    "longitude": 44.5
+  },
+  {
+    "name": "Guwahati",
+    "latitude": 26.16,
+    "longitude": 91.77
+  },
+  {
+    "name": "Yichun",
+    "latitude": 27.8333,
+    "longitude": 114.4
+  },
+  {
+    "name": "Yangquan",
+    "latitude": 37.87,
+    "longitude": 113.57
+  },
+  {
+    "name": "Natal",
+    "latitude": -6.9838,
+    "longitude": -60.2699
+  },
+  {
+    "name": "Chandigarh",
+    "latitude": 30.72,
+    "longitude": 76.78
+  },
+  {
+    "name": "Gwalior",
+    "latitude": 26.23,
+    "longitude": 78.1801
+  },
+  {
+    "name": "Hamamatsu",
+    "latitude": 34.7181,
+    "longitude": 137.7327
+  },
+  {
+    "name": "Qom",
+    "latitude": 34.65,
+    "longitude": 50.95
+  },
+  {
+    "name": "Jixi",
+    "latitude": 45.3,
+    "longitude": 130.97
+  },
+  {
+    "name": "Merida",
+    "latitude": 20.9666,
+    "longitude": -89.6166
+  },
+  {
+    "name": "Xin'an",
+    "latitude": 34.38,
+    "longitude": 118.35
+  },
+  {
+    "name": "Queretaro",
+    "latitude": 20.63,
+    "longitude": -100.38
+  },
+  {
+    "name": "Pingxiang",
+    "latitude": 27.62,
+    "longitude": 113.85
+  },
+  {
+    "name": "Joao Pessoa",
+    "latitude": -7.1011,
+    "longitude": -34.8761
+  },
+  {
+    "name": "Klang",
+    "latitude": 3.0204,
+    "longitude": 101.55
+  },
+  {
+    "name": "Jinzhou",
+    "latitude": 41.1204,
+    "longitude": 121.1
+  },
+  {
+    "name": "Oklahoma City",
+    "latitude": 35.4676,
+    "longitude": -97.5137
+  },
+  {
+    "name": "Salerno",
+    "latitude": 40.6804,
+    "longitude": 14.7699
+  },
+  {
+    "name": "Thiruvananthapuram",
+    "latitude": 8.5,
+    "longitude": 76.95
+  },
+  {
+    "name": "Calicut",
+    "latitude": 11.2504,
+    "longitude": 75.77
+  },
+  {
+    "name": "Trichinopoly",
+    "latitude": 10.81,
+    "longitude": 78.69
+  },
+  {
+    "name": "Ogbomoso",
+    "latitude": 8.13,
+    "longitude": 4.24
+  },
+  {
+    "name": "General Santos",
+    "latitude": 6.1108,
+    "longitude": 125.1747
+  },
+  {
+    "name": "Hue",
+    "latitude": 16.47,
+    "longitude": 107.58
+  },
+  {
+    "name": "Bacolod",
+    "latitude": 10.6317,
+    "longitude": 122.9817
+  },
+  {
+    "name": "Nantong",
+    "latitude": 32.0304,
+    "longitude": 120.825
+  },
+  {
+    "name": "Tegucigalpa",
+    "latitude": 14.102,
+    "longitude": -87.2175
+  },
+  {
+    "name": "Foshan",
+    "latitude": 23.0301,
+    "longitude": 113.12
+  },
+  {
+    "name": "Songnam",
+    "latitude": 37.4386,
+    "longitude": 127.1378
+  },
+  {
+    "name": "Bridgeport",
+    "latitude": 41.1918,
+    "longitude": -73.1953
+  },
+  {
+    "name": "Kingston",
+    "latitude": 17.9771,
+    "longitude": -76.7674
+  },
+  {
+    "name": "Nay Pyi Taw",
+    "latitude": 19.7666,
+    "longitude": 96.1186
+  },
+  {
+    "name": "Nice",
+    "latitude": 43.715,
+    "longitude": 7.265
+  },
+  {
+    "name": "Buffalo",
+    "latitude": 42.9017,
+    "longitude": -78.8487
+  },
+  {
+    "name": "Erbil",
+    "latitude": 36.179,
+    "longitude": 44.0086
+  },
+  {
+    "name": "Krasnoyarsk",
+    "latitude": 56.014,
+    "longitude": 92.866
+  },
+  {
+    "name": "Djibouti",
+    "latitude": 11.595,
+    "longitude": 43.148
+  },
+  {
+    "name": "Olinda",
+    "latitude": -8,
+    "longitude": -34.85
+  },
+  {
+    "name": "Managua",
+    "latitude": 12.153,
+    "longitude": -86.2685
+  },
+  {
+    "name": "Antwerp",
+    "latitude": 51.2204,
+    "longitude": 4.415
+  },
+  {
+    "name": "Konya",
+    "latitude": 37.875,
+    "longitude": 32.475
+  },
+  {
+    "name": "Bogor",
+    "latitude": -6.57,
+    "longitude": 106.75
+  },
+  {
+    "name": "Niamey",
+    "latitude": 13.5167,
+    "longitude": 2.1167
+  },
+  {
+    "name": "Hartford",
+    "latitude": 41.7661,
+    "longitude": -72.6834
+  },
+  {
+    "name": "Huaibei",
+    "latitude": 33.9504,
+    "longitude": 116.75
+  },
+  {
+    "name": "Xinyu",
+    "latitude": 27.8,
+    "longitude": 114.93
+  },
+  {
+    "name": "Teresina",
+    "latitude": -5.095,
+    "longitude": -42.78
+  },
+  {
+    "name": "Naha",
+    "latitude": 26.2072,
+    "longitude": 127.673
+  },
+  {
+    "name": "Goyang",
+    "latitude": 37.6527,
+    "longitude": 126.8372
+  },
+  {
+    "name": "Nangandao",
+    "latitude": 35.3204,
+    "longitude": 113.87
+  },
+  {
+    "name": "Yibin",
+    "latitude": 28.77,
+    "longitude": 104.57
+  },
+  {
+    "name": "Aba",
+    "latitude": 5.1004,
+    "longitude": 7.35
+  },
+  {
+    "name": "Maiduguri",
+    "latitude": 11.85,
+    "longitude": 13.16
+  },
+  {
+    "name": "Tirana",
+    "latitude": 41.3275,
+    "longitude": 19.8189
+  },
+  {
+    "name": "Kathmandu",
+    "latitude": 27.7167,
+    "longitude": 85.3166
+  },
+  {
+    "name": "Az Zarqa'",
+    "latitude": 32.07,
+    "longitude": 36.1
+  },
+  {
+    "name": "Tarsus",
+    "latitude": 36.9204,
+    "longitude": 34.88
+  },
+  {
+    "name": "Bengbu",
+    "latitude": 32.95,
+    "longitude": 117.33
+  },
+  {
+    "name": "Mendoza",
+    "latitude": -32.8833,
+    "longitude": -68.8166
+  },
+  {
+    "name": "Hubli",
+    "latitude": 15.36,
+    "longitude": 75.125
+  },
+  {
+    "name": "Concepcion",
+    "latitude": -36.83,
+    "longitude": -73.05
+  },
+  {
+    "name": "Zaria",
+    "latitude": 11.08,
+    "longitude": 7.71
+  },
+  {
+    "name": "Dengtalu",
+    "latitude": 36.08,
+    "longitude": 114.35
+  },
+  {
+    "name": "Cartagena",
+    "latitude": 10.3997,
+    "longitude": -75.5144
+  },
+  {
+    "name": "Mysore",
+    "latitude": 12.31,
+    "longitude": 76.66
+  },
+  {
+    "name": "Ulaanbaatar",
+    "latitude": 47.9167,
+    "longitude": 106.9166
+  },
+  {
+    "name": "Mexicali",
+    "latitude": 32.65,
+    "longitude": -115.48
+  },
+  {
+    "name": "Tongliao",
+    "latitude": 43.62,
+    "longitude": 122.27
+  },
+  {
+    "name": "Mombasa",
+    "latitude": -4.04,
+    "longitude": 39.6899
+  },
+  {
+    "name": "Newcastle upon Tyne",
+    "latitude": 55.0004,
+    "longitude": -1.6
+  },
+  {
+    "name": "Novo Hamburgo",
+    "latitude": -29.7096,
+    "longitude": -51.14
+  },
+  {
+    "name": "Callao",
+    "latitude": -12.07,
+    "longitude": -77.135
+  },
+  {
+    "name": "Bilbao",
+    "latitude": 43.25,
+    "longitude": -2.93
+  },
+  {
+    "name": "Johor Bahru",
+    "latitude": 1.48,
+    "longitude": 103.73
+  },
+  {
+    "name": "Raipur",
+    "latitude": 21.235,
+    "longitude": 81.635
+  },
+  {
+    "name": "Xiaoxita",
+    "latitude": 30.7,
+    "longitude": 111.28
+  },
+  {
+    "name": "Fort Worth",
+    "latitude": 32.7812,
+    "longitude": -97.3472
+  },
+  {
+    "name": "Salem",
+    "latitude": 11.67,
+    "longitude": 78.1801
+  },
+  {
+    "name": "Yangjiang",
+    "latitude": 21.8504,
+    "longitude": 111.97
+  },
+  {
+    "name": "Marrakech",
+    "latitude": 31.63,
+    "longitude": -8
+  },
+  {
+    "name": "Kaifeng Chengguanzhen",
+    "latitude": 34.85,
+    "longitude": 114.35
+  },
+  {
+    "name": "Dandong",
+    "latitude": 40.1436,
+    "longitude": 124.3936
+  },
+  {
+    "name": "Al Basrah",
+    "latitude": 30.5135,
+    "longitude": 47.8136
+  },
+  {
+    "name": "Aguascalientes",
+    "latitude": 21.8795,
+    "longitude": -102.2904
+  },
+  {
+    "name": "Tucson",
+    "latitude": 32.1545,
+    "longitude": -110.8782
+  },
+  {
+    "name": "Okayama",
+    "latitude": 34.672,
+    "longitude": 133.9171
+  },
+  {
+    "name": "Bucheon",
+    "latitude": 37.4989,
+    "longitude": 126.7831
+  },
+  {
+    "name": "Xuanzhou",
+    "latitude": 30.9525,
+    "longitude": 118.7553
+  },
+  {
+    "name": "Bandar Lampung",
+    "latitude": -5.43,
+    "longitude": 105.27
+  },
+  {
+    "name": "Rizhao",
+    "latitude": 35.4304,
+    "longitude": 119.45
+  },
+  {
+    "name": "Palermo",
+    "latitude": 38.125,
+    "longitude": 13.35
+  },
+  {
+    "name": "Caerdydd",
+    "latitude": 51.5,
+    "longitude": -3.225
+  },
+  {
+    "name": "Kigali",
+    "latitude": -1.9536,
+    "longitude": 30.0605
+  },
+  {
+    "name": "Tampico",
+    "latitude": 22.3,
+    "longitude": -97.87
+  },
+  {
+    "name": "Jiaozuo",
+    "latitude": 35.25,
+    "longitude": 113.22
+  },
+  {
+    "name": "Padang",
+    "latitude": -0.96,
+    "longitude": 100.36
+  },
+  {
+    "name": "Jalandhar",
+    "latitude": 31.3349,
+    "longitude": 75.569
+  },
+  {
+    "name": "Zhenjiang",
+    "latitude": 32.22,
+    "longitude": 119.43
+  },
+  {
+    "name": "Valparaiso",
+    "latitude": -33.0478,
+    "longitude": -71.621
+  },
+  {
+    "name": "Pingdingshan",
+    "latitude": 33.7304,
+    "longitude": 113.3
+  },
+  {
+    "name": "Zunyi",
+    "latitude": 27.7,
+    "longitude": 106.92
+  },
+  {
+    "name": "Anshun",
+    "latitude": 26.2504,
+    "longitude": 105.93
+  },
+  {
+    "name": "Toulouse",
+    "latitude": 43.62,
+    "longitude": 1.4499
+  },
+  {
+    "name": "El Paso",
+    "latitude": 31.8479,
+    "longitude": -106.4309
+  },
+  {
+    "name": "Iguacu",
+    "latitude": -22.74,
+    "longitude": -43.47
+  },
+  {
+    "name": "Bhubaneshwar",
+    "latitude": 20.2704,
+    "longitude": 85.8274
+  },
+  {
+    "name": "Voronezh",
+    "latitude": 51.73,
+    "longitude": 39.27
+  },
+  {
+    "name": "Saratov",
+    "latitude": 51.58,
+    "longitude": 46.03
+  },
+  {
+    "name": "Yuci",
+    "latitude": 37.6804,
+    "longitude": 112.73
+  },
+  {
+    "name": "Yancheng",
+    "latitude": 33.3856,
+    "longitude": 120.1253
+  },
+  {
+    "name": "Bishkek",
+    "latitude": 42.8731,
+    "longitude": 74.5852
+  },
+  {
+    "name": "Oslo",
+    "latitude": 59.9167,
+    "longitude": 10.75
+  },
+  {
+    "name": "Cuernavaca",
+    "latitude": 18.9211,
+    "longitude": -99.24
+  },
+  {
+    "name": "Linfen",
+    "latitude": 36.0803,
+    "longitude": 111.52
+  },
+  {
+    "name": "Honolulu",
+    "latitude": 21.3294,
+    "longitude": -157.846
+  },
+  {
+    "name": "Bangui",
+    "latitude": 4.3666,
+    "longitude": 18.5583
+  },
+  {
+    "name": "Warri",
+    "latitude": 5.52,
+    "longitude": 5.76
+  },
+  {
+    "name": "Basel",
+    "latitude": 47.5804,
+    "longitude": 7.59
+  },
+  {
+    "name": "San Miguel de Tucuman",
+    "latitude": -26.816,
+    "longitude": -65.2166
+  },
+  {
+    "name": "Kermanshah",
+    "latitude": 34.38,
+    "longitude": 47.06
+  },
+  {
+    "name": "Thessaloniki",
+    "latitude": 40.6961,
+    "longitude": 22.885
+  },
+  {
+    "name": "Omaha",
+    "latitude": 41.2628,
+    "longitude": -96.0498
+  },
+  {
+    "name": "Freetown",
+    "latitude": 8.47,
+    "longitude": -13.2342
+  },
+  {
+    "name": "Kota",
+    "latitude": 25.18,
+    "longitude": 75.835
+  },
+  {
+    "name": "Braga",
+    "latitude": 41.555,
+    "longitude": -8.4213
+  },
+  {
+    "name": "Jhansi",
+    "latitude": 25.453,
+    "longitude": 78.5575
+  },
+  {
+    "name": "Rongjiawan",
+    "latitude": 29.3801,
+    "longitude": 113.1
+  },
+  {
+    "name": "Nottingham",
+    "latitude": 52.9703,
+    "longitude": -1.17
+  },
+  {
+    "name": "Agadir",
+    "latitude": 30.44,
+    "longitude": -9.62
+  },
+  {
+    "name": "Butterworth",
+    "latitude": 5.4171,
+    "longitude": 100.4
+  },
+  {
+    "name": "Bareilly",
+    "latitude": 28.3454,
+    "longitude": 79.42
+  },
+  {
+    "name": "Jos",
+    "latitude": 9.93,
+    "longitude": 8.89
+  },
+  {
+    "name": "Xingyi",
+    "latitude": 25.0904,
+    "longitude": 104.89
+  },
+  {
+    "name": "Cebu City",
+    "latitude": 10.32,
+    "longitude": 123.9001
+  },
+  {
+    "name": "Arequipa",
+    "latitude": -16.42,
+    "longitude": -71.53
+  },
+  {
+    "name": "Liverpool",
+    "latitude": 53.416,
+    "longitude": -2.918
+  },
+  {
+    "name": "Wuhu",
+    "latitude": 31.3504,
+    "longitude": 118.37
+  },
+  {
+    "name": "Langfang",
+    "latitude": 39.5204,
+    "longitude": 116.68
+  },
+  {
+    "name": "Rajshahi",
+    "latitude": 24.375,
+    "longitude": 88.605
+  },
+  {
+    "name": "Zhaotong",
+    "latitude": 27.3204,
+    "longitude": 103.72
+  },
+  {
+    "name": "Culiacan",
+    "latitude": 24.83,
+    "longitude": -107.38
+  },
+  {
+    "name": "Valencia",
+    "latitude": 39.485,
+    "longitude": -0.4
+  },
+  {
+    "name": "Lingyuan",
+    "latitude": 41.24,
+    "longitude": 119.4011
+  },
+  {
+    "name": "Cuiaba",
+    "latitude": -15.6142,
+    "longitude": -57.162
+  },
+  {
+    "name": "Quy Nhon",
+    "latitude": 13.78,
+    "longitude": 109.18
+  },
+  {
+    "name": "Malang",
+    "latitude": -7.98,
+    "longitude": 112.61
+  },
+  {
+    "name": "Aligarh",
+    "latitude": 27.8922,
+    "longitude": 78.0618
+  },
+  {
+    "name": "L'viv",
+    "latitude": 49.835,
+    "longitude": 24.03
+  },
+  {
+    "name": "Bordeaux",
+    "latitude": 44.85,
+    "longitude": -0.595
+  },
+  {
+    "name": "McAllen",
+    "latitude": 26.2273,
+    "longitude": -98.2471
+  },
+  {
+    "name": "Baojishi",
+    "latitude": 34.38,
+    "longitude": 107.15
+  },
+  {
+    "name": "Pekanbaru",
+    "latitude": 0.565,
+    "longitude": 101.425
+  },
+  {
+    "name": "Oran",
+    "latitude": 35.71,
+    "longitude": -0.62
+  },
+  {
+    "name": "Yingkou",
+    "latitude": 40.6703,
+    "longitude": 122.28
+  },
+  {
+    "name": "Bhiwandi",
+    "latitude": 19.35,
+    "longitude": 73.13
+  },
+  {
+    "name": "Liaoyang",
+    "latitude": 41.28,
+    "longitude": 123.18
+  },
+  {
+    "name": "Chihuahua",
+    "latitude": 28.645,
+    "longitude": -106.085
+  },
+  {
+    "name": "Jammu",
+    "latitude": 32.7118,
+    "longitude": 74.8467
+  },
+  {
+    "name": "Melaka",
+    "latitude": 2.2064,
+    "longitude": 102.2465
+  },
+  {
+    "name": "Zaporizhzhya",
+    "latitude": 47.8573,
+    "longitude": 35.1768
+  },
+  {
+    "name": "Moradabad",
+    "latitude": 28.8418,
+    "longitude": 78.7568
+  },
+  {
+    "name": "Antalya",
+    "latitude": 36.89,
+    "longitude": 30.7
+  },
+  {
+    "name": "Islamabad",
+    "latitude": 33.7,
+    "longitude": 73.1666
+  },
+  {
+    "name": "Al Hudaydah",
+    "latitude": 14.7979,
+    "longitude": 42.953
+  },
+  {
+    "name": "Campo Grande",
+    "latitude": -20.45,
+    "longitude": -54.6166
+  },
+  {
+    "name": "Shaoxing",
+    "latitude": 30.0004,
+    "longitude": 120.57
+  },
+  {
+    "name": "Yichun",
+    "latitude": 47.6999,
+    "longitude": 128.9
+  },
+  {
+    "name": "Mangalore",
+    "latitude": 12.9,
+    "longitude": 74.85
+  },
+  {
+    "name": "Wuppertal",
+    "latitude": 51.25,
+    "longitude": 7.17
+  },
+  {
+    "name": "Cheongju",
+    "latitude": 36.6439,
+    "longitude": 127.5012
+  },
+  {
+    "name": "Zamboanga City",
+    "latitude": 6.92,
+    "longitude": 122.08
+  },
+  {
+    "name": "Hamhung",
+    "latitude": 39.9101,
+    "longitude": 127.5454
+  },
+  {
+    "name": "Fuyang",
+    "latitude": 30.0533,
+    "longitude": 119.9519
+  },
+  {
+    "name": "Ilorin",
+    "latitude": 8.49,
+    "longitude": 4.55
+  },
+  {
+    "name": "Saarbrucken",
+    "latitude": 49.2504,
+    "longitude": 6.97
+  },
+  {
+    "name": "Fuxin",
+    "latitude": 42.0105,
+    "longitude": 121.66
+  },
+  {
+    "name": "Shiyan",
+    "latitude": 32.57,
+    "longitude": 110.78
+  },
+  {
+    "name": "Quetta",
+    "latitude": 30.22,
+    "longitude": 67.025
+  },
+  {
+    "name": "Trujillo",
+    "latitude": -8.12,
+    "longitude": -79.02
+  },
+  {
+    "name": "Kananga",
+    "latitude": -5.89,
+    "longitude": 22.4
+  },
+  {
+    "name": "Trabzon",
+    "latitude": 40.98,
+    "longitude": 39.72
+  },
+  {
+    "name": "Cotonou",
+    "latitude": 6.4,
+    "longitude": 2.52
+  },
+  {
+    "name": "Jincheng",
+    "latitude": 35.5004,
+    "longitude": 112.83
+  },
+  {
+    "name": "Albuquerque",
+    "latitude": 35.1053,
+    "longitude": -106.6464
+  },
+  {
+    "name": "Lodz",
+    "latitude": 51.775,
+    "longitude": 19.4514
+  },
+  {
+    "name": "Krakow",
+    "latitude": 50.06,
+    "longitude": 19.96
+  },
+  {
+    "name": "Vientiane",
+    "latitude": 17.9667,
+    "longitude": 102.6
+  },
+  {
+    "name": "Saltillo",
+    "latitude": 25.42,
+    "longitude": -101.005
+  },
+  {
+    "name": "Sao Jose dos Campos",
+    "latitude": -23.2,
+    "longitude": -45.8799
+  },
+  {
+    "name": "Hungnam",
+    "latitude": 39.8231,
+    "longitude": 127.6232
+  },
+  {
+    "name": "Ta`izz",
+    "latitude": 13.6045,
+    "longitude": 44.0394
+  },
+  {
+    "name": "Pietermaritzburg",
+    "latitude": -29.61,
+    "longitude": 30.39
+  },
+  {
+    "name": "Tangier",
+    "latitude": 35.7473,
+    "longitude": -5.8327
+  },
+  {
+    "name": "Hsinchu",
+    "latitude": 24.8168,
+    "longitude": 120.9767
+  },
+  {
+    "name": "Changhua",
+    "latitude": 24.0734,
+    "longitude": 120.5134
+  },
+  {
+    "name": "Kolhapur",
+    "latitude": 16.7,
+    "longitude": 74.22
+  },
+  {
+    "name": "Farg`ona",
+    "latitude": 40.39,
+    "longitude": 71.78
+  },
+  {
+    "name": "Namangan",
+    "latitude": 41,
+    "longitude": 71.67
+  },
+  {
+    "name": "Liege",
+    "latitude": 50.63,
+    "longitude": 5.58
+  },
+  {
+    "name": "Ciudad Guayana",
+    "latitude": 8.37,
+    "longitude": -62.62
+  },
+  {
+    "name": "Birmingham",
+    "latitude": 33.5277,
+    "longitude": -86.7987
+  },
+  {
+    "name": "Hegang",
+    "latitude": 47.4,
+    "longitude": 130.37
+  },
+  {
+    "name": "Riga",
+    "latitude": 56.95,
+    "longitude": 24.1
+  },
+  {
+    "name": "Nouakchott",
+    "latitude": 18.0864,
+    "longitude": -15.9753
+  },
+  {
+    "name": "Naga City",
+    "latitude": 13.6192,
+    "longitude": 123.1814
+  },
+  {
+    "name": "Gdansk",
+    "latitude": 54.36,
+    "longitude": 18.64
+  },
+  {
+    "name": "Ansan",
+    "latitude": 37.3481,
+    "longitude": 126.8595
+  },
+  {
+    "name": "Nuremberg",
+    "latitude": 49.45,
+    "longitude": 11.08
+  },
+  {
+    "name": "Oyo",
+    "latitude": 7.8504,
+    "longitude": 3.93
+  },
+  {
+    "name": "Muscat",
+    "latitude": 23.6133,
+    "longitude": 58.5933
+  },
+  {
+    "name": "Amravati",
+    "latitude": 20.95,
+    "longitude": 77.77
+  },
+  {
+    "name": "Denpasar",
+    "latitude": -8.65,
+    "longitude": 115.22
+  },
+  {
+    "name": "Sokoto",
+    "latitude": 13.06,
+    "longitude": 5.24
+  },
+  {
+    "name": "Beihai",
+    "latitude": 21.4804,
+    "longitude": 109.1
+  },
+  {
+    "name": "Ashgabat",
+    "latitude": 37.95,
+    "longitude": 58.3833
+  },
+  {
+    "name": "Bremen",
+    "latitude": 53.08,
+    "longitude": 8.8
+  },
+  {
+    "name": "As Sulaymaniyah",
+    "latitude": 35.5613,
+    "longitude": 45.4309
+  },
+  {
+    "name": "Zagreb",
+    "latitude": 45.8,
+    "longitude": 16
+  },
+  {
+    "name": "Hannover",
+    "latitude": 52.367,
+    "longitude": 9.7167
+  },
+  {
+    "name": "Cucuta",
+    "latitude": 7.92,
+    "longitude": -72.52
+  },
+  {
+    "name": "Hamilton",
+    "latitude": 43.25,
+    "longitude": -79.83
+  },
+  {
+    "name": "Moshi",
+    "latitude": -3.3396,
+    "longitude": 37.34
+  },
+  {
+    "name": "Shaoguan",
+    "latitude": 24.8,
+    "longitude": 113.58
+  },
+  {
+    "name": "Kumamoto",
+    "latitude": 32.8009,
+    "longitude": 130.7006
+  },
+  {
+    "name": "Dayton",
+    "latitude": 39.7797,
+    "longitude": -84.1998
+  },
+  {
+    "name": "Xinpu",
+    "latitude": 34.6004,
+    "longitude": 119.17
+  },
+  {
+    "name": "Acapulco de Juarez",
+    "latitude": 16.85,
+    "longitude": -99.916
+  },
+  {
+    "name": "Kandahar",
+    "latitude": 31.61,
+    "longitude": 65.6949
+  },
+  {
+    "name": "Dehra Dun",
+    "latitude": 30.3204,
+    "longitude": 78.05
+  },
+  {
+    "name": "Rochester",
+    "latitude": 43.168,
+    "longitude": -77.6162
+  },
+  {
+    "name": "Jeonju",
+    "latitude": 35.8314,
+    "longitude": 127.1404
+  },
+  {
+    "name": "Samarkand",
+    "latitude": 39.67,
+    "longitude": 66.945
+  },
+  {
+    "name": "Qingyuan",
+    "latitude": 23.7004,
+    "longitude": 113.0301
+  },
+  {
+    "name": "Sarasota",
+    "latitude": 27.3386,
+    "longitude": -82.543
+  },
+  {
+    "name": "Changzhi",
+    "latitude": 36.1839,
+    "longitude": 113.1053
+  },
+  {
+    "name": "Tol'yatti",
+    "latitude": 53.4804,
+    "longitude": 49.53
+  },
+  {
+    "name": "Jaboatao",
+    "latitude": -8.11,
+    "longitude": -35.02
+  },
+  {
+    "name": "Shizuoka",
+    "latitude": 34.9858,
+    "longitude": 138.3854
+  },
+  {
+    "name": "Bulawayo",
+    "latitude": -20.17,
+    "longitude": 28.58
+  },
+  {
+    "name": "Soledad",
+    "latitude": 10.92,
+    "longitude": -74.77
+  },
+  {
+    "name": "Fresno",
+    "latitude": 36.7831,
+    "longitude": -119.7941
+  },
+  {
+    "name": "Meknes",
+    "latitude": 33.9004,
+    "longitude": -5.56
+  },
+  {
+    "name": "Sarajevo",
+    "latitude": 43.85,
+    "longitude": 18.383
+  },
+  {
+    "name": "La Plata",
+    "latitude": -34.9096,
+    "longitude": -57.96
+  },
+  {
+    "name": "Malegaon",
+    "latitude": 20.5604,
+    "longitude": 74.525
+  },
+  {
+    "name": "Enugu",
+    "latitude": 6.45,
+    "longitude": 7.5
+  },
+  {
+    "name": "Chisinau",
+    "latitude": 47.005,
+    "longitude": 28.8577
+  },
+  {
+    "name": "Huangshi",
+    "latitude": 30.22,
+    "longitude": 115.1
+  },
+  {
+    "name": "Aracaju",
+    "latitude": -10.9,
+    "longitude": -37.12
+  },
+  {
+    "name": "Allentown",
+    "latitude": 40.5961,
+    "longitude": -75.4755
+  },
+  {
+    "name": "Bonn",
+    "latitude": 50.7205,
+    "longitude": 7.08
+  },
+  {
+    "name": "San Pedro Sula",
+    "latitude": 15.5,
+    "longitude": -88.03
+  },
+  {
+    "name": "Nellore",
+    "latitude": 14.44,
+    "longitude": 79.9899
+  },
+  {
+    "name": "Catania",
+    "latitude": 37.5,
+    "longitude": 15.08
+  },
+  {
+    "name": "Gorakhpur",
+    "latitude": 26.7504,
+    "longitude": 83.38
+  },
+  {
+    "name": "Ipoh",
+    "latitude": 4.6,
+    "longitude": 101.065
+  },
+  {
+    "name": "Ch'ongjin",
+    "latitude": 41.7846,
+    "longitude": 129.79
+  },
+  {
+    "name": "Tulsa",
+    "latitude": 36.1284,
+    "longitude": -95.9043
+  },
+  {
+    "name": "Utsunomiya",
+    "latitude": 36.55,
+    "longitude": 139.87
+  },
+  {
+    "name": "Puyang Chengguanzhen",
+    "latitude": 35.7004,
+    "longitude": 114.98
+  },
+  {
+    "name": "An Najaf",
+    "latitude": 32.0003,
+    "longitude": 44.3354
+  },
+  {
+    "name": "Sao Jose dos Pinhais",
+    "latitude": -25.57,
+    "longitude": -49.18
+  },
+  {
+    "name": "Santo Andre",
+    "latitude": -23.6528,
+    "longitude": -46.5278
+  },
+  {
+    "name": "Bytom",
+    "latitude": 50.35,
+    "longitude": 18.91
+  },
+  {
+    "name": "Pointe-Noire",
+    "latitude": -4.77,
+    "longitude": 11.88
+  },
+  {
+    "name": "At Ta'if",
+    "latitude": 21.2622,
+    "longitude": 40.3823
+  },
+  {
+    "name": "Ismailia",
+    "latitude": 30.5903,
+    "longitude": 32.26
+  },
+  {
+    "name": "Concord",
+    "latitude": 37.9722,
+    "longitude": -122.0016
+  },
+  {
+    "name": "Shimoga",
+    "latitude": 13.9304,
+    "longitude": 75.56
+  },
+  {
+    "name": "Bien Hoa",
+    "latitude": 10.97,
+    "longitude": 106.8301
+  },
+  {
+    "name": "Xiping",
+    "latitude": 25.6005,
+    "longitude": 103.8166
+  },
+  {
+    "name": "Kryvyy Rih",
+    "latitude": 47.9283,
+    "longitude": 33.345
+  },
+  {
+    "name": "Irbid",
+    "latitude": 32.55,
+    "longitude": 35.85
+  },
+  {
+    "name": "Tiruppur",
+    "latitude": 11.0804,
+    "longitude": 77.33
+  },
+  {
+    "name": "Andijon",
+    "latitude": 40.79,
+    "longitude": 72.34
+  },
+  {
+    "name": "Krasnodar",
+    "latitude": 45.02,
+    "longitude": 39
+  },
+  {
+    "name": "Zaragoza",
+    "latitude": 41.65,
+    "longitude": -0.89
+  },
+  {
+    "name": "Genoa",
+    "latitude": 44.41,
+    "longitude": 8.93
+  },
+  {
+    "name": "Lilongwe",
+    "latitude": -13.9833,
+    "longitude": 33.7833
+  },
+  {
+    "name": "Diyarbakir",
+    "latitude": 37.9204,
+    "longitude": 40.23
+  },
+  {
+    "name": "Morelia",
+    "latitude": 19.7334,
+    "longitude": -101.1895
+  },
+  {
+    "name": "Ul'yanovsk",
+    "latitude": 54.33,
+    "longitude": 48.41
+  },
+  {
+    "name": "Utrecht",
+    "latitude": 52.1003,
+    "longitude": 5.12
+  },
+  {
+    "name": "Kikwit",
+    "latitude": -5.03,
+    "longitude": 18.85
+  },
+  {
+    "name": "Al Hufuf",
+    "latitude": 25.3487,
+    "longitude": 49.5856
+  },
+  {
+    "name": "Yogyakarta",
+    "latitude": -7.78,
+    "longitude": 110.375
+  },
+  {
+    "name": "Wroclaw",
+    "latitude": 51.1104,
+    "longitude": 17.03
+  },
+  {
+    "name": "Winnipeg",
+    "latitude": 49.883,
+    "longitude": -97.166
+  },
+  {
+    "name": "Izhevsk",
+    "latitude": 56.85,
+    "longitude": 53.23
+  },
+  {
+    "name": "Cape Coral",
+    "latitude": 26.6445,
+    "longitude": -81.9955
+  },
+  {
+    "name": "Springfield",
+    "latitude": 42.1155,
+    "longitude": -72.5395
+  },
+  {
+    "name": "Zhuozhou",
+    "latitude": 39.5401,
+    "longitude": 115.79
+  },
+  {
+    "name": "Raurkela",
+    "latitude": 22.2304,
+    "longitude": 84.83
+  },
+  {
+    "name": "Quebec",
+    "latitude": 46.84,
+    "longitude": -71.2456
+  },
+  {
+    "name": "Poznan",
+    "latitude": 52.4058,
+    "longitude": 16.8999
+  },
+  {
+    "name": "Colorado Springs",
+    "latitude": 38.8674,
+    "longitude": -104.7606
+  },
+  {
+    "name": "Port Said",
+    "latitude": 31.26,
+    "longitude": 32.29
+  },
+  {
+    "name": "Nanded",
+    "latitude": 19.17,
+    "longitude": 77.3
+  },
+  {
+    "name": "Bannu",
+    "latitude": 32.989,
+    "longitude": 70.5986
+  },
+  {
+    "name": "Asmara",
+    "latitude": 15.3333,
+    "longitude": 38.9333
+  },
+  {
+    "name": "Southend-on-Sea",
+    "latitude": 51.55,
+    "longitude": 0.72
+  },
+  {
+    "name": "Dresden",
+    "latitude": 51.05,
+    "longitude": 13.75
+  },
+  {
+    "name": "Wiesbaden",
+    "latitude": 50.0804,
+    "longitude": 8.25
+  },
+  {
+    "name": "Charleston",
+    "latitude": 32.8151,
+    "longitude": -79.963
+  },
+  {
+    "name": "Changping",
+    "latitude": 40.2248,
+    "longitude": 116.1944
+  },
+  {
+    "name": "Palu",
+    "latitude": -0.907,
+    "longitude": 119.833
+  },
+  {
+    "name": "Taizhou",
+    "latitude": 32.4904,
+    "longitude": 119.9
+  },
+  {
+    "name": "Xingtai",
+    "latitude": 37.05,
+    "longitude": 114.5
+  },
+  {
+    "name": "Samsun",
+    "latitude": 41.28,
+    "longitude": 36.3437
+  },
+  {
+    "name": "Luxor",
+    "latitude": 25.7,
+    "longitude": 32.65
+  },
+  {
+    "name": "Belgaum",
+    "latitude": 15.865,
+    "longitude": 74.505
+  },
+  {
+    "name": "Pontianak",
+    "latitude": -0.03,
+    "longitude": 109.32
+  },
+  {
+    "name": "Yaroslavl'",
+    "latitude": 57.62,
+    "longitude": 39.87
+  },
+  {
+    "name": "Constantine",
+    "latitude": 36.36,
+    "longitude": 6.5999
+  },
+  {
+    "name": "Banjarmasin",
+    "latitude": -3.33,
+    "longitude": 114.5801
+  },
+  {
+    "name": "Abu Dhabi",
+    "latitude": 24.4667,
+    "longitude": 54.3666
+  },
+  {
+    "name": "Grand Rapids",
+    "latitude": 42.9615,
+    "longitude": -85.6557
+  },
+  {
+    "name": "Kirkuk",
+    "latitude": 35.4722,
+    "longitude": 44.3923
+  },
+  {
+    "name": "Sangli",
+    "latitude": 16.8604,
+    "longitude": 74.575
+  },
+  {
+    "name": "Barcelona",
+    "latitude": 41.3851,
+    "longitude": 2.1734
+  },
+  {
+    "name": "Mission Viejo",
+    "latitude": 33.6095,
+    "longitude": -117.655
+  },
+  {
+    "name": "Suhaj",
+    "latitude": 26.5504,
+    "longitude": 31.7
+  },
+  {
+    "name": "Al Mansurah",
+    "latitude": 31.0504,
+    "longitude": 31.38
+  },
+  {
+    "name": "Canoas",
+    "latitude": -29.92,
+    "longitude": -51.18
+  },
+  {
+    "name": "Barnaul",
+    "latitude": 53.355,
+    "longitude": 83.745
+  },
+  {
+    "name": "Zahedan",
+    "latitude": 29.5,
+    "longitude": 60.83
+  },
+  {
+    "name": "Jalalabad",
+    "latitude": 34.4415,
+    "longitude": 70.4361
+  },
+  {
+    "name": "Albany",
+    "latitude": 42.6664,
+    "longitude": -73.7987
+  },
+  {
+    "name": "Chiclayo",
+    "latitude": -6.7629,
+    "longitude": -79.8366
+  },
+  {
+    "name": "Hermosillo",
+    "latitude": 29.0989,
+    "longitude": -110.9541
+  },
+  {
+    "name": "Port Louis",
+    "latitude": -20.1666,
+    "longitude": 57.5
+  },
+  {
+    "name": "Chanda",
+    "latitude": 19.97,
+    "longitude": 79.3
+  },
+  {
+    "name": "Al Hillah",
+    "latitude": 32.4721,
+    "longitude": 44.4217
+  },
+  {
+    "name": "Al Hillah",
+    "latitude": 23.4895,
+    "longitude": 46.7564
+  },
+  {
+    "name": "Rasht",
+    "latitude": 37.3,
+    "longitude": 49.63
+  },
+  {
+    "name": "Nagano",
+    "latitude": 36.65,
+    "longitude": 138.17
+  },
+  {
+    "name": "Vinh",
+    "latitude": 18.7,
+    "longitude": 105.68
+  },
+  {
+    "name": "Abeokuta",
+    "latitude": 7.1604,
+    "longitude": 3.35
+  },
+  {
+    "name": "Kayseri",
+    "latitude": 38.735,
+    "longitude": 35.49
+  },
+  {
+    "name": "Samarinda",
+    "latitude": -0.5,
+    "longitude": 117.15
+  },
+  {
+    "name": "Ajmer",
+    "latitude": 26.45,
+    "longitude": 74.64
+  },
+  {
+    "name": "Dortmund",
+    "latitude": 51.53,
+    "longitude": 7.45
+  },
+  {
+    "name": "Vladivostok",
+    "latitude": 43.13,
+    "longitude": 131.91
+  },
+  {
+    "name": "Irkutsk",
+    "latitude": 52.32,
+    "longitude": 104.245
+  },
+  {
+    "name": "Knoxville",
+    "latitude": 35.9692,
+    "longitude": -83.9496
+  },
+  {
+    "name": "Blantyre",
+    "latitude": -15.79,
+    "longitude": 34.9899
+  },
+  {
+    "name": "Baton Rouge",
+    "latitude": 30.4419,
+    "longitude": -91.131
+  },
+  {
+    "name": "Anqing",
+    "latitude": 30.5,
+    "longitude": 117.05
+  },
+  {
+    "name": "Cuttack",
+    "latitude": 20.47,
+    "longitude": 85.8899
+  },
+  {
+    "name": "Hachioji",
+    "latitude": 35.6577,
+    "longitude": 139.3261
+  },
+  {
+    "name": "Khabarovsk",
+    "latitude": 48.455,
+    "longitude": 135.12
+  },
+  {
+    "name": "Veracruz",
+    "latitude": 19.1773,
+    "longitude": -96.16
+  },
+  {
+    "name": "Kisangani",
+    "latitude": 0.52,
+    "longitude": 25.22
+  },
+  {
+    "name": "Libreville",
+    "latitude": 0.3854,
+    "longitude": 9.458
+  },
+  {
+    "name": "Kerman",
+    "latitude": 30.3,
+    "longitude": 57.08
+  },
+  {
+    "name": "Orumiyeh",
+    "latitude": 37.53,
+    "longitude": 45
+  },
+  {
+    "name": "Bikaner",
+    "latitude": 28.0304,
+    "longitude": 73.3299
+  },
+  {
+    "name": "Quetzaltenango",
+    "latitude": 14.83,
+    "longitude": -91.52
+  },
+  {
+    "name": "Bakersfield",
+    "latitude": 35.353,
+    "longitude": -119.0359
+  },
+  {
+    "name": "Ogden",
+    "latitude": 41.228,
+    "longitude": -111.9677
+  },
+  {
+    "name": "Shihezi",
+    "latitude": 44.3,
+    "longitude": 86.0299
+  },
+  {
+    "name": "Kuching",
+    "latitude": 1.53,
+    "longitude": 110.33
+  },
+  {
+    "name": "Shuozhou",
+    "latitude": 39.3004,
+    "longitude": 112.42
+  },
+  {
+    "name": "Niigata",
+    "latitude": 37.92,
+    "longitude": 139.04
+  },
+  {
+    "name": "Pereira",
+    "latitude": 4.8104,
+    "longitude": -75.68
+  },
+  {
+    "name": "Macau",
+    "latitude": 22.203,
+    "longitude": 113.545
+  },
+  {
+    "name": "New Haven",
+    "latitude": 41.3112,
+    "longitude": -72.9246
+  },
+  {
+    "name": "Bouake",
+    "latitude": 7.69,
+    "longitude": -5.03
+  },
+  {
+    "name": "Columbia",
+    "latitude": 34.0376,
+    "longitude": -80.9037
+  },
+  {
+    "name": "Akron",
+    "latitude": 41.0798,
+    "longitude": -81.5219
+  },
+  {
+    "name": "Binjai",
+    "latitude": 3.6204,
+    "longitude": 98.5001
+  },
+  {
+    "name": "Manama",
+    "latitude": 26.2361,
+    "longitude": 50.5831
+  },
+  {
+    "name": "Uberlandia",
+    "latitude": -18.9,
+    "longitude": -48.28
+  },
+  {
+    "name": "Sorocaba",
+    "latitude": -23.49,
+    "longitude": -47.47
+  },
+  {
+    "name": "Wusong",
+    "latitude": 30.9504,
+    "longitude": 117.78
+  },
+  {
+    "name": "Weihai",
+    "latitude": 37.5,
+    "longitude": 122.1
+  },
+  {
+    "name": "Mar del Plata",
+    "latitude": -38,
+    "longitude": -57.58
+  },
+  {
+    "name": "Santiago de Cuba",
+    "latitude": 20.025,
+    "longitude": -75.8213
+  },
+  {
+    "name": "Siping",
+    "latitude": 43.17,
+    "longitude": 124.33
+  },
+  {
+    "name": "Kagoshima",
+    "latitude": 31.586,
+    "longitude": 130.5611
+  },
+  {
+    "name": "Surakarta",
+    "latitude": -7.565,
+    "longitude": 110.825
+  },
+  {
+    "name": "Makhachkala",
+    "latitude": 42.98,
+    "longitude": 47.5
+  },
+  {
+    "name": "Bhavnagar",
+    "latitude": 21.7784,
+    "longitude": 72.13
+  },
+  {
+    "name": "Uyo",
+    "latitude": 5.008,
+    "longitude": 7.85
+  },
+  {
+    "name": "Bristol",
+    "latitude": 51.45,
+    "longitude": -2.5833
+  },
+  {
+    "name": "Bahawalpur",
+    "latitude": 29.39,
+    "longitude": 71.675
+  },
+  {
+    "name": "Kenitra",
+    "latitude": 34.2704,
+    "longitude": -6.58
+  },
+  {
+    "name": "Ribeirao Preto",
+    "latitude": -21.17,
+    "longitude": -47.83
+  },
+  {
+    "name": "Kanazawa",
+    "latitude": 36.56,
+    "longitude": 136.64
+  },
+  {
+    "name": "Orenburg",
+    "latitude": 51.78,
+    "longitude": 55.11
+  },
+  {
+    "name": "Malaga",
+    "latitude": 36.7204,
+    "longitude": -4.42
+  },
+  {
+    "name": "Tabuk",
+    "latitude": 28.3838,
+    "longitude": 36.555
+  },
+  {
+    "name": "Puerto La Cruz",
+    "latitude": 10.17,
+    "longitude": -64.68
+  },
+  {
+    "name": "Jiujiang",
+    "latitude": 29.73,
+    "longitude": 115.98
+  },
+  {
+    "name": "Hisar",
+    "latitude": 29.17,
+    "longitude": 75.725
+  },
+  {
+    "name": "Kashgar",
+    "latitude": 39.4763,
+    "longitude": 75.9699
+  },
+  {
+    "name": "Matola",
+    "latitude": -25.9696,
+    "longitude": 32.46
+  },
+  {
+    "name": "Bilaspur",
+    "latitude": 22.0904,
+    "longitude": 82.16
+  },
+  {
+    "name": "Sargodha",
+    "latitude": 32.0854,
+    "longitude": 72.675
+  },
+  {
+    "name": "Leipzig",
+    "latitude": 51.3354,
+    "longitude": 12.41
+  },
+  {
+    "name": "Vilnius",
+    "latitude": 54.6834,
+    "longitude": 25.3166
+  },
+  {
+    "name": "Tinnevelly",
+    "latitude": 8.7304,
+    "longitude": 77.69
+  },
+  {
+    "name": "Cancun",
+    "latitude": 21.17,
+    "longitude": -86.83
+  },
+  {
+    "name": "Yangzhou",
+    "latitude": 32.4,
+    "longitude": 119.43
+  },
+  {
+    "name": "Novokuznetsk",
+    "latitude": 53.75,
+    "longitude": 87.115
+  },
+  {
+    "name": "Latakia",
+    "latitude": 35.54,
+    "longitude": 35.78
+  },
+  {
+    "name": "Heroica Matamoros",
+    "latitude": 25.88,
+    "longitude": -97.5
+  },
+  {
+    "name": "Goteborg",
+    "latitude": 57.75,
+    "longitude": 12
+  },
+  {
+    "name": "Otsu",
+    "latitude": 35.0064,
+    "longitude": 135.8674
+  },
+  {
+    "name": "Tomsk",
+    "latitude": 56.495,
+    "longitude": 84.975
+  },
+  {
+    "name": "Linxia Chengguanzhen",
+    "latitude": 35.6,
+    "longitude": 103.2
+  },
+  {
+    "name": "Matsuyama",
+    "latitude": 33.8455,
+    "longitude": 132.7658
+  },
+  {
+    "name": "Rouen",
+    "latitude": 49.4304,
+    "longitude": 1.08
+  },
+  {
+    "name": "Jiangmen",
+    "latitude": 22.5804,
+    "longitude": 113.08
+  },
+  {
+    "name": "Oaxaca",
+    "latitude": 17.0827,
+    "longitude": -96.6699
+  },
+  {
+    "name": "Beira",
+    "latitude": -19.82,
+    "longitude": 34.87
+  },
+  {
+    "name": "Guntur",
+    "latitude": 16.33,
+    "longitude": 80.45
+  },
+  {
+    "name": "Tripoli",
+    "latitude": 32.882,
+    "longitude": 8.705
+  },
+  {
+    "name": "Hamadan",
+    "latitude": 34.796,
+    "longitude": 48.515
+  },
+  {
+    "name": "Cangzhou",
+    "latitude": 38.3204,
+    "longitude": 116.87
+  },
+  {
+    "name": "Kota Kinabalu",
+    "latitude": 5.98,
+    "longitude": 116.11
+  },
+  {
+    "name": "Gold Coast",
+    "latitude": -28.0815,
+    "longitude": 153.4482
+  },
+  {
+    "name": "Ji'an",
+    "latitude": 27.1304,
+    "longitude": 115
+  },
+  {
+    "name": "Londrina",
+    "latitude": -23.3,
+    "longitude": -51.18
+  },
+  {
+    "name": "Ryazan'",
+    "latitude": 54.62,
+    "longitude": 39.72
+  },
+  {
+    "name": "Shashi",
+    "latitude": 30.32,
+    "longitude": 112.23
+  },
+  {
+    "name": "Bello",
+    "latitude": 6.33,
+    "longitude": -75.57
+  },
+  {
+    "name": "Tyumen'",
+    "latitude": 57.14,
+    "longitude": 65.53
+  },
+  {
+    "name": "Lipetsk",
+    "latitude": 52.62,
+    "longitude": 39.64
+  },
+  {
+    "name": "Shiliguri",
+    "latitude": 26.7204,
+    "longitude": 88.455
+  },
+  {
+    "name": "Eskisehir",
+    "latitude": 39.795,
+    "longitude": 30.53
+  },
+  {
+    "name": "Banda Aceh",
+    "latitude": 5.55,
+    "longitude": 95.32
+  },
+  {
+    "name": "Ujjain",
+    "latitude": 23.1904,
+    "longitude": 75.79
+  },
+  {
+    "name": "Salta",
+    "latitude": -24.7834,
+    "longitude": -65.4166
+  },
+  {
+    "name": "Penza",
+    "latitude": 53.18,
+    "longitude": 45
+  },
+  {
+    "name": "Blida",
+    "latitude": 36.4203,
+    "longitude": 2.83
+  },
+  {
+    "name": "Mykolayiv",
+    "latitude": 46.9677,
+    "longitude": 31.9843
+  },
+  {
+    "name": "Karbala'",
+    "latitude": 32.6149,
+    "longitude": 44.0245
+  },
+  {
+    "name": "Suez",
+    "latitude": 30.005,
+    "longitude": 32.5499
+  },
+  {
+    "name": "Gliwice",
+    "latitude": 50.3304,
+    "longitude": 18.67
+  },
+  {
+    "name": "Bukittinggi",
+    "latitude": -0.3031,
+    "longitude": 100.3615
+  },
+  {
+    "name": "Liaoyuan",
+    "latitude": 42.9,
+    "longitude": 125.13
+  },
+  {
+    "name": "Kota Bharu",
+    "latitude": 6.12,
+    "longitude": 102.23
+  },
+  {
+    "name": "Jundiai",
+    "latitude": -23.2,
+    "longitude": -46.88
+  },
+  {
+    "name": "Edinburgh",
+    "latitude": 55.9483,
+    "longitude": -3.2191
+  },
+  {
+    "name": "Tlaxcala",
+    "latitude": 19.32,
+    "longitude": -98.23
+  },
+  {
+    "name": "Provo",
+    "latitude": 40.2457,
+    "longitude": -111.6457
+  },
+  {
+    "name": "Arak",
+    "latitude": 34.0804,
+    "longitude": 49.7
+  },
+  {
+    "name": "Davangere",
+    "latitude": 14.47,
+    "longitude": 75.92
+  },
+  {
+    "name": "Vina del Mar",
+    "latitude": -33.03,
+    "longitude": -71.54
+  },
+  {
+    "name": "Pingtung",
+    "latitude": 22.6817,
+    "longitude": 120.4817
+  },
+  {
+    "name": "Annaba",
+    "latitude": 36.92,
+    "longitude": 7.76
+  },
+  {
+    "name": "Akola",
+    "latitude": 20.71,
+    "longitude": 77.01
+  },
+  {
+    "name": "Brighton",
+    "latitude": 50.8303,
+    "longitude": -0.17
+  },
+  {
+    "name": "Astrakhan'",
+    "latitude": 46.3487,
+    "longitude": 48.055
+  },
+  {
+    "name": "Bradford",
+    "latitude": 53.8,
+    "longitude": -1.75
+  },
+  {
+    "name": "Bari",
+    "latitude": 41.1142,
+    "longitude": 16.8728
+  },
+  {
+    "name": "Damanhur",
+    "latitude": 31.0504,
+    "longitude": 30.47
+  },
+  {
+    "name": "Al Minya",
+    "latitude": 28.09,
+    "longitude": 30.75
+  },
+  {
+    "name": "Taoyuan District",
+    "latitude": 24.9889,
+    "longitude": 121.3111
+  },
+  {
+    "name": "Keelung",
+    "latitude": 25.1333,
+    "longitude": 121.7333
+  },
+  {
+    "name": "San Lorenzo",
+    "latitude": -25.34,
+    "longitude": -57.52
+  },
+  {
+    "name": "Pasuruan",
+    "latitude": -7.6296,
+    "longitude": 112.9
+  },
+  {
+    "name": "Chiayi",
+    "latitude": 23.4755,
+    "longitude": 120.4351
+  },
+  {
+    "name": "Thai Nguyen",
+    "latitude": 21.6,
+    "longitude": 105.83
+  },
+  {
+    "name": "Awka",
+    "latitude": 6.2104,
+    "longitude": 7.07
+  },
+  {
+    "name": "Shuangyashan",
+    "latitude": 46.6704,
+    "longitude": 131.35
+  },
+  {
+    "name": "Mazatan",
+    "latitude": 29.0171,
+    "longitude": -110.1333
+  },
+  {
+    "name": "Tsu",
+    "latitude": 34.7171,
+    "longitude": 136.5167
+  },
+  {
+    "name": "New Delhi",
+    "latitude": 28.52758,
+    "longitude": 77.068
+  },
+  {
+    "name": "Kiev",
+    "latitude": 50.4021,
+    "longitude": 29.4113
+  },
+  {
+    "name": "Isaac",
+    "latitude": -21.405,
+    "longitude": 147.938
+  },
+  {
+    "name": "Lawn Hill",
+    "latitude": -18.9344,
+    "longitude": 138.017
+  },
+  {
+    "name": "Mabel Creek",
+    "latitude": -29.1629,
+    "longitude": 134.1290
+  },
+  {
+    "name": "Telfer",
+    "latitude": -21.350,
+    "longitude": 123.2545
+  },
+  {
+    "name": "Kairuku-Hiri",
+    "latitude": -9.2843,
+    "longitude": 147.256
+  },
+  {
+    "name": "Seram Island",
+    "latitude": -3.498,
+    "longitude": 130.380
+  },
+  {
+    "name": "South Sulawesi",
+    "latitude": -4.00568,
+    "longitude": 119.688
+  },
+  {
+    "name": "Sarawak",
+    "latitude": 2.75525,
+    "longitude": 114.0098
+  },
+  {
+    "name": "Binh Phuoc",
+    "latitude": 11.765,
+    "longitude": 107.205
+  },
+  {
+    "name": "Lamon Bay",
+    "latitude": 14.453,
+    "longitude": 121.744
+  },
+  {
+    "name": "Lạng Son",
+    "latitude": 21.437,
+    "longitude": 107.034
+  },
+  {
+    "name": "District Belaga",
+    "latitude": 2.755,
+    "longitude": 114.009
+  },
+  {
+    "name": "West Papau",
+    "latitude": -0.799,
+    "longitude": 132.831
+  }
+]

@@ -1,0 +1,34 @@
+<svg viewBox="0 0 1261 621" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
+            <stop offset="0%"></stop>
+            <stop stop-color="#FFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="9.92674208%" y1="61.9506173%" x2="72.7752131%" y2="38.0493827%" id="b">
+            <stop stop-color="#39C1CB" offset="0%"></stop>
+            <stop stop-color="#3069BD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="9.92674208%" y1="61.967097%" x2="72.7752131%" y2="38.032903%" id="c">
+            <stop stop-color="#39C1CB" offset="0%"></stop>
+            <stop stop-color="#3069BD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <path fill="url(#a)" opacity="0.2" d="M0 .63h1v620H0zM101 .63h1v620h-1zM404 .63h1v620h-1zM706 .63h1v620h-1zM1008 .62h1v620h-1zM201 .63h1v620h-1zM504 .63h1v620h-1zM806 .63h1v620h-1zM1108 .62h1v620h-1zM302 .63h1v620h-1zM605 .63h1v620h-1zM907 .63h1v620h-1zM1209 .62h1v620h-1z" transform="translate(1, -3)"></path>
+    <path fill="#C4C4C4" d="M1260.5 516.5v-2H.5v2z" opacity=".2" />
+    <path fill="#C4C4C4" d="M1260.5 416.5v2H.5v-2z" opacity=".17" />
+    <path fill="#C4C4C4" d="M1260.5 314.5v-2H.5v2z" opacity=".14" />
+    <path fill="#C4C4C4" d="M1260.5 211.5v2H.5v-2z" opacity=".11" />
+    <path fill="#C4C4C4" d="M1260.5 109.5v2H.5v-2z" opacity=".07" />
+    <path class="line" stroke="url(#b)" stroke-width="2" stroke-linecap="round" d="M2 616L1254 3.2187" style="stroke-dashoffset: 0px; stroke-dasharray: 1394.42;"></path>
+    <path class="line--bg" stroke="url(#c)" stroke-width="2" opacity="0.3" stroke-linecap="square" d="M2 616L1254 3.2187" style="stroke-dashoffset: 0px; stroke-dasharray: 1394.42;"></path>
+    <path fill="#D8D8D8" d="M1 616h1260v2H1z"></path>
+    <circle class="dot" fill="#3069BD" cx="68" cy="584.00125" r="3" data-svg-origin="65 581.001220703125" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; opacity: 1;"></circle>
+    <circle class="dot" fill="#3069BD" cx="193.888889" cy="522.00125" r="3" data-svg-origin="190.88888549804688 519.001220703125" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; opacity: 1;"></circle>
+    <circle class="dot" fill="#3069BD" cx="319.777778" cy="460.00125" r="3" data-svg-origin="316.77777099609375 457.0012512207031" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; opacity: 1;"></circle>
+    <circle class="dot" fill="#3069BD" cx="445.666667" cy="399.00125" r="3" data-svg-origin="442.6666564941406 396.0012512207031" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; opacity: 1;"></circle>
+    <circle class="dot" fill="#3069BD" cx="571.555556" cy="337.00125" r="3" data-svg-origin="568.5555419921875 334.0012512207031" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; opacity: 1;"></circle>
+    <circle class="dot" fill="#3069BD" cx="697.444444" cy="276.22" r="3" data-svg-origin="694.4444580078125 273.2200012207031" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; opacity: 1;"></circle>
+    <circle class="dot" fill="#3069BD" cx="823.333333" cy="214.22" r="3" data-svg-origin="820.3333129882812 211.22000122070312" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; opacity: 1;"></circle>
+    <circle class="dot" fill="#3069BD" cx="949.222222" cy="152.22" r="3" data-svg-origin="946.2222290039062 149.22000122070312" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; opacity: 1;"></circle>
+    <circle class="dot" fill="#3069BD" cx="1075.11111" cy="90.22" r="3" data-svg-origin="1072.111083984375 87.22000122070312" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; opacity: 1;"></circle>
+</svg>

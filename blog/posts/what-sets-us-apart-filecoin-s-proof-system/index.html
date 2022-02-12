@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>What sets it apart: Filecoin’s proof system</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="What sets it apart: Filecoin’s proof system"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/proof-system-english-social.png?c=1644520463"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/proof-system-english-social.png?c=1644520463"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/proof-system-english-social.png">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520463">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/proof-system-main-header_hu52b91cf0c3b9c5eb6471b2e3d0cf68da_3792572_667x0_resize_q90_linear_2.png 667w,../../../uploads/proof-system-main-header_hu52b91cf0c3b9c5eb6471b2e3d0cf68da_3792572_1333x0_resize_q90_linear_2.png 1333w,../../../uploads/proof-system-main-header_hu52b91cf0c3b9c5eb6471b2e3d0cf68da_3792572_2000x0_resize_q90_linear_2.png 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                            <li class="list-item"><a href="../../../blog/Filecoin-Features" class="anchor">Filecoin-Features</a></li>
+                            
+                            <li class="list-item"><a href="../../../blog/updates" class="anchor">updates</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Feb 18, 2020</span><br />
+                    <h2 class="h title">What sets it apart: Filecoin’s proof system</h2>
+                    
+
+<p>Much like other large technological innovations, blockchains are the marriage of several established technologies that have already been used and trusted for decades. “Consensus mechanisms,” studied since the 1970s and developed in the 1990s as <a href="https://thenextweb.com/hardfork/2019/02/04/basics-explainer-proof-of-work/" target="_blank"><strong>a tool to combat email spam</strong></a>, let users in a distributed system come to an agreement without the need for a central arbiter.</p>
+
+<p>Blockchains use different systems to maintain consensus. For example, Bitcoin’s proof-of-work consensus mechanism requires miners to compete with one another to solve a computationally expensive math problem in order to verify payments made between two people exchanging Bitcoin. Solving these problems requires lots of electricity. That’s why you hear reports about the Bitcoin network using <a href="https://www.bbc.com/news/technology-48853230" target="_blank"><strong>more power annually</strong></a> than all of Switzerland (and its consumption growing much faster).</p>
+
+<p>Filecoin is built on a variation of Proof-of-Space. It is also related to Proof of Stake in that instead of only tokens as stake, stake is in the form of proven storage that determines a miner’s probability of mining a block. In building a decentralized storage network, a proof structure was built in which consensus is achieved through an operation yielding positive social externality: data storage. With the testnet launch, a new set of storage-based proof systems has been unveiled to attain decentralized consensus.</p>
+
+<p>When Filecoin was announced in 2017, the plan was to create a decentralized storage network built on a robust decentralized market. To seed this market, to decentralize market functions, and to incentivize early miner participation, a crypto token was created, a byproduct of Filecoin consensus. This token is generated on the back of useful work, namely a useful Proof-of-Replication and Proof-of-Space-time.</p>
+
+<p><img src="https://filecoin.io/vintage/images/blog/filecoin-proof-system-diagram.jpg" alt="Proofs diagram" /></p>
+
+<h3 id="the-story-of-these-proofs">The Story of these Proofs</h3>
+
+<p>PL’s Juan Benet explored the history of Filecoin’s proof construction in a <a href="https://www.zeroknowledge.fm/106" target="_blank"><strong>recent interview on the Zero Knowledge podcast</strong></a>. The following are excerpts from that interview:</p>
+
+<p>“Filecoin pushes the frontier of blockchains in a number of different ways. Proof of Replication is ultimately a proving system to verify that a storage miner actually has the content they are storing and are not cheating. <strong>Within these systems it’s a very hard problem: how do you prove to the network that you’re indeed storing something and not just lying about that?</strong></p>
+
+<p>There are other interesting problems Filecoin tries to solve, including things like higher throughput consensus and interoperable, content-addressable linking data structures that Filecoin uses so on. But at the end of the day, it’s all about taking all of the unused storage on the planet and organizing it with incentives, to build the largest, most powerful computing storage network and drive prices for this storage down.</p>
+
+<p><strong>Filecoin’s Proof of Replication is both a Proof of Storage and Proof of Space</strong>, and these are subtly different [explained later]. In Filecoin units of data are stored in what are called sectors. You <strong>seal</strong> specific data in a sector on disk in a slow encoding process and commit a proof of that to the blockchain. Sealing is an intense amount of work spent on that particular proof. In order to fake a proof like that, you would have to do that particular work using the original data that a client stores on Filecoin, unlike numeric hashes in Bitcoin’s Proof of Work.</p>
+
+<p><strong>Proving systems</strong> are cryptographic protocols where there’s a prover and verifier and the prover is going to prove something to the verifier. In Proof of Work, for example, it’s that the prover has done some amount of work, or spent some amount of computational cycles. The classic example is hashes [in Bitcoin]. Another example is a Verifiable Delay Function (VDF), where I can prove to you that I’ve spent a certain amount of cycles, in sequence, and so I’ve waited a certain amount of time [Filecoin does not use VDFs but it’s a <a href="https://filecoin.io/blog/collaboration-on-vdfs/" target="_blank">research area</a>]. So all these Proof of Storage systems are proving systems like that, <em>low-level cryptographic primitives</em> used in a wide variety of protocols.</p>
+
+<p><strong>Proofs of Storage</strong> are simple proving systems to prove that I have possession of some data. A Proof of Data Possession example is: I can prove to you that I have data X, either without revealing data X or if the data is several GB large, in some more succinct way. Then there’s Proof of Retrievability where, not only am I going to prove that I have X, but also that these proofs can be used to reconstruct X in case I’m malicious and want to withhold X from you.</p>
+
+<p><strong>Proofs of Space</strong> are a different type of group where I can guarantee to you that I’m spending a certain amount of storage. If I commit to storing 1 GB, and I generate a random GB then I can prove to you that I’m storing that random GB and not storing some other thing. That lets you use storage space as a Proof of Work.</p>
+
+<p><em>The interesting part is combining a Proof of Space with a normal Proof of data possession</em>, where I would like X to be useful, not just a random string. <strong>The hard part of this was to create a Proof of Space that was also being used to store <em>useful</em> data.</strong> So that’s what Proofs of Replication are as foundational primitives in the Filecoin network’s cryptographic protocol.</p>
+
+<p>Other Proof of Storage systems were invented to create clouds that you could trust better because they could prove to you that <em>they were backing up your data. But they went completely unused in the normal centralized cloud environment where trust is contractual</em>. And <strong>now they are being used in the whole decentralization space</strong> because this is where we’re using incentives structures to guarantee things not contractual agreements.</p>
+
+<p>We also use <strong>SNARKs</strong> to prove some of the actual Proofs of Replication which produce large outputs. We’d like to do a lot of challenges on these Proofs of Replication but aggregate them so they can go on chain in a very small, compact way. There are different ways to do this but SNARKs are a great way to do this, they give you a way to prove that you’ve done the proofs correctly, then you can just put the SNARK proof on the chain. Then parties can now verify a few of the inputs themselves and the actual SNARK proof, and know that the proof has been generated correctly.</p>
+
+<p>In Proof of Replication we take the source data, a large amount like 32GB, and apply a very slow encoding that produces these lattice-like graphs in layers where a node might be a 32 byte segment. There’s a sequential process going on producing a graph and for each node hashing sequentially. It has to be done one after the other, because of the hash function.</p>
+
+<p><img src="https://filecoin.io/vintage/images/blog/filecoin-proofs-system-sierpinski-triangle.svg" alt="Sierpinski triangle as decoration" />One type of graph produced is a <strong>DRG (Depth-Robust-Graph)</strong> and they get connected with these expander graphs, and there’s a whole complicated lattice structure. At the end of which we now have encoded the original data into what we call the <strong>replica</strong>, which is committed as a value. You can take the same source data and encode it multiple times if you wanted to, and you’d end up with multiple different replicas that are uniquely encoded.</p>
+
+<p>Now that we’ve done that, <strong>in order to prove that we’ve done this encoding correctly</strong>, we can either do the entire encoding inside of a SNARK, which would be extremely expensive, or we could just sample a few of the challenges to prove that we have stored this. Say we sample a thousand random challenges over this whole proof, and we do that computation inside of the SNARK. We take the source encoded data, then decode it, and then show that that goes all the way back to root that we committed to. <strong>It’s that proof that we want to make succinct.</strong> Because otherwise it’d be a 32 byte leaf and then the whole Merkle chain all the way back up to the root would be a pretty large amount of data, then times that by a thousand. 100s of KB or MB to produce one proof. With a SNARK we can compress it down, I think it’s like to 200B or something like that.</p>
+
+<p><img src="../../../uploads/filecoin-proofs-system-cartoons.png" alt="" /></p>
+
+<p>A great story about all of this work is what we call the proofs rollercoaster. You end up creating tons of different constructions over time, with all these different parameters serving all these different use cases.</p>
+
+<p>This parameter choice, over the choice of proofs in Filecoin has been probably the <em>biggest reason</em> it’s taken us so long to ship all of this stuff. Because you choose one construction and it has a certain shape and produces artifacts of a particular size, and maybe that’s fine, and then you tweak some parameter, like, “Hey, maybe we want the sectors to be slightly bigger.” That makes some other parameter have to change.</p>
+
+<p>So pretty quickly you’re in <em>a very large parameter space</em> with many different variables where you tweak one thing here, and a bunch of other things have to change as well. Doing that complexity management, as a bunch of these algorithms are getting optimized, is pretty difficult. <strong>Because a lot of these constructions, these slow encodings, you want slow enough to be useful for the proof but fast enough so that it’s not very expensive.</strong> Dialing that so that it’s just right is a pretty difficult challenge, then nailing that with particular SNARK constructions on top to make sure that you can do this efficiently and succinctly enough for the chain.</p>
+
+<p><strong>All of this parameter optimization can be so intense and difficult that we actually had to write software to be able to deal with this.</strong> We have a constraints solver just to be able to deal with the constraint optimization problem, on choosing the proof structures and the parameters in Filecoin. It’s kind of an amazing result out of this, other groups can now use that to make their lives easier, but we had to write this.</p>
+
+<p>We used a tool called <a href="https://github.com/filecoin-project/orient" target="_blank"><strong>Orient</strong></a>, it’s on Github and everything is open source (See <a href="https://filecoin-project.github.io/specs/#parameter-calculation-dependency-graph" target="_blank"><strong>Filecoin’s parameters in Orient</strong></a> and the <a href="https://github.com/filecoin-project/orient/blob/master/ubercalc/ubercalc.org" target="_blank"><strong>Übercalc</strong></a>). It has a special language where you define a particular algorithm and the artifacts they generate, then compose them into larger ones, with all these variables and parameters.</p>
+
+<p>And then you can do experimental results for say, how long certain hash functions take, and plug that data in some of the parameters and compute out what some of the other parameters have to be. So, for example, based on this hash function and how long that takes, inside of the SNARK or outside of a SNARK, then this particular construction is the one you want to use, because it minimizes some times or minimizes some on-chain footprint and all of that stuff is calculated through this solver.</p>
+
+<p><img src="https://filecoin.io/vintage/images/blog/filecoin-proof-system-ubercalc.jpg" alt="ubercalc" />Making blockchain technology right now, because of how complex the structures are, both the individual primitives and how they’re weaved into the chain, and all the off-chain protocols and so on, all of that stuff is so complex, that <strong>we need this software to help us write software</strong>. Similar to how chip manufacturing where, chip manufacturing was going pretty well until it hit a certain density, and they then stopped being able to produce chips manually. They had to start using software to be able to lay out the chips. I think we’ve hit that point with blockchains, where some of the constructions we’re making, we need software to help us design.</p>
+
+<p>I think no other network is using Proof of Replication, it’s an advantage we have that we created that field. So that’s one differentiating factor. We are also the only one with this fluid market structure that is meant to be optimized based on an ask and bid structure where miners and clients are able to reason about prices together and then form deals out of that. I think we are also the only ones doing consensus backed by useful storage. With other networks it may be a consensus backed by a Proof of Space, but in our case it’s useful. <strong>Those are the three biggest differentiating factors of Filecoin.</strong></p>
+
+<p>Then there’s the tight integration through libp2p into IPFS and a bunch of other things where there’s a ton of usage on IPFS already. It’s going to be easy to backup all of that data straight into Filecoin. One cool thing to mention is that IPFS is an open network and we’ve seen other networks start to add support for it which is also really cool to see. It’s meant to be a decoupled layer for that reason.”</p>
+
+<p><em>Juan Benet’s full interview on the Zero Knowledge podcast can be found</em> <a href="https://www.zeroknowledge.fm/106" target="_blank"><strong><em>here</em></strong></a><em>.</em></p>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520467"></script>
+    <script src="../../../js/bundle.js?c=1644520467"></script>
+</body>
+</html>
+
+

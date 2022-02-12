@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+  <defs>
+    <linearGradient id="pay-a" x1="87.148%" x2="15.394%" y1="82.259%" y2="14.236%">
+      <stop offset="0%" stop-color="#39C1CB" stop-opacity=".99"/>
+      <stop offset="100%" stop-color="#006FEC"/>
+    </linearGradient>
+    <linearGradient id="pay-b" x1="0%" x2="100%" y1="-8.357%" y2="100%">
+      <stop offset="0%" stop-color="#39C1CB"/>
+      <stop offset="100%" stop-color="#006FEC"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+    <path fill="url(#pay-a)" d="M17.126 17.8c.91 0 1.65.74 1.65 1.65 0 .64-.55 1.65-1.65 1.65h-8.8v1.1h8.8l11.512-2.54a.962.962 0 0 1 1.138.949c0 1.012-.682 1.9-1.66 2.161l-10.448 2.787A30.953 30.953 0 0 1 9.703 26.6H0l.073-4.653 4.424-2.95A7.106 7.106 0 0 1 8.45 17.8zM16.576.2a7.7 7.7 0 1 1 0 15.4 7.7 7.7 0 1 1 0-15.4zm2.75 2.2a3.047 3.047 0 0 0-2.99 2.484l-.028.18-.08.636h-1.302v1.1h1.165l-.137 1.1h-1.578V9h1.44l-.062.5a1.945 1.945 0 0 1-1.775 1.694l-.153.006v1.1a3.047 3.047 0 0 0 2.99-2.484l.029-.18.079-.636h.752V7.9h-.615l.138-1.1h1.027V5.7h-.89l.063-.5a1.945 1.945 0 0 1 1.774-1.694l.153-.006V2.4z" transform="translate(11 9)"/>
+    <circle cx="25" cy="25" r="25" stroke="url(#pay-b)" stroke-width="2"/>
+  </g>
+</svg>

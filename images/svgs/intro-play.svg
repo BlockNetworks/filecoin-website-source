@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 2 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#43C1CA" offset="0%"></stop>
+            <stop stop-color="#295EFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-90.2218163%" y1="-113.775635%" x2="180.361047%" y2="204.736328%" id="linearGradient-2">
+            <stop stop-color="#43C1CA" offset="0%"></stop>
+            <stop stop-color="#1D0EB1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="play" fill-rule="nonzero">
+            <g id="Group-2-Copy-2">
+                <circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="25" cy="25" r="24"></circle>
+                <polygon id="Path" fill="url(#linearGradient-2)" points="32.5 25 20.8333333 17.5 20.8333333 32.5"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

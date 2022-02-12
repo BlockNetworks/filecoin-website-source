@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Announcing Filecoin implementations in Rust and C&#43;&#43;</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="Announcing Filecoin implementations in Rust and C&#43;&#43;"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/announcing-filecoin-implementations-in-rust-and-c/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/rust-english-social.png?c=1644520240"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/rust-english-social.png?c=1644520240"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/rust-english-social.png">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/announcing-filecoin-implementations-in-rust-and-c/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520240">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/rust-main-header_hu6ae4ab314285575bd94b4c85da7276f1_804842_667x0_resize_q90_linear_2.png 667w,../../../uploads/rust-main-header_hu6ae4ab314285575bd94b4c85da7276f1_804842_1333x0_resize_q90_linear_2.png 1333w,../../../uploads/rust-main-header_hu6ae4ab314285575bd94b4c85da7276f1_804842_2000x0_resize_q90_linear_2.png 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                            <li class="list-item"><a href="../../../blog/updates" class="anchor">updates</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Jan 31, 2020</span><br />
+                    <h2 class="h title">Announcing Filecoin implementations in Rust and C&#43;&#43;</h2>
+                    
+
+<p>Today, we are excited to announce two additional implementations of the Filecoin protocol: <a href="https://github.com/ChainSafe/forest" target="_blank"><strong>forest</strong></a> – being implemented in Rust by ChainSafe, and <a href="https://github.com/filecoin-project/cpp-filecoin" target="_blank"><strong>fuhon</strong></a> – being implemented in C++ by Soramitsu. These implementations are in active development, and are now fully open for anyone to use or contribute to. Check them out on GitHub!</p>
+
+<h3 id="the-importance-of-multiple-implementations">The importance of multiple implementations</h3>
+
+<p>As we first mentioned in <a href="https://filecoin.io/blog/announcing-lotus/" target="_blank">this blog post</a>, launching the Filecoin network with multiple implementations is a key part of our network security strategy. Having multiple software implementations that interoperate on the same network reduces the risk that a significant bug in <em>one</em> implementation rears its head and takes down the entire network.</p>
+
+<p>Additionally, the success of any open source project – such as Filecoin – rests on a strong community that is collectively involved in building and stewarding the project. Ultimately, Protocol Labs will be just one of <strong>many</strong> parties devoting their energy, talent, and resources to making Filecoin an important building block of the internet’s evolving infrastructure. We are very excited to see the exceptional teams of ChainSafe and Soramitsu building implementations and providing more security to the broader Filecoin ecosystem.</p>
+
+<p>Today, there are <strong>four full node implementations</strong> of the Filecoin protocol in progress. This is a huge step forward for increasing Filecoin network security and growing the Filecoin ecosystem!</p>
+
+<p><a href="https://filecoin.io/vintage/images/blog/four-implementations.png" target="_blank"><img src="https://filecoin.io/vintage/images/blog/four-implementations.png" alt="Four Filecoin Implementations" /></a></p>
+
+<p>While the four Filecoin implementations are not yet feature-complete, they are getting really close. As published in our <a href="https://filecoin.io/blog/testnet-phase-2-update/" target="_blank">most recent roadmap update</a>, we are aiming for network interoperability between <strong>lotus</strong> and <strong>go-filecoin</strong> within the next few weeks. Interoperability with <strong>fuhon</strong> and <strong>forest</strong> will follow shortly afterwards. In the meantime, you can follow each implementation’s progress at its respective repo on GitHub:</p>
+
+<ul>
+<li><a href="https://github.com/filecoin-project/go-filecoin" target="_blank"><strong>go-filecoin</strong></a> (written in Go)</li>
+<li><a href="https://github.com/filecoin-project/lotus" target="_blank"><strong>lotus</strong></a> (written in Go)</li>
+<li><a href="https://github.com/filecoin-project/cpp-filecoin" target="_blank"><strong>fuhon</strong></a> (written in C++)</li>
+<li><a href="https://github.com/ChainSafe/forest" target="_blank"><strong>forest</strong></a> (written in Rust)</li>
+</ul>
+
+<h3 id="about-chainsafe-and-soramitsu">About ChainSafe and Soramitsu</h3>
+
+<p>For our first batch of implementation grants, we chose to partner with ChainSafe and Soramitsu because of these teams’ core alignment with the mission and values of the web3 space and their deep experience with implementing complex blockchains. We are excited to have these exemplary teams contributing to the Filecoin ecosystem!</p>
+
+<h3 id="chainsafe">ChainSafe</h3>
+
+<p><a href="https://chainsafe.io/" target="_blank">ChainSafe Systems</a> is a blockchain R&amp;D firm that is building infrastructure for Web3. ChainSafe started several years ago as a group of developers who met at early Ethereum meetups. Ever since, the team has been building in the Ethereum, Ethereum Classic, Cosmos, Polkadot, and now Filecoin ecosystems. In addition to the Rust Filecoin implementation, ChainSafe is building Ethereum 2.0 and Polkadot protocol implementations. You can read more about the team and their Rust implementation of Filecoin <a href="https://medium.com/chainsafe-systems/announcing-forest-chainsafes-implementation-of-filecoin-in-rust-675d176be517" target="_blank">here</a>.</p>
+
+<h3 id="soramitsu">Soramitsu</h3>
+
+<p><a href="https://soramitsu.co.jp/" target="_blank">Soramitsu</a> is a boutique Japanese fintech company with expertise creating blockchain-based infrastructure, payment systems, and identity solutions. The Soramitsu team has deep experience building enterprise-grade fintech systems; this commitment to robustness and high software quality is especially important when building software rockets (e.g. blockchains). In addition to the C++ Filecoin implementation, Soramitsu is currently building a Polkadot implementation in C++ and is also the lead maintainer of the <a href="https://github.com/soramitsu/libp2p" target="_blank">C++ implementation of libp2p</a>.</p>
+
+<h3 id="let-s-collaborate">Let’s collaborate!</h3>
+
+<p>We are always looking for mission-aligned partners to collaborate with as we grow the Filecoin ecosystem. If you already have an idea for something to build or want to check out our open RFPs, apply to the <a href="https://filecoin.io/grants/" target="_blank">Filecoin DevGrants program</a>! If you’re interested in brainstorming and learning more about ways to get involved, kick off a thread at <a href="https://discuss.filecoin.io/" title="https://discuss.filecoin.io/" target="_blank">https://discuss.filecoin.io/</a>.</p>
+
+<p>As always, thank you for your continued support. We look forward to building with you!</p>
+
+                </div>
+            </div>
+
+            
+            <div class="div related-articles">
+                <div class="div grid">
+                    <div class="div label"><h3 class="h type-base">Related Articles</h3></div>
+                    <div class="div overview-link"><a class="anchor type-base" href="../../../blog">View all articles</a></div>
+                </div>
+                <div class="div grid">
+
+                    <div class="div Carousel" data-setting-mobile="true">
+                        <div class="div carousel-container">
+                            <div class="div carousel-items">
+                                <div class="div unit-cols-3">
+                                    
+                                    <div class="div carousel-item article-1">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/filecoin-implementations-progress-update/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/virtual-community-main-header_hu67b0265ea6b3218d6cb8241fe9b5190a_2108251_500x0_resize_q90_linear_2.png 500w,../../../uploads/virtual-community-main-header_hu67b0265ea6b3218d6cb8241fe9b5190a_2108251_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/virtual-community-main-header_hu67b0265ea6b3218d6cb8241fe9b5190a_2108251_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/filecoin-implementations-progress-update/" class="anchor">
+                Filecoin Implementations Progress Update
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">One of Filecoin’s launch goals has always been to have multiple independent protocol implementations to help secure the network at launch.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Oct 20, 2020
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-2">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/announcing-lotus-our-first-alternate-filecoin-implementation/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/lotus-main-header_hucd9ff9b151a50e2c5e0f5284d12c5114_572730_500x0_resize_q90_linear_2.png 500w,../../../uploads/lotus-main-header_hucd9ff9b151a50e2c5e0f5284d12c5114_572730_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/lotus-main-header_hucd9ff9b151a50e2c5e0f5284d12c5114_572730_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/announcing-lotus-our-first-alternate-filecoin-implementation/" class="anchor">
+                Announcing Lotus, our first alternate Filecoin implementation
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">One of our most important goals is to make the Filecoin mainnet as secure and resilient as possible. One part of our network security strategy is launching the Filecoin network with multiple implementations. Today, we are delighted to announce lotus, our first alternate Filecoin implementation.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Oct 16, 2019
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-3">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/a-guide-to-filecoin-storage-mining/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/filecoin-mining-guide-main-header_hu75b748b4be9c99debc646ea4739de567_427200_500x0_resize_q90_linear_2.png 500w,../../../uploads/filecoin-mining-guide-main-header_hu75b748b4be9c99debc646ea4739de567_427200_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/filecoin-mining-guide-main-header_hu75b748b4be9c99debc646ea4739de567_427200_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/a-guide-to-filecoin-storage-mining/" class="anchor">
+                A Guide to Filecoin Storage Mining
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">An updated guide to Filecoin storage mining, and discuss some of the recently announced incentives and opportunities for members of the growing Filecoin community.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Jul 7, 2020
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="div nav-dots"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520256"></script>
+    <script src="../../../js/bundle.js?c=1644520256"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+  <defs>
+    <linearGradient id="files-a" x1="0%" x2="100%" y1="-8.357%" y2="100%">
+      <stop offset="0%" stop-color="#39C1CB"/>
+      <stop offset="100%" stop-color="#006FEC"/>
+    </linearGradient>
+    <linearGradient id="files-b" x1="87.148%" x2="15.394%" y1="70.937%" y2="26.788%">
+      <stop offset="0%" stop-color="#39C1CB" stop-opacity=".99"/>
+      <stop offset="100%" stop-color="#006FEC"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+    <circle cx="25" cy="25" r="25" stroke="url(#files-a)" stroke-width="2"/>
+    <path fill="url(#files-b)" d="M0 .4v22h15.4V5.9H9.9V.4H0zm3.3 9.9h8.8V9.2H3.3v1.1zm0 3.3h8.8v-1.1H3.3v1.1zm27.5-2.2v11H17.6v-11h13.2zm-1.1 8.8h-2.2v1.1h2.2v-1.1zm-3.3 0h-7.7v1.1h7.7v-1.1zm-3.3-5.5V18l3.3-1.65-3.3-1.65zm-11 1.1v1.1H3.3v-1.1h8.8zM25.3.4v8.8h-7.7V.4h7.7zM22 5.9l-2.2 2.2h4.4L22 5.9zM11 1.5l3.3 3.3H11V1.5zm8.8 0a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z" transform="translate(11 13)"/>
+  </g>
+</svg>

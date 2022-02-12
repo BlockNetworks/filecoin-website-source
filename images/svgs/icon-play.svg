@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>play_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 11.9090642 0 11.9090642 15.9124848 0 15.9124848"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="play_icon">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="path-1"></g>
+            <path d="M11.613545,7.372 L0.952811009,0.102909091 C0.760150459,-0.0283636364 0.518168807,-0.0344242424 0.320444037,0.0867878788 C0.122719266,0.208121212 -3.30275229e-05,0.437818182 -3.30275229e-05,0.687151515 L-3.30275229e-05,15.2253333 C-3.30275229e-05,15.4745455 0.122719266,15.7043636 0.320444037,15.825697 C0.415012844,15.8836364 0.5196,15.9124848 0.624187156,15.9124848 C0.738242202,15.9124848 0.852297248,15.8780606 0.952811009,15.8094545 L11.613545,8.54048485 C11.7972881,8.41515152 11.9091413,8.19418182 11.9091413,7.95624242 C11.9091413,7.71830303 11.7972881,7.49733333 11.613545,7.372" id="Fill-1" fill="#FEFEFE" fill-rule="nonzero" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

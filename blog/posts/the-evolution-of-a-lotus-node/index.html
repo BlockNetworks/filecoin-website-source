@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>The Evolution of a Lotus Node</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="The Evolution of a Lotus Node"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/the-evolution-of-a-lotus-node/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/fil-retrieval-market-lotus.jpg?c=1644520441"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/fil-retrieval-market-lotus.jpg?c=1644520441"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/fil-retrieval-market-lotus.jpg">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/the-evolution-of-a-lotus-node/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520441">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/fil-retrieval-market-lotus_hub69f8c2f1601a681daa5637fd56b9024_700241_667x0_resize_q90_linear.jpg 667w,../../../uploads/fil-retrieval-market-lotus_hub69f8c2f1601a681daa5637fd56b9024_700241_1333x0_resize_q90_linear.jpg 1333w,../../../uploads/fil-retrieval-market-lotus_hub69f8c2f1601a681daa5637fd56b9024_700241_2000x0_resize_q90_linear.jpg 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                            <li class="list-item"><a href="../../../blog/events" class="anchor">events</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Jun 22, 2021</span><br />
+                    <h2 class="h title">The Evolution of a Lotus Node</h2>
+                    
+
+<h2 id="lotus-retrieval-markets-builders-summit">Lotus &amp; Retrieval Markets Builders Summit</h2>
+
+<p>The purpose of the Retrieval Market Mini-Summit was to gather all the builders of the multiple Retrieval Market solutions, highlight the progress made so far and identify how the multiple systems can come together in a way to increase the retrieval deals efficacy, efficiency and reliability for users of the network.</p>
+
+<p>All the<a href="https://www.youtube.com/playlist?list=PL_0VrY55uV19TsJ8r2qsMyG2v2LIKEmv2" target="_blank"> talks from the summit were made available on the Filecoin Channel</a>.</p>
+
+<p>In <a href="https://www.youtube.com/watch?v=QuE_NotFCXs&amp;list=PL_0VrY55uV19TsJ8r2qsMyG2v2LIKEmv2" target="_blank">April’s Retrieval Market Builders Mini-Summit</a>, <a href="https://github.com/raulk" target="_blank">Raul Kripalani</a> (libp2p and Filecoin core dev) led a deep dive on the architecture of a Lotus node and the changes planned, specifically to the lotus-miner nodes, to better fit the needs of miners and network participants. The full talk is <a href="https://www.youtube.com/watch?v=cmrLfnqzflk" target="_blank">available here.</a> The talk aimed to highlight the work needed to ensure retrieval deals were highly reliable and scalable for Lotus miners - helping ensure a Filecoin retrieval market would build on a robust foundation.</p>
+
+<p><a href="https://github.com/filecoin-project/lotus" target="_blank">Lotus</a> is an implementation of the Filecoin network, written in Go. As the first of Filecoin’s implementations, Lotus is designed to set a solid and resilient foundation for the network as a whole. One of the core functions of any Filecoin node is to enable both storage and <em>retrieval</em> of useful data - and thus set the groundwork for a robust retrieval market on the Filecoin network.</p>
+
+<h2 id="the-evolution-of-a-lotus-node">The Evolution of a Lotus Node</h2>
+
+<p>The Filecoin ecosystem is moving quickly, and ecosystem tools like Lotus are constantly evolving to meet the needs of the network and experiment with future opportunities. Retrieval markets in particular will introduce new capabilities to the Filecoin network, including indexing, CDNs, public retrieval, and more.</p>
+
+<p>The issue we have identified is that these new retrieval market capabilities will rely on a robust miner foundation - and today Lotus miners tend to work <em>around</em> certain features they find either unstable or unprofitable. At the end of the day, this is good behavior to witness from miners; it helps the Lotus implementation evolve to meet their needs. When network participants start short-circuiting certain features, it indicates that the software itself should be providing more flexibility and modularity to its users.</p>
+
+<p>Through this observation, we realized that Lotus’ <em>monolithic binary</em> was preventing flexible and robust operations for Lotus miners, and identified opportunities to address the problem.</p>
+
+<p><img src="../../../uploads/pl_lotus1.png" alt="" /></p>
+
+<h3 id="the-monolithic-binary">The Monolithic Binary</h3>
+
+<p>So far, the architecture of a Lotus node has been largely monolithic. There are two distinct entry points to Lotus: 1) a full node, and 2) a miner. However beyond this, network participants have very little optionality for which responsibilities in the storage lifecycle to take on. Miners, for example, are tasked with mining, proving storage, deal making, and more. These are fundamentally different responsibilities, but they are coupled together by the current lotus-miner architecture.</p>
+
+<h3 id="the-problems-with-monolithic-architecture">The Problems with Monolithic Architecture</h3>
+
+<p>Broadly speaking, this monolithic architecture precludes miners from effectively allocating their resources between discrete responsibilities. Forcing combined responsibilities contradicts the core motivation of miners, which is to maximize profit while minimizing operational risk. Specifically, there are a number of problems with the monolithic binary.</p>
+
+<p><strong>Fragility:</strong> bugs in one area can leak and impact other critical processes when there is no segregation within the architecture. This makes it difficult to segment between critical and non-critical processes, and opens up the entire instance to crashing.</p>
+
+<p><strong>Increased attack surface:</strong> certain processes of a Lotus miner require exposing public endpoints, which opens up that portion of the system to vulnerabilities. If the architecture is monolithic, a single public endpoint can jeopardize the entire system.</p>
+
+<p><strong>Feature bloating:</strong> within Filecoin’s mission, miners not only store and serve raw data, but they provide useful services on top of it, such as indexing, discovery, and more. Overloading a single process with new miner-side features causes further apprehension and operational risk.</p>
+
+<p><strong>Inability to scale:</strong> different capabilities require different features and different upgrade processes. Attempting to manage these different capabilities in a monolithic system is difficult, and leads to slow iteration and growth.</p>
+
+<p><strong>Lack of fine-grain control:</strong> because miners cannot actively opt-in or opt-out of features, they have to work around them through mechanisms such as refusing deals, setting high prices to dissuade deals, or even forking the codebase.</p>
+
+<p><strong>Slower iteration:</strong> a monolithic architecture means it’s more difficult to test and innovate, because there exists no easy way to segregate new components and opt-in to an experimental feature without bringing it into the entire system.</p>
+
+<h3 id="towards-a-modular-miner-architecture">Towards a Modular Miner Architecture</h3>
+
+<p>Looking at the responsibilities of a Lotus miner under the hood, two distinct categories emerge: mining operations and markets. These two layers share very different services and SLAs. For example, the mining operation of a Lotus miner is its most economically profitable activity, and also private in nature. The market operation, however, is entirely public and operates under different profitability models.</p>
+
+<p><img src="../../../uploads/pl_lotus2.png" alt="" /></p>
+
+<p><a href="https://github.com/protocol/web3-dev-team/blob/raulk/lotus-miner-runtime-segregation/proposals/lotus-miner-runtime-segregation.md#context" target="_blank"><em>More responsibilities of lotus miners</em></a></p>
+
+<p>Using this initial categorization, the first step towards a modular miner architecture that addresses the downsides of monolithic architecture emerges: <em>separate the Lotus miner process into 1) the Lotus markets process and 2) other Lotus miner processes.</em></p>
+
+<p>By separating markets and mining, the architecture of a Lotus node becomes more feature-specific for miners, allowing them to align themselves with the responsibilities that best fit their capabilities and their economic preferences for the network.</p>
+
+<p><img src="../../../uploads/pl_lotus3.png" alt="" /></p>
+
+<h3 id="design-principles">Design Principles</h3>
+
+<p>While proceeding down this new path towards a more modular miner architecture, Lotus will continue to uphold a number of design principles:</p>
+
+<p><strong>Avoiding microservice architecture-like complexity:</strong> explicitly avoiding complicated webs of interdependencies that quickly translate into spaghetti architectures and require specialised tools like service meshes to govern and debug. This is the wrong level of complexity to introduce to Lotus. Order and hierarchy still belongs, as these processes are still part of a single cohesive unit</p>
+
+<p><strong>Simple hub/spoke architecture:</strong> Lotus is moving towards a hub and spoke architecture, which is governed by supervisor instances. These supervisors know which capabilities are provisioned in the deployment and which nodes offer them. They also serve as the external API entrypoint into the aggregate.</p>
+
+<p><img src="../../../uploads/pl_lotus4.png" alt="" /></p>
+
+<p><strong>Worth the investment on many fronts:</strong> the new Lotus architecture must be worth the investment. In addition to profitability, some other ROI factors include reliability, security, developer agility, and robustness.</p>
+
+<p><strong>Robust distributed process lifecycle supervision:</strong> a modular architecture cannot mean an entirely isolated one. If something fails and it means other downstream services are going to fail, then the entire system must be able to notice and react.</p>
+
+<p>To design this new runtime, we are inspiring ourselves in models like Erlang/OTP and actor-oriented programming (e.g. Akka in the JVM world), and borrowing select concepts and abstractions from service meshes and orchestrators, without actually relying on those frameworks wholesale.</p>
+
+<h2 id="more-resources">More Resources</h2>
+
+<p>To learn more about Lotus and the path towards a modular miner architecture, see:</p>
+
+<p><a href="https://github.com/filecoin-project/lotus" target="_blank">Lotus Github</a></p>
+
+<p><a href="https://github.com/protocol/web3-dev-team/blob/raulk/lotus-miner-runtime-segregation/proposals/lotus-miner-runtime-segregation.md" target="_blank">Proposal: Miner Runtime Segregation</a></p>
+
+<p><a href="https://github.com/filecoin-project/lotus/pull/5983" target="_blank">Draft Prototype</a></p>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520443"></script>
+    <script src="../../../js/bundle.js?c=1644520443"></script>
+</body>
+</html>
+
+

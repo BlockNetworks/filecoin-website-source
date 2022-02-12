@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>IPFS, Filecoin, and ‘Content Persistence’</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="IPFS, Filecoin, and ‘Content Persistence’"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/ipfs-filecoin-and-content-persistence/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/ipfs-fil-blog-persistence-art.png?c=1644520402"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/ipfs-fil-blog-persistence-art.png?c=1644520402"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/ipfs-fil-blog-persistence-art.png">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/ipfs-filecoin-and-content-persistence/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520402">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/ipfs-fil-blog-persistence-art-1_hud2b659acf56d9c5693fd64fc6ae778d5_217927_667x0_resize_q90_linear_2.png 667w,../../../uploads/ipfs-fil-blog-persistence-art-1_hud2b659acf56d9c5693fd64fc6ae778d5_217927_1333x0_resize_q90_linear_2.png 1333w,../../../uploads/ipfs-fil-blog-persistence-art-1_hud2b659acf56d9c5693fd64fc6ae778d5_217927_2000x0_resize_q90_linear_2.png 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                            <li class="list-item"><a href="../../../blog/updates" class="anchor">updates</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Jun 3, 2021</span><br />
+                    <h2 class="h title">IPFS, Filecoin, and ‘Content Persistence’</h2>
+                    
+
+<p>There are two fundamental problems facing the sustainability of content on the internet: addressing and persistence.</p>
+
+<p><em>Addressing</em> refers to the way in which internet users can find the content that they’re looking for online. Today, the Web leans into location addressing, or finding content by where it is located, as opposed to content addressing, which allows network participants to confidently and consistently ensure their content does not change over time without a clear record of that change. <em>Persistence</em> refers to the ability of those network participants to continue accessing content in perpetuity, without worries of the content disappearing or becoming unavailable for any reason.</p>
+
+<p>The consequences of these problems are not theoretical; internet users experience them every day. As the Web has evolved in the past few decades, the fragility of location addressing and persistence has become more apparent. Try to access your favorite sites as a child &ndash; GeoCities, Blingee, Myspace, and more. You’ll find many of those sites difficult to find or altogether removed. When internet users are faced with error messages such as <em>404 page not found</em>, they are experiencing the downsides of location addressing and lack of content persistence on today’s internet. If the content (the image, text, webpage, video, etc.) has been changed, removed, or abandoned, it becomes irretrievable.</p>
+
+<p>This isn’t how it should be. Content on the public Web should be available to anyone, anytime &ndash; even a thousand years in the future.</p>
+
+<p>The solution is a decentralized storage stack that addresses the issues of addressing and persistence to enable a more complete and resilient internet experience for all users. Together, IPFS and Filecoin provide these assurances for the Web and its users.</p>
+
+<h3 id="ipfs-for-content-addressing">IPFS for Content Addressing</h3>
+
+<p>Broadly speaking, today’s web browsing operates through what is known as <em>location addressing.</em> Location addressing retrieves online information from specific locations on the web ─ i.e. from behind URLs. However, this has its obvious downsides. Location addressing is centralized; whoever controls that location controls the content. And anything behind a location-addressed URL can be changed. The language of an article, the colors of a digital artwork, or the properties of a recorded identity. Location-addressed URLs are exploitable.</p>
+
+<p>The solution is <em>content addressing.</em> Content-based addressing allows you to access data based on a unique fingerprint of that piece of data; no matter <em>where</em> it is stored, if you have that unique fingerprint of the data, you should be able to retrieve the content. In content-based addressing (within the context of IPFS), content is no longer retrieved from single locations on the web. Rather, content is retrieved from any participating nodes on the IPFS network that have the content you’re requesting. Pieces of content are shared by many parties, and content can always be retrieved either entirely from one node (such as a <a href="https://docs.ipfs.io/concepts/persistence/#persistence-versus-permanence" target="_blank">pinning service node</a>) or collected in bits and pieces from multiple nodes.</p>
+
+<p>For an overall look at the value of content addressing and how you can use IPFS content identifiers/fingerprints (CIDs) to properly address NFTs, <a href="https://blog.ipfs.io/2021-04-05-storing-nfts-on-ipfs/" target="_blank">see here.</a></p>
+
+<p>Content addressing, however, is only part of the solution. Just because information can be retrieved through IPFS no matter where it is stored, doesn’t mean it is guaranteed to be around forever. To have a complete solution, <em>content persistence</em> is key.</p>
+
+<h3 id="the-value-of-content-persistence">The Value of Content Persistence</h3>
+
+<p>Once the retrieval of online content is reoriented around content-based addressing, the question becomes: how do we ensure the content continues to be available throughout time? In other words, how do we make sure the content <em>persists</em>? Without content that is reliably stored over time, similar issues of today emerge, with a fragmented, incomplete, and amnesic Web.</p>
+
+<p>As with most solutions around data and information, there are centralized and decentralized options. The centralized option would be to go with a service that promises to always store the content in their servers. Centralized storage, however, doesn’t achieve true persistence, as it is subject to a single centralized point of failure.</p>
+
+<p>Decentralized content persistence is the only way to ensure that content remains available over time. By ensuring that completely separate, interoperable nodes are all storing data that is backed by strong cryptographic guarantees, information is protected from becoming unavailable due to the actions (or inaction) of any central service. The question becomes: how? Filecoin is building the foundation for content persistence, as well as a set of tools and services on top to aid in that mission.</p>
+
+<h3 id="filecoin-for-content-persistence">Filecoin for Content Persistence</h3>
+
+<p><a href="http://filecoin.io/" target="_blank">Filecoin</a> is the incentivization layer built to complement IPFS’ solution to content addressing by providing <em>content persistence.</em> IPFS ensures that content cannot change over time without a clear record and solves the issue of URLs not resolving. Filecoin ensures that content-based addressing remains resilient over time by making sure that the content that is being retrieved keeps being available.</p>
+
+<p>Filecoin achieves this mission through <a href="https://filecoin.io/blog/posts/filecoin-features-verifiable-storage/" target="_blank">novel cryptography, consensus protocols, and game-theoretic incentives</a>, providing true decentralized storage. At the heart of it all is Filecoin’s unique approach to storage verification.</p>
+
+<p>Filecoin’s storage verification system solves a previously intractable problem for decentralized storage: How can storage providers <em>prove</em> that they are really storing the data they say they are through time and that they are dedicating unique physical space for it?</p>
+
+<p>In a centralized storage service, you have to place your trust in well-known companies that guarantee the integrity and security of their systems. On the Filecoin network, anyone in the world can offer storage space. But to maintain trust on a decentralized network like Filecoin, you need a way to establish trust in the global network <em>itself</em>.</p>
+
+<p>To verify storage on Filecoin’s decentralized network, you need to prove two things. First, you need to prove that the right set of data is stored in a given storage space. Second, you need to prove that the same set of data has been stored continuously over a given period of time.</p>
+
+<p>Filecoin’s <a href="https://filecoin.io/blog/posts/what-sets-us-apart-filecoin-s-proof-system/" target="_blank">proving algorithms</a> perform these verification tasks. <em>Proof-of-Replication</em> proves that a given storage provider is storing a physically unique copy of a client’s original data, while <em>Proof-of-Spacetime</em> proves that the client’s data is stored continuously over time.</p>
+
+<p>In addition to its proof system, the Filecoin network also relies on game-theoretic incentives to discourage malicious or negligent activity. All storage providers that agree to store data on the Filecoin network must provide collateral in the form of Filecoin tokens at the time of agreement. Any storage provider that fails Proof-of-Spacetime checks is penalized, loses a portion of the collateral and is eventually prevented from offering storage again to clients.</p>
+
+<p>Together, novel cryptography, consensus protocols, and game-theoretic incentives allow Filecoin to provide true decentralized storage.</p>
+
+<p>Filecoin has baked content persistence into its core mission to “store humanity’s most important information.” And it is well on its way to achieving that mission. To date, the network supports <a href="https://filfox.info/en" target="_blank">5.8 Exbibytes</a> of storage (for reference, that is sufficient to store all Wikipedia articles 250 million times over).</p>
+
+<h3 id="content-addressing-and-persistence-in-action-nfts">Content Addressing and Persistence in Action: NFTs</h3>
+
+<p>Today, one of the fastest growing types of content in the crypto space is <a href="https://nftschool.dev/concepts/non-fungible-tokens/" target="_blank">NFTs</a>. However, NFTs have been the subject of scrutiny for matters of availability and permanence, all of which boil down to the concepts of content addressing and persistence. When an NFT is minted and traded, what is actually being talked about is the <em>record</em> of the (for example) artwork. The content and the metadata of that artwork (the colors, shapes, sounds, etc.) do not automatically live on the blockchain. “Content” refers to the image itself. “Metadata” refers to the descriptive text, artist information, CID of the actual content, and more. This <a href="https://cointelegraph.com/news/opensea-collector-pulls-the-rug-on-nfts-to-highlight-arbitrary-value" target="_blank">exposes many NFTs to issues</a> of addressing and persistence, if that content and metadata of the NFT are not stored reliably. Using IPFS to solve the addressing concern of NFTs is quickly becoming the norm, and a large and growing ecosystem of pinning services ensures availability of all the IPFS data.</p>
+
+<p>Protocol Labs recently launched <a href="http://nft.storage/" target="_blank">nft.storage</a> to make handling content addressing and persistence as easy as possible, specifically for NFTs. Nft.storage allows anyone to generate the metadata for minting and storing their NFTs on Filecoin for free, with nothing more than a few lines of code. Developers register for an account, generate an API access key, and can use a simple client library to generate metadata and permanently store their NFTs.</p>
+
+<p>NFTs stored via nft.storage are not only available via the IPFS network, they are also protected from disappearing by Filecoin, which incentivizes storage providers around the world to continue storing the NFT content and metadata long-term.</p>
+
+<p><img src="../../../uploads/nftstorage1.png" alt="" /></p>
+
+<h3 id="evolving-network-participants-in-content-persistence">Evolving Network Participants in Content Persistence</h3>
+
+<p>Right now, agreements to keep content stored over time are economic relationships between individuals and the nodes that keep the content online. The model has proven immensely sustainable for the Filecoin ecosystem. However, the ecosystem is also preparing for greater numbers of people who want to store their information online, and create solutions to accommodate more decentralized needs of ownership and payment. By providing storage for developers of NFT applications, nft.storage is on the frontlines of that role, encouraging NFT best practices by making them as easy as possible to implement and by removing the economic consideration from creators and collectors.</p>
+
+<p>A wave of other ecosystem partners will continue to emerge to incentivize the persistence of vital data by adopting different economic roles within the IPFS and Filecoin ecosystem. These ecosystem partners will make the basic relationship between individual and storage providers more varied, flexible, and sustainable. <a href="https://filecoin.io/blog/posts/the-future-of-datadaos/" target="_blank">DataDAOs</a> are on the horizon and well-positioned to shape the evolution of data storage and payment on distributed systems. The term describes a DAO (Decentralized Autonomous Organization) dedicated to the storage, maintenance, processing, and (possibly) licensing of potentially massive datasets. By shouldering the technical and financial responsibility of storing the datasets, dataDAOs can effectively monetize critical data while remaining true to a broader commitment to decentralized content persistence. Other ecosystem partners, like <a href="https://oceanprotocol.com/" target="_blank">Ocean Protocol</a> and <a href="https://filecoin.io/blog/posts/decentralized-data-markets-with-filehive/" target="_blank">Filehive</a>, do not operate as DAOs, but play a similar role as ecosystem partners that rely on Filecoin to maintain the data they are monetizing and licensing to others.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>The internet today, though immensely powerful, has long exposed critical weaknesses in the way it stores and maintains data. Content addressing and persistence are at the root of this issue; specifically, <em>centralized</em> content addressing and persistence. Only through decentralized, verifiable solutions can we ensure that our online information remains secure and available indefinitely. Together, IPFS and Filecoin solve the issues of addressing and persistence, exemplified most recently by nft.storage – a solution that demonstrates an elegant technical stack and a sustainable economic model.</p>
+
+<p>Learn more at:</p>
+
+<p><a href="http://nft.storage/" target="_blank">nft.storage</a></p>
+
+<p><a href="https://nftschool.dev/" target="_blank">NFT School</a></p>
+
+<p><a href="https://docs.ipfs.io/concepts/content-addressing/" target="_blank">IPFS Documentation - content addressing</a></p>
+
+<p><a href="https://docs.ipfs.io/how-to/mint-nfts-with-ipfs/#a-short-introduction-to-nfts" target="_blank">IPFS Documentation - minting an NFT with IPFS</a></p>
+
+                </div>
+            </div>
+
+            
+            <div class="div related-articles">
+                <div class="div grid">
+                    <div class="div label"><h3 class="h type-base">Related Articles</h3></div>
+                    <div class="div overview-link"><a class="anchor type-base" href="../../../blog">View all articles</a></div>
+                </div>
+                <div class="div grid">
+
+                    <div class="div Carousel" data-setting-mobile="true">
+                        <div class="div carousel-container">
+                            <div class="div carousel-items">
+                                <div class="div unit-cols-3">
+                                    
+                                    <div class="div carousel-item article-1">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper image--dimmed">
+        <a href="../../../blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/fil-blog-nft-storage-notext-1_hu0f986e6d3668f304753a6341d061b59b_77385_500x0_resize_q90_linear_2.png 500w,../../../uploads/fil-blog-nft-storage-notext-1_hu0f986e6d3668f304753a6341d061b59b_77385_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/fil-blog-nft-storage-notext-1_hu0f986e6d3668f304753a6341d061b59b_77385_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/" class="anchor">
+                Introducing NFT.Storage: Free Decentralized Storage for NFTs
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">NFT.Storage lets users store their NFT content and metadata seamlessly and securely with IPFS and Filecoin.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Apr 29, 2021
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+
+                                    
+                                </div>
+                            </div>
+                            <div class="div nav-dots"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520405"></script>
+    <script src="../../../js/bundle.js?c=1644520405"></script>
+</body>
+</html>
+
+

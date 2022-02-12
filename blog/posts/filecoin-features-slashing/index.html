@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Filecoin Features: Slashing</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="Filecoin Features: Slashing"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/filecoin-features-slashing/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/filecoin-features-slashing.png?c=1644520333"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/filecoin-features-slashing.png?c=1644520333"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/filecoin-features-slashing.png">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/filecoin-features-slashing/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520333">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/filecoin-features-slashing-3_hu1c23516a2396b6a7c998cc22d1f60fd4_65649_667x0_resize_q90_linear_2.png 667w,../../../uploads/filecoin-features-slashing-3_hu1c23516a2396b6a7c998cc22d1f60fd4_65649_1333x0_resize_q90_linear_2.png 1333w,../../../uploads/filecoin-features-slashing-3_hu1c23516a2396b6a7c998cc22d1f60fd4_65649_2000x0_resize_q90_linear_2.png 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Nov 17, 2020</span><br />
+                    <h2 class="h title">Filecoin Features: Slashing</h2>
+                    
+
+<p>Filecoin’s combination of cryptographic and economic mechanisms are designed to align participants’ incentives with the goals and mission of the network. With block reward and deal payment as the main incentive drivers, slashing is the main form of mitigating bad behavior when participants deviate from the promises they made to the network.</p>
+
+<p>Slashing uses game theory and decision science to help solve one of the most important challenges for a decentralized storage network like Filecoin. In the absence of centralized control, Filecoin needs a built-in way to ensure the integrity of the network and align the incentives of its participants. Slashing helps achieve this by fining miners who seek to maximize their own personal gain at the expense of the broader Filecoin ecosystem. Slashing ensures that, for any miner participating in Filecoin, the most rational choice is always to act in good faith to uphold the network.</p>
+
+<h2 id="how-slashing-works">How slashing works</h2>
+
+<p>Every miner who commits storage power to the network is required to pledge collateral in the form of Filecoin. If any miner acts negligently or maliciously, the miner will be “slashed,” or forced to forfeit a portion of their collateral. After all, the network’s reputation and reliability are at stake. In this way, slashing discourages bad behavior from miners by creating a strong economic disincentive to it.</p>
+
+<p>Slashing is thus a kind of built-in disincentive that works to keep all miners on the Filecoin network honest and reliable. Miners will have to behave well or risk losing their Filecoin collateral and storage power.</p>
+
+<h2 id="when-does-slashing-occur">When does slashing occur?</h2>
+
+<p>There are three circumstances under which a Filecoin miner may be slashed. These are:</p>
+
+<ul>
+<li>When a miner removes data before a storage deal has expired (broken contract slashing).</li>
+<li>When a miner fails to submit their Proof of Spacetime when asked (storage fault slashing).</li>
+<li>When a miner attempts to fork the Filecoin blockchain or manipulate block leader elections (consensus slashing).</li>
+</ul>
+
+<p>In each of these circumstances, a miner fails to act in a manner that fulfills their promises to the network. Let’s examine each in detail.</p>
+
+<h2 id="broken-contract-slashing">Broken contract slashing</h2>
+
+<p>Miners store data on the Filecoin network in storage partitions called “sectors.” Within each sector, miners can enter into storage deal contracts with clients and offer a deal collateral to provide guarantee and confidence that deals will be well maintained. There is a minimum deal collateral required by the protocol to provide a basic level of guarantee, and it is slashed if the deal is terminated. However, miners can offer a higher deal collateral to imply a higher level of service and reliability to potential clients.</p>
+
+<p>The Filecoin network expects that miners will continuously store a clients’ files over the set period of time established by their storage contracts: Miners are responsible for keeping all sectors online and continuously available until the end of their contract period. Miners can fail to meet this expectation either by defaulting on a contract before it expires or by neglecting to store a client’s data continuously as promised.</p>
+
+<p>Miners can default on a contract in one of two ways, either by bringing their committed storage sector offline prior to the end date of a contract or by voluntarily terminating a contract prematurely. Miners who voluntarily terminate a contract are required to pay a termination fee. Miners who outright fail to keep their storage sectors online are slashed; they automatically have a portion of their Filecoin collateral confiscated and their storage power is reduced.</p>
+
+<h2 id="storage-fault-slashing">Storage fault slashing</h2>
+
+<p>As discussed in a previous <a href="https://filecoin.io/blog/filecoin-features-verifiable-storage/" target="_blank">post</a>, Filecoin uses a cryptographic protocol (proof system) to validate the acts of storage performed by miners for the network and to ensure that miners provide storage as promised. Part of that proof system is Filecoin’s unique Proof-of-Spacetime (PoSt), through which miners are daily issued a random cryptographic challenge (WindoPoSt) that can only be answered if a miner is able to consult the client data they committed to store, to validate that they are actually providing storage.</p>
+
+<p>Miners who fail at least one WindowPoSt are considered by the Filecoin protocol to be in a state of fault. Miners will lose storage power on the sector for which they are found to be at fault. Miners can only recover their sector power after they have successfully responded to a subsequent WindowPoSt.</p>
+
+<p>However, if a miner remains in this state for two consecutive days, a storage fault fee is slashed every day. After all, Filecoin only incentivizes reliable and useful storage and it is of paramount importance for storage clients to know that all data is stored reliably on Filecoin. If a sector reaches the maximum consecutive number of allowable days of failures, all the rewards earned by that sector and its initial pledge collateral will be slashed.</p>
+
+<h2 id="consensus-slashing">Consensus slashing</h2>
+
+<p>Blocks on the Filecoin blockchain are arranged into epochs. At every epoch, miners participate in leader elections to determine who will mine the next block of the Filecoin blockchain and receive its block rewards. Leaders are elected based on a pool of Filecoin miners selected for their storage power. The protocol by which leader elections are performed is called <em>Expected Consensus (EC)</em>.</p>
+
+<p>In a leader election, every miner draws a random seed provided by the <a href="https://filecoin.io/blog/distributed-randomness-and-leader-elections/" target="_blank">drand beacon</a>. Miners then perform an <em>Election Proof</em> function on this random seed. If the value generated by the Election Proof function is valid, then the miner is eligible to mine a block. When miners generate new blocks during EC, these blocks come together to form “tipsets,” families of blocks mined in the same epoch and connected to the same parent blocks from a previous epoch.</p>
+
+<p>Filecoin’s EC is unique in that many miners can win in a leader election: In every epoch, multiple valid blocks can be generated at once by different miners. To avoid splitting, or “forking”, the Filecoin blockchain into multiple competing chains, miners are required to agree that the canonical or true blockchain is the blockchain with the heaviest tipset, that is, the tipset with the most blocks in its history. Learn more about tipsets in <a href="https://filecoin.io/blog/tipsets-family-based-approach-to-consensus/" target="_blank">this post</a>.</p>
+
+<p>Consensus fault consists in mining two different blocks at the same height. When this occurs, miners’ storage is temporarily suspended and there is a penalty.</p>
+
+<p>Unlike storage faults and broken contract faults, consensus faults have to be reported by other miners in the Filecoin network; the process of slashing is not executed automatically in this case. Filecoin miners have an incentive to report consensus faults, however. Any Filecoin miner who detects and reports a consensus fault becomes the slasher. The slasher receives a portion of the slashed miner’s pledge collateral.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The Filecoin network uses slashing to generate powerful economic disincentives for miner misbehavior. Because misbehaving miners will always sustain the loss of their pledge collateral and their storage power, miners have no good reason to neglect or otherwise compromise the Filecoin network. In this way, slashing helps to give clients confidence that their data will be stored by miners exactly as promised. Slashing is thus a feature of the Filecoin protocol that protects the integrity, reliability, and reputation of the Filecoin ecosystem.</p>
+
+                </div>
+            </div>
+
+            
+            <div class="div related-articles">
+                <div class="div grid">
+                    <div class="div label"><h3 class="h type-base">Related Articles</h3></div>
+                    <div class="div overview-link"><a class="anchor type-base" href="../../../blog">View all articles</a></div>
+                </div>
+                <div class="div grid">
+
+                    <div class="div Carousel" data-setting-mobile="true">
+                        <div class="div carousel-container">
+                            <div class="div carousel-items">
+                                <div class="div unit-cols-3">
+                                    
+                                    <div class="div carousel-item article-1">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/filecoin-features-block-rewards/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/block-rewards-header-1_hucfeeba1d0479673bc8fa504b10e476c2_214906_500x0_resize_q90_linear_2.png 500w,../../../uploads/block-rewards-header-1_hucfeeba1d0479673bc8fa504b10e476c2_214906_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/block-rewards-header-1_hucfeeba1d0479673bc8fa504b10e476c2_214906_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/filecoin-features-block-rewards/" class="anchor">
+                Filecoin Features: Block Rewards
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">The Filecoin network boasts a unique economic design that aligns incentives among participants and rewards useful work by Filecoin miners.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Oct 12, 2020
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-2">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/filecoin-features-distributed-randomness-leader-elections/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/distributed-randomness-header_hubf92277eacd5d4d1023442474987ceea_465720_500x0_resize_q90_linear_2.png 500w,../../../uploads/distributed-randomness-header_hubf92277eacd5d4d1023442474987ceea_465720_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/distributed-randomness-header_hubf92277eacd5d4d1023442474987ceea_465720_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/filecoin-features-distributed-randomness-leader-elections/" class="anchor">
+                Filecoin Features: Distributed Randomness &amp; Leader Elections
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">This is the latest installment in our series highlighting unique features of the Filecoin network. Filecoin will be the first high-profile user of the production drand network.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Aug 10, 2020
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-3">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/filecoin-features-gas-fees/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/gas-fees-header_hu28cc3899db713592a7284cde7366fdeb_204170_500x0_resize_q90_linear_2.png 500w,../../../uploads/gas-fees-header_hu28cc3899db713592a7284cde7366fdeb_204170_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/gas-fees-header_hu28cc3899db713592a7284cde7366fdeb_204170_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/filecoin-features-gas-fees/" class="anchor">
+                Filecoin Features: Gas Fees
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">This is the latest installment in our series highlighting unique features of the Filecoin network. This post dives into gas fees – how they operate and why they’re important to the Filecoin network.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Oct 8, 2020
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="div nav-dots"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520343"></script>
+    <script src="../../../js/bundle.js?c=1644520343"></script>
+</body>
+</html>
+
+

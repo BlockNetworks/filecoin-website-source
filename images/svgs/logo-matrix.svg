@@ -1,0 +1,23 @@
+<svg viewBox="0 0 40 40" width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle id="a-matrix" cx="20" cy="20" r="20" />
+        <path id="c-matrix" d="M0 0H19.98v17.759H.001z" />
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b-matrix" fill="#fff">
+            <use xlink:href="#a-matrix" />
+        </mask>
+        <use fill="#D8D8D8" fill-rule="nonzero" xlink:href="#a-matrix" />
+        <g mask="url(#b-matrix)" fill="#0090FF" fill-rule="nonzero">
+            <path d="M-1.455 0h42v41h-42z" />
+        </g>
+        <g mask="url(#b-matrix)">
+            <g transform="translate(10 11)">
+                <mask id="d-matrix" fill="#fff">
+                    <use xlink:href="#c-matrix" />
+                </mask>
+                <path d="M13.044 4.91c-.554-.011-1.112.126-1.561.434-.29.198-.536.453-.821.696-.434-.863-1.218-1.092-2.114-1.108-.908-.015-1.611.396-2.241 1.149v-.93H4.44v7.046h1.984s-.004-2.642.002-3.946c0-.232.013-.468.06-.696.147-.697.745-1.126 1.459-1.07.68.057.99.427 1.024 1.23.005.14.009 4.477.009 4.477h2.009s-.008-2.743.004-3.908c.004-.301.033-.61.107-.9.164-.653.694-.972 1.413-.893.635.068.953.419 1 1.109v4.609h2s.032-3.462 0-5.107a2.417 2.417 0 00-.267-1.002c-.37-.74-1.277-1.171-2.2-1.19zM16.649 0v2.22h1.11v13.319h-1.11v2.22h3.33V-.001h-3.33zM0 0v17.759H3.33v-2.22H2.22V2.219h1.11V0H0z" fill="#FEFEFE" mask="url(#d-matrix)" />
+            </g>
+        </g>
+    </g>
+</svg>

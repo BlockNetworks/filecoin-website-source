@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{clip-path:url(#SVGID_3_);fill:#FFFFFF;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0.8047" y1="25.0234" x2="49.6365" y2="25.0234">
+	<stop  offset="0" style="stop-color:#5CA5CB"/>
+	<stop  offset="1" style="stop-color:#486DB4"/>
+</linearGradient>
+<circle class="st0" cx="25.22" cy="25.02" r="24.42"/>
+<g>
+	<defs>
+		
+			<rect id="SVGID_2_" x="-20.75" y="18.04" transform="matrix(0.1602 -0.9871 0.9871 0.1602 -2.907 45.6375)" width="92.24" height="12.98"/>
+	</defs>
+	<clipPath id="SVGID_3_">
+		<use xlink:href="#SVGID_2_"  style="overflow:visible;"/>
+	</clipPath>
+	<polygon class="st1" points="32.86,23.69 18.73,23.69 19.16,21.1 33.3,21.1 	"/>
+	<polygon class="st1" points="31.57,27.95 17.44,27.95 17.87,25.37 32,25.37 	"/>
+	<path class="st1" d="M20.07,38.15l-4.9,0l0.43-2.59h4.46c1.28,0,2.35-0.91,2.55-2.17l2.94-18.15c0.41-2.52,2.56-4.34,5.11-4.34
+		h4.46l-0.43,2.59l-4.03,0c-1.28,0-2.35,0.91-2.55,2.17l-2.94,18.15C24.76,36.32,22.62,38.15,20.07,38.15z"/>
+</g>
+</svg>

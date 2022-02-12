@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>回顾Slingshot第一阶段</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="回顾Slingshot第一阶段"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/slingshot.zh-cn-1/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/slingshot-phase-1-recap-4.jpg?c=1644520427"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/slingshot-phase-1-recap-4.jpg?c=1644520427"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/slingshot-phase-1-recap-4.jpg">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/slingshot.zh-cn-1/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520427">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/slingshot-phase-1-recap-4_hu76c72094e629e890a2fd444c5c268acc_94176_667x0_resize_q90_linear.jpg 667w,../../../uploads/slingshot-phase-1-recap-4_hu76c72094e629e890a2fd444c5c268acc_94176_1333x0_resize_q90_linear.jpg 1333w,../../../uploads/slingshot-phase-1-recap-4_hu76c72094e629e890a2fd444c5c268acc_94176_2000x0_resize_q90_linear.jpg 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                            <li class="list-item"><a href="../../../blog/updates" class="anchor">updates</a></li>
+                            
+                            <li class="list-item"><a href="../../../blog/awards" class="anchor">awards</a></li>
+                            
+                            <li class="list-item"><a href="../../../blog/events" class="anchor">events</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono">  Filecoin Project, Nov 5, 2020</span><br />
+                    <h2 class="h title">回顾Slingshot第一阶段</h2>
+                    
+
+<p>太空竞赛2的第一阶段：<a href="https://slingshot.filecoin.io/" target="_blank">Slingshot</a>已经进入尾声! Slingshot是一个针对存储用户和开发者的社区竞赛，以奖励大家将真实、有价值、可用的数据存储到Filecoin网络上，该竞赛共分为两个部分。其目标是将10PiB有价值的数据存储到Filecoin网络。团队将通过存储更多有用的数据、创建与他们存储的数据相关有趣、新颖、具有功能性的用户界面（UI）或应用程序而获得奖励。</p>
+
+<p>Slingshot竞赛的第一阶段历时四周，在2020年10月28日（上周三）的闭幕式上达到高潮。本文回顾了闭幕式和第一阶段竞赛的情况。您也可以通过观看以下视频了解闭幕式：</p>
+
+<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/qheNJZ1DClM' frameborder='0' allowfullscreen></iframe></div>
+</div>
+
+<h2 id="庆祝第一阶段圆满结束">庆祝第一阶段圆满结束</h2>
+
+<p>闭幕式的开始，Filecoin产品负责人Pooja Shah回顾了竞赛第一阶段四个星期发生的事情。Filecoin网络本身发生了巨大的变化，包括成功地进行了<a href="../../../blog/journey-to-lifff/">主网启动</a>、5个社区共同主导了<a href="https://github.com/filecoin-project/FIPs" target="_blank">Filecoin改进提案</a>，以及网络继续扩展到超过675PiB的存储容量。</p>
+
+<p>为了庆祝主网顺利启动，社区发起了<a href="https://liftoff.filecoin.io/" target="_blank">Filecoin 主网启动周</a>，聚集了超过80位圆桌讨论者来谈论涵盖从技术细节和发展过程到当前和未来的应用等所有与Filecoin相关的话题。您可以在<a href="https://liftoff.filecoin.io/#mainTrack" target="_blank">此处</a>查看所有环节！</p>
+
+<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
+<img src=../../../vintage/images/blog/slingshot-p1-achieve.jpg alt="第一阶段成就">
+<p>第一阶段成就</p>
+</div>
+
+<p>在这令人兴奋的主题下，Slingshot的第一阶段让人们关注到了越来越多有价值的数据存储到Filecoin网络上。通过超过52万笔交易存储了超过650TiB的数据。这些交易是由19个国家的100多个项目进行的! 由于他们的努力，这些参赛者在奖励池中获得了59,850枚FIL奖励。</p>
+
+<p>除了在网络上存储有价值的数据，Filecoin社区还在其他一些方面受益。第一阶段在许多方面对Filecoin网络进行了压力测试，Filecoin的贡献者和开发者学习了许多关于Filecoin存储用户的工作流程，同时也发现了潜在的改进机会，修复漏洞并记录下来，然后对<a href="https://github.com/filecoin-project/lotus" target="_blank">lotus</a>、<a href="https://docs.textile.io/powergate/" target="_blank">Powergate</a>、<a href="https://docs.textile.io/buckets/" target="_blank">Buckets</a>等进行了改进。未来要进行的改进也被标记出来以继续提升Filecoin存储和检索用户的体验。</p>
+
+<p>在过去的几个月里，Filecoin开发者和存储用户社区也在稳步发展。在几个<a href="https://filecoin.io/slack" target="_blank">Filecoin Slack</a>的频道中，我们看到许多开发者一起分享实践心得，并帮助对方存储有价值的数据集、在Filecoin网络上创建令人兴奋的应用程序。大家建立了友谊，社区成员也回答了提出的问题。社区专家还主持了各种主题的会议，从有关Filecoin核心概念和工具的精品课程与开放提问，到在“我们如何创建”系列中分享在Filecoin上创建的绝妙工具和应用。您可以点击<a href="https://slingshot.filecoin.io/events/" target="_blank">此处</a>观看这些环节的记录。</p>
+
+<p>在Slingshot的第一阶段，社区在短短几周时间就推动了网络的增长，我们已经迫不及待想看到Slingshot第二阶段要达成的成就了！</p>
+
+<h2 id="现场盛况">现场盛况</h2>
+
+<p>在Slingshot闭幕式上，参与第一阶段的九个团队在现场展示了他们的项目。我们看到了一系列有着有趣的用户界面并将数据存储在Filecoin上的项目，包括：</p>
+
+<ul>
+<li>可以搜索谷歌公开图像数据并直观地了解照片的拍摄地点的互动式地图(<a href="https://open-images.deplatformr.com/" target="_blank">Deplatformr</a>)</li>
+<li>Docker图像中心(<a href="https://dragonfly.diancun.net/" target="_blank">Dragonfly</a>)</li>
+<li>储存COVID-19公开研究数据等有价值的公共数据集的文件共享应用和共享创意媒体(<a href="http://filezoo.wenzhouteck.net/" target="_blank">FileZoo</a>、<a href="https://creativefilecloud.com/login" target="_blank">CreativeFileCloud</a>、<a href="http://filedrive.io/" target="_blank">FileDrive</a>)</li>
+<li>保含有趣数据（包括从大学收集的气象数据存储到公开的虚拟现实视频）的用户端(<a href="https://ah22192341-1.icoc.vc/" target="_blank">云南星空</a>，<a href="http://ipfsnb.io/" target="_blank">ipfsNewBund</a>)</li>
+<li>在互动游戏中使用Landsat8卫星图像数据 (<a href="https://geoguesser.vercel.app/" target="_blank">Geoguesser</a>)</li>
+<li>一个存储人工智能训练数据的平台，并将其与更多分布式模型训练平台整合在一起(<a href="https://nbai.io/" target="_blank">Orion-DeepLearningCloud</a>)</li>
+</ul>
+
+<p>这些团队在短时间内完成了大量的工作。点击<a href="https://youtu.be/qheNJZ1DClM?t=556" target="_blank">此处</a>查看所有的演示!</p>
+
+<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
+<img src=../../../vintage/images/blog/slingshot-p1-ipfsnewbund.jpg alt="ipfsNewBund团队展示其界面">
+<p>ipfsNewBund团队展示其界面</p>
+</div>
+
+<h2 id="颁奖仪式">颁奖仪式</h2>
+
+<p>现场展示结束后，进行了第一阶段的颁奖仪式。这些奖项由Slingshot的<a href="https://github.com/filecoin-project/slingshot#community-reviewers" target="_blank">社区审查小组</a>决定。评审过程历时三天，评审人员对用户界面进行评估，并和Filecoin网络中检索团队的数据进行比对验证。感谢社区评审员的帮助!</p>
+
+<p>最后我们在三个奖项中共颁发了59850枚FIL作为奖励：</p>
+
+<ul>
+<li><strong>存储奖</strong>。奖励池共有5万枚FIL，参赛者在第一阶段至少存储500TiB的数据才可以获得。</li>
+<li><strong>社区奖</strong>。奖励池共有5550枚FIL，由各类最佳项目获得。</li>
+<li><strong>助力奖</strong>。奖励池共有4300枚FIL，向每个存储至少1GiB数据的项目颁发50枚FIL奖励。</li>
+</ul>
+
+<p>存储奖项按照存储量的比例分配给所有存储合格数据的团队。在这部分竞赛中排名前五的团队是：</p>
+
+<ol>
+<li>dragonfly</li>
+<li>CreativeFileCloud</li>
+<li>FileDrive</li>
+<li>Filecoin.Netdisk</li>
+<li>matin-cloud-pan</li>
+</ol>
+
+<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
+<img src=../../../vintage/images/blog/slingshot-p1-topprojects.jpg alt="存储竞赛中的头部项目">
+<p>存储竞赛中的头部项目</p>
+</div>
+
+<p>Chainsafe联合创始人兼CTO、Slingshot大赛社区评审员Greg Markou为社区奖项颁奖。获奖团队是:</p>
+
+<ul>
+<li>个人用户存储类
+
+<ol>
+<li><a href="https://filbox.keystore.com/home/login/" target="_blank">Filbox</a> (1500枚FIL奖励)</li>
+<li><a href="http://www.pufferdrive.com/user/main" target="_blank">Pufferfish Cloud Storage Drive</a> (1000枚FIL奖励)</li>
+<li><a href="http://filedrive.io/" target="_blank">FileDrive</a> (500枚FIL奖励)</li>
+</ol></li>
+<li>其他类 (每位获奖者获得250枚FIL奖励)
+
+<ul>
+<li>Video: <a href="http://www.movies.ax/" target="_blank">MoviesAX</a></li>
+<li>Music: <a href="https://weraveyou.ipfssys.info/" target="_blank">WeRaveYou</a></li>
+<li>Scientific Datasets: <a href="https://open-images.deplatformr.com/" target="_blank">Deplatformr</a></li>
+<li>Machine Learning: <a href="https://yolo.coinsummer.io/" target="_blank">Yolo</a></li>
+<li>Technical Complexity: <a href="https://ipfs.io/ipfs/QmPKru6chbbjxJXWRyNEEY8jmdte2x8ic13bUnrw8Mw7kB/" target="_blank">Decentralized Docker Hub</a></li>
+<li>Outstanding Creativity: <a href="http://ipfsnb.io/" target="_blank">ipfsNewBund</a></li>
+<li>Dazzling User Interface: <a href="https://geoguesser.vercel.app/" target="_blank">geoguesser</a></li>
+</ul></li>
+<li>社区影响力奖（荣誉奖项，每位获奖者获得100枚FIL奖励）
+
+<ul>
+<li><a href="http://api.sr2.glm2m.com/index.php?r=site/index" target="_blank">Smartcity</a></li>
+<li><a href="https://filecoin.in/" target="_blank">IPFS Found</a></li>
+<li><a href="http://slingshot.kernelogic.ca/" target="_blank">Free Music Archive Browser</a></li>
+<li><a href="https://anwen.cc/welcome" target="_blank">Anwen Web3 Content Community</a></li>
+<li><a href="https://dicesolo.com/" target="_blank">diceSolo</a></li>
+<li><a href="http://chaindb.mtfs.top/#/" target="_blank">Chains’ DB</a></li>
+<li><a href="http://vof.ipfs9.com/" target="_blank">VOF (Video Over FIlecoin)</a></li>
+<li><a href="https://cadbury.on.fleek.co/" target="_blank">Cadbury Meet</a></li>
+</ul></li>
+</ul>
+
+<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
+<img src=../../../vintage/images/blog/slingshot-p1-ui.jpg alt="为精彩的用户界面颁奖">
+<p>为精彩的用户界面颁奖</p>
+</div>
+
+<p>祝贺所有获奖团队，你们的项目取得了巨大的成就！</p>
+
+<h2 id="进入第二阶段">进入第二阶段</h2>
+
+<p>随后Pooja为大家预告了第二阶段的内容。第二阶段于UTC时间2020年10月21日18时正式启动。我们将于2020年11月9日公布最终确定的规则和奖励，并于2020年11月11日开放本阶段竞赛的正式报名。</p>
+
+<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
+<img src=../../../vintage/images/blog/slingshot-p1-p2-guidance.jpg alt="第二阶段提前指导">
+<p>第二阶段提前指导</p>
+</div>
+
+<p>对于希望在此之前参与第二阶段的团队，Pooja提供了一些指导：</p>
+
+<ul>
+<li>与第一阶段通过存储应用程序数据来获得奖励不同，第二阶段只能存储<a href="https://github.com/filecoin-project/slingshot/blob/master/datasets.md" target="_blank">精选数据集</a>。</li>
+<li>这些数据集必须添加到Slingshot竞赛Github repo上的<a href="https://github.com/filecoin-project/slingshot/blob/master/datasets.md" target="_blank">精选数据集列表</a>；数据必须由有拥有信誉的来源提供，必须有利于公众利益、并可公开访问才能被纳入该列表。</li>
+<li>数据集必须是世界上任何人都可以访问和探索的，这意味着您必须提供面向公众的文档，说明你存储了哪些数据以及如何从Filecoin网络中检索数据。</li>
+<li>参与者不能用自己的矿工存储数据，并且参与者的单个矿工存储数据量不能超过参与者总存储量的30%。</li>
+<li>与第一阶段一样，参赛者应在整个竞赛过程中维护他们存储的数据索引，并要求在竞赛结束时提交一份他们的交易清单（包括交易ID、矿工ID、payload CID、文件名、文件格式、文件大小和所有存储数据的存储日期）。</li>
+<li>参与者们可以期待在第二阶段有更多的奖励和活动！包括存储奖、社区奖、助力奖、各种社区活动和开放提问。</li>
+</ul>
+
+<p>最后，协议实验室的CEO胡安为第一阶段的工作圆满地画上了句号，他提出了一些关于Slingshot的想法，以及他希望看到竞赛引领的新方向。Filecoin项目仍处于早期阶段，有很多机会可以创造有价值的使用场景、集成等来不断改善项目的方向。您可以在此处查看他的演讲。</p>
+
+<div style="width:80%;margin-left:10%;text-align:center;font-style:italic">
+<img src=../../../vintage/images/blog/slingshot-p1-p2-forward.jpg alt="期待第二阶段的精彩表现">
+<p>期待第二阶段的精彩表现</p>
+</div>
+
+<p>再次祝贺所有参加第一阶段的团队。如果您对第二阶段感兴趣，请继续关注11月9日<a href="https://slingshot.filecoin.io/" target="_blank">此处</a>公布的细节（如果你还没有参与的话，请加入<a href="https://filecoin.io/slack" target="_blank">Filecoin Slack</a>的#slingshot和#slingshot-announcements频道）。</p>
+
+<p>我们对社区截至目前所取得的成就感到欣慰，并对未来的发展感到振奋! 向前！🚀</p>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520428"></script>
+    <script src="../../../js/bundle.js?c=1644520428"></script>
+</body>
+</html>
+
+

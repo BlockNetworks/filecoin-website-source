@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Getting started with Filecoin repos and devnets</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="Getting started with Filecoin repos and devnets"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/getting-started-with-filecoin-repos-and-devnets/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/devnets-and-repos.jpg?c=1644520384"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/devnets-and-repos.jpg?c=1644520384"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/devnets-and-repos.jpg">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/getting-started-with-filecoin-repos-and-devnets/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520384">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/gofc-022-main-header_hu75f171d213b73f5ab4624e174f3edef8_19370821_667x0_resize_q90_linear_2.png 667w,../../../uploads/gofc-022-main-header_hu75f171d213b73f5ab4624e174f3edef8_19370821_1333x0_resize_q90_linear_2.png 1333w,../../../uploads/gofc-022-main-header_hu75f171d213b73f5ab4624e174f3edef8_19370821_2000x0_resize_q90_linear_2.png 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                            <li class="list-item"><a href="../../../blog/updates" class="anchor">updates</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Feb 14, 2019</span><br />
+                    <h2 class="h title">Getting started with Filecoin repos and devnets</h2>
+                    
+
+<p><img src="https://filecoin.io/vintage/images/blog/getting-started-with-repos-devnets.jpg" alt="Getting Started with Filecoin Repos and Devnets" /></p>
+
+<p>As we announced <a href="https://filecoin.io/blog/opening-filecoin-project-repos/" target="_blank">here</a>, we recently opened up the Filecoin project repos on <a href="https://github.com/filecoin-project" target="_blank">GitHub</a>. You can visit the GitHub repos to explore the codebase, development tools, community resources, and more. If you’re ready to jump straight in, here are some of the ways you can learn more.</p>
+
+<ol>
+<li><a href="https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#1-set-up-a-filecoin-node-and-connect-to-a-devnet" target="_blank">Set up a Filecoin node and connect to a devnet</a></li>
+<li><a href="https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#2-visualize-the-network" target="_blank">Visualize the network</a></li>
+<li><a href="https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#3-improve-the-filecoin-protocol-specification" target="_blank">Improve the Filecoin protocol specification</a></li>
+<li><a href="https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#4-collaborate-with-us-to-solve-open-research-problems" target="_blank">Collaborate with us to solve open research problems</a></li>
+<li><a href="https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#5-compete-in-the-replication-game" target="_blank">Compete in the Replication Game</a></li>
+<li><a href="https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#6-join-the-community" target="_blank">Join the community</a></li>
+<li><a href="https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#7-build-on-top-of-filecoin" target="_blank">Build on top of Filecoin</a></li>
+<li><a href="https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#8-join-the-team" target="_blank">Join the team</a></li>
+<li><a href="https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#closing-thoughts" target="_blank">Closing thoughts</a></li>
+</ol>
+
+<h3 id="1-set-up-a-filecoin-node-and-connect-to-a-devnet">1. Set up a Filecoin node and connect to a devnet</h3>
+
+<p>As of today, anyone can set up a Filecoin node and connect to a devnet. This is the best way to explore the current command-line interface and the Filecoin decentralized storage market.</p>
+
+<p>Note that the Filecoin project and network are not yet live. The entire project is still a work-in-progress, so we cannot make any performance, stability, or security guarantees.</p>
+
+<p>There is currently one reference implementation for the Filecoin protocol: <a href="https://github.com/filecoin-project/go-filecoin" target="_blank">go-filecoin</a>. There has been tremendous progress made on the go-filecoin implementation. You can get a full development update for go-filecoin <a href="https://filecoin.io/blog/update-2018-q3-q4/" target="_blank">here</a>.</p>
+
+<p>You can connect to one of two devnets:</p>
+
+<ul>
+<li><strong>user devnet:</strong> long-running devnet, may be rebooted at random times. Good for testing and playing for the majority of users</li>
+<li><strong>nightly devnet:</strong> redeployed and rebooted daily at 0600 UTC. Used for development and testing by contributors to go-filecoin</li>
+</ul>
+
+<p>On the devnets, you can store data as a storage client and also try how Filecoin mining works. The devnets are an important development tool for those who anticipate building applications on top of the Filecoin protocol or storing data on the decentralized storage market. While this is still far from a production system, you can begin to get a sense of the different workflows the Filecoin protocol supports and how to integrate them for your application.</p>
+
+<p>You can visit the <a href="https://github.com/filecoin-project/go-filecoin/wiki" target="_blank">go-filecoin repo Wiki</a> to see the full go-filecoin installation instructions and details on how to connect to a devnet.</p>
+
+<h3 id="2-visualize-the-network">2. Visualize the network</h3>
+
+<p>The <a href="https://stats.kittyhawk.wtf/" target="_blank">network stats dashboard</a> shows a high-level overview of <strong>user devnet</strong> activity. The dashboard aggregates self-reported information and displays total storage capacity on the network, network utilization rate, geographic distribution of nodes, tokens in circulation, and other useful information.</p>
+
+<p>If you <em>are</em> connected to the user devnet, you can stream your node’s activity to this dashboard to see your own activity within the broader network. The full instructions for connecting to the devnet and streaming your node’s activity are on the <a href="https://github.com/filecoin-project/go-filecoin/wiki" target="_blank">go-filecoin Wiki</a>.</p>
+
+<h3 id="3-improve-the-filecoin-protocol-specification">3. Improve the Filecoin protocol specification</h3>
+
+<p>The Filecoin protocol specification (“the spec”) can be found on GitHub in the <a href="https://github.com/filecoin-project/specs" target="_blank">filecoin-project/specs</a> repo. It is very much an active work in progress, and is far from complete. Today, the spec covers:</p>
+
+<ul>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/operation.md" target="_blank">Node operation</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/validation.md" target="_blank">Chain validation</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/storage-market.md" target="_blank">Storage market</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/retrieval-market.md" target="_blank">Retrieval market</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/payments.md" target="_blank">Payments</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/mining.md" target="_blank">Mining</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/expected-consensus.md" target="_blank">Expected consensus</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/state-machine.md" target="_blank">State machine</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/faults.md" target="_blank">Faults</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/signatures.md" target="_blank">Signatures</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/proofs.md" target="_blank">Proofs</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/network-protocols.md" target="_blank">Storage protocols</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/data-structures.md" target="_blank">Data structures</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/local-storage.md" target="_blank">Local storage</a></li>
+<li><a href="https://github.com/filecoin-project/specs/blob/master/definitions.md" target="_blank">Glossary of terms</a></li>
+</ul>
+
+<p>We would love comments, questions, and contributions to the spec. You can surface these in <a href="https://github.com/filecoin-project/specs/issues" target="_blank">GitHub issues on the specs repo</a>.</p>
+
+<p>We welcome PRs to the spec. This is one of the most valuable ways to contribute to building the Filecoin network. Improving the protocol specification makes it possible for multiple implementations of the protocol to be built to similar standards of scale and security. Though be warned: it is hard to contribute protocol specification writing without a deep understanding of how it is meant to work. Asking clarifying questions, reviewing and commenting on drafts, and fleshing out details are great ways to get started. Those who want to contribute by writing a section entirely from scratch will require deeper knowledge and close collaboration with out team. Come talk with us on chat (see the <a href="https://filecoin.io/blog/getting-started-with-filecoin-repos-and-devnets/#6-join-the-community" target="_blank">Join the Community</a> section below)!</p>
+
+<h3 id="4-collaborate-with-us-to-solve-open-research-problems">4. Collaborate with us to solve open research problems</h3>
+
+<p>The Filecoin research team has published both an <a href="https://github.com/filecoin-project/research#filecoin-research-endeavours" target="_blank">updated roadmap</a> and a <a href="https://github.com/filecoin-project/research/blob/master/open-problems.md" target="_blank">list of open research problems</a>. You can collaborate with our team directly if you are interested in solving these problems. Reach out to us at <a href="mailto:research@filecoin.org" target="_blank">research@filecoin.org</a>.</p>
+
+<p>There are also a number of open RFPs for cryptographic and distributed systems available through the Protocol Labs RFP program. Check out the <a href="https://github.com/protocol/research-RFPs" target="_blank">full listing of RFPs</a> and <a href="https://github.com/protocol/research-RFPs/blob/master/RFP-application-instructions.md" target="_blank">how to apply for an RFP</a> for more information.</p>
+
+<h3 id="5-compete-in-the-replication-game">5. Compete in the Replication Game</h3>
+
+<p>The Filecoin protocol uses Proofs-of-Replication (PoReps) to ensure that a storage miner is storing a client’s data correctly. As a result, PoReps are fundamental to the operation of the Filecoin protocol.</p>
+
+<p>The Replication Game is a competition in which individuals compete to submit the fastest replication and PoRep proof generation times. Beating others in the Replication Game (and telling us how you did it) is a great way to help optimize and improve our existing PoRep constructions. This is a valuable contribution to the Filecoin protocol and network, as it can help create better, faster, and more secure proving systems.</p>
+
+<p>Full details for how to compete in the Replication Game are available on <a href="https://github.com/filecoin-project/replication-game" target="_blank">GitHub</a>. You can also watch the <a href="https://youtu.be/2NAKGL0ydiE" target="_blank">demo video</a> (embedded below) to see how to participate in the replication game and view the current leaderboard.</p>
+
+<h3 id="6-join-the-community">6. Join the community</h3>
+
+<p>Come join the discussion! You can participate in our research and development conversations on Filecoin chat, ask for help troubleshooting installation problems on the discussion forums, and visit our <a href="https://github.com/filecoin-project/community" target="_blank">community repo</a> for information about meetups, calls, and other community resources!</p>
+
+<ul>
+<li><strong>Chat channels:</strong> We use channels bridged across several platforms. As a distributed community, these channels are where the vast majority of our communications take place. Please read our <a href="https://github.com/filecoin-project/community/blob/master/CODE_OF_CONDUCT.md" target="_blank">code of conduct</a> before posting on chat.
+
+<ul>
+<li><em>Matrix:</em> <a href="https://riot.im/app/#/group/+filecoin:matrix.org" target="_blank">Filecoin community</a> (which contains links to all bridged channels)</li>
+<li><em>Slack:</em> Create an account <a href="https://join.slack.com/t/filecoinproject/shared_invite/enQtNTUwNTI1Mzk5MDYwLTI2MmMxNzNjYjhlYWM3YjQxM2E4MThmM2ZhY2JkYWIxNGVjMGVmNTg3Y2VhZjQ3OGM5ZTc1OGFmZGZhMzZmMTI" target="_blank">here</a></li>
+<li><em>IRC:</em> <a href="https://github.com/filecoin-project/community/issues/4" target="_blank">Coming soon</a></li>
+</ul></li>
+<li><a href="https://discuss.filecoin.io/" target="_blank"><strong>Discussion forum</strong></a>: We use the forums for more long-lived questions. When in doubt, you can always post here.</li>
+</ul>
+
+<h3 id="7-build-on-top-of-filecoin">7. Build on top of Filecoin</h3>
+
+<p>We are interested in collaborating with application developers who want to build massively impactful applications on the decentralized web. If you are interested in exploring potential collaboration opportunities, you can post directly on the <a href="https://discuss.filecoin.io/" target="_blank">forum</a>. These are open by default. As a secondary option, you can email <a href="mailto:filecoin-collab@protocol.ai" target="_blank">filecoin-collab@protocol.ai</a>.</p>
+
+<h3 id="8-join-the-team">8. Join the team</h3>
+
+<p>The Filecoin team is <em>growing</em>.</p>
+
+<p>Today, the Filecoin team is employed by Protocol Labs. PL is hiring across a variety of functions, including software engineering, distributed systems research, cryptography research, community, business, UX design, and more. Please take a look at the <a href="https://jobs.lever.co/protocol" target="_blank">open positions</a>.</p>
+
+<p>There are other organizations involved in developing Filecoin, and in time we will hear from more of them publicly. We also expect many new groups, companies, and teams to form around Filecoin. This is a great time for the pioneers to start exploring. Feel free to coordinate through the forums, and reach out if we can be helpful. In the future, we will host events to bring the community together and build a larger, more connected team.</p>
+
+<h3 id="closing-thoughts">Closing thoughts</h3>
+
+<p>So there you have it! There are a number of ways that you can check out the Filecoin Project, what we have been up to for the past several months, and what we look forward to landing in 2019. Building the Filecoin decentralized storage market has been and continues to be extremely meaningful. We are glad to have you with us on this journey.</p>
+
+<p>If you have any questions at all, do not hesitate to join our community on <a href="https://github.com/filecoin-project" target="_blank">GitHub</a>, the <a href="https://discuss.filecoin.io/" target="_blank">discussion forum</a>, or <a href="https://join.slack.com/t/filecoinproject/shared_invite/enQtNTUwNTI1Mzk5MDYwLTI2MmMxNzNjYjhlYWM3YjQxM2E4MThmM2ZhY2JkYWIxNGVjMGVmNTg3Y2VhZjQ3OGM5ZTc1OGFmZGZhMzZmMTI" target="_blank">chat</a>.</p>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520390"></script>
+    <script src="../../../js/bundle.js?c=1644520390"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Why is decentralized and distributed file storage critical for a better web?</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="Why is decentralized and distributed file storage critical for a better web?"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/why-is-decentralized-and-distributed-file-storage-critical-for-a-better-web/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/whitepaper-main-header.png?c=1644520464"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/whitepaper-main-header.png?c=1644520464"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/whitepaper-main-header.png">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/why-is-decentralized-and-distributed-file-storage-critical-for-a-better-web/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520464">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                            <li class="list-item"><a href="../../../blog/updates" class="anchor">updates</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Jun 20, 2017</span><br />
+                    <h2 class="h title">Why is decentralized and distributed file storage critical for a better web?</h2>
+                    
+
+<p><em>The team behind IPFS and Filecoin explain how advances in distributed data storage and strong alignment of market incentives are combining to create a much more secure and efficient web.</em></p>
+
+<p>In the span of less than three decades the web has become one of the greatest achievements in human history, responsible for never-before-seen gains in science, technology, and commerce. This amazing growth has been driven in large part by technologists abstracting away much of the underlying complexity of the internet. One of the biggest of these abstractions has been centralized ‘cloud storage’ where data is stored in large, centralized silos owned and run largely by for-profit corporations. This architecture makes the web brittle, undermines privacy, allows the price of storage to remain artificially high, and creates bottlenecks that prevent innovative new uses of data.</p>
+
+<p>The web need not be structured this way. Emerging new technologies are allowing us to improve the web’s underlying protocols by addressing content by what it is rather than addressing it by where it is. This makes the web a much safer and robust place, where we’re far less reliant on any one particular entity to give us the data we request. Now instead of relying on expensive businesses to store and transmit humanity’s trove of knowledge we can distribute data across a vast network of peers who are paid to store each other’s data.</p>
+
+<h3 id="decentralized-storage-makes-the-web-robust-and-resilient">Decentralized Storage makes the web robust and resilient</h3>
+
+<p>Today, information on the internet is addressed by <strong>location</strong>: a particular piece of content has a URL — a Universal Resource <em>Locator</em> — that involves the IP Address of a web server that hosts the content at a specific location. For example, to go to a URL like facebook.com/mypicture.jpg, we resolve the domain name (facebook.com) into an IP Address (eg 31.13.70.36) and look up the picture there. The URL is saying “go to 31.13.70.36 and request the content at the path “/mypicture.jpg”. The URL always points to that location. If the same picture was hosted on another site, or even your own computer, you would still have to connect to that IP Address and download the content.</p>
+
+<p>It’s useful to think about this in everyday human context. Imagine that we could only reference books by the physical location of a copy, not by title, or author, or ISBN – only the location of the physical object. So if someone told you to read a book, they’d say something like “Hey, you should read this great book, it’s at the New York Public Library, section 9, bookcase 3, top shelf, first from the left”. And now you have to check there, and get that one physical copy. Until you do, you don’t know what book it actually is; you only have the location. This is obviously terribly inefficient. It’s also a precarious situation—what if someone moved the book? What if the library is closed that day? Or totally shut down? Or, what if you get there, you get to Bookcase 3, top shelf, first from the left, and you realize, this whole time, you had another copy of that same book in your backpack.</p>
+
+<p>This isn’t just a theoretical concern. A recent <a href="https://blogs.harvard.edu/futureoftheinternet/2013/09/22/perma/" target="_blank">Harvard-led study</a> found that 49% of all hyperlinks cited in US Supreme Court opinions are no longer working. The opinions point to locations that held the correct content at some time in the past, but the content is no longer available at that location. This is brittle, inefficient, and unnecessary. This is madness.</p>
+
+<p>Instead, consider a different way. Consider addressing information by what it is, not where it is. To do this we need to use a different kind of web link. Instead of using links that point to locations, we need links that uniquely describe the content itself, like a fingerprint. This content-addressed approach separates “what” from “where”, so data can flow through the network, so it can be <strong>stored and served from anywhere by anyone</strong>. To create these content-addressed links, we use the content’s <em>cryptographic</em> hash as the unique identifier or fingerprint.</p>
+
+<p><img src="https://filecoin.io/vintage/images/blog/coin-center/ipfs1.png_optimized.jpg" alt="content addressed links" /></p>
+
+<p>IPFS, the InterPlanetary File System, is a protocol that lets us use those content-addressed links to exchange data. In IPFS, the hash fingerprint of a file or a piece of data is its address. We use these fingerprints to identify the content instead of using the physical location of the server. This way, when you are trying to load a file, you retrieve it from any place you can. If the file is already on your own computer you could retrieve it from there. If your direct neighbors in the network have the file you could retrieve it from them. You might get it from the original server, from others in the network, whomever. IPFS handles this all for you using efficient routing algorithms to search the network, and it can be tuned for privacy: e.g. only request data from peers you trust. This is similar to what other peer-to-peer systems do, but greatly amplified. You can use it to exchange any kind of files or data with any number of peers and it’s built directly into the web.</p>
+
+<p>IPFS decentralizes the web by addressing information based on what it is, not where it is. This decentralized pattern lets web applications work in local networks disconnected from the original source, whether it is a chat room in an office that lost its uplink, a scientific paper hosted in a variety of libraries, Wikipedia in a remote village with poor connectivity, or a family’s chat messenger during a crisis. It strengthens our digital information, making the data resilient to failures in the underlying internet, securing it cryptographically, and giving it permanence through time. You or the people whom you’ve shared your data with can save copies of information and count on the same links for years. IPFS allows file storage on the web to be decentralized, but a second question remains: how can we create an open, competitive market for providing that storage?</p>
+
+<h3 id="cloud-storage-and-the-dangers-of-centralization">Cloud Storage and the dangers of centralization</h3>
+
+<p>Since its inception cloud data storage has evolved to be functional, but leaves many economic and security concerns unaddressed. In order to understand why cloud storage is currently expensive and precarious it’s useful to examine its evolution over time.</p>
+
+<p>The earliest websites and online services ran their own web servers: computers and hard-drives dedicated to serving content to their users. Before an online business could sign-up their first customer or sell their first product, they’d have to invest formidable sums of money and time in setting up server infrastructure. Even if the product or service was completely unrelated to computing and data storage virtually everyone was forced to invest and run their own hardware just to have a web-presence. This was expensive, wasteful, and time-consuming.</p>
+
+<p>In 2006, Amazon.com addressed this wasteful overhead, and boldly launched Amazon Web Services (AWS). AWS removed the need for developers to create and manage their own server infrastructure by renting out Amazon’s own servers and storage space to others. Now for a modest fee a company could easily store and serve their files from Amazon, negating the need for that company to buy their own hardware. AWS became a quick hit and several other large technology firms followed suit in creating their own ‘cloud’ based storage solutions.</p>
+
+<p>Cloud storage allowed new online businesses to spring up overnight and grow to match user demand quickly. Instead of ordering new hard-drives and installing them in their own small data-centers, cloud computing allowed businesses to scale up at a moment’s notice with a few keyboard strokes. In just a few years cloud computing became so useful and popular that the majority of all data became stored in just a few of these cloud data-providers. This infrastructure is still largely invisible to the end-user, even though most websites today are hosted by these 3rd party providers. For example, did you know that Netflix, the popular movie streaming app, actually uses AWS for much of their hosting needs? Even though Amazon has its own rival movie streaming service (Amazon Prime) they’re also happy to sell hosting space to a competitor.</p>
+
+<p>Currently, building a successful cloud data storage business is extraordinarily complex and challenging. Even to begin to be competitive with incumbents a company would need to build a global network of data-centers in every continent (most players in this market have multiple datacenters per continent), build out robust user interfaces that satisfy many user demands, grow global sales and marketing teams to attract customers, and hire large customer support teams. These tremendous barriers to entry have resulted in just a few massive corporations owning nearly all of the global cloud data storage market. This consolidation is especially painful for a number of reasons: users must trust these large corporate actors to protect their data from exposure, the cost of switching cloud providers is especially high, data is stored very far from the end-user (usually hundreds to thousands of miles away), and providers are incentivized to lock in their customers and extract a premium. The current market for cloud storage is not nearly as competitive or efficient as it could be and end-users suffer because of it.</p>
+
+<p>Even more frustrating, there exists a significant amount of ‘latent’ (available) storage throughout the world that sits unused. This storage is owned by all kinds of entities: large corporations down to small family businesses, individuals with huge hard-drive racks in their basements to small drives in everyone’s laptop. However, due to the aforementioned barriers to entry it would be difficult for any one particular company or individual to monetize their extra space and start a cloud data service. A much more efficient market would decouple raw hard-drive space, e.g. the storage, from all the services and support on-top, e.g. the customer service, user interface, payments and price negotiation, etc.. This would allow for a diverse and dynamic market of hard-drive providers to focus only on hardware and compete in a proper market for storage itself, which would greatly reduce the price of cloud storage and allow vast monetization of existing capacity. It would make cloud storage more like a commodity or a utility that you buy as you need at the going market rate and less like a service relationship fraught with contracting, negotiation, transaction, and lock-in costs. But the question remains, how can we build a true decentralized storage ecosystem? Content addressing is solved by IPFS, but how can we encourage people all over the world to become the backbone of storage itself? Enter Filecoin.</p>
+
+<p><img src="https://filecoin.io/vintage/images/blog/coin-center/ipfs2.png" alt="Filecoin: A blockchain-based storage network and cryptocurrency" /></p>
+
+<h3 id="filecoin-paying-the-network-to-store-your-data">Filecoin: Paying the network to store your data</h3>
+
+<p>While IPFS lets us exchange data directly with our peers instead of relying on centralized hosts, Filecoin takes it a step further by giving us a way to pay each other for storing data. Filecoin is a decentralized file storage network and protocol token (‘token’ is used interchangeably with ‘<a href="https://coincenter.org/entry/what-are-appcoins" target="_blank">appcoin</a>’ and ‘cryptocurrency’). Think of it like the AirBnB data storage. On the supply side — the mining side of the token — individuals and organizations with unused storage space can add their disks to the Filecoin Network and receive client orders. On the demand side — the clients — individuals and organizations hire the Filecoin Network to store their data, which gets routed to many different miners worldwide.</p>
+
+<p>Filecoin draws from cutting-edge advances in cryptography and blockchain technologies to make this holy grail a reality. It uses: a blockchain, a native cryptocurrency, publicly verifiable <em>proofs-of-storage</em>, storage contracts with collaterals, algorithmic markets to ensure efficient pricing, payment channels to enable micropayments and reduce transaction costs, and more. All this adds up to a <em>powerful, decentralized, self-healing network</em> that can bring together massive amounts of storage from “miners” all over the world, and provide a great service with strong guarantees of availability, resilience, and great price. It can automatically rebalance itself to meet demand, protects content from attack, and recovers from miners going offline.</p>
+
+<p><img src="https://filecoin.io/vintage/images/blog/coin-center/ipfs3.png" alt="self-storage in the Filecoin decentralized storage market" /></p>
+
+<p>The world has a gargantuan amount of unused storage across thousands of entities and millions of people. By bringing all that latent supply into the market, Filecoin might cause the price of online storage to drop significantly. Moreover, Filecoin kicks off the powerful optimization process that made Bitcoin amass enormous quantities of computing power. Filecoin miners can make a lot of money by adding more and more storage to the network.</p>
+
+<p>Users aren’t required to use Filecoin and IPFS together, but the two combined are a perfect pair that solve significant failings of the current web. Users currently using IPFS are required to ‘pin’ (store &amp; serve) their data from either their own computer, an existing centralized cloud provider, or off the generosity of other IPFS users who actively choose to host that content. Filecoin provides the incentive for any IPFS user to assure their data is stored across a host of decentralized nodes. Soon anyone will be able to pay a large mass of decentralized storage providers in filecoin to robustly store their files, assuring their data can be securely and quickly served to those that request it. Users storing files on IPFS and Filecoin will benefit from optimized storage costs, a diversity of storage providers, much faster serving of data, automated self-healing, and tremendous economies of scale.</p>
+
+<p><img src="https://filecoin.io/vintage/images/blog/coin-center/ipfs4.png" alt="New blockchain, new breakthroughs" /></p>
+
+<h3 id="protecting-privacy-and-decency-on-the-decentralized-web">Protecting Privacy and Decency on the Decentralized Web</h3>
+
+<p>Storing private data on a network powered by IPFS and Filecoin means that parts of the data may be distributed across many computers operated by complete strangers; remarkably, however, this can be <em>better</em> for privacy than existing cloud systems. Today, a large variety of cloud storage providers, big and small, store their users’ data entirely in the clear—unencrypted. Even some who have added <em>encryption-at-rest</em>, have done so by controlling their users’ encryption keys, instead of creating truly “oblivious” or “zero-knowledge” systems. This is a dangerous arrangement because it means that customer data can be stolen and leaked or sold by hackers or other attackers. Users (or the applications they use) should encrypt their data end-to-end before giving it to these cloud storage providers, whether centralized or not.</p>
+
+<p>Distributing user data to a large array of storage computers who are not owned by one company or service can increase the exposure of the data. However, if valuable data is stored end-to-end encrypted, then attackers with access to the encrypted texts cannot learn what is inside them. This is true whether the storage network is a big cloud provider or an incentive market like Filecoin. This is a different security model, where we are forced to always encrypt everything, with only user access to the keys, and where the failures of a single cloud provider cannot harm the resilience of the data.</p>
+
+<p><img src="https://filecoin.io/vintage/images/blog/coin-center/ipfs5.png" alt="A decentralized market for storage" /></p>
+
+<h3 id="market-protocols-harnessing-networks-and-incentives-to-create-better-industries">Market Protocols: Harnessing networks and incentives to create better industries</h3>
+
+<p>At Protocol Labs, we believe that Market Protocols——decentralized networks that are powered by protocol tokens—are the next wave of internet innovation. We believe these technologies have the potential to reshape how we organize commerce and transact value world-wide. This is partially because Market Protocols present a completely new dynamic between incentives, participants, and a network’s ability to create value. In the current model of internet innovation, when a company creates a network economy they capture the majority of the network’s value. Though millions of people participate in creating value on the network, those participants are likely not earning a stake in the network itself. The majority of long-term value is awarded to a small number of wealthy investors and early-shareholders. By contrast, Market Protocols are fueled by protocol tokens, which are a percentage of the network’s overall value. The compensation for participating in a Market Protocol is a stake in the network, which grows and shrinks with the value of that network.</p>
+
+<p>For instance, Airbnb and Uber are companies that have built network economies. They compensate service providers (Airbnb hosts and Uber drivers) with service fees, not a share of the overall wealth created by their networks. This ensures that a small number of shareholders are greatly rewarded while the people who helped the network create value (drivers, homeowners, users) may not share fairly in that upside.</p>
+
+<p>Networks like Filecoin embody an alternative where participants who create the network’s value are compensated with a stake in the network. Miners who store and distribute data on the Filecoin network earn the Filecoin protocol tokens, which they can choose to hold or liquidate to cash. Since Filecoin protocol tokens are designed to track the amount of value created by the storage network, growth in the Filecoin economy will translate to growth in the value of the token. Miners and users who choose to hold the token will share in that upside, earning fair rewards for the creation of value. The more tokens any individual participant earns and holds, the more incentive they have to support the network and ensure its success. This incentive alignment and feedback loop causes an extremely strong network of collaborating participants who will all greatly benefit from the success of the network.</p>
+
+<p>Market Protocols are still in their early stages of development and their promise is great. We’re excited to be on the forefront of these technological advancements that are making the internet and its web of data more secure, robust, and fast. Just as the web has created massive connectivity and unlocked human potential, we think the next wave of Market Protocols will do the same for the future.</p>
+
+<p><em>Originally published as a Plain Language Explainer at</em> <a href="https://coincenter.org/entry/why-is-decentralized-and-distributed-file-storage-critical-for-a-better-web" target="_blank"><em>Coin Center</em></a><em>, June 20, 2017. Thanks to Peter Van Valkenburgh for reading drafts of this.</em></p>
+
+                </div>
+            </div>
+
+            
+            <div class="div related-articles">
+                <div class="div grid">
+                    <div class="div label"><h3 class="h type-base">Related Articles</h3></div>
+                    <div class="div overview-link"><a class="anchor type-base" href="../../../blog">View all articles</a></div>
+                </div>
+                <div class="div grid">
+
+                    <div class="div Carousel" data-setting-mobile="true">
+                        <div class="div carousel-container">
+                            <div class="div carousel-items">
+                                <div class="div unit-cols-3">
+                                    
+                                    <div class="div carousel-item article-1">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/announcing-filecoin-implementations-in-rust-and-c/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/rust-main-header_hu6ae4ab314285575bd94b4c85da7276f1_804842_500x0_resize_q90_linear_2.png 500w,../../../uploads/rust-main-header_hu6ae4ab314285575bd94b4c85da7276f1_804842_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/rust-main-header_hu6ae4ab314285575bd94b4c85da7276f1_804842_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/announcing-filecoin-implementations-in-rust-and-c/" class="anchor">
+                Announcing Filecoin implementations in Rust and C&#43;&#43;
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">Today, we are excited to announce two additional implementations of the Filecoin protocol: forest – being implemented in Rust by ChainSafe, and fuhon – being implemented in C&#43;&#43; by Soramitsu. These implementations are in active development, and are now fully open for anyone to use or contribute to. Check them out on GitHub!</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Jan 31, 2020
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-2">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/announcing-filecoin-s-testnet-incentives/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/testnet-incentives-main-header_hua098e4a5818c2f28d9bfb362e497977e_543436_500x0_resize_q90_linear_2.png 500w,../../../uploads/testnet-incentives-main-header_hua098e4a5818c2f28d9bfb362e497977e_543436_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/testnet-incentives-main-header_hua098e4a5818c2f28d9bfb362e497977e_543436_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/announcing-filecoin-s-testnet-incentives/" class="anchor">
+                Announcing Filecoin&#39;s Testnet incentives
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">After years of research and development, Filecoin’s mainnet launch is within sight. Today, we’re announcing Filecoin’s testnet incentives program and inviting miners all over the world to compete to earn global and regional pools totaling up to 4 million Filecoin tokens.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Jun 9, 2020
+            
+        </p>
+
+        
+        <a href="../../../blog/posts/announcing-filecoin-s-testnet-incentives/" class="anchor extra-cta icon icon-arrow--white">
+            <span></span>
+        </a>
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-3">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/announcing-lotus-our-first-alternate-filecoin-implementation/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/lotus-main-header_hucd9ff9b151a50e2c5e0f5284d12c5114_572730_500x0_resize_q90_linear_2.png 500w,../../../uploads/lotus-main-header_hucd9ff9b151a50e2c5e0f5284d12c5114_572730_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/lotus-main-header_hucd9ff9b151a50e2c5e0f5284d12c5114_572730_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/announcing-lotus-our-first-alternate-filecoin-implementation/" class="anchor">
+                Announcing Lotus, our first alternate Filecoin implementation
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">One of our most important goals is to make the Filecoin mainnet as secure and resilient as possible. One part of our network security strategy is launching the Filecoin network with multiple implementations. Today, we are delighted to announce lotus, our first alternate Filecoin implementation.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Oct 16, 2019
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="div nav-dots"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520464"></script>
+    <script src="../../../js/bundle.js?c=1644520464"></script>
+</body>
+</html>
+
+

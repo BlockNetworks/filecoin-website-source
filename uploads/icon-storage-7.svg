@@ -1,0 +1,67 @@
+<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M45.703 0C54.375 0 60 5.625 60 14.297v31.406C60 54.375 54.375 60 45.703 60H14.297C5.625 60 0 54.375 0 45.703V14.297C0 5.625 5.625 0 14.297 0h31.406z" id="b" />
+        <path id="d" d="M30 47l18.292 14.517 15.366-.053.413-63.855-24.058.084-.236 27.754z" />
+        <path d="M.347 4.612S4.852-2.31 10.709 1.008c5.858 3.318 8.079 3.386 12.886 1.18C28.402-.02 12.02 26.626 12.02 26.626L.347 4.612z" id="f" />
+        <path id="h" d="M.237 5.606L10.008.468l10.364 5.815-9.889 21.709z" />
+        <path id="l" d="M.252.036l4.522 28.087 11.3-24.469z" />
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
+            <stop stop-color="#2EA3DC" offset="0%" />
+            <stop stop-color="#1383BB" offset="100%" />
+        </linearGradient>
+        <linearGradient x1="14.218%" y1="40.575%" x2="46.378%" y2="40.575%" id="i">
+            <stop stop-color="#FBDEB5" offset="0%" />
+            <stop stop-color="#FEE0B9" offset="100%" />
+        </linearGradient>
+        <linearGradient x1="9.603%" y1="40.422%" x2="67.774%" y2="40.422%" id="k">
+            <stop stop-color="#EAC99D" offset="0%" />
+            <stop stop-color="#D1AD7B" offset="100%" />
+        </linearGradient>
+        <filter x="-3.7%" y="-2%" width="107.3%" height="103.9%" filterUnits="objectBoundingBox" id="e">
+            <feGaussianBlur stdDeviation=".5" in="SourceAlpha" result="shadowBlurInner1" />
+            <feOffset dx=".5" dy="1.5" in="shadowBlurInner1" result="shadowOffsetInner1" />
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1" />
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowInnerInner1" />
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M45.703 0C54.375 0 60 5.625 60 14.297v31.406C60 54.375 54.375 60 45.703 60H14.297C5.625 60 0 54.375 0 45.703V14.297C0 5.625 5.625 0 14.297 0h31.406z" fill="url(#a)" />
+        <g>
+            <mask id="c" fill="#fff">
+                <use xlink:href="#b" />
+            </mask>
+            <g mask="url(#c)" fill="#000">
+                <use fill-opacity=".149" xlink:href="#d" />
+                <use filter="url(#e)" xlink:href="#d" />
+            </g>
+            <g mask="url(#c)">
+                <path fill="#FFDB5D" d="M20-.5h6.5v25.659H20z" />
+                <path fill="#FFB908" d="M26-.5h8v27h-8z" />
+                <path d="M33.5-.5H40l-.194 25.942s-1.66 1.252-2.47 1.388c-1.292.217-3.836-.33-3.836-.33v-27z" fill="#DC880D" />
+                <g transform="translate(18 22.5)">
+                    <mask id="g" fill="#fff">
+                        <use xlink:href="#f" />
+                    </mask>
+                    <g mask="url(#g)">
+                        <g transform="translate(1.5 -3.5)">
+                            <mask id="j" fill="#fff">
+                                <use xlink:href="#h" />
+                            </mask>
+                            <use fill="url(#i)" xlink:href="#h" />
+                            <path fill="#343434" mask="url(#j)" d="M4 20h14v9H4z" />
+                            <path fill="url(#k)" mask="url(#j)" d="M6.252 2.036l4.522 28.087 11.3-24.469z" />
+                            <g mask="url(#j)">
+                                <g transform="translate(6 2)">
+                                    <mask id="m" fill="#fff">
+                                        <use xlink:href="#l" />
+                                    </mask>
+                                    <path fill="#202020" mask="url(#m)" d="M-2 18h14v9H-2z" />
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

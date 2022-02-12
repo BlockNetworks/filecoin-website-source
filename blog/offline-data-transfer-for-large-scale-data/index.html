@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Offline Data Transfer for Large-Scale Data</title>
+    <link rel="stylesheet" type="text/css" href="../../vintage/css/main.css">
+    
+    <link rel="icon" type="image/png" href="../../vintage/images/icon-coin-128-new.png"/>
+    <link rel="alternate feed" href="https://filecoin.io/blog/feed/index.xml" type="application/rss+xml"  title="Filecoin Blog" />
+
+    
+      
+        <link rel="canonical" href="https://filecoin.io/blog/offline-data-transfer-for-large-scale-data/" />
+        <link rel="alternate" href="https://filecoin.io/blog/offline-data-transfer-for-large-scale-data/" hreflang="x-default">
+      
+      
+        
+        <link rel="alternate" href="https://filecoin.io/zh-cn/blog/offline-data-transfer-for-large-scale-data/" hreflang="zh-cn">
+      
+    
+
+    <meta name="description" content="Filecoin is designed to store the world’s most valuable information. Globally, we produce 2.5 quintillion bytes of data daily. While much of that data doesn’t need to be stored in perpetuity, some of it spans the most important information humans have ever created across the sciences, mathematics, arts, history, and humanities. " />
+    <meta name="author" content="Filecoin Project" />
+    <meta name="theme-color" content="#00C5CA"/>
+
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Filecoin is designed to store the world’s most valuable information. Globally, we produce 2.5 quintillion bytes of data daily. While much of that data doesn’t need to be stored in perpetuity, some of it spans the most important information humans have ever created across the sciences, mathematics, arts, history, and humanities. " />
+    <meta property="og:title" content="Offline Data Transfer for Large-Scale Data" />
+    <meta property="og:image" content="https://filecoin.io/vintage/images/blog/offline-data-transfer.png" />
+    <meta property="og:url" content="https://filecoin.io/blog/offline-data-transfer-for-large-scale-data/" />
+    <meta property="og:site_name" content="Filecoin" />
+    <meta property="og:locale" content="en">
+    
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="316" />
+
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="Filecoin" />
+    <meta name="twitter:title" content="Offline Data Transfer for Large-Scale Data" />
+    <meta name="twitter:creator" content="Filecoin Project" />
+    <meta name="twitter:description" content="Filecoin is designed to store the world’s most valuable information. Globally, we produce 2.5 quintillion bytes of data daily. While much of that data doesn’t need to be stored in perpetuity, some of it spans the most important information humans have ever created across the sciences, mathematics, arts, history, and humanities. " />
+    <meta name="twitter:domain" content="filecoin.io" />
+    <meta name="twitter:image:src" content="https://filecoin.io/vintage/images/blog/offline-data-transfer.png" />
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+<body class="section blog">
+  <header>
+    <nav class="navbar">
+  <div class="nav-items-left">
+    <a href="https://filecoin.io" class="nav-item">
+      <img class="logo" src="../../vintage/images/filecoin-logo.png" alt="filecoin logo" width="130">
+    </a>
+  </div>
+  <div class="nav-items-right">
+    <label class="menu-icon" for="menu-btn">☰</label>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <ul class="nav-items-right-inner">
+      <li class="nav-item">
+        <a href="https://filecoin.io/store">Store</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://filecoin.io/mine">Mine</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://filecoin.io/build">Build</a>
+      </li>
+      
+        
+        
+        
+        
+        <li class="nav-item">
+          <a href="../../blog/" >
+            Blog
+          </a>
+        </li>
+      
+      </ul>
+  </div>
+</nav>
+
+  </header>
+
+  <div class="wrapper section-single">
+
+    
+  <div class="translations">
+  <em>This page is also available in other languages:</em>
+  <ul>
+      
+      <li>
+          中文  (zh-cn): <a href="../../zh-cn/blog/offline-data-transfer-for-large-scale-data/">用于大型数据的离线数据传输</a>
+      </li>
+      
+  </ul>
+</div>
+
+
+
+    <div class="section-read-more">
+      <a href="../../blog/">← Back to the index</a>
+    </div>
+
+    <div class="date">June 8, 2020</div>
+    <h2 class="title">Offline Data Transfer for Large-Scale Data</h2>
+    
+      <div class="cover-img">
+        <img alt="Offline Data Transfer for Large-Scale Data" src="../../vintage/images/blog/offline-data-transfer.png">
+      </div>
+    
+
+    <div class="content">
+      <p>
+  
+
+</p>
+      
+
+<p><em>This is the first blog post in the new series highlighting features unique to the Filecoin protocol.</em></p>
+
+<p>Filecoin is designed to store the world’s most valuable information. Globally, we produce <a href="https://techstartups.com/2018/05/21/how-much-data-do-we-create-every-day-infographic/">2.5 quintillion bytes</a> of data daily. While much of that data doesn’t need to be stored in perpetuity, some of it spans the most important information humans have ever created across the sciences, mathematics, arts, history, and humanities.</p>
+
+<p>Filecoin is a blockchain-based marketplace for buying and selling decentralized storage. The blockchain mechanism offers secure storage assurance, and the cryptocurrency mechanism creates a dynamic marketplace.</p>
+
+<p>As we discussed in our <a href="../../vintage/blog/filecoin-cryptoeconomic-constructions/">cryptoeconomics constructions</a> blog post, sometimes when you’re dealing with huge troves of data, it’s difficult (expensive and time-consuming)  to transfer those files over the internet for safekeeping. For petabyte-scale datasets and larger, the most sensible solutions often involve shipping data on hard drives. The Filecoin protocol and project has tools and structures to support what’s known as offline data transfers.</p>
+
+<h2 id="when-to-consider-offline-data-transfer">When to consider offline data transfer</h2>
+
+<p>The two factors to consider when making the decision whether to transfer data online or off are <strong>expense</strong> and <strong>time.</strong></p>
+
+<p><strong><em>Expense:</em></strong> Think about storage programs like a network – as highways of data moving from one place to another. This movement can get very expensive very quickly. Imagine a huge archive of information, such as a museum or library, looking to upload, store, and safeguard its collection on the decentralized web (dweb). In order to do so, the organization can either stream their data over the internet or transfer it using a physical device.</p>
+
+<p>Using the internet to stream data, transfer costs can build very quickly. Transferring petabytes of data in today’s cloud services requires sending the data through multiple regions, incurring interconnection fees, and regional bandwidth fees, as well as additional costs if you choose to rent a dedicated line or account for the need for retries. For a rough sense of cost, just the bandwidth alone to transfer 2.5 petabytes of data would cost about $140,000 – and more if you’re moving this data across regions.</p>
+
+<p>These costs can add up for archives, museums, and other non-profit ventures. The <a href="https://www.vice.com/en_us/article/gvy7q3/how-do-you-back-up-the-museum-of-modern-art">Museum of Modern Art’s collection</a> is more than 90 terabytes and is projected to grow to 1.2 petabytes by 2025. The English-language Wikipedia contains more than <a href="https://en.wikipedia.org/wiki/Wikipedia:Size_of_Wikipedia">6 million</a> articles and over 3.6 billion words. <a href="http://opendata.cern.ch/">CERN’s Open Data</a> portal includes more than one petabyte of data on its particle physics experiments. London’s <a href="http://data.nhm.ac.uk/">Natural History Museum Data Portal</a> includes nearly 4 million historical specimens. The Electronic Records division of the National Archives holds <a href="https://www.archives.gov/era/about">500 terabytes</a> of data. These are massive troves of highly valuable data.</p>
+
+<p>Then, consider the cost of a hard drive itself – a physical medium to store and ship the data. A server-grade 8 TB drive costs about $200. To transfer 2.5 petabytes of data, for example, you would need roughly 315 hard drives, totaling approximately $63,000. While you might have slight additional per-unit costs for shipping, import fees, and currency exchange &ndash; you’re well below the cost of streaming the data over the internet!</p>
+
+<p><strong><em>Time:</em></strong> Now, let’s imagine that the National Archives wants to transfer its electronic records to another server. Transferring 500 TB of data at 100 Mbps would take <a href="https://techinternets.com/copy_calc?do">more than a year</a>. Transferring the same data with hard drives would take just the amount of time to download and ship – likely you’d be done within a week! Bottom line, it’s clear that in some cases, it’s more cost-effective <em>and</em> faster to physically ship data.</p>
+
+<h2 id="how-offline-data-transfer-works-with-filecoin">How offline data transfer works with Filecoin</h2>
+
+<p>With smaller data transfers, when a storage client wants to make a deal with a miner, they propose a deal to a miner to store “X” data for “Y” length of time. After the miner and the client negotiate a deal, they initiate transfer of the data from client to miner, typically over the network.</p>
+
+<p>Filecoin’s offline data transfer feature allows users with very large datasets to complete the data transfer step offline (e.g. by shipping hard drives from the client to the storage miner), and have the deal work as intended on-chain. It is implemented via a flag that tells the client <em>not</em> to transfer the data over the network. Instead, the client passes a piece CID (a unique identifier describing the data), which a miner must then match for the deal to go through. This gives the client node flexibility in how it can set up the deal – for example, passing miners a specific location on a hard drive for the data they can use to generate the piece CID.</p>
+
+<h2 id="how-the-filecoin-project-supports-offline-data-transfer">How the Filecoin Project supports offline data transfer</h2>
+
+<p>On May 7, we launched Filecoin Discover, a project that incentivizes early miners to order and store hard drives filled with valuable open-source data, and in exchange, earn additional Filecoin tokens. This is a way to help seed Filecoin as the home for humanity’s most important datasets and make it accessible to others, to grow our knowledge base and forge new ideas. Miners can choose hard drives and sign up for guaranteed contracts in the <a href="https://store.filecoin-discover.com/">Filecoin Discover store</a>, a catalog of petabytes of important public data (and growing!). Miners will then receive that data on a drive at cost. In exchange for storing this data, miners earn Filecoin.</p>
+
+<p>We received orders for more than 600 drives in the first 24 hours after the store opened, underscoring the excitement around this project.</p>
+
+<p>The key to program success for a project like Filecoin Discover is to drive down the cost of hardware. In April, Filecoin put out a <a href="https://github.com/filecoin-project/devgrants/pull/131#">request for proposal</a> for a storage device (similar to <a href="https://aws.amazon.com/snowball/">AWS Snowball</a>) to enable even faster offline data transfer.</p>
+
+<p>The goal with this RFP is to build an at-cost hard drive solution that’s redundant and secure. Miners could rent these devices for set periods in order to hold onto data transfers. Clients could load data onto these devices and miners offload it onto their own servers upon receipt.</p>
+
+<p>Offline deals can happen outside of the Discover program, too. Consider a submarine at sea collecting petabytes of information about underwater life in the Pacific. It likely makes more sense to mail those hard drives when the ship is back on land, rather than relying on online data transfer. Physical transport of large quantities of data will continue to play an important role in the dissemination of information as we work to decentralize the web. Looking ahead, Exabyte-scale data transfer (e.g. <a href="https://aws.amazon.com/snowmobile/#:~:text=AWS%20Snowmobile%20is%20an%20Exabyte,by%20a%20semi%2Dtrailer%20truck.&amp;text=Transferring%20data%20with%20Snowmobile%20is%20more%20secure%2C%20fast%20and%20cost%20effective.">AWS Snowmobile</a>) is the next step in this evolution for transferring massive amounts of data.</p>
+
+<p>Ultimately, solutions like offline data transfer will make Filecoin an even stronger alternative to traditional cloud storage platforms for storing data. Data storage is a real cost for almost every business in every sector. If the cost of storage falls, small businesses will save money – money that they can invest in hiring or R&amp;D.</p>
+
+<p>This is just one example of how the unique features of the Filecoin network will help businesses meet their storage needs in more efficient, secure, and affordable ways. In the coming weeks we’ll roll out more posts highlighting these features. We hope you’ll join us on this mission to decentralize storage and improve access to information.</p>
+
+    </div>
+
+    <div class="section-read-more">
+      <a href="../../blog/">← Back to the index</a>
+    </div>
+  </div>
+
+  <footer>
+  <div class="inner">
+    <div class="col">
+      Follow us at&nbsp;<a class="twitter" target="_blank" title="@Filecoin" href="https://twitter.com/Filecoin" rel="noopener">
+      @Filecoin
+      </a>
+    </div>
+  </div>
+</footer>
+<script src="../../vintage/js/main.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-52930282-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</body>
+</html>

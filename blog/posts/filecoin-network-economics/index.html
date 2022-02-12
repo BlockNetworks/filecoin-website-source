@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Filecoin Network Economics</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="Filecoin Network Economics"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/filecoin-network-economics/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/filecoin-network-economics-header.png?c=1644520358"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/filecoin-network-economics-header.png?c=1644520358"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/filecoin-network-economics-header.png">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/filecoin-network-economics/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520358">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/sms-header-1_hu28f8db27b346dcf77d19b5e8da43f86d_44361_667x0_resize_q90_linear_2.png 667w,../../../uploads/sms-header-1_hu28f8db27b346dcf77d19b5e8da43f86d_44361_1333x0_resize_q90_linear_2.png 1333w,../../../uploads/sms-header-1_hu28f8db27b346dcf77d19b5e8da43f86d_44361_2000x0_resize_q90_linear_2.png 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Dec 22, 2020</span><br />
+                    <h2 class="h title">Filecoin Network Economics</h2>
+                    
+
+<p>Earlier this month, ETH Global and Filecon hosted the Storage Market Summit (SMS). A portion of the day was dedicated to Filecoin Economy Deep Dives. Below are recaps, themes, and conclusions from different talks during this portion of the day.</p>
+
+<p>You can browse the <a href="https://sms.ethglobal.co/" target="_blank">agenda</a> and check out the <a href="https://www.youtube.com/watch?v=leJHrvz-YY8&amp;" target="_blank">full Collaborative Resource and Risk Management section here</a>.</p>
+
+<h2 id="filecoin-economy-deep-dives">Filecoin Economy Deep Dives</h2>
+
+<p><em>The following is a summary of the talk “Filecoin Economy Deep Dives”, given by ZX Zhang of Protocol Labs at SMS.</em> <a href="http://www.youtube.com/watch?v=leJHrvz-YY8#t=12m36s" target="_blank"><em>Watch the full recording here</em></a><em>.</em></p>
+
+<p>The Filecoin network is a complex ecosystem with many different actors. These include the clients, miners, and developers of Filecoin, as well as FIL token holders and ecosystem partners.</p>
+
+<p>The modern storage landscape leaves a lot to be desired. Reliable storage can be expensive; as a result, more data is created than actually stored, and the data that is stored is highly centralized, with the top five providers controlling nearly 77% of the cloud storage market. This creates an environment that makes it difficult for new entrants to gain a foothold in the ecosystem.</p>
+
+<p>Filecoin aims to build an open storage economy that addresses these issues, providing a platform that makes it more feasible for independent actors to compete and innovate in the face of established competition. Its network implements a complete storage and retrieval economy, serving as the basis for a variety of differentiated services.</p>
+
+<p>Every participant in the Filecoin ecosystem has a role to play, as well as a stake in its success. Actors are incentivized to both cooperate and compete in ways that maximize the network’s utility. These roles often overlap; for example, miners remain key contributors to development, and token holder investment in miners and developers is critical to ecosystem growth.</p>
+
+<p>The protocol underlying Filecoin pushes network participants toward behavior that is beneficial for the network. The mechanisms that reward and punish storage miners - actors on the Filecoin network that provide it with storage capacity - are a prime example of this.</p>
+
+<p>Anybody can create a storage miner, but miners are not eligible to earn rewards until they onboard a minimum amount of storage to the network. The onboarded storage operates as a proof of the network’s reliability and capacity, and the network would lose reputation if these storage commitments were easily broken. As such, miners that commit capacity to the network must pledge Filecoin tokens, called FIL, as collateral, which insures against the potential that a miner fails to uphold their pledge.</p>
+
+<p>In return for the risk they incur, storage miners become eligible for block rewards, which are paid out to storage miners in proportion to the amount of storage they provide to the network. Storage miners are also able to make collateralized deals with clients, who pay them FIL in exchange for storing specific data.</p>
+
+<p>The network also empowers clients through <a href="https://www.youtube.com/watch?v=-kxNpRiEd_c" target="_blank">Filecoin Plus</a>, a community-governed notary program that allows approved clients to make special storage deals. These deals carry a multiplier that makes them more valuable to the storage miners that win them, giving clients leverage.</p>
+
+<p>In addition to the storage economy, Filecoin implements all the building blocks necessary for retrieval services, providing the basis for a global content delivery network.</p>
+
+<p>The Filecoin mainnet is now eight weeks old, and experiencing immense growth, both in terms of new miners, and new applications that leverage the platform, targeting emerging business opportunities in both the Web2.0 and Web3 spaces.</p>
+
+<h2 id="filecoin-circulating-supply-mechanisms-and-scenario">Filecoin Circulating Supply: Mechanisms and Scenario</h2>
+
+<p><em>The following is a summary of the talk “Filecoin Circulating Supply”, given by ZX Zhang and Colin Evran of Protocol Labs at SMS.</em> <a href="https://www.youtube.com/watch?v=leJHrvz-YY8#t=34m" target="_blank"><em>Watch the full recording here</em></a><em>.</em></p>
+
+<p>Modeling the circulating supply of Filecoin tokens is non-trivial: the actual supply is determined by a number of interdependent factors, and any model must necessarily make assumptions about those factors. While any serious modeling should be done in close consultation with the Filecoin economy whitepaper, the Filecoin specification, and the Lotus implementation of Filecoin, we can offer a brief overview of the dominant modeling considerations.</p>
+
+<p>To start, it is important to highlight the difference between the <em>maximum</em> token supply and the <em>circulating</em> token supply. The maximum supply refers to all tokens that will ever be in existence, while circulating supply refers specifically to those tokens available for market transactions at any given point in time.</p>
+
+<p>Filecoin has a fixed maximum supply of two billion FIL; however, many of these tokens have not yet been released. Furthermore, unlike Bitcoin, these outstanding tokens are not tied to a fixed released schedule. Instead, their rate of distribution is tied to the overall utility of the Filecoin ecosystem.</p>
+
+<p>Outstanding tokens, released over time, constitute an inflow of tokens to the circulating supply. There are two sources of unreleased tokens: tokens used to eventually reward storage miners, and tokens owned by SAFT investors, which are vesting on variable timetables.</p>
+
+<p>Seventy percent of Filecoin’s total token supply (1.4 billion tokens) is allocated to reward miners. These tokens are separated into three categories: simple minting rewards (330M), baseline minting rewards (770M), and a mining reserve (300M). Simple minting rewards are time-based, released on a six-year half-life. Baseline minting rewards, however, are performance-based, and target growth in the storage capacity of the network. Block rewards earned by miners are also subject to vesting: while 25% of these rewards are made available immediately to improve miner cash flow, 75% percent rewards vest linearly over 180 days. The mining reserve is not yet scheduled to be released; it will be up to the community to decide how to best distribute these.</p>
+
+<p>There is also an <em>outflow</em> of tokens from the circulating supply. In Filecoin, this occurs when tokens are <em>locked</em>, such as when they are provided as collateral for a deal - Filecoin Plus deals, which offer miners ten times the block rewards, also require ten times the collateral. Outflow also occurs through network transaction fees, which see some tokens consumed to compensate for the computation and storage resources to put them on-chain.</p>
+
+<p>Consequently, modeling the circulating supply requires, at a minimum, making assumptions about the growth of the Filecoin network; the breakdown of network capacity into committed capacity, regular storage deals, and Filecoin Plus deals; and daily network transaction fees. Depending on these assumptions, estimates of the circulating supply can differ wildly!</p>
+
+<p>Above all else, it is important to note that the economic mechanisms in the Filecoin ecosystem align stakeholders to long-term participation and investment in the network. The most important goal for the community is to make the network as useful as possible, by increasing its use cases, improving its tooling and infrastructure, and helping it scale.</p>
+
+<h2 id="filecoin-economy-q-a">Filecoin Economy Q&amp;A</h2>
+
+<p><em>The following is a summary of the portion of SMS “Block 1 [Filecoin Economy Deep Dives] Q&amp;A” with Juan Benet, ZX Zhang, Colin Evran, and of Protocol Labs at SMS.</em> <a href="https://www.youtube.com/watch?v=leJHrvz-YY8#t=1h24m54s" target="_blank"><em>Watch the full recording here</em></a><em>.</em></p>
+
+<p><strong>The Filecoin ecosystem is large and thriving, but what is lacking for there to be more equilibrium and harmony? Where can people help to build out the ecosystem?</strong></p>
+
+<p>Filecoin is live, but the protocol right now is only on the base layer. There is a tremendous amount that can happen for new capabilities and services to be built on the protocol. In general, there are two broad categories of services that can be built on top of Filecoin. First, products to fastrack Web2 integration. Second, products to interact with Web3 systems.</p>
+
+<p><strong>Web2.</strong> Web2 in particular could benefit from financial services that allow the average user to interact with crypto. For most people to interact with Filecoin, a smooth experience is important. Discovery platforms are also critical for any thriving economy. We have to answer the question: how do demand and supply meet? And how do we support the reputation of the supply side? Lastly, there is a large opportunity for data services on top of the base protocol. For Web2 users, this also hinges on good UX.</p>
+
+<p><strong>Web3.</strong> For Web3 interaction, cross-chain integration with other smart contract systems is crucial. With that sort of integration, new products and services can be built; especially if we start thinking about how Filecoin can own and operate data for another network. There’s a tremendous amount of creativity for these ideas in particular.</p>
+
+<p>Overall, however, incredible developer tooling will prove especially game-changing by allowing more developers to use Filecoin. <a href="https://docs.textile.io/powergate/" target="_blank">Powergate</a> and <a href="https://fleek.co/" target="_blank">Fleek</a> have done incredible work, and there are many other implementations that can allow developers to join Filecoin and not necessarily need to know everything that’s under the hood.</p>
+
+<p>Storage Market Summit wrapped up on December 11, 2020. <a href="https://www.youtube.com/watch?v=leJHrvz-YY8" target="_blank">Watch the full recording on YouTube</a>.</p>
+
+<p><em>Disclaimers:</em></p>
+
+<ul>
+<li><em>Nothing in these presentations is investment advice.</em></li>
+<li><em>Any models shown in presentations are based on many assumptions, and should not be relied upon as the source of truth. Any estimates should not be relied upon and are for illustrative purposes only. You should build your own models based on the code and the Filecoin spec.</em></li>
+</ul>
+
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520358"></script>
+    <script src="../../../js/bundle.js?c=1644520358"></script>
+</body>
+</html>
+
+

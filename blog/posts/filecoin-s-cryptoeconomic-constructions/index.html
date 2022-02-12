@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Filecoin&#39;s cryptoeconomic constructions</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="Filecoin&#39;s cryptoeconomic constructions"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/filecoin-s-cryptoeconomic-constructions/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/cryptoeconomic-english-social.png?c=1644520372"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/cryptoeconomic-english-social.png?c=1644520372"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/cryptoeconomic-english-social.png">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/filecoin-s-cryptoeconomic-constructions/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520372">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/cryptoeconomic-main-header_huac828b5220eb12b903edef9434f9ef1e_2999621_667x0_resize_q90_linear_2.png 667w,../../../uploads/cryptoeconomic-main-header_huac828b5220eb12b903edef9434f9ef1e_2999621_1333x0_resize_q90_linear_2.png 1333w,../../../uploads/cryptoeconomic-main-header_huac828b5220eb12b903edef9434f9ef1e_2999621_2000x0_resize_q90_linear_2.png 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                            <li class="list-item"><a href="../../../blog/updates" class="anchor">updates</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Apr 24, 2020</span><br />
+                    <h2 class="h title">Filecoin&#39;s cryptoeconomic constructions</h2>
+                    
+
+<p>Public blockchains rely on a combination of cryptography and incentive structures that make a system work without centralized control. Cryptography makes some harmful actions practically impossible, while game theory discourages others. Analysis that focuses on this set of mechanisms is called <em>cryptoeconomics</em>. A properly-structured cryptoeconomic system can determine whether a network becomes valuable and self-sustaining or struggles to get off the ground.</p>
+
+<p>Filecoin’s mission is to create a decentralized, efficient and robust foundation for humanity’s information. To advance that mission, we’ve created a decentralized storage network that lets anyone in the world store or retrieve files. We hope Filecoin will make storage cheaper and more reliable by helping small players compete directly with well-known centralized services, providing a common interface for providers of all sizes, and greatly reducing migration and transaction costs.</p>
+
+<p>Today, we’re pleased to provide an overview of the cryptoeconomic structures that will allow Filecoin to create that foundation. Filecoin uses a combination of existing cryptoeconomic structures and many new ones to meet the network’s unique requirements. If you’re interested in Filecoin’s long-term success as a storage marketplace, you should find these mechanisms encouraging. While we’re still conducting extensive testing to finalize parameters, we’re excited to share these details on how the system works.</p>
+
+<p><img src="../../../uploads/cyptoeconomic-chart.png" alt="" /></p>
+
+<h3 id="an-overview-of-filecoin-s-economy">An overview of Filecoin’s economy</h3>
+
+<p>There are five main actors in the Filecoin economy:</p>
+
+<ul>
+<li>Clients, who store and retrieve data via applications.</li>
+<li>Developers, who develop applications on top of the protocol.</li>
+<li>Retrieval services, which deliver files to clients on demand.</li>
+<li>Storage miners, who store files and help maintain and update the Filecoin blockchain.</li>
+<li>Token holders, who make Filecoin a viable currency by using it as a store of value and as a medium of exchange.</li>
+</ul>
+
+<p><strong>Clients</strong>’ role in the Filecoin economy is straightforward, but critical: they use Filecoin tokens to pay for the storage and retrieval of files. Filecoin’s cryptoeconomic mechanisms are ultimately intended to support clients’ file storage and retrieval needs.</p>
+
+<p><strong>Developers</strong> are a bridge between clients and the Filecoin network. They build applications to improve clients’ access to Filecoin’s storage and retrieval markets.</p>
+
+<p><strong>Retrieval</strong> services serve as a content delivery network or caching layer to make sure files stored on Filecoin are efficiently available. Clients can use payment channels to pay for retrieval in tiny increments.</p>
+
+<p><strong>Storage</strong> miners earn Filecoin for their services in three main ways:</p>
+
+<ul>
+<li>Deal fees, which are direct payments from clients for storing data over time.</li>
+<li>Block rewards, which are payments made to storage miners by the Filecoin protocol in exchange for participation in Filecoin consensus (the process of maintaining and updating the blockchain) and providing reliable long-term storage.</li>
+<li>Network message transaction fees, which let users encourage miners to prioritize their transactions.</li>
+</ul>
+
+<p>Most of Filecoin’s cryptoeconomic constructions are intended to ensure that storage miners, and the Filecoin network itself, can reliably and sustainably meet clients’ needs.</p>
+
+<p><strong>Token holders</strong> provide a bridge between the Filecoin economy and other markets. They provide liquidity for miners and clients and make it easier to build real-world businesses on Filecoin.</p>
+
+<h2 id="cryptoeconomic-principles">Cryptoeconomic Principles</h2>
+
+<h3 id="block-reward-basics">Block reward basics</h3>
+
+<p>Filecoin storage miners receive block rewards based on their <a href="https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/power/power_state.go" target="_blank"><strong>storage power</strong></a>. Storage power is a measurement of how much useful storage a Filecoin storage miner is providing to the network. At a high level, miners gain storage power by accepting clients’ files, publicly promising to store them for some duration, and repeatedly proving that they’re actually storing them over time.</p>
+
+<p>Economically, you can think of storage power like hash rate in a proof of work blockchain like Bitcoin. A miner receives block rewards in proportion to her storage power against the total storage power provided by all miners. For example, a miner maintaining 1 PiB of storage power against a total network size of 100 PiB would, on average, win one percent of block rewards over time.</p>
+
+<h3 id="unique-filecoin-innovations-on-block-rewards">Unique Filecoin innovations on block rewards</h3>
+
+<p>Filecoin needs to be a reliable and sustainable protocol over long timeframes. In a traditional proof-of-work blockchain, it doesn’t matter much if a given miner goes offline for a short time (or forever), since any miner can fungibly add new blocks to the chain. Filecoin miners also provide non-fungible useful services to their clients, so clients need strong guarantees that each storage miner will continue operating. Filecoin therefore includes many mechanisms to make great quality of service an economically rational choice for storage miners, and to encourage storage miners to promote the long-term health of the network.</p>
+
+<h4 id="network-baselines">Network baselines</h4>
+
+<p>Many blockchains reward tokens based on a simple exponential decay model. Under this model, block rewards are highest in the beginning, and miner participation is the lowest, so mining generates many tokens per unit of work early in the network’s life, then rapidly tails off.</p>
+
+<p>Over many cryptoeconomic simulations, it became clear that the simple exponential decay model would encourage unhealthy short-term behavior around network launch. Specifically, it would push storage miners towards over-invest in hardware for the <a href="https://filecoin.io/blog/filecoin-testnet-mining/" target="_blank"><strong>sealing stage of mining</strong></a> to onboard storage as quickly as possible. Because Filecoin rewarded per unit of storage power would have been so much larger in the very early days of the network, we predicted that it would be profitable to exit the network after exhausting these early rewards, even if it resulted in losing client data. This would harm the network: clients would lose data and have less access to long-term storage, and miners would have few incentives to contribute to improving the network.</p>
+
+<p>To encourage consistent storage onboarding and investment in long-term storage, not just rapid sealing, Filecoin introduces the concept of a <a href="https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/reward/reward_state.go" target="_blank"><strong>network baseline</strong></a>. Instead of minting tokens based purely on elapsed time, block rewards instead scale up as total storage power on the network increases. This preserves the shape of the original exponential decay model, but softens it in the earliest days of the network. Once the network reaches a baseline, the cumulative block reward issued is identical to a simple exponential decay model, but at small network sizes, a portion of block rewards are deferred. The overall result is that Filecoin rewards to miners more closely match the utility they, and the network as a whole, provide to clients.</p>
+
+<h4 id="block-rewards-as-collateral">Block rewards as collateral</h4>
+
+<p>Storage miners add new data to the network in fixed amounts called <strong>sectors</strong>. When a storage miner adds a sector, she commits to storing it for a certain duration. This gives clients more certainty that stored data will be available for as long as it’s required.</p>
+
+<p>Under certain circumstances, miners might agree to a storage deal, then want to abandon it later as a result of increased costs or other market dynamics. Clients need reliable storage. A system where storage miners can freely or cheaply abandon files would drive clients away from Filecoin as a result of serious data loss and low quality of service.</p>
+
+<p>Filecoin miners work as partners with clients in a two-sided data marketplace. To make sure all the incentives in that partnership are correctly aligned, Filecoin penalizes miners that fail to store files for the promised duration. This penalty is enforced against a pool of Filecoin collateral called <a href="https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/miner/miner_state.go" target="_blank"><strong>locked funds</strong></a> that each storage miner provides. Locked funds consist of a small up-front amount of FIL, plus a chunk of tokens taken from the block rewards earned by the miner.</p>
+
+<p>If a miner goes offline for a day, she would lose a little from her locked funds; if the miner completely stops proving storage of the file, she could lose it all. If the miner successfully completes the full term of a storage contract, she can reclaim the full locked funds after a short lock-up period.</p>
+
+<p>Using block rewards to collateralize miners is another improvement gained from our cryptoeconomic simulations. Early models required miners to provide substantial up-front collateral for all their storage. However, this would have created a shortage of Filecoin around launch, when the total supply of tokens will be low and many miners will be attempting to join the network. By transferring some up-front costs to later block rewards, we were able to decrease the cost of entry for miners.</p>
+
+<h3 id="aligning-incentives-for-useful-data-storage">Aligning incentives for useful data storage</h3>
+
+<p>Filecoin clients and storage miners operate in a dynamic system. At any given time, it’s unlikely that the demand for storage will exactly match supply. Early Filecoin constructions forced storage miners to choose between two bad options: waiting for client deals to arrive (meaning miners’ hardware would sit idle), or storing non-useful data in pursuit of block rewards (which decreases the network’s ability to store useful data). Filecoin introduces several mechanisms to ensure that miners who store client’s data are also maximizing the tokens they earn.</p>
+
+<h4 id="committed-capacity">Committed Capacity</h4>
+
+<p>When a miner finds herself with no client data to store, she doesn’t have to let her hardware sit idle because of Filecoin’s <a href="https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/market/market_actor.go" target="_blank"><strong>committed capacity sectors</strong></a>, proven but empty sectors demonstrating that the miner is ready to provide storage to clients. Committed capacity sectors verify that the miner has space available for client data, but can be upgraded to store client data at any time. This mechanism mitigates the miners’ need to choose between block rewards and client data – she can store committed capacity sectors right away to begin earning block rewards, then upgrade them at any time to store client data in exchange for deal fees.</p>
+
+<h4 id="verified-datasets">Verified Datasets</h4>
+
+<p>Committed capacity sectors improve miners’ incentives to store client data, but they don’t solve the problem entirely. Storing real client files adds some operational overhead for storage miners. In certain circumstances – for example, if a miner values block rewards far more than deal fees – miners might still choose to ignore client data entirely and simply store their own self-generated data to increase their storage power as rapidly as possible in pursuit of block rewards. This would make Filecoin less useful and limit clients’ ability to store data on the network.</p>
+
+<p>Filecoin addresses this issue by introducing the concept of <a href="https://github.com/filecoin-project/specs-actors/blob/master/actors/builtin/verifreg/verified_registry_state.go" target="_blank"><strong>verified data</strong></a>. Sectors with verified data are awarded more storage power – and therefore more block rewards – than sectors without. This provides storage miners with an additional incentive to store client data.</p>
+
+<p>Verified data is data stored by <strong><em>verified clients</em></strong>, who in turn are certified by a decentralized network of <strong><em>verifiers</em></strong>. Verification is <strong>not</strong> intended to be scarce – it’s very easy to acquire for anyone with real data to store on Filecoin. Even though verifiers may allocate verified data permissively to make onboarding easier, the overall effect should be to dramatically increase the proportion of useful data stored on Filecoin.</p>
+
+<h3 id="demand-drivers">Demand Drivers</h3>
+
+<p>A decentralized storage network that lets anyone in the world store or retrieve files is an amazing tool. However, the Filecoin network is only useful to the world if there are applications built on top of it. The good news is that there are already many amazing applications already being built on Filecoin, with even more to come between now and mainnet launch.</p>
+
+<h4 id="reliability">Reliability</h4>
+
+<p>Filecoin is set up from day one to store the world’s most important data reliably and efficiently. To enhance reliability, the protocol gives clients unlimited flexibility to store redundant copies of files with different miners, and to verify that unique copies are actually being stored. Unlike centralized cloud storage services, which back up data in ways clients can’t change or verify, Filecoin allows clients to easily express their own preferences for reliability and cost.</p>
+
+<h4 id="efficiency">Efficiency</h4>
+
+<p>Filecoin’s offline data transfer mechanism is another example of the protocol’s support for diverse client needs. Many datasets are so large that transferring them over the internet is slow and expensive. For example, if you stored the 2.5 petabyte <a href="https://www.usgs.gov/land-resources/nli/landsat/landsat-data-access?qt-science_support_page_related_con=0#qt-science_support_page_related_con" target="_blank">Landsat 8 open source geoimaging dataset</a> on a centralized cloud, transferring it over the internet would take <a href="https://www.wolframalpha.com/input/?i=2.5+petabytes+divided+by+1+gigabit+per+second" target="_blank">more than seven months</a> on a dedicated gigabit line and <a href="https://www.wolframalpha.com/input/?i=USD+0.05+per+gigabyte+times+2.5+petabytes" target="_blank">cost $125,000</a>. Filecoin’s <a href="https://github.com/filecoin-project/lotus/pull/1242" target="_blank">offline deal protocol</a> allows you to store your large data on hard drives, ship the drives to miners, and then continuously verify that the files are being safely stored.</p>
+
+<p>As Filecoin’s mainnet launch approaches, you can expect to hear much more about applications that are already using the network’s unique features to store huge quantities of critical data.</p>
+
+<h2 id="a-solid-foundation-for-filecoin-s-mainnet-launch">A solid foundation for Filecoin’s mainnet launch</h2>
+
+<p>Filecoin’s cryptoeconomics are designed to ensure that the network can support the long-term needs of its clients. After thousands of hours of discussion, modeling, and experiments, we’re confident that these mechanisms will provide a solid foundation for Filecoin’s mainnet launch. The final result of these efforts, along with the incredible work of Filecoin’s research and engineering teams, will be a public blockchain powered by useful work, a reliable cloud storage service, and a thriving decentralized economy.</p>
+
+<p>Over the coming weeks, we’ll be conducting our final rounds of simulation and modeling to determine final cryptoeconomic parameters. We look forward to independent analyses from other groups, and to the community’s contributions to make the Filecoin network even more useful and valuable for the world.</p>
+
+                </div>
+            </div>
+
+            
+            <div class="div related-articles">
+                <div class="div grid">
+                    <div class="div label"><h3 class="h type-base">Related Articles</h3></div>
+                    <div class="div overview-link"><a class="anchor type-base" href="../../../blog">View all articles</a></div>
+                </div>
+                <div class="div grid">
+
+                    <div class="div Carousel" data-setting-mobile="true">
+                        <div class="div carousel-container">
+                            <div class="div carousel-items">
+                                <div class="div unit-cols-3">
+                                    
+                                    <div class="div carousel-item article-1">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/announcing-filecoin-s-testnet-incentives/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/testnet-incentives-main-header_hua098e4a5818c2f28d9bfb362e497977e_543436_500x0_resize_q90_linear_2.png 500w,../../../uploads/testnet-incentives-main-header_hua098e4a5818c2f28d9bfb362e497977e_543436_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/testnet-incentives-main-header_hua098e4a5818c2f28d9bfb362e497977e_543436_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/announcing-filecoin-s-testnet-incentives/" class="anchor">
+                Announcing Filecoin&#39;s Testnet incentives
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">After years of research and development, Filecoin’s mainnet launch is within sight. Today, we’re announcing Filecoin’s testnet incentives program and inviting miners all over the world to compete to earn global and regional pools totaling up to 4 million Filecoin tokens.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Jun 9, 2020
+            
+        </p>
+
+        
+        <a href="../../../blog/posts/announcing-filecoin-s-testnet-incentives/" class="anchor extra-cta icon icon-arrow--white">
+            <span></span>
+        </a>
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-2">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper image--dimmed">
+        <a href="../../../blog/posts/filecoin-features-verifiable-storage/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/fc-discover-main-header_hua098e4a5818c2f28d9bfb362e497977e_543436_500x0_resize_q90_linear_2.png 500w,../../../uploads/fc-discover-main-header_hua098e4a5818c2f28d9bfb362e497977e_543436_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/fc-discover-main-header_hua098e4a5818c2f28d9bfb362e497977e_543436_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/filecoin-features-verifiable-storage/" class="anchor">
+                Filecoin features: verifiable storage
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">With Filecoin, miners’ storage is publicly audited. In other words, our storage proofs give every user of the Filecoin network assurance that all miners are storing data exactly as promised.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Jun 29, 2020
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-3">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/filecoin-testnet-mining/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/testnet-mining-main-header_hub07133c20ea7ab6511ed9b3cb318f18c_689429_500x0_resize_q90_linear_2.png 500w,../../../uploads/testnet-mining-main-header_hub07133c20ea7ab6511ed9b3cb318f18c_689429_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/testnet-mining-main-header_hub07133c20ea7ab6511ed9b3cb318f18c_689429_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/filecoin-testnet-mining/" class="anchor">
+                Filecoin Testnet mining
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">Becoming a Filecoin miner is an opportunity for community members to help store and preserve access to humanity’s most important information. By providing network security and infrastructure, Filecoin miners help build a more open, resilient, and trustworthy Internet.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Dec 10, 2019
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="div nav-dots"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520384"></script>
+    <script src="../../../js/bundle.js?c=1644520384"></script>
+</body>
+</html>
+
+

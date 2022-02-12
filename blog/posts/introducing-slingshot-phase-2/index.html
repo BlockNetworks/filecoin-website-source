@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Introducing Slingshot Phase 2</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="Introducing Slingshot Phase 2"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/introducing-slingshot-phase-2/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/slingshot-phase-2.png?c=1644520397"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/slingshot-phase-2.png?c=1644520397"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/slingshot-phase-2.png">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/introducing-slingshot-phase-2/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520397">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/slingshot-phase-2-1_hu72f78ca5a9dac337618c197266ef65b2_160992_667x0_resize_q90_linear_2.png 667w,../../../uploads/slingshot-phase-2-1_hu72f78ca5a9dac337618c197266ef65b2_160992_1333x0_resize_q90_linear_2.png 1333w,../../../uploads/slingshot-phase-2-1_hu72f78ca5a9dac337618c197266ef65b2_160992_2000x0_resize_q90_linear_2.png 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono"> Nov 9, 2020</span><br />
+                    <h2 class="h title">Introducing Slingshot Phase 2</h2>
+                    
+
+<p><a href="https://slingshot.filecoin.io/" target="_blank">Slingshot</a> is a community competition for storage clients and developers that rewards the storage of real, valuable, and usable data on the Filecoin network. Phase 1 of the Slingshot competition ran for four weeks. In that time, the Filecoin storage client and developer communities passed several important milestones, including:</p>
+
+<ul>
+<li>More than 730 TiB data stored across more than 450,000 storage deals to unlock a 50,000FIL prize pool</li>
+<li><a href="https://slingshot.filecoin.io/events/" target="_blank">15 events</a> where speakers shared lessons and insights into developer tooling and how to navigate Filecoin as a storage client</li>
+<li>And more! You can read all about Slingshot Phase 1 in our <a href="https://filecoin.io/blog/slingshot-phase-1-recap/" target="_blank">recap blog post</a></li>
+</ul>
+
+<p>In this blog post, we are introducing Phase 2 of the Slingshot competition. If you are interested in earning FIL rewards for storing valuable data on the Filecoin network, Slingshot is for you!</p>
+
+<h1 id="introducing-slingshot-phase-2">Introducing Slingshot Phase 2</h1>
+
+<p>Slingshot Phase 2 is a community competition that rewards the storage of valuable data onto the Filecoin network. In Phase 2, we are looking for <strong>teams that are excited to preserve public, open-access datasets on the Filecoin network.</strong></p>
+
+<p>Slingshot has the following goals:</p>
+
+<ul>
+<li><strong>Preserve humanity’s most important datasets on the Filecoin network.</strong> It has always been Filecoin’s mission to serve as the foundation for humanity’s information. With Slingshot, we are really excited to work with teams who are energized by that same mission so that, together, we can make this vision a reality! This includes telemetry and imaging datasets, historical archives, Creative Commons-licensed media and entertainment datasets, scientific research papers, and more! We currently plan to continue this competition until we hit 10PiB of valuable data stored on the network.</li>
+<li><strong>Make these important datasets accessible and explorable by anyone in the world.</strong> Storing important datasets to the Filecoin network is a crucial step, but we also want people around the world to be able to access this data, explore it, and potentially use it for their own projects! All participants must store their data in such a way that it can be reused by others, and must provide public-facing documentation that shows exactly how to use the data that has been stored. We provide more specific documentation steps in the rules below.</li>
+<li><strong>Strengthen the Filecoin storage client and developer experience.</strong> As you participate in this competition, you’ll discover ways to improve the overall Filecoin storage client and developer experience. Your feedback is extremely valuable, and we’re excited to improve the Filecoin product experience with you!</li>
+<li><strong>Have fun and build our developer and client communities!</strong> We will have numerous opportunities for community members to connect, showcase their projects, and share insights with one another over the next few months. If you have an idea for a meetup or event, let us know by filing an <a href="https://github.com/filecoin-project/slingshot" target="_blank">issue in the Slingshot repo</a>!</li>
+</ul>
+
+<h1 id="how-to-participate-in-slingshot-phase-2">How to Participate in Slingshot Phase 2</h1>
+
+<p>In this competition, participants are rewarded for storing <a href="https://github.com/filecoin-project/slingshot/blob/master/datasets.md" target="_blank">curated datasets</a> (i.e. public datasets approved for storage in this competition) in well-documented, thoughtful, and reusable ways.</p>
+
+<p>Slingshot Phase 2 is a very different competition from Slingshot Phase 1. If you are participating in Phase 2, please read this section carefully!</p>
+
+<p>To participate in Slingshot Phase 2, you must store one of the <a href="https://github.com/filecoin-project/slingshot/blob/master/datasets.md" target="_blank">curated datasets</a> that are listed on the Slingshot GitHub repo. Once you have made your dataset choice and determined a plan for storing this data, you can register to participate in the competition on the Slingshot website: <a href="https://slingshot.filecoin.io" title="https://slingshot.filecoin.io" target="_blank">https://slingshot.filecoin.io</a>. Then, continue storing valuable data to earn more rewards.</p>
+
+<p>To be eligible for rewards in this competition, you must follow the Competition Rules:</p>
+
+<ul>
+<li>Your project must be storing an approved <a href="https://github.com/filecoin-project/slingshot/blob/master/datasets.md" target="_blank">curated dataset</a> to Filecoin. If you would like to store a dataset that is not on this list, please submit a PR to the <a href="https://github.com/filecoin-project/slingshot" target="_blank">filecoin-project/slingshot GitHub repo</a>. Encrypted data will not count for rewards.</li>
+<li>No more than 30% of your total data can be stored with any one miner. This means that your project must be storing data with 4+ miners, but also that your data cannot be overly centralized to any one individual miner.</li>
+<li>You cannot store any data with your own miner. Data that is stored with your own miner will not be counted for final rewards. This may also be grounds for disqualification. You are allowed to store up to 10 replicas of the same piece of data on the network. If you store more than 10 copies of the same piece of data, we will not count the additional copies in the final rewards. If you store many more than 10 copies of the same piece of data, we may disqualify your team.</li>
+<li>Every data piece you store to the Filecoin network must be retrievable by others. This means you must place some care and thought into how you will be storing your dataset so that it can be retrieved by others. We will be scoring projects on the reusability and retrievability of the data from Filecoin, and adjusting rewards for teams that do not have retrievable data.</li>
+<li>In order to be eligible for rewards, you will need to submit and publish data processing and retrieval <strong>documentation</strong> through your account on the Slingshot website. We will also judge the quality of your documentation as part of the final review process. The documentation must include:
+
+<ul>
+<li>Which curated dataset you are storing and a link to the dataset.</li>
+<li>Exact steps on how you processed the curated dataset and stored it to Filecoin.</li>
+<li>Links to any tools that you used for pre-processing.</li>
+<li>Exact steps for another person to retrieve, view, and use any of the stored data.</li>
+</ul></li>
+<li>In order to be eligible for rewards, you must submit a list of your successful deals that you have made on the Filecoin network. You can submit this list as a CSV upload to your account on the Slingshot website. Please submit this list as a text-based CSV that includes the 8 columns listed below, with the same names and order (example in Google sheets <a href="https://docs.google.com/spreadsheets/d/1qQzAvrJAtqukWKfGEaBgN5KKmd-KJmMXAA-gk-E4CEw/edit#gid=0" target="_blank">here</a>, CSV example <a href="https://github.com/filecoin-project/slingshot/blob/master/cid_list.csv" target="_blank">here</a>). Incomplete or incorrect lists may lead to disqualification, so please make sure to start preparing these lists as soon as possible. These lists may also be used by other participants in the Slingshot Phase 2 competition to build hacks on top of, so the deal lists must be usable by others.
+
+<ul>
+<li><strong>deal_id</strong>: This is an integer uniquely identifying a deal on the Filecoin network. There may not be multiple rows with the same deal ID in your list submission. The deal ID must be findable on-chain (via <code>lotus state get-deal &lt;deal_id&gt;</code>).</li>
+<li><strong>miner_id</strong>: The id of form <code>f0XXXX</code> of the miner storing this particular deal.</li>
+<li><strong>payload_cid</strong>: The CID of the root of the DAG representing either the file or the directory contained in this deal. This is the CID you gave to <code>lotus client deal</code> if you are using Lotus.</li>
+<li><strong>filename</strong>: The human-readable filename of the resulting content (with any appropriate file extensions).</li>
+<li><strong>file_format</strong>: The data format (either mime-type or extension) for how a file recipient should interpret the data.</li>
+<li><strong>deal_size_in_bytes</strong>: The size of the deal in bytes.</li>
+<li><strong>date</strong>: The timestamp for when the deal was transacted in the following format (YYYY-MM-dd HH:mm).</li>
+<li><strong>curated_dataset</strong>: The name of the curated dataset you are storing (from <a href="https://github.com/filecoin-project/slingshot/blob/master/datasets.md" target="_blank">this list</a>).</li>
+</ul></li>
+</ul>
+
+<p>If you have questions at any point in the competition, check out:</p>
+
+<ul>
+<li><strong>Slingshot website</strong>: <a href="https://slingshot.filecoin.io" title="https://slingshot.filecoin.io" target="_blank">https://slingshot.filecoin.io</a>. This website is the source of truth for the entire Filecoin competition. It includes the most up-to-date rules, the competition leaderboard, events, and more!</li>
+<li><strong>Slingshot repo</strong>: <a href="https://slingshot.filecoin.io" title="https://slingshot.filecoin.io" target="_blank">https://github.com/filecoin-project/slingshot</a>. This repo contains important resources for the competition, such as the <a href="https://github.com/filecoin-project/slingshot/blob/master/datasets.md" target="_blank">datasets</a> that you can choose to store for the competition. You can create a new <a href="https://github.com/filecoin-project/slingshot/discussions" target="_blank">Slingshot Discussion</a> to ask any questions about the program.</li>
+<li><strong>Slack</strong>: If you haven’t already, please join the <a href="https://filecoin.io/slack" target="_blank">Filecoin Project Slack workspace</a> and these channels:
+
+<ul>
+<li><strong>#slingshot-announcements</strong> – For major announcements about the Slingshot program</li>
+<li><strong>#slingshot</strong> – For debugging help and community conversations</li>
+</ul></li>
+</ul>
+
+<h1 id="rewards">Rewards</h1>
+
+<p>We are excited to announce that Slingshot Phase 2 will distribute at least 500,000 FIL in rewards! This is in addition to the 50,000 FIL that will be distributed for Slingshot Phase 1.</p>
+
+<h2 id="storage-rewards">Storage Rewards</h2>
+
+<p>Slingshot reward pools are collaborative and competitive. The more data is stored to the network by Slingshot participants, the more reward pools you will unlock!</p>
+
+<table>
+<thead>
+<tr>
+<th>Total Data Onboarded by Slingshot Participants</th>
+<th>Reward Pool Unlocked for this Storage Tier (FIL)</th>
+<th>Cumulative Reward Pool (FIL)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>500TiB (Phase 1)</td>
+<td>-</td>
+<td>50,000</td>
+</tr>
+
+<tr>
+<td>1PiB</td>
+<td>50,000</td>
+<td>100,000</td>
+</tr>
+
+<tr>
+<td>1.5PiB</td>
+<td>25,000</td>
+<td>125,000</td>
+</tr>
+
+<tr>
+<td>2PiB</td>
+<td>25,000</td>
+<td>150,000</td>
+</tr>
+
+<tr>
+<td>2.5PiB</td>
+<td>25,000</td>
+<td>175,000</td>
+</tr>
+
+<tr>
+<td>3PiB</td>
+<td>25,000</td>
+<td>200,000</td>
+</tr>
+
+<tr>
+<td>More to be announced</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Storage Rewards are distributed every month in which a storage tier has been unlocked. Our plan is to continue this competition for the next several months. We think it would be a lot nicer if we were able to give out rewards on a monthly basis instead of having to wait until the very end of the competition! As a result, we have monthly reward windows that we will use to determine final rewards distribution for the month. All deadlines below are at 1800 UTC.</p>
+
+<table>
+<thead>
+<tr>
+<th>Reward Deadline: We will take a snapshot of the competition at this point to determine rankings/data stored. If no prize pools have been unlocked by this date, we will not distribute any rewards in this reward period.</th>
+<th>Material Submission Deadline: This is the deadline to submit additional materials, e.g. CID lists and documentation. Participants will submit this information through the Slingshot website.</th>
+<th>Judging Period: Community Reviewers will review all projects during this period, and determine valid data stored and final rewards.</th>
+<th>Winners Announced: Final rewards are determined and winners are announced. Rewards will be distributed within 1-2 weeks after this date and all rewards vest over 6 months from distribution date.</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Dec 9, 2020</td>
+<td>Dec 11, 2020</td>
+<td>Dec 14-16, 2020</td>
+<td>Dec 18, 2020</td>
+</tr>
+
+<tr>
+<td>Jan 27, 2021</td>
+<td>Jan 29, 2021</td>
+<td>Feb 1-3, 2021</td>
+<td>Feb 5, 2021</td>
+</tr>
+
+<tr>
+<td>Mar 10, 2021</td>
+<td>Mar 12, 2021</td>
+<td>Mar 15-17, 2021</td>
+<td>Mar 19, 2021</td>
+</tr>
+
+<tr>
+<td>More to be announced</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Storage Rewards will be <strong>distributed proportionally</strong> based on the amount of <strong>new valid data</strong> that Slingshot participants have stored in the reward window. The amount of valid data might be different than the total data you have stored, after accounting for too many redundant copies, unretrievable data, datasets that don’t match the curated dataset list, poor documentation, if you have lots of unretrievable data, and more. Some teams may be outright disqualified for not following the rules, so make sure you follow the rules please!</p>
+
+<h2 id="booster-rewards">Booster Rewards</h2>
+
+<p>In addition, we will be offering <strong>Booster Prizes</strong> in Slingshot Phase 2! If you follow the rules and store more than 50GiB of <strong>new data</strong> in the reward window, you will receive a 10FIL Booster Prize.</p>
+
+<p>Other prizes may become available over time as well!</p>
+
+<p>Note: All rewards earned will vest linearly over six months from mainnet launch. Additionally, while we don’t expect it, in the unlikely event that Protocol Labs or the Filecoin Foundation determine in their sole discretion that legal or regulatory issues prevent the delivery of any portion of rewards, the rewards may be restructured, postponed, or cancelled.</p>
+
+<h1 id="thank-you">Thank you!</h1>
+
+<p>We are excited to continue the Slingshot competition with familiar Phase 1 participants and new faces alike! Your efforts will greatly contribute to continue to grow the amount of real data stored on humanity’s largest decentralized storage network. Thank you to the Filecoin storage client, developer, and mining communities. Onward to Slingshot Phase 2!</p>
+
+                </div>
+            </div>
+
+            
+            <div class="div related-articles">
+                <div class="div grid">
+                    <div class="div label"><h3 class="h type-base">Related Articles</h3></div>
+                    <div class="div overview-link"><a class="anchor type-base" href="../../../blog">View all articles</a></div>
+                </div>
+                <div class="div grid">
+
+                    <div class="div Carousel" data-setting-mobile="true">
+                        <div class="div carousel-container">
+                            <div class="div carousel-items">
+                                <div class="div unit-cols-3">
+                                    
+                                    <div class="div carousel-item article-1">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/slingshot-phase-1-recap/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/slingshot-phase-1-recap-3_hu76c72094e629e890a2fd444c5c268acc_94176_500x0_resize_q90_linear.jpg 500w,../../../uploads/slingshot-phase-1-recap-3_hu76c72094e629e890a2fd444c5c268acc_94176_1000x0_resize_q90_linear.jpg 1000w,../../../uploads/slingshot-phase-1-recap-3_hu76c72094e629e890a2fd444c5c268acc_94176_1500x0_resize_q90_linear.jpg 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/slingshot-phase-1-recap/" class="anchor">
+                Slingshot Phase 1 Recap
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">Phase 1 of Space Race 2: Slingshot is in the books! Slingshot is a two-part community competition for storage clients and developers that rewards the storage of real, valuable, and usable data onto the Filecoin network. The goal is to onboard 10PiB of valuable data to the Filecoin network. Teams are rewarded for storing more useful data, as well as building interesting, novel, and functional user interfaces (UIs) or applications associated with the data they store.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Nov 5, 2020
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-2">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/slingshot-week-one-recap/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/slingshot-week-one-header_hu2326385f7b146d34277f3c8bc8b4eeed_227824_500x0_resize_q90_linear_2.png 500w,../../../uploads/slingshot-week-one-header_hu2326385f7b146d34277f3c8bc8b4eeed_227824_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/slingshot-week-one-header_hu2326385f7b146d34277f3c8bc8b4eeed_227824_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/slingshot-week-one-recap/" class="anchor">
+                Slingshot Week One Recap
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">It’s been an exciting week with the kickoff of Filecoin Slingshot, a two-part competition for storage clients and developers to deploy their products to the testnet.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Sep 25, 2020
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                </div>
+                            </div>
+                            <div class="div nav-dots"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520406"></script>
+    <script src="../../../js/bundle.js?c=1644520406"></script>
+</body>
+</html>
+
+

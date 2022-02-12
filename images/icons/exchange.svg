@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+  <defs>
+    <linearGradient id="exchange-a" x1="0%" x2="100%" y1="-8.357%" y2="100%">
+      <stop offset="0%" stop-color="#39C1CB"/>
+      <stop offset="100%" stop-color="#006FEC"/>
+    </linearGradient>
+    <linearGradient id="exchange-b" x1="87.148%" x2="15.394%" y1="91.036%" y2="4.506%">
+      <stop offset="0%" stop-color="#39C1CB" stop-opacity=".99"/>
+      <stop offset="100%" stop-color="#006FEC"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+    <circle cx="25" cy="25" r="25" stroke="url(#exchange-a)" stroke-width="2"/>
+    <path fill="url(#exchange-b)" d="M7.452 18.097v2.661h3.193v6.387H7.452v2.661L0 23.952l7.452-5.855zm14.37-2.662a6.92 6.92 0 1 1 .001 13.839 6.92 6.92 0 0 1 0-13.839zm3.194 2.13a2.95 2.95 0 0 0-2.894 2.403l-.027.175-.077.615h-1.26v1.064h1.127l-.133 1.065h-1.526v1.065h1.393l-.06.483a1.882 1.882 0 0 1-1.71 1.64l-.155.006v1.064a2.95 2.95 0 0 0 2.893-2.404l.028-.174.076-.615h.728v-1.065h-.595l.133-1.065h.995v-1.064h-.862l.061-.483a1.882 1.882 0 0 1 1.709-1.64l.156-.006v-1.065zM1.086 4.597L7.172 7.64l1.344.671v8.696l-7.451-4.302.022-8.108zm14.879.522l-.02 7.585-6.364 3.698v-8.09l6.384-3.193zm6.39-3.524l7.451 5.855L22.743 13l-.388.305v-2.661H19.16V4.258h3.194V1.596zM8.504 0l7.279 4.02-6.735 3.37-7.293-3.648L8.504 0z" transform="translate(10 10)"/>
+  </g>
+</svg>

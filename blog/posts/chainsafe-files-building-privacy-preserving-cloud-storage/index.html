@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ChainSafe Files — Building Privacy-preserving Cloud Storage</title>
+
+	
+
+	
+	<meta name="author" content="Filecoin">
+	<meta property="og:title" content="ChainSafe Files — Building Privacy-preserving Cloud Storage"/>
+	<meta property="og:site_name" content="Filecoin"/>
+	<meta property="og:url" content="https://filecoin.io/blog/posts/chainsafe-files-building-privacy-preserving-cloud-storage/"/>
+	<meta property="og:type" content="website"/>
+	<meta name="twitter:card" content="summary_large_image">
+
+	
+  
+	
+
+	
+	<meta property="og:image" content="https://filecoin.io/uploads/chainsafe-files.jpg?c=1644520295"/>
+	<meta name="twitter:image" content="https://filecoin.io/uploads/chainsafe-files.jpg?c=1644520295"/>
+	<link rel="image_src" href="https://filecoin.io/uploads/chainsafe-files.jpg">
+	
+
+	<link rel="canonical" href="https://filecoin.io/blog/posts/chainsafe-files-building-privacy-preserving-cloud-storage/">
+
+	
+	<link rel="apple-touch-icon" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="../../../images/favicons/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicons/favicon-16x16.png">
+
+	
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MS25MX2');</script>
+	
+
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52930282-1', {
+			'storage': 'none'
+		});
+
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+	
+
+	<link rel="stylesheet" href="../../../css/site.css?c=1644520295">
+
+	
+</head>
+<body class="body">
+
+	
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MS25MX2"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+  
+	
+
+
+<header class="nav-header header ">
+
+  <div class="div logo">
+    <span data-slug="/">
+      <a class="anchor" href="../../../">
+        <img class="image" src="../../../images/filecoin-logo.svg" alt="Filecoin">
+      </a>
+    </span>
+  </div>
+
+  <button class="button nav-handle" aria-label="toggle navigation">
+    <div class="div hamburger hamburger--squeeze">
+      <div class="div hamburger-box">
+        <div class="div hamburger-inner"></div>
+      </div>
+    </div>
+  </button>
+
+  <div class="div navigation-container">
+
+    <div class="div navigation">
+      <div class="div grid">
+
+        <nav class="main-nav Accordion">
+          <ul class="list main-items">
+            
+              
+                
+                <li class="list-item" data-slug="/store/">
+                  <a class="anchor" href="../../../store/"   >Store</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/provide/">
+                  <a class="anchor" href="../../../provide/"   >Provide</a>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/build/">
+                  <a class="anchor" href="../../../build/"   >Build</a>
+                  
+                  <button class="button main-item" aria-label="accordion item"></button>
+                  <div class="div submenu">
+                    <div class="div inner-dropdown">
+                      <div class="div triangle"></div>
+                      <ul class="list sub-items">
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="benefits-banner" aria-label="sub navigation">Docs</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="tools-and-more" aria-label="sub navigation">Tools &amp; services</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="grants" aria-label="sub navigation">Grants</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="usp" aria-label="sub navigation">Roadmap</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="videos" aria-label="sub navigation">Videos</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="community" aria-label="sub navigation">Filecoin Community</button>
+                        </li>
+                        
+                        <li class="list-item sub-item">
+                          <button class="button" data-anchor="events" aria-label="sub navigation">Events</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </li>
+              
+                
+                <li class="list-item" data-slug="/blog/">
+                  <a class="anchor" href="../../../blog/"   >Blog</a>
+                  
+                </li>
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="div sub-container">
+      <nav class="sub">
+        <div class="community-nav">
+          <div class="selected">
+            <button class="button" aria-label="change community-nav">
+              <span>Explore the Network</span>
+            </button>
+          </div>
+
+          <div class="dropdown">
+            <div class="inner-dropdown">
+              <ul class="list">
+                
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filfox.info/en">Filfox.info</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscan.io/#/tipset/chain">Filscan.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://filscout.io/en/">Filscout.io</a>
+                </li>
+                
+                
+                <li class="list-item">
+                  <a class="anchor" target="_blank" rel="noreferrer" href="https://spacegap.github.io">Spacegap</a>
+                </li>
+                
+                
+                <li class="list-item"><a class="list-note anchor">These explorers were built by community members and may have inaccuracies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="languages">
+        <div class="selected">
+          
+          
+          
+          <span data-slug="en/">
+            <a class="anchor" href="../../../en" data-anchor="en/"  class="active-lang" >
+              EN
+            </a>
+          </span>
+          
+          
+          <span data-slug="zh-cn/">
+            <a class="anchor" href="../../../zh-cn" data-anchor="zh-cn/" >
+              中文
+            </a>
+          </span>
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="div background">
+    <div class="div light"></div>
+    <div class="div dark"></div>
+    <div class="div gray-light"></div>
+    <div class="div gray-dark"></div>
+    <div class="div blue"></div>
+    <div class="div transparent"></div>
+  </div>
+
+</header>
+
+    <div class="div sections">
+        
+<main class="main blog-single">
+
+    
+
+    <section class="section mode-light">
+        <div class="div section-wrapper">
+            <div class="div media-wrapper">
+                <div class="div container">
+                    <div class="div media">
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/chainsafe-files-1_hu044f1ac2f4fa61d03c86cb8dab837f2a_96510_667x0_resize_q90_linear.jpg 667w,../../../uploads/chainsafe-files-1_hu044f1ac2f4fa61d03c86cb8dab837f2a_96510_1333x0_resize_q90_linear.jpg 1333w,../../../uploads/chainsafe-files-1_hu044f1ac2f4fa61d03c86cb8dab837f2a_96510_2000x0_resize_q90_linear.jpg 2000w" alt=""/>
+        
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="div grid">
+                <div class="div metadata desktop grid">
+                    <div class="div categories">
+                        <div class="div label">Category:</div>
+                        <ul class="list categories__items">
+                            
+                            <li class="list-item"><a href="../../../blog/updates" class="anchor">updates</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="div share">
+                        <ul class="list networks">
+                            <li class="list-item icon">
+                                <button class="button facebook" aria-label="facebook share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M19.841 17.925l.363-2.39h-2.27v-1.549c0-.653.317-1.29 1.334-1.29H20.3V10.66s-.937-.161-1.832-.161c-1.87 0-3.09 1.144-3.09 3.215v1.82H13.3v2.39h2.078V23.7a8.152 8.152 0 002.557 0v-5.775h1.906z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button twitter" aria-label="twitter share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M17.658 14.693l.029.454-.48-.055c-1.75-.213-3.278-.936-4.575-2.15l-.634-.603-.164.445c-.346.992-.125 2.039.596 2.743.384.39.298.445-.365.214-.23-.075-.433-.13-.452-.102-.067.064.164.908.346 1.242.25.463.76.917 1.317 1.186l.47.213-.557.01c-.538 0-.557.009-.5.203.193.603.952 1.242 1.798 1.52l.595.195-.519.296a5.603 5.603 0 01-2.575.686c-.432.01-.788.047-.788.075 0 .092 1.172.611 1.855.815 2.047.603 4.478.343 6.304-.686 1.297-.732 2.595-2.187 3.2-3.596.327-.75.653-2.122.653-2.78 0-.427.03-.482.567-.992.318-.297.616-.621.673-.714.096-.176.087-.176-.403-.018-.817.278-.933.24-.529-.176.298-.297.653-.835.653-.992 0-.028-.144.018-.307.102a5.513 5.513 0 01-.846.315l-.519.157-.47-.305c-.26-.167-.625-.353-.817-.408-.49-.13-1.24-.111-1.682.037-1.201.417-1.96 1.492-1.874 2.67z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                            <li class="list-item icon">
+                                <button class="button linkedin" aria-label="linkedin share">
+                                    <svg viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <circle class="circle" stroke="#F0F0F0" stroke-width="2" cx="17.5" cy="17.5" r="16.5" />
+        <path d="M14.601 14.143V21.7h-2.55v-7.557h2.55zm.168-2.338c0 .726-.553 1.306-1.443 1.306h-.016c-.856 0-1.41-.58-1.41-1.306 0-.74.57-1.305 1.443-1.305.873 0 1.41.564 1.426 1.305zm9.031 5.562V21.7h-2.55v-4.043c0-1.016-.37-1.709-1.293-1.709-.705 0-1.124.468-1.309.919-.067.161-.084.387-.084.613v4.22h-2.55s.033-6.848 0-7.557h2.55v1.07c.339-.514.945-1.248 2.3-1.248 1.678 0 2.936 1.08 2.936 3.402z" fill="#000" />
+    </g>
+</svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="div fold-out icon">
+                            <a href="#" class="anchor"><img src="../../../images/icons/social/share.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div blog-content">
+                    <span class="author-date type-mono">  Thibaut Sardan, Sep 28, 2021</span><br />
+                    <h2 class="h title">ChainSafe Files — Building Privacy-preserving Cloud Storage</h2>
+                    
+
+<p><em>This is a guest post from</em> <a href="https://chainsafe.io/" target="_blank"><em>ChainSafe</em></a><em>.</em></p>
+
+<p><em>ChainSafe Files provides highly private, highly secure cloud storage that allows users to maintain full sovereignty over their data. Our product leverages IPFS and Filecoin to give users all the benefits of distributed storage and blockchain technology. Files abstracts away the complexities of these systems to deliver a simple, user-friendly experience. In this way, users can enjoy easy access to our data storage solution that is more private, more resilient, and more decentralized than traditional cloud storage options.</em> <a href="https://files.chainsafe.io/" target="_blank"><em>Try it today</em></a><em>!</em></p>
+
+<p><a href="https://files.chainsafe.io/" target="_blank">ChainSafe Files</a> is an online platform to store, view, and share files. Although it might look like it, it isn’t your typical cloud storage platform. ChainSafe Files was built and designed with <strong>user freedom and data privacy</strong> top of mind.</p>
+
+<p>To deliver on our vision of better user autonomy and privacy, we came up with two principles to inform our approach: 1) <strong>Privacy</strong>. Files users should be the only ones able to read their data without fear of incursions on privacy; 2) <strong>Self-reliance</strong>. Instead of being locked into our app, users should be able to access their files even in the unlikely scenario where the Files platform becomes unavailable.</p>
+
+<p>This article will walk through the most important parts of Files’ architecture, explaining how we strive to build a product that prioritizes its users as first-class citizens. We will go through:</p>
+
+<ol>
+<li>The <strong>decentralized login process</strong>, effectively preventing anyone but yourself from accessing the Files user interface</li>
+<li>How this gives you access to the <strong>tools that let you encrypt any data you store</strong></li>
+<li>Finally, we will show how we leverage IPFS and Filecoin to make sure <strong>your data will always be available to you</strong>.</li>
+</ol>
+
+<h3 id="decentralized-login"><strong>Decentralized login</strong></h3>
+
+<p>When you visit a conventional web application for the first time, you generally need to sign up and then log in. You’ll then enter a login and password, then the platform’s backend will verify if the credentials match what you provided upon sign-up, and finally it will let you access your files.</p>
+
+<p>Now, this platform is the gatekeeper. <strong>If conventional web applications have a backdoor, or if an admin is malicious, one could trivially gain access to your data</strong>. These backdoors could be introduced by a hacker, a government, or even by the platform itself.</p>
+
+<p>Another common use case for an application’s user login is to use a single sign-on solution such as Google. They are convenient since they require just one click. They are mostly used as a single source of truth where a third-party (e.g., Google) can vouch that you are who you say you are because you are logged in on their platform.</p>
+
+<p>All an application needs to do is to verify that the third-party signature is valid (e.g Google’s signature). Now, this means that in our example, Google is the gatekeeper, and you would have to trust them. If your Google account gets hacked, if Google itself gets hacked, or if an admin is malicious, <strong>they could issue a signature to vouch that someone is identified as you.</strong></p>
+
+<p>At ChainSafe Files, to prevent the need to trust a third-party, we have built an authentication flow using a decentralized login provider called tKey, by<a href="https://tech.tor.us" target="_blank"> Torus</a>. We have dedicated an article about it and shared in detail how it works, you can check it out<a href="https://medium.com/chainsafe-systems/major-improvement-to-chainsafe-files-ab489d3e52a2" target="_blank"> here</a>. The gist of it is that you <strong>no longer need to trust a single actor</strong>, be it Google, Github, or the ChainSafe Files’ team. You will require two factors to be authenticated:</p>
+
+<ol>
+<li>A password in case your first sign-in method gets compromised, a malicious actor would still not be able to login to Files on your behalf.</li>
+</ol>
+
+<p><img src="../../../uploads/chainsafe-files-1-1.jpg" alt="Get Started with ChainSafe Files" /></p>
+
+<ol>
+<li>To make it simpler, your browser will also be used as a second factor, so that if you use the same browser to log in to Files, you can sign into your account in a single click.</li>
+</ol>
+
+<p>In this section, we went through the login flow of Files and explained how we are using a decentralized authentication system. Thanks to this, <strong>no single entity is storing user credentials, and you do not have to trust a single entity</strong>, be it the backend of Files or a third-party platform. Now that we are convinced that no single entity is gatekeeping access to your Files, let’s see how we make sure that you are the only one able to read your content.</p>
+
+<h3 id="your-files-cannot-be-read-by-anyone-but-yourself"><strong>Your files cannot be read by anyone but yourself</strong></h3>
+
+<p>When you log in to ChainSafe Files using two factors, under the hood, you reconstruct a public/private key pair that is <strong>only known to you</strong>. We will call it the master key in this article. This master key only lives in your browser. It is reconstructed every time you log in to Files and deleted again when you end your browser session. Let’s see how it is used in practice and walk through what happens when you upload a document on Files.</p>
+
+<p>Say you want to upload an image of a cat to ChainSafe Files. When you do this, the Files application will request an encryption key that is stored on Files’ backend. Of course, because it’s stored away from your computer, it’s not stored in plain text. It is encrypted with your master key (using AES-256). Only you can read this encryption key. Once you have it, the cat image you want to upload will be encrypted locally, in your browser, on your machine, and finally, it will be sent to Files’ backend.</p>
+
+<p>Let’s take a short aside here to discuss how a website works. Technically, visiting a website in your browser means that you are downloading the website’s code from the internet, and executing it in your browser, locally. What happens in your browser isn’t necessarily shared with any server on the internet. What any website’s code does can be seen and verified. Also because<a href="https://github.com/ChainSafe/ui-monorepo/tree/dev/packages/files-ui" target="_blank"> Files is open-source</a>, you <strong>don’t need to take our word for it, you can verify</strong> what is explained in this article!</p>
+
+<p>Back to our cat image, remember what we said earlier: what happens in your browser locally isn’t necessarily shared on the internet. When the cat image reaches the Files’ backend, it’s already encrypted with this encryption key that only you have access to. As cute as it may be, no one can see that it’s a cat image!</p>
+
+<p>As you can see, we’ve built Files with a privacy-by-design approach. We’ve made it as hard as we can to prevent someone from impersonating you when you log in, while not having to trust a single third-party — not even ChainSafe. Additionally, <strong>thanks to powerful encryption, no one but you can read the content of your files</strong>.</p>
+
+<h3 id="your-files-can-be-accessed-even-if-the-files-interface-and-infrastructure-is-down"><strong>Your files can be accessed even if the Files interface and infrastructure is down</strong></h3>
+
+<p>One very important aspect of building an open and decentralized platform is data retrieval. It sounds awesome that no one but you can log in to the platform and read your files, but what if the platform is down, or worse censoring you? This is where the decentralized storage network of IPFS and Filecoin come into play. While there are high chances that readers of this article already know about IPFS and Filecoin,<a href="https://docs.filecoin.io/about-filecoin/ipfs-and-filecoin/" target="_blank"> here is a link to learn more about them</a>.</p>
+
+<p>In a nutshell, IPFS is a network of computers (called nodes) that store files. A node can “pin” your files, meaning it will keep a copy of it ready for distribution in case it is asked to. The Files’ backend is built on top of<a href="http://storage.chainsafe.io" target="_blank"> ChainSafe Storage</a>, and any file that is uploaded to Files is also pinned by a node on our infrastructure. Each file has an IPFS content identifier (CID) which can be seen on the interface when you click on “info”.</p>
+
+<p><img src="../../../uploads/file-info.jpg" alt="ChainSafe Files file info" /></p>
+
+<p>This way, you can retrieve your files without using the Files user interface. Now, as explained before, those files are encrypted, and you would need to decrypt them if you want to read them.<a href="https://github.com/ChainSafe/files-cli" target="_blank"> <strong>We have created a simple cli tool</strong></a> <strong>to download and decrypt your files from IPFS without using the Files interface</strong>.</p>
+
+<p>While it doesn’t cost anything to retrieve a file from IPFS, nodes that are a part of the network have no incentive to store files. Therefore, it can be said that there is no guarantee that your files will always be available when you need them. This is where Filecoin will help. Filecoin is an incentive layer on top of IPFS. In simple words, it means you can pay specific nodes to make sure they will keep your file around. This guarantee is enforced by the Filecoin protocol so that you can be sure to be able to access your files when you want. Unlike IPFS though, it is not free to retrieve your files. <strong>ChainSafe Files is therefore using IPFS</strong> as a caching layer, to be able to show your files right away when you need them, but <strong>we also store them using Filecoin for long-term storage, and redundancy</strong>.</p>
+
+<h3 id="placing-users-at-the-center-with-a-privacy-preserving-mindset"><strong>Placing users at the center, with a privacy preserving mindset</strong></h3>
+
+<p>Summing it up, you are the only one able to log in to the Files user interface to retrieve your master key. Any file you upload is encrypted and is only readable by yourself. Your files are stored on a decentralized network that lets you access them even if the ChainSafe Files infrastructure isn’t available anymore. Is there anything more one could wish? The answer is yes!</p>
+
+<p>Users of a platform leave a lot of metadata behind, which can tell a lot about them. Let’s take WhatsApp as an example. While the content of the messages is encrypted, the information collected about who you are sending messages to, how often, at what time of the day, etc.. can tell a lot about yourself, your habits, your and your social circle. Now, mix this data with other sources such as what other apps are installed on your phone, which Facebook account you may be associated with, and you get the perfect cocktail for being targeted.</p>
+
+<p><strong>Any personal data is sensitive, and must be safeguarded so that they should not land in malicious hands. Better yet, they should not even be collected in the first place</strong>.</p>
+
+<p>We at ChainSafe Files take data privacy very seriously and aim at providing the best experience on the Files platform while protecting our users from such threats. <strong>We are not in the data collection business and we will make sure that user usage information is not shared with third parties and never sold</strong>.</p>
+
+<h3 id="we-are-conducting-user-interviews"><strong>We are conducting user interviews!</strong></h3>
+
+<p>Help shape the future of Files by scheduling a user interview with our product manager Colin Schwarz. The user interviews are short 15 minute calls that aim to gleam insights into your usage of our product and how we can better serve you! Join our <a href="https://t.me/joinchat/mhd6CPFR45gyYmUx" target="_blank">Files Task Force Telegram group chat</a> or <a href="https://calendly.com/colinschwarz/chainsafe-files-chat" target="_blank">schedule a call</a> today.</p>
+
+<h3 id="get-involved"><strong>Get involved</strong></h3>
+
+<p>To help us make Files better, we rely on user feedback and we would love to hear your thoughts. What do you like about Files? Is there anything annoying you? What feature would you like to see in the future? Tell us what you think in our<a href="https://t.me/joinchat/mhd6CPFR45gyYmUx" target="_blank"> Files power user Telegram group</a>, or on<a href="https://github.com/ChainSafe/ui-monorepo/tree/dev/packages/files-ui" target="_blank"> GitHub</a>,<a href="https://twitter.com/ChainSafeth" target="_blank"> Twitter</a>,<a href="https://discord.gg/CprJHjrWG6" target="_blank"> Discord</a>.</p>
+
+<p>Want to work with ChainSafe? <strong>Come join us!</strong> Check out the careers section of our website with our<a href="https://chainsafe.io/careers" target="_blank"> open positions</a>, and get in touch with us at <a href="mailto:careers@chainsafe.io" target="_blank">careers@chainsafe.io</a> if you are interested!</p>
+
+                </div>
+            </div>
+
+            
+            <div class="div related-articles">
+                <div class="div grid">
+                    <div class="div label"><h3 class="h type-base">Related Articles</h3></div>
+                    <div class="div overview-link"><a class="anchor type-base" href="../../../blog">View all articles</a></div>
+                </div>
+                <div class="div grid">
+
+                    <div class="div Carousel" data-setting-mobile="true">
+                        <div class="div carousel-container">
+                            <div class="div carousel-items">
+                                <div class="div unit-cols-3">
+                                    
+                                    <div class="div carousel-item article-1">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper image--dimmed">
+        <a href="../../../blog/posts/building-businesses-for-the-future-of-the-decentralized-web/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/filecoin-x-outlier_hu863d6f44aacbfeba1f25647d8c3c863f_140781_500x0_resize_q90_linear_2.png 500w,../../../uploads/filecoin-x-outlier_hu863d6f44aacbfeba1f25647d8c3c863f_140781_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/filecoin-x-outlier_hu863d6f44aacbfeba1f25647d8c3c863f_140781_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">interviews</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/building-businesses-for-the-future-of-the-decentralized-web/" class="anchor">
+                Building Businesses for the Future of the Decentralized Web
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">Outlier Ventures CEO &amp; Founder Jamie Burke and Protocol Labs Ecosystem Lead Colin Evran talking about the business opportunities of decentralized storage in the future of Web3 and the role that the recently-announced Filecoin Base Camp by Outlier Ventures plays.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Jul 20, 2021
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-2">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper image--dimmed">
+        <a href="../../../blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/fil-blog-nft-storage-notext-1_hu0f986e6d3668f304753a6341d061b59b_77385_500x0_resize_q90_linear_2.png 500w,../../../uploads/fil-blog-nft-storage-notext-1_hu0f986e6d3668f304753a6341d061b59b_77385_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/fil-blog-nft-storage-notext-1_hu0f986e6d3668f304753a6341d061b59b_77385_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/introducing-nft.storage-free-decentralized-storage-for-nfts/" class="anchor">
+                Introducing NFT.Storage: Free Decentralized Storage for NFTs
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">NFT.Storage lets users store their NFT content and metadata seamlessly and securely with IPFS and Filecoin.</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Apr 29, 2021
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+
+                                    
+                                    <div class="div carousel-item article-3">
+                                        
+                                        
+
+
+
+
+<div class="div blog-card">
+    <div class="div image-wrapper ">
+        <a href="../../../blog/posts/announcing-filecoin-implementations-in-rust-and-c/" class="anchor">
+            <div class="div ratio ratio--16x9">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/rust-main-header_hu6ae4ab314285575bd94b4c85da7276f1_804842_500x0_resize_q90_linear_2.png 500w,../../../uploads/rust-main-header_hu6ae4ab314285575bd94b4c85da7276f1_804842_1000x0_resize_q90_linear_2.png 1000w,../../../uploads/rust-main-header_hu6ae4ab314285575bd94b4c85da7276f1_804842_1500x0_resize_q90_linear_2.png 1500w" alt=""/>
+        
+    
+
+
+
+            </div>
+        </a>
+    </div>
+    <div class="div copy">
+        <div class="div tags type-mono">
+            
+            <span class="tag">updates</span>
+            
+        </div>
+        <h2 class="h title">
+            <a href="../../../blog/posts/announcing-filecoin-implementations-in-rust-and-c/" class="anchor">
+                Announcing Filecoin implementations in Rust and C&#43;&#43;
+            </a>
+        </h2>
+
+        <p class="p excerpt type-base">Today, we are excited to announce two additional implementations of the Filecoin protocol: forest – being implemented in Rust by ChainSafe, and fuhon – being implemented in C&#43;&#43; by Soramitsu. These implementations are in active development, and are now fully open for anyone to use or contribute to. Check them out on GitHub!</p>
+
+        <p class="p author-date type-mono">
+            
+            
+                Jan 31, 2020
+            
+        </p>
+
+        
+    </div>
+</div>
+
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="div nav-dots"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+</main>
+
+    </div>
+    <section class="section hero3d mode-transparent-dark">
+
+    <div class="div webgl"></div>
+
+    
+    <img class="globe-still" alt="Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer." data-src="" alt="">
+
+    <div class="div sprites2d">
+        <div class="div icon-client">
+            <img class="image" data-src="../../../images/svgs/icon_client.svg" alt="icon_client">
+        </div>
+        <div class="div icon-request pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_request_icon.svg" alt="filecoin_request_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon.svg" alt="filecoin_data_icon">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-doc-black">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+        </div>
+        <div class="div icon-miner">
+            <img class="image" data-src="../../../images/svgs/icon_miner.svg" alt="icon_miner">
+        </div>
+        <div class="div icon-miner-orange">
+            <img class="image" data-src="../../../images/svgs/icon_miner_other.svg" alt="icon_miner_other">
+        </div>
+        <div class="div icon-package pin">
+            <img class="image" data-src="../../../images/svgs/filecoin_data_icon_black.svg" alt="filecoin_data_icon_black">
+            <div class="div vertical-line"></div>
+        </div>
+        <div class="div icon-coin-spin spritesheet"
+             data-src="../../../images/coin_sprite.png"
+             data-spritesheet-width="50"
+             data-spritesheet-height="50"
+             data-spritesheet-frames="17">
+        </div>
+        <div class="div icon-question-in spritesheet"
+             data-src="../../../images/proof_sprites1.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-question-to-check spritesheet"
+             data-src="../../../images/proof_sprites2.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="16">
+        </div>
+        <div class="div icon-check-to-block spritesheet"
+             data-src="../../../images/proof_sprites3.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="43">
+        </div>
+        <div class="div icon-block-out spritesheet"
+             data-src="../../../images/proof_sprites4.png"
+             data-spritesheet-width="65"
+             data-spritesheet-height="65"
+             data-spritesheet-frames="14">
+        </div>
+        <div class="div icon-block-approved spritesheet"
+             data-src="../../../images/block_approved.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div icon-block-declined spritesheet"
+             data-src="../../../images/block_declined.png"
+             data-spritesheet-width="75"
+             data-spritesheet-height="75"
+             data-spritesheet-frames="69">
+        </div>
+        <div class="div text-field">
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <div class="div fade-plane"></div>
+</section>
+
+    <div class="div click-blocker"></div>
+	
+
+<footer class="footer mode-dark">
+	<div class="div grid">
+		<div class="div tagline">
+			
+			<span class="type-unit">Filecoin is an open-source cloud storage marketplace, protocol, and incentive layer.</span>
+		</div>
+
+		
+
+		<div class="div col-contact">
+			<h5 class="h h5 type-base">Reach out</h5>
+			<ul class="list">
+				
+				<li class="list-item">
+					<a class="anchor" href="https://filecoin.io/slack" target="_blank" rel="noreferrer">Slack
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://weixin.qq.com/r/1xz54Y-EctINrcuC90nF" target="_blank" rel="noreferrer">WeChat
+						
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+    
+    
+        
+        
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+            
+            
+
+            
+              
+            
+
+          
+          
+          <img class="image lazyload" data-sizes="auto" data-srcset="../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_67x0_resize_q90_linear.jpg 67w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_133x0_resize_q90_linear.jpg 133w,../../../uploads/wechat-qr_hu5f023094d097160dda753b77835988c6_33854_200x0_resize_q90_linear.jpg 200w" alt=""/>
+        
+    
+
+
+
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://twitter.com/Filecoin" target="_blank" rel="noreferrer">Twitter
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://github.com/filecoin-project/community#forums" target="_blank" rel="noreferrer">Forum
+						
+					</a>
+				</li>
+				
+				<li class="list-item">
+					<a class="anchor" href="https://riot.im/app/#/group/&#43;filecoin:matrix.org" target="_blank" rel="noreferrer">Matrix
+						
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-resources">
+			<h5 class="h h5 type-base">Resources</h5>
+			<ul class="list">
+				
+				<li class="list-item"><a class="anchor" href="https://research.filecoin.io/" target="_blank" rel="noreferrer">Research</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://filecoin.io/blog/" target="_blank" rel="noreferrer">Blog</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://github.com/filecoin-project" target="_blank" rel="noreferrer">Github</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://proto.school/course/filecoin" target="_blank" rel="noreferrer">ProtoSchool</a></li>
+				
+				<li class="list-item"><a class="anchor" href="https://security.filecoin.io/" target="_blank" rel="noreferrer">Security</a></li>
+				
+			</ul>
+		</div>
+
+		<div class="div col-newsletter">
+			<h5 class="h h5 type-base">Sign up for Filecoin updates</h5>
+
+			<div class="div newsletter-container" id="newsletter">
+				<form class="form" action="" novalidate>
+					<div class="div input-container">
+						<label class="label" for="newsletter-email">Your email</label>
+						<input class="input email" id="newsletter-email" type="text" placeholder="Your email" required/>
+						<label class="label" for="newsletter-submit">Submit</label>
+						<input class="input" id="newsletter-submit" type="submit" value=""/>
+						<span class="success-icon"></span>
+					</div>
+
+					<div class="div error-message">
+						<p class="p">Something went wrong. Please try again.</p>
+					</div>
+
+					<div class="div success-message">
+						<p class="p">You’ve been signed up for our newsletter. Thank you!</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+	</div>
+
+</footer>
+
+    <script src="../../../js/vendor.bundle.js?c=1644520302"></script>
+    <script src="../../../js/bundle.js?c=1644520302"></script>
+</body>
+</html>
+
+
